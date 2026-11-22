@@ -1,0 +1,218 @@
+[
+ {
+  "config": "stage3_cifar100_damping_050_alpha0.1.yaml",
+  "dataset": "CIFAR100",
+  "root": "./datasets",
+  "sha256": "1902f43899335c1ea0708ff3c30247cee42e910dfb79d7ee6533cbbb2592d95b"
+ },
+ {
+  "config": "stage3_cifar100_damping_050_alpha1.0.yaml",
+  "dataset": "CIFAR100",
+  "root": "./datasets",
+  "sha256": "b05b97d5c0e8a2db41af0b91c9fe5c4c9b9de65d98f1ef6f7aec590d53ec8bce"
+ },
+ {
+  "config": "stage3_cifar100_damping_075_alpha0.1.yaml",
+  "dataset": "CIFAR100",
+  "root": "./datasets",
+  "sha256": "4bb64958cb504d4b7e8cfd78ddfdb98931b9fe003b07a586743b63dc881d7380"
+ },
+ {
+  "config": "stage3_cifar100_damping_075_alpha1.0.yaml",
+  "dataset": "CIFAR100",
+  "root": "./datasets",
+  "sha256": "f88ab08c018cfeddc7a6e0fde34f39f4d6e508ea72d34ef147e9b89adb5d9dc9"
+ },
+ {
+  "config": "stage3_cifar100_fedavg_alpha0.1.yaml",
+  "dataset": "CIFAR100",
+  "root": "./datasets",
+  "sha256": "99d919e30ba9b01b92a8b499f4ac4fd84f46cd0f8f7d0491b468afcb29d1605c"
+ },
+ {
+  "config": "stage3_cifar100_fedavg_alpha1.0.yaml",
+  "dataset": "CIFAR100",
+  "root": "./datasets",
+  "sha256": "f0deb95961c388c4641d31bed31504b017d1c41572ab0497d1ba4caa09b6b0c8"
+ },
+ {
+  "config": "stage3_cifar100_infoopt_alpha0.1.yaml",
+  "dataset": "CIFAR100",
+  "root": "./datasets",
+  "sha256": "8ecf85cb3e1f5d36650c59347d0716c0453bd446bbbb99ebc0faf2302bee53ca"
+ },
+ {
+  "config": "stage3_cifar100_infoopt_alpha1.0.yaml",
+  "dataset": "CIFAR100",
+  "root": "./datasets",
+  "sha256": "426e97c22f19546f61dcf0d56799022afb20e1589bcdba2767a3b29d51849bde"
+ },
+ {
+  "config": "stage3_cifar100_shuffled_infoopt_alpha0.1.yaml",
+  "dataset": "CIFAR100",
+  "root": "./datasets",
+  "sha256": "1b0340f77e2791bf35b3e4ec1bc1cc22fdb97006f839c7b12e5a4b99f270dc74"
+ },
+ {
+  "config": "stage3_cifar100_shuffled_infoopt_alpha1.0.yaml",
+  "dataset": "CIFAR100",
+  "root": "./datasets",
+  "sha256": "2a2e6c4d749582d0c1791d17c9668e4ef9cdee9bb9fca6c2802b4ef5cc2f29df"
+ },
+ {
+  "config": "stage3_cifar100_uniform_alpha0.1.yaml",
+  "dataset": "CIFAR100",
+  "root": "./datasets",
+  "sha256": "c55d5645e3249ad91ffe898b5b5d212771bb023e402383c346c5e0866609916a"
+ },
+ {
+  "config": "stage3_cifar100_uniform_alpha1.0.yaml",
+  "dataset": "CIFAR100",
+  "root": "./datasets",
+  "sha256": "886b152c12e629e06e3c0d156563e4518f14144b82cd378f48c2b1a691b6e5a9"
+ },
+ {
+  "config": "stage3_eurosat_damping_050_alpha0.1.yaml",
+  "dataset": "EuroSAT",
+  "root": "./datasets",
+  "sha256": "26b3694bcaacba4d25dedadcde0bee580da82f2d9b21af32b5bff8f16bb79d61"
+ },
+ {
+  "config": "stage3_eurosat_damping_050_alpha1.0.yaml",
+  "dataset": "EuroSAT",
+  "root": "./datasets",
+  "sha256": "1a028d68389988f9a0c76c5442035760af18cf1b9a97abc3f96bca8316b11830"
+ },
+ {
+  "config": "stage3_eurosat_damping_075_alpha0.1.yaml",
+  "dataset": "EuroSAT",
+  "root": "./datasets",
+  "sha256": "d262b1b4f00ffbccbaf1a4936c1b31e0cd415c9743922f988ad2f185a091dd0b"
+ },
+ {
+  "config": "stage3_eurosat_damping_075_alpha1.0.yaml",
+  "dataset": "EuroSAT",
+  "root": "./datasets",
+  "sha256": "0201cc6fb1c44e789de3acdba31bfba1a5b44f68c1d1ad18a5f152f419555516"
+ },
+ {
+  "config": "stage3_eurosat_fedavg_alpha0.1.yaml",
+  "dataset": "EuroSAT",
+  "root": "./datasets",
+  "sha256": "ed1055af9109577b169b3c90ede79c076726f8864d232bf80cdf83e9673d3869"
+ },
+ {
+  "config": "stage3_eurosat_fedavg_alpha1.0.yaml",
+  "dataset": "EuroSAT",
+  "root": "./datasets",
+  "sha256": "2c1f972d765ebac99a00d7e3e7f48641ff33ed0fed08c2468716c7f5ed0419c6"
+ },
+ {
+  "config": "stage3_eurosat_infoopt_alpha0.1.yaml",
+  "dataset": "EuroSAT",
+  "root": "./datasets",
+  "sha256": "37b6375b83da074c832d9a6414960345130b21621a9e3ab0ceb6ab6e2f892d5e"
+ },
+ {
+  "config": "stage3_eurosat_infoopt_alpha1.0.yaml",
+  "dataset": "EuroSAT",
+  "root": "./datasets",
+  "sha256": "edf88f25bb8cabcf32c6cdfbab95a54b0a9c577b7c5db87e7ec40b4c11de025f"
+ },
+ {
+  "config": "stage3_eurosat_shuffled_infoopt_alpha0.1.yaml",
+  "dataset": "EuroSAT",
+  "root": "./datasets",
+  "sha256": "6a22f65c4f169d1b0f986e7f04e37f322a6652ad3740b181445134e5404f9cc9"
+ },
+ {
+  "config": "stage3_eurosat_shuffled_infoopt_alpha1.0.yaml",
+  "dataset": "EuroSAT",
+  "root": "./datasets",
+  "sha256": "1c1859b86e9d498033cea44978895da78b343d17757aed54e8c095e5fb43a728"
+ },
+ {
+  "config": "stage3_eurosat_uniform_alpha0.1.yaml",
+  "dataset": "EuroSAT",
+  "root": "./datasets",
+  "sha256": "01b5138fc9bd5008c06b579a0549eed8ca689299e14d3b0c70f364c941b8770f"
+ },
+ {
+  "config": "stage3_eurosat_uniform_alpha1.0.yaml",
+  "dataset": "EuroSAT",
+  "root": "./datasets",
+  "sha256": "eeb4c363e8e14eae10b9aed0a749a78ab12592a13326f8e2cdabdb5a608990b1"
+ },
+ {
+  "config": "stage3_pathmnist_damping_050_alpha0.1.yaml",
+  "dataset": "PathMNIST",
+  "root": "./datasets",
+  "sha256": "047c462c5169ca6de3e1722075481a55abe8e8479efeb6900aaf5ef5ae409447"
+ },
+ {
+  "config": "stage3_pathmnist_damping_050_alpha1.0.yaml",
+  "dataset": "PathMNIST",
+  "root": "./datasets",
+  "sha256": "b7bcaf24bd00051889ab5137c5be78243cbf6b6339609347e5eea59b3df879d8"
+ },
+ {
+  "config": "stage3_pathmnist_damping_075_alpha0.1.yaml",
+  "dataset": "PathMNIST",
+  "root": "./datasets",
+  "sha256": "338bcbc628937bbaf310f1ab4a61e152500ab1e8ff138f85a6940baf056847fe"
+ },
+ {
+  "config": "stage3_pathmnist_damping_075_alpha1.0.yaml",
+  "dataset": "PathMNIST",
+  "root": "./datasets",
+  "sha256": "9ea176f29ca676b3588bcacddc90218385808ad4e50a19fc750171dff0c6a36e"
+ },
+ {
+  "config": "stage3_pathmnist_fedavg_alpha0.1.yaml",
+  "dataset": "PathMNIST",
+  "root": "./datasets",
+  "sha256": "0de014d9c73420569461601e46ea1919b50947e3edba622f7c1cd29fc4cacd37"
+ },
+ {
+  "config": "stage3_pathmnist_fedavg_alpha1.0.yaml",
+  "dataset": "PathMNIST",
+  "root": "./datasets",
+  "sha256": "12a4be5f78109ebcd6a28edbaead087a518850651c6438b6fa065766f7d707df"
+ },
+ {
+  "config": "stage3_pathmnist_infoopt_alpha0.1.yaml",
+  "dataset": "PathMNIST",
+  "root": "./datasets",
+  "sha256": "8f1cd20ccb045dd99e54397102434513ff89572dca716457df2a5a86d48fe2c9"
+ },
+ {
+  "config": "stage3_pathmnist_infoopt_alpha1.0.yaml",
+  "dataset": "PathMNIST",
+  "root": "./datasets",
+  "sha256": "9d87f4942221e9f5b6cbca0e74763375181dee0b781cfc5451115f9218e6dd9d"
+ },
+ {
+  "config": "stage3_pathmnist_shuffled_infoopt_alpha0.1.yaml",
+  "dataset": "PathMNIST",
+  "root": "./datasets",
+  "sha256": "decb40fd4cd3d810baedbd211cc77c04f913b850c820c3dfbea5df83b8fcb656"
+ },
+ {
+  "config": "stage3_pathmnist_shuffled_infoopt_alpha1.0.yaml",
+  "dataset": "PathMNIST",
+  "root": "./datasets",
+  "sha256": "4e5b193a859e8f7e87a346e9a05ac4b157661cdf9241173c2e0efb03143458c7"
+ },
+ {
+  "config": "stage3_pathmnist_uniform_alpha0.1.yaml",
+  "dataset": "PathMNIST",
+  "root": "./datasets",
+  "sha256": "0fb8505d929e758c7a67b86e04db62701f1b4a1c0f4ab79090c196bec0fe9dae"
+ },
+ {
+  "config": "stage3_pathmnist_uniform_alpha1.0.yaml",
+  "dataset": "PathMNIST",
+  "root": "./datasets",
+  "sha256": "6517b634449c2903d4b83ac219e5c6e2a3cf53505717bb0f342b902f3b68cefa"
+ }
+]

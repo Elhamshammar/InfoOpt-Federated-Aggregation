@@ -1,0 +1,33 @@
+{
+ "label": "SENSITIVITY ONLY (strict E3 primary exclusion)",
+ "n": 5,
+ "mean": 44.724000000000004,
+ "sd": 2.153109379478897,
+ "runs": [
+  {
+   "seed": 100,
+   "run": "cifar100_sweep_v2_fedopt_slr0.01_seed100_alpha0.3_20260813_041224",
+   "round100_acc_pct": 43.15
+  },
+  {
+   "seed": 101,
+   "run": "cifar100_sweep_v2_fedopt_slr0.01_seed101_alpha0.3_20260813_041854",
+   "round100_acc_pct": 43.65
+  },
+  {
+   "seed": 102,
+   "run": "cifar100_sweep_v2_fedopt_slr0.01_seed102_alpha0.3_20260813_042529",
+   "round100_acc_pct": 46.760000000000005
+  },
+  {
+   "seed": 103,
+   "run": "cifar100_sweep_v2_fedopt_slr0.01_seed103_alpha0.3_20260813_043226",
+   "round100_acc_pct": 42.730000000000004
+  },
+  {
+   "seed": 104,
+   "run": "cifar100_sweep_v2_fedopt_slr0.01_seed104_alpha0.3_20260813_043856",
+   "round100_acc_pct": 47.33
+  }
+ ]
+}

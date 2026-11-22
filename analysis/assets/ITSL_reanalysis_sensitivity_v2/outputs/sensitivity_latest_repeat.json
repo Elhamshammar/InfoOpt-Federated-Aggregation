@@ -1,0 +1,164 @@
+{
+ "label": "SENSITIVITY (latest repeat within stratum); sources verified; no fallback to primary values; single-source cells labelled 'same run'",
+ "results": [
+  {
+   "dataset": "cifar100",
+   "row": "fedavg",
+   "n": 5,
+   "primary_mean_earliest": 43.141999999999996,
+   "sensitivity_mean_latest": 43.141999999999996,
+   "delta": 0.0,
+   "per_seed_notes": [
+    "seed 100: same run (single source)",
+    "seed 101: same run (single source)",
+    "seed 102: same run (single source)",
+    "seed 103: same run (single source)",
+    "seed 104: same run (single source)"
+   ]
+  },
+  {
+   "dataset": "cifar100",
+   "row": "InfoOpt_Full",
+   "n": 5,
+   "primary_mean_earliest": 43.964,
+   "sensitivity_mean_latest": 43.964,
+   "delta": 0.0,
+   "per_seed_notes": [
+    "seed 100: same run (single source)",
+    "seed 101: same run (single source)",
+    "seed 102: same run (single source)",
+    "seed 103: same run (single source)",
+    "seed 104: same run (single source)"
+   ]
+  },
+  {
+   "dataset": "eurosat",
+   "row": "fedavg",
+   "n": 5,
+   "primary_mean_earliest": 80.02962959999999,
+   "sensitivity_mean_latest": 80.02962959999999,
+   "delta": 0.0,
+   "per_seed_notes": [
+    "seed 100: same run (single source)",
+    "seed 101: same run (single source)",
+    "seed 102: same run (single source)",
+    "seed 103: same run (single source)",
+    "seed 104: same run (single source)"
+   ]
+  },
+  {
+   "dataset": "eurosat",
+   "row": "InfoOpt_Full",
+   "n": 5,
+   "primary_mean_earliest": 75.29629639999999,
+   "sensitivity_mean_latest": 75.25925925925927,
+   "delta": -0.03703714074072195,
+   "per_seed_notes": [
+    "seed 100: latest=eurosat_sweep_InfoOpt_Full_seed100_alpha0.3_20260717_090826",
+    "seed 101: latest=eurosat_sweep_InfoOpt_Full_seed101_alpha0.3_20260717_091952",
+    "seed 102: latest=eurosat_sweep_InfoOpt_Full_seed102_alpha0.3_20260717_093120",
+    "seed 103: latest=eurosat_sweep_InfoOpt_Full_seed103_alpha0.3_20260717_122712",
+    "seed 104: latest=eurosat_sweep_InfoOpt_Full_seed104_alpha0.3_20260717_133520"
+   ]
+  },
+  {
+   "dataset": "pathmnist",
+   "row": "fedavg",
+   "n": 5,
+   "primary_mean_earliest": 85.6128132,
+   "sensitivity_mean_latest": 85.6128132,
+   "delta": 0.0,
+   "per_seed_notes": [
+    "seed 100: same run (single source)",
+    "seed 101: same run (single source)",
+    "seed 102: same run (single source)",
+    "seed 103: same run (single source)",
+    "seed 104: same run (single source)"
+   ]
+  },
+  {
+   "dataset": "pathmnist",
+   "row": "InfoOpt_Full",
+   "n": 5,
+   "primary_mean_earliest": 85.70473519999999,
+   "sensitivity_mean_latest": 85.54038997214485,
+   "delta": -0.1643452278551365,
+   "per_seed_notes": [
+    "seed 100: latest=pathmnist_sweep_InfoOpt_Full_seed100_alpha0.3_20260717_083443",
+    "seed 101: latest=pathmnist_sweep_InfoOpt_Full_seed101_alpha0.3_20260717_084557",
+    "seed 102: latest=pathmnist_sweep_InfoOpt_Full_seed102_alpha0.3_20260717_085702",
+    "seed 103: latest=pathmnist_sweep_InfoOpt_Full_seed103_alpha0.3_20260717_115314",
+    "seed 104: latest=pathmnist_sweep_InfoOpt_Full_seed104_alpha0.3_20260717_130047"
+   ]
+  },
+  {
+   "dataset": "cifar100",
+   "row": "InfoOpt_Full-FedAvg",
+   "n": 5,
+   "sensitivity_mean_latest_diff": 0.8219999999999998,
+   "ci95": [
+    -0.6122804766403929,
+    2.2562804766403923
+   ],
+   "p_raw": 0.18677397653911476,
+   "per_seed_notes": [
+    "seed 100 InfoOpt: same run (single source)",
+    "seed 100 fedavg: same run (single source)",
+    "seed 101 InfoOpt: same run (single source)",
+    "seed 101 fedavg: same run (single source)",
+    "seed 102 InfoOpt: same run (single source)",
+    "seed 102 fedavg: same run (single source)",
+    "seed 103 InfoOpt: same run (single source)",
+    "seed 103 fedavg: same run (single source)",
+    "seed 104 InfoOpt: same run (single source)",
+    "seed 104 fedavg: same run (single source)"
+   ]
+  },
+  {
+   "dataset": "eurosat",
+   "row": "InfoOpt_Full-FedAvg",
+   "n": 5,
+   "sensitivity_mean_latest_diff": -4.770370340740738,
+   "ci95": [
+    -10.230935093253795,
+    0.6901944117723202
+   ],
+   "p_raw": 0.07233069465785909,
+   "per_seed_notes": [
+    "seed 100 InfoOpt: latest=eurosat_sweep_InfoOpt_Full_seed100_alpha0.3_20260717_090826",
+    "seed 100 fedavg: same run (single source)",
+    "seed 101 InfoOpt: latest=eurosat_sweep_InfoOpt_Full_seed101_alpha0.3_20260717_091952",
+    "seed 101 fedavg: same run (single source)",
+    "seed 102 InfoOpt: latest=eurosat_sweep_InfoOpt_Full_seed102_alpha0.3_20260717_093120",
+    "seed 102 fedavg: same run (single source)",
+    "seed 103 InfoOpt: latest=eurosat_sweep_InfoOpt_Full_seed103_alpha0.3_20260717_122712",
+    "seed 103 fedavg: same run (single source)",
+    "seed 104 InfoOpt: latest=eurosat_sweep_InfoOpt_Full_seed104_alpha0.3_20260717_133520",
+    "seed 104 fedavg: same run (single source)"
+   ]
+  },
+  {
+   "dataset": "pathmnist",
+   "row": "InfoOpt_Full-FedAvg",
+   "n": 5,
+   "sensitivity_mean_latest_diff": -0.07242322785515114,
+   "ci95": [
+    -2.9771278833769594,
+    2.832281427666657
+   ],
+   "p_raw": 0.9481327770528225,
+   "per_seed_notes": [
+    "seed 100 InfoOpt: latest=pathmnist_sweep_InfoOpt_Full_seed100_alpha0.3_20260717_083443",
+    "seed 100 fedavg: same run (single source)",
+    "seed 101 InfoOpt: latest=pathmnist_sweep_InfoOpt_Full_seed101_alpha0.3_20260717_084557",
+    "seed 101 fedavg: same run (single source)",
+    "seed 102 InfoOpt: latest=pathmnist_sweep_InfoOpt_Full_seed102_alpha0.3_20260717_085702",
+    "seed 102 fedavg: same run (single source)",
+    "seed 103 InfoOpt: latest=pathmnist_sweep_InfoOpt_Full_seed103_alpha0.3_20260717_115314",
+    "seed 103 fedavg: same run (single source)",
+    "seed 104 InfoOpt: latest=pathmnist_sweep_InfoOpt_Full_seed104_alpha0.3_20260717_130047",
+    "seed 104 fedavg: same run (single source)"
+   ]
+  }
+ ]
+}

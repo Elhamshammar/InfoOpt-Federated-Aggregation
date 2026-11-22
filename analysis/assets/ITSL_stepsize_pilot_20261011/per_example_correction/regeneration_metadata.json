@@ -1,0 +1,184 @@
+{
+  "generated_at": "2026-10-08 08:41:53",
+  "scope": "PARTIAL: trajectory_cohort sources only (9 of 90). The 81 repetition/alt-cohort sources were NOT regenerated: their post-local client states were never persisted and regenerating them requires retraining.",
+  "missing_states": {
+    "original_cohort_rep": "per (seed, round): post-local client state dicts for the 5 trajectory-cohort clients x 3 repetition seeds",
+    "alt_cohort": "per (seed, round): post-local client state dicts for the 2 alternative cohorts x 5 clients x 3 repetition seeds",
+    "note": "these were computed in-memory by the pilot and not written to disk; only trajectory_cohort client_sds were checkpointed"
+  },
+  "gamma_source": "results\\stepsize_diag_pilot_20261004_175620\\results\\pilot_decision.json",
+  "run_dir": "results\\stepsize_diag_pilot_20261004_175620",
+  "checkpoint_sha256": {
+    "results\\stepsize_diag_pilot_20261004_175620\\checkpoints\\seed_201\\checkpoint_round_5.pt": "a8892c087b6584c9474f630668e3893158fe64d5461c428f4039cb095aa0700c",
+    "results\\stepsize_diag_pilot_20261004_175620\\checkpoints\\seed_201\\checkpoint_round_50.pt": "dd9f7ac62477307662f90603dc4b3a9fc6c4cf01b3001bca9a596b8548a6b6cb",
+    "results\\stepsize_diag_pilot_20261004_175620\\checkpoints\\seed_201\\checkpoint_round_100.pt": "eec2eac9fa02f77daec0b246388cee1e50f238ab304f17200ec22cd53c9533b6",
+    "results\\stepsize_diag_pilot_20261004_175620\\checkpoints\\seed_202\\checkpoint_round_5.pt": "70b5f020989e76a5f187de4c1b704b0b2924d7e8f79cab5a5246ad36650fca39",
+    "results\\stepsize_diag_pilot_20261004_175620\\checkpoints\\seed_202\\checkpoint_round_50.pt": "ac24f7fa3912a94493bf7beea7595ed089b40df4bcb7d225a59c8a833dcd9cfb",
+    "results\\stepsize_diag_pilot_20261004_175620\\checkpoints\\seed_202\\checkpoint_round_100.pt": "41d017abd613e6aa5569784eaf3df967fd749d45cac4e698eae31b27a9adf632",
+    "results\\stepsize_diag_pilot_20261004_175620\\checkpoints\\seed_203\\checkpoint_round_5.pt": "0f46ec16f8d4cdcb42dd9ebb64d5ea17f0a4f8dc81a58863951f195bfa1f52a3",
+    "results\\stepsize_diag_pilot_20261004_175620\\checkpoints\\seed_203\\checkpoint_round_50.pt": "a48cf922e9047f24156238c87039ad4a997547ec4dcd0cac21257717055fce15",
+    "results\\stepsize_diag_pilot_20261004_175620\\checkpoints\\seed_203\\checkpoint_round_100.pt": "29a901be8ed49af46f18d054d315f16b830512049e2d807d4fcce32273d8804a"
+  },
+  "partition_hashes_verified": true,
+  "model_provenance": {
+    "model_source": "bundled_reference_snapshot",
+    "builder": "reference_code.models.cnn.SmallCNN",
+    "builder_kwargs": {
+      "num_classes": 100,
+      "input_channels": 3,
+      "use_aib": false
+    },
+    "source_file": "D:\\FL_StepSize_Diagnostic\\reference_code\\models\\cnn.py",
+    "source_sha256": "93629daa211af2a23800e6bcbb8b941294f6e553e307489699fca776c1e59513",
+    "snapshot_hash_validation": "ok",
+    "fact_validation": "ok"
+  },
+  "device": "cuda",
+  "runtime_seconds": 4.43773627281189,
+  "cells": [
+    {
+      "key": "201|5|trajectory_cohort",
+      "gamma": 1.0,
+      "holdout": "selection",
+      "n": 2500,
+      "mean_loss": 3.8242413139402864,
+      "mean_acc": 0.1124
+    },
+    {
+      "key": "201|5|trajectory_cohort",
+      "gamma": 1.0,
+      "holdout": "evaluation",
+      "n": 2500,
+      "mean_loss": 3.8049080430418254,
+      "mean_acc": 0.1188
+    },
+    {
+      "key": "201|50|trajectory_cohort",
+      "gamma": 0.5,
+      "holdout": "selection",
+      "n": 2500,
+      "mean_loss": 2.4618927620958537,
+      "mean_acc": 0.3652
+    },
+    {
+      "key": "201|50|trajectory_cohort",
+      "gamma": 0.5,
+      "holdout": "evaluation",
+      "n": 2500,
+      "mean_loss": 2.4028738079840317,
+      "mean_acc": 0.3636
+    },
+    {
+      "key": "201|100|trajectory_cohort",
+      "gamma": 0.5,
+      "holdout": "selection",
+      "n": 2500,
+      "mean_loss": 2.1393606403105427,
+      "mean_acc": 0.416
+    },
+    {
+      "key": "201|100|trajectory_cohort",
+      "gamma": 0.5,
+      "holdout": "evaluation",
+      "n": 2500,
+      "mean_loss": 2.0851770570468156,
+      "mean_acc": 0.4368
+    },
+    {
+      "key": "202|5|trajectory_cohort",
+      "gamma": 0.5,
+      "holdout": "selection",
+      "n": 2500,
+      "mean_loss": 3.7679023247122765,
+      "mean_acc": 0.1172
+    },
+    {
+      "key": "202|5|trajectory_cohort",
+      "gamma": 0.5,
+      "holdout": "evaluation",
+      "n": 2500,
+      "mean_loss": 3.7460466263234617,
+      "mean_acc": 0.1116
+    },
+    {
+      "key": "202|50|trajectory_cohort",
+      "gamma": 0.5,
+      "holdout": "selection",
+      "n": 2500,
+      "mean_loss": 2.4664154103331266,
+      "mean_acc": 0.3568
+    },
+    {
+      "key": "202|50|trajectory_cohort",
+      "gamma": 0.5,
+      "holdout": "evaluation",
+      "n": 2500,
+      "mean_loss": 2.4101067075408995,
+      "mean_acc": 0.3672
+    },
+    {
+      "key": "202|100|trajectory_cohort",
+      "gamma": 0.5,
+      "holdout": "selection",
+      "n": 2500,
+      "mean_loss": 2.1374406946065543,
+      "mean_acc": 0.4304
+    },
+    {
+      "key": "202|100|trajectory_cohort",
+      "gamma": 0.5,
+      "holdout": "evaluation",
+      "n": 2500,
+      "mean_loss": 2.0873651108575704,
+      "mean_acc": 0.4412
+    },
+    {
+      "key": "203|5|trajectory_cohort",
+      "gamma": 1.0,
+      "holdout": "selection",
+      "n": 2500,
+      "mean_loss": 3.812118189769983,
+      "mean_acc": 0.112
+    },
+    {
+      "key": "203|5|trajectory_cohort",
+      "gamma": 1.0,
+      "holdout": "evaluation",
+      "n": 2500,
+      "mean_loss": 3.7963094902843237,
+      "mean_acc": 0.112
+    },
+    {
+      "key": "203|50|trajectory_cohort",
+      "gamma": 0.5,
+      "holdout": "selection",
+      "n": 2500,
+      "mean_loss": 2.426480842855759,
+      "mean_acc": 0.3668
+    },
+    {
+      "key": "203|50|trajectory_cohort",
+      "gamma": 0.5,
+      "holdout": "evaluation",
+      "n": 2500,
+      "mean_loss": 2.3807201255012305,
+      "mean_acc": 0.3668
+    },
+    {
+      "key": "203|100|trajectory_cohort",
+      "gamma": 0.5,
+      "holdout": "selection",
+      "n": 2500,
+      "mean_loss": 2.1140798495174096,
+      "mean_acc": 0.4456
+    },
+    {
+      "key": "203|100|trajectory_cohort",
+      "gamma": 0.5,
+      "holdout": "evaluation",
+      "n": 2500,
+      "mean_loss": 2.0691077644184754,
+      "mean_acc": 0.45
+    }
+  ]
+}

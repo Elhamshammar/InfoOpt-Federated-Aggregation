@@ -1,0 +1,67 @@
+{
+  "tag": "dev_only",
+  "predictors": [
+    {
+      "predictor_id": "phase_only",
+      "fit_status": "no_cells",
+      "n_dev_cells_used": 0,
+      "n_held_cells_used": 0,
+      "dev_cells_too_few": true,
+      "rank_deficient": false,
+      "max_predict_inconsistency": NaN,
+      "mae_held": NaN,
+      "mse_held": NaN,
+      "sign_agreement_held_overall": NaN,
+      "sign_agreement_by_phase": {},
+      "predict_tolerance": 1e-09,
+      "feature_order": [
+        "phase_50",
+        "phase_100"
+      ],
+      "n_features_X": 2,
+      "decisive_inputs_sha256": "f14e3a359519781b30a5d9fbbe80611282dd5804579c8537052e4646c9bd276d"
+    },
+    {
+      "predictor_id": "phase_plus_variability",
+      "fit_status": "no_cells",
+      "n_dev_cells_used": 0,
+      "n_held_cells_used": 0,
+      "dev_cells_too_few": true,
+      "rank_deficient": false,
+      "max_predict_inconsistency": NaN,
+      "mae_held": NaN,
+      "mse_held": NaN,
+      "sign_agreement_held_overall": NaN,
+      "sign_agreement_by_phase": {},
+      "predict_tolerance": 1e-09,
+      "feature_order": [
+        "phase_50",
+        "phase_100",
+        "cohort_within_client_norm_cv_mean",
+        "cohort_persistent_client_diff",
+        "cohort_aggregate_vector_norm",
+        "cohort_client_reps_count"
+      ],
+      "n_features_X": 6,
+      "decisive_inputs_sha256": "1556f54252718683acffdf7e76e646cc37f924d69e188c1b1b34a54bd9cb2642"
+    }
+  ],
+  "n_dev_cells_used_total": 0,
+  "n_held_cells_used_total": 0,
+  "common_held_keys_count": 0,
+  "feature_order": [
+    "phase_50",
+    "phase_100",
+    "cohort_within_client_norm_cv_mean",
+    "cohort_persistent_client_diff",
+    "cohort_aggregate_vector_norm",
+    "cohort_client_reps_count"
+  ],
+  "phase_indicators": [
+    "phase_50",
+    "phase_100"
+  ],
+  "n_features_X": 6,
+  "intercept_equals_posterior": false,
+  "sign_agreement_definition": "sign(actual) == sign(pred)"
+}

@@ -1,0 +1,6 @@
+{
+  "dev_split_metric_keys_sha256": "f48ac4d0d157cc5c397c5e21e464a1948ebf2171f7e16fd5e8ee8468530ddd0d",
+  "pilot_config_fingerprint": "281ecf3f1bbb56ee6607f4df096e9825ba0250167501d8a46e7bd69f9079ef06",
+  "frozen_at": "2026-10-04 18:48:17",
+  "guarantee": "Dev-side selection tables are computed from split_metric_keys carrying only dev-seed entries; this SHA proves that no held-out key contributed to dev-side selection."
+}

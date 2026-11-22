@@ -1,0 +1,46 @@
+=== FedDisco Stage 4 statistical analysis ===
+
+Final test accuracy (proportion):
+  seed      FedAvg     Uniform    FedDisco    Shuffled
+   100      0.4184      0.4191      0.4195      0.4183
+   101      0.4370      0.4350      0.4339      0.4349
+   102      0.4249      0.4241      0.4239      0.4269
+   103      0.4488      0.4469      0.4499      0.4450
+   104      0.4275      0.4313      0.4288      0.4286
+
+Mean final accuracy per arm:
+  fedavg: 0.4313
+  uniform: 0.4313
+  feddisco: 0.4312
+  feddisco_shuffled: 0.4307
+
+Primary comparison: FedDisco - Shuffled (percentage points):
+  seed 100: +0.1200
+  seed 101: -0.1000
+  seed 102: -0.3000
+  seed 103: +0.4900
+  seed 104: +0.0200
+  mean: +0.0460
+  sample SD: 0.2934
+  95% CI: [-0.3183, 0.4103]
+  paired t-test p-value: 0.743585
+  (Unadjusted, single prespecified extension comparison; do not interpret nonsignificance as equivalence.)
+
+Weighting diagnostics (FedDisco arms):
+  seed 100 feddisco: mean_L1_dev_from_FedAvg=0.035688, mean_eff_clients=4.90, fallbacks=0/100
+  seed 100 feddisco_shuffled: mean_L1_dev_from_FedAvg=0.035688, mean_eff_clients=4.93, fallbacks=0/100
+  seed 100 FedDisco vs Shuffled: mean_L1_diff=0.046723, rounds_differ=100/100, nonidentity_perm=100/100
+  seed 101 feddisco: mean_L1_dev_from_FedAvg=0.047595, mean_eff_clients=4.92, fallbacks=0/100
+  seed 101 feddisco_shuffled: mean_L1_dev_from_FedAvg=0.047595, mean_eff_clients=4.92, fallbacks=0/100
+  seed 101 FedDisco vs Shuffled: mean_L1_diff=0.061454, rounds_differ=100/100, nonidentity_perm=100/100
+  seed 102 feddisco: mean_L1_dev_from_FedAvg=0.022004, mean_eff_clients=4.94, fallbacks=0/100
+  seed 102 feddisco_shuffled: mean_L1_dev_from_FedAvg=0.022004, mean_eff_clients=4.95, fallbacks=0/100
+  seed 102 FedDisco vs Shuffled: mean_L1_diff=0.026072, rounds_differ=98/100, nonidentity_perm=98/100
+  seed 103 feddisco: mean_L1_dev_from_FedAvg=0.037859, mean_eff_clients=4.87, fallbacks=0/100
+  seed 103 feddisco_shuffled: mean_L1_dev_from_FedAvg=0.037859, mean_eff_clients=4.91, fallbacks=0/100
+  seed 103 FedDisco vs Shuffled: mean_L1_diff=0.051612, rounds_differ=100/100, nonidentity_perm=100/100
+  seed 104 feddisco: mean_L1_dev_from_FedAvg=0.044920, mean_eff_clients=4.92, fallbacks=0/100
+  seed 104 feddisco_shuffled: mean_L1_dev_from_FedAvg=0.044920, mean_eff_clients=4.93, fallbacks=0/100
+  seed 104 FedDisco vs Shuffled: mean_L1_diff=0.057865, rounds_differ=100/100, nonidentity_perm=100/100
+
+Saved summary to stage4_analysis_summary.json

@@ -1,0 +1,476 @@
+{
+  "description": "Hashes of files ADAPTED or ADDED after the copy recorded in COPY_MANIFEST.json. COPY_MANIFEST.json is the original source record and is never modified; for every reference_code/ file the expected hash is the manifest value unless an entry here supersedes it.",
+  "generated": "2026-10-05 16:34:32",
+  "manifest": "COPY_MANIFEST.json",
+  "adapted_files": [
+    {
+      "path": "reference_code/methods/client.py",
+      "original_sha256": "1e83671320a88617cdb5ac7e383d1af2896c0f6e7d7af7d359736ef23a392a9b",
+      "adapted_sha256": "bce31365c8a4cdd31772ffe66e3f05bfe595ba144ba17065941b1adfa49784b9",
+      "adaptation": "import namespacing only: 'from utils.feddyn/info_metrics import' -> 'from reference_code.utils.feddyn/info_metrics import'"
+    },
+    {
+      "path": "run_diag.py",
+      "original_sha256": "dee567c9c8158469796d5aeca6000bc339111df6a6c17371b4069c57c7ea239e",
+      "adapted_sha256": "6910096f60ef9dd8e9fc148fcdfdad6d3b2bc7c3e66ec783245125d2bce5f7d2",
+      "adaptation": "adapted during standalone integration (2026-10-03)"
+    },
+    {
+      "path": "selftest_cpu.py",
+      "original_sha256": "8e1dc2439e9197eea651d8933253379a8202da3d6f8e233ef2b7da46e108c0f5",
+      "adapted_sha256": "954082781a9a47717741a1dd8286112ecbeab3e33fc7127d0d942dd97c237e12",
+      "adaptation": "adapted during standalone integration (2026-10-03)"
+    },
+    {
+      "path": "run_smoke.sh",
+      "original_sha256": "b117e9fa9a609fad87e47079c1b15bb550ecab40243e1b5a7dbc00308ccda457",
+      "adapted_sha256": "a6f263910370ee5b2f2c8ea0a9e7b4f4db6f9254de2b12a4ef1114a92c0c1414",
+      "adaptation": "adapted during standalone integration (2026-10-03)"
+    },
+    {
+      "path": "README.md",
+      "original_sha256": "bedd0394e4e2609927b1357f44d016c007b7c1e09d2a86339caa87d7e44707b5",
+      "adapted_sha256": "9277293bb3983591557be3755c26fe41b491b7b87f3268a165edc7b5dbe3c311",
+      "adaptation": "adapted during standalone integration (2026-10-03)"
+    },
+    {
+      "path": "INTENTIONAL_DIFFERENCES.md",
+      "original_sha256": "dae53272cda2125f1f3b50e5e2484d18016073b9714c034ce1e5ee50e6964a41",
+      "adapted_sha256": "44d54f12ee5f23b4fb91ea2cf77e0ae06a500c470bbfbea15ec26760ebbfd6c1",
+      "adaptation": "adapted during standalone integration (2026-10-03)"
+    },
+    {
+      "path": "stepsize_diag/__init__.py",
+      "original_sha256": "c3a6f272e6ee50f29d8e0dea90869fb7e984b9d7ad14fb0192faeb90eeb88408",
+      "adapted_sha256": "3b5124c3b0f42506d09a2b07768a7029614b30ce8d2975ef8279a1274dbe4da4",
+      "adaptation": "adapted during standalone integration (2026-10-03)"
+    },
+    {
+      "path": "stepsize_diag/config.py",
+      "original_sha256": "3b0ab2290d9a474e472b685ae969452dc7539b1d837509e3955c99b80e53ac26",
+      "adapted_sha256": "5367da450510c609b171ce4d30f0af9d689e5055cf8082fd6df3f122feaa4ce9",
+      "adaptation": "adapted during standalone integration (2026-10-03)"
+    },
+    {
+      "path": "stepsize_diag/data.py",
+      "original_sha256": "342a199adcdcf2307f0e2e45e9072774c9a2ec21b580b7bf168c856d23f25b7c",
+      "adapted_sha256": "1b4d02d441c429020dfdd0779b8516d0154a11abc3960041fec93b2dac588f74",
+      "adaptation": "adapted during standalone integration (2026-10-03)"
+    },
+    {
+      "path": "stepsize_diag/fedavg.py",
+      "original_sha256": "f128fd8b40e26293e4a1c87211a3be4c7643545a64af4364e2f2aaf75ba8fc3a",
+      "adapted_sha256": "7b23feb0f71ce7e7be5d3f661fc17ae3aaa9380fe45c6dc5b244e869193f56fb",
+      "adaptation": "adapted during standalone integration (2026-10-03)"
+    },
+    {
+      "path": "stepsize_diag/harness.py",
+      "original_sha256": "c27357793e9dfb8cf1a6a049b641e24d7da4c3a08d2e53595e3f7f9435a95b54",
+      "adapted_sha256": "001f6e9d24abae38533603175da82cf98057a652952efa8a638d710cf5d6d89b",
+      "adaptation": "adapted during standalone integration (2026-10-03)"
+    },
+    {
+      "path": "stepsize_diag/ref_adapter.py",
+      "original_sha256": "5f2494c68968175bb7fba3b34df00fc257969baba686dbc93271c65d17dd578a",
+      "adapted_sha256": "6634094b3cfe69575f89da5b3dc8ce0e280d6bedbb627dff3e8dafc6e67c11e0",
+      "adaptation": "adapted during standalone integration (2026-10-03)"
+    },
+    {
+      "path": "stepsize_diag/ref_compare.py",
+      "original_sha256": "57d2daeb881d31663f99bb6f6b015fcdf356ab35dc075ce5b35170c7d2ccff01",
+      "adapted_sha256": "5065a837a8667116f2698fc466bb81e4f90fdc7b0ba0455e7fd3c6add457dd41",
+      "adaptation": "adapted during standalone integration (2026-10-03)"
+    },
+    {
+      "path": "stepsize_diag/reference_impl.py",
+      "original_sha256": "c3fea07b562ce9f30e5347f710d2d3b436cac130779388a569158fc04acebd5d",
+      "adapted_sha256": "67bdc4267d049d141a9f2f351203010c6dea94d6bee37f093f682107499d5f1c",
+      "adaptation": "adapted during standalone integration (2026-10-03)"
+    },
+    {
+      "path": "stepsize_diag/verify.py",
+      "original_sha256": "9def461b26bced79b4ff28cbf2c3d47ec4b9b03e7b683b842550a106487f2677",
+      "adapted_sha256": "6f646412c8621ea6fdffc87195d9686446d76feab9e4a1637ca081c575fb79e2",
+      "adaptation": "adapted during standalone integration (2026-10-03)"
+    }
+  ],
+  "added_files": [
+    {
+      "path": "reference_code/__init__.py",
+      "sha256": "57b85a989d62c876056030e74cf1b75bafb3c365f2c88ba09dc3b313e16e115d",
+      "reason": "package marker (snapshot importability)"
+    },
+    {
+      "path": "reference_code/data/__init__.py",
+      "sha256": "33779ad32746acf7d67491accf5d1b0886df641c3cbeca91ec1f145e7e80454e",
+      "reason": "package marker (source repo imported data/ via sys.path)"
+    },
+    {
+      "path": "run_smoke.ps1",
+      "sha256": "8ad920ae1a491e526a55d7babfb447a0ef23fe5aa03eb8a8462bd8acbfffe873",
+      "reason": "Windows PowerShell launcher"
+    },
+    {
+      "path": "preflight.sh",
+      "sha256": "cd96ec017c840331dcd14c895cacc3b106da2dd0971e919c5ef4d89d69775278",
+      "reason": "standalone read-only preflight (replaces server_preflight.sh)"
+    },
+    {
+      "path": "scripts/update_adapted_hashes.py",
+      "sha256": "e9054319e9f19ea70c5c7e3a4a35634c6918718de1ee74467115e84e2b15fd71",
+      "reason": "this generator"
+    },
+    {
+      "path": "scripts/regenerate_report.py",
+      "sha256": "eda88e0047fc9178c6c88a4dc552165e590c5f8a1ce3dd61ca2726f95b2cd9aa",
+      "reason": "regenerate report.md from saved run artifacts (no retraining)"
+    },
+    {
+      "path": "scripts/test_report_generation.py",
+      "sha256": "e00a63eaafaeb26cf3a5d1399d72072863837eefb04d38714f9aa77f0a30cf87",
+      "reason": "write_report schema test"
+    },
+    {
+      "path": "replication_eurosat/PROTOCOL_REPLICATION_v3_2026-10-05.md",
+      "sha256": "3e7506b31caf95788898d7ed811027d67f2745472ebf0d68a8d31c186a032026",
+      "reason": "v3 of the EuroSAT replication protocol, archived unchanged (pre-v4 amendment)"
+    },
+    {
+      "path": "replication_eurosat/PROTOCOL_REPLICATION_v2_2026-10-05.md",
+      "sha256": "5a06a1550250da792e602cfcc2873ecc12782ce6c5c5affee4e90f236070953e",
+      "reason": "v2 of the EuroSAT replication protocol, archived unchanged (pre-v3 amendment)"
+    },
+    {
+      "path": "replication_eurosat/PROTOCOL_REPLICATION_v1_2026-10-05.md",
+      "sha256": "fbbc95f1cd0de5f677ac2f0e37be151b3a7eb49dec09ddc8ada8b993e2d4e25a",
+      "reason": "v1 of the EuroSAT replication protocol, archived unchanged (pre-v2 amendment)"
+    },
+    {
+      "path": "replication_eurosat/server_locate_eurosat.sh",
+      "sha256": "eee33f7f5c33e5a2a07a5534720a88feda825e25d86ba90f65c2e717b1aeaeb6",
+      "reason": "read-only server locator for EuroSAT data and historical EuroSAT configurations"
+    },
+    {
+      "path": "replication_eurosat/EUROSAT_COMPATIBILITY_AUDIT.md",
+      "sha256": "9fba5f7964b88f7820385d2969fd4941e1f0706f51727dada2c5d1702c5be9f7",
+      "reason": "audit of bundled EuroSAT support before replication (2026-10-05)"
+    },
+    {
+      "path": "replication_eurosat/PROTOCOL_REPLICATION.md",
+      "sha256": "043ede9b98c10e0abdb98bb749362c3beb2485d9a5816164617588aef8569f29",
+      "reason": "frozen EuroSAT replication protocol (frozen before execution; NOT launched)"
+    },
+    {
+      "path": "replication_eurosat/eurosat_data.py",
+      "sha256": "dbf7e7702232b757c0fd62d95d4e5273b7e79ac17851cbdfc752e211fc1c1b86",
+      "reason": "EuroSAT raw-array loader + functional transforms (reference recipe/constants; train.csv only, test.csv never read)"
+    },
+    {
+      "path": "replication_eurosat/run_replication.py",
+      "sha256": "3dd362182a12c2a44793dcc7b2a1098d5bfab0990a788e14add16f6ac53136e7",
+      "reason": "EuroSAT replication runner (--selftest/--preflight/--run; prepared, not launched)"
+    },
+    {
+      "path": "replication_eurosat/test_run_replication_mocked.py",
+      "sha256": "ef1c9bdb64628357890fc2b37d96823f3d487ef1159a57f8d5293e2673172c9e",
+      "reason": "mocked end-to-end orchestration test (synthetic data; no training, no download)"
+    },
+    {
+      "path": "replication_eurosat/COMMANDS.md",
+      "sha256": "cc2524d8a91c73ed027b1a902b2c7c3876965295e52dd10ae46cf4422ee3ea8e",
+      "reason": "exact Windows/Linux commands (configurable python/GPU/data/output)"
+    },
+    {
+      "path": "replication_eurosat/READINESS.md",
+      "sha256": "388adec0197db0a671ff06e8011a70f6905fc114e0ce89cb46c3f12c4677d7b0",
+      "reason": "readiness report with unresolved blockers"
+    },
+    {
+      "path": "analysis_confirmation_posthoc/analyze_posthoc.py",
+      "sha256": "1c1671c17198f37f0a4bee6dd0186f32650806a8d4cccc2b2c8a02f8b6aeabc5",
+      "reason": "read-only post-hoc classwise analysis of the completed CIFAR-100 confirmation (2026-10-05; exploratory)"
+    },
+    {
+      "path": "analysis_confirmation_posthoc/classwise_round100.csv",
+      "sha256": "784ac795046f6f96951bee99eedecc8a84283f2114ec07ac1361d4f6179d1de3",
+      "reason": "per (run, class) exposure + NLL/recall changes under the actual correction and the best reconstructed shuffled control"
+    },
+    {
+      "path": "analysis_confirmation_posthoc/findings.json",
+      "sha256": "479306509ef279df4ca182708b3feab5eb028d3167d1f264e5d85553fa314d30",
+      "reason": "structured post-hoc findings incl. artifact integrity checks"
+    },
+    {
+      "path": "analysis_confirmation_posthoc/report.md",
+      "sha256": "842f93069846660202303c436b197a59a12d0511d260d9213a1febabb1b1f75f",
+      "reason": "post-hoc report (premise correction: verdict is GO, no failed runs; direction-alignment analysis)"
+    },
+    {
+      "path": "analysis_eurosat_posthoc/analyze_tau_diagnostics.py",
+      "sha256": "f17adc587ae2f1bb8015200123292abd5b18f4d35387ef382a13e22a2f3f219c",
+      "reason": "tau-direction diagnostics from saved logits (s^T g, descent rate, curvature, shuffled-direction comparison, permutation clarification; exploratory)"
+    },
+    {
+      "path": "analysis_eurosat_posthoc/tau_diagnostics.json",
+      "sha256": "27f029b206583fd21ad8af34c502bbbde0c49a69203a21be679fa4e5b016091c",
+      "reason": "structured tau-direction diagnostics"
+    },
+    {
+      "path": "analysis_eurosat_posthoc/tau_diagnostics.md",
+      "sha256": "3bd2b309b5b0f210a8dfa987b90579b46cb84ec8291bbde7a25dee8ae4f2c7bf",
+      "reason": "tau-direction diagnostics report"
+    },
+    {
+      "path": "analysis_eurosat_posthoc/CHECKPOINT_FEASIBILITY_AUDIT.md",
+      "sha256": "96619265e4fbb84191736a96053a89959e5d95ec499644271dc0ba69d8a2715a",
+      "reason": "read-only feasibility audit of the EuroSAT checkpoints (2026-10-05; .pt files absent locally - reported explicitly; code + run-metadata basis)"
+    },
+    {
+      "path": "analysis_eurosat_posthoc/analyze_posthoc.py",
+      "sha256": "55f325d8bb14c340b712c76521a267ab10db0d8492c737d47a3ae66554bc1bf9",
+      "reason": "read-only post-hoc classwise analysis of the EuroSAT replication run replication_20261005_094928 (2026-10-05; exploratory; NO-GO verdict reproduced and preserved)"
+    },
+    {
+      "path": "analysis_eurosat_posthoc/classwise_round100.csv",
+      "sha256": "ae0e689d2511c213b4dd82241738192c16a171599fbdfce732324cf8c68d0c7a",
+      "reason": "EuroSAT per (run, class) exposure + NLL/recall changes"
+    },
+    {
+      "path": "analysis_eurosat_posthoc/findings.json",
+      "sha256": "bbc3afdf9a21d5a6d0d89ba7289120a2ffc08068fc0f01fead4eccd3b1a944f2",
+      "reason": "EuroSAT post-hoc findings incl. identity + verdict recomputation + integrity checks"
+    },
+    {
+      "path": "analysis_eurosat_posthoc/report.md",
+      "sha256": "7f0e1026e8dcbd2a757346dafd04d353b7373016644b516d7dcb2f510ab6073a",
+      "reason": "EuroSAT post-hoc report"
+    },
+    {
+      "path": "confirmation_cohort_correction/PROTOCOL_CONFIRMATION.md",
+      "sha256": "5298df019d20f49e497c7067f24aeb1a36dee6fb0ecd44062fedb4d9eafb8808",
+      "reason": "frozen protocol for the fresh-seed confirmation (frozen before execution, 2026-10-04; PREPARED, NOT LAUNCHED)"
+    },
+    {
+      "path": "confirmation_cohort_correction/run_confirmation.py",
+      "sha256": "302a9dbc3edf696a6b4a21b1468163fc137229693973f5e639d517ac894a2ffe",
+      "reason": "confirmation implementation (--selftest checks pass; --run prepared, not launched)"
+    },
+    {
+      "path": "confirmation_cohort_correction/test_run_confirmation_mocked.py",
+      "sha256": "3b5363e37171c7651cf4739f3badd76df6ce340ea177df516047b84a8fd9dc37",
+      "reason": "mocked end-to-end orchestration test for run_confirmation.py (synthetic data + structured fake checkpoints; no training)"
+    },
+    {
+      "path": "confirmation_cohort_correction/COMMANDS.md",
+      "sha256": "7123b4dc8ca03504dd2724c821684ad4175cc8facf9697ec158f4f05f46ee6ff",
+      "reason": "exact Windows/Linux commands for the confirmation"
+    },
+    {
+      "path": "analysis_cohort_correction/PLAN.md",
+      "sha256": "0fa92ff3a189cb388c8f60a5b96b92eafeb881388cbd3b016ab2bdfc2aba453a",
+      "reason": "frozen plan for the cohort-derived logit-correction utility test (frozen before evaluation, 2026-10-04)"
+    },
+    {
+      "path": "analysis_cohort_correction/analyze_cohort_correction.py",
+      "sha256": "ccae80d0505a6966361400968a1315910368638c40d3aef6de7114ef1375cdb6",
+      "reason": "utility test of the cohort-derived logit correction on the nine saved trajectory checkpoints (no training; exploratory)"
+    },
+    {
+      "path": "analysis_cohort_correction/results.json",
+      "sha256": "82fffc0cc44b27ba5bd5eab375c57e255e4e84423970b56d28dae162cadd22f5",
+      "reason": "structured correction results (per-checkpoint, controls, hashes, runtime)"
+    },
+    {
+      "path": "analysis_cohort_correction/per_checkpoint.csv",
+      "sha256": "ca9518d411f894c3b1d85aff3c36c7ec76b7d74589fc23e21515e1746bfdd7e5",
+      "reason": "per-checkpoint paired NLL/accuracy/transitions"
+    },
+    {
+      "path": "analysis_cohort_correction/report.md",
+      "sha256": "b243be4d581b62bb004495560b4f6be39e40c35c557bcc86aec309600753e8ed",
+      "reason": "correction utility report (pre-declared recommendation rule)"
+    },
+    {
+      "path": "analysis_cohort_bias_v2/analyze_cohort_bias_v2.py",
+      "sha256": "6366367fe1d04ce6a672deb80229eba54e6920004585c6a95ca48209c5f0e7fc",
+      "reason": "revised cohort-bias analysis: centered-logit (broad/non-own) and correct-class margin measures added, own-class relabeled; try/finally restoration, output freshness, conditional conclusions (2026-10-04)"
+    },
+    {
+      "path": "analysis_cohort_bias_v2/per_class_deltas.csv",
+      "sha256": "acccaf8cc8d4eedd957b6d97c4be379cf1b6e6e81b9765fe4c6ac1f195606329",
+      "reason": "v2 per-(seed, round, class) exposure and delta measurements"
+    },
+    {
+      "path": "analysis_cohort_bias_v2/measurements.json",
+      "sha256": "8d2a1ec27cbb4ea99693dd28fced3e97bb3a0a0db6e25a89e721bc3e123241e3",
+      "reason": "v2 validation record, associations + controls, checks, hashes"
+    },
+    {
+      "path": "analysis_cohort_bias_v2/report.md",
+      "sha256": "29f6375f1140d156b3c7c3a900c4f18bbaf213611ed4e06098dbbf1a4a41c2a6",
+      "reason": "v2 cohort-bias report (conditional conclusions)"
+    },
+    {
+      "path": "analysis_cohort_bias/analyze_cohort_bias.py",
+      "sha256": "f47b5f30fab53b07437691db2f763e42d2233e0c51e7097a66d2046db6b28610",
+      "reason": "exploratory paired cohort-bias analysis of the nine saved trajectory checkpoints (selection split only; no training)"
+    },
+    {
+      "path": "analysis_cohort_bias/per_class_deltas.csv",
+      "sha256": "b7140caed259792cd170fec7e0e4d94375471c7bb08102169edf05406f3f5c54",
+      "reason": "per-(seed, round, class) exposure and delta measurements"
+    },
+    {
+      "path": "analysis_cohort_bias/measurements.json",
+      "sha256": "305c34d03e726e02f5ef01728a47a68b01ddfd7a5b2fbd461765ec1216429338",
+      "reason": "validation record, associations + controls, input hashes, command, runtime"
+    },
+    {
+      "path": "analysis_cohort_bias/report.md",
+      "sha256": "dc42d81d2d7bb35ab1104915c9d436d8fa26391945bc2e634514f108dc1b83a8",
+      "reason": "cohort-bias report with recommendation"
+    },
+    {
+      "path": "COHORT_BIAS_FEASIBILITY.md",
+      "sha256": "449ec7f3d0c2c8a15c76025fac8f4c97f695bae06a395a71883a7ddca9cc8496",
+      "reason": "feasibility audit for the cohort-bias hypothesis (2026-10-04; source + CPU checkpoint inspection only; no experiments)"
+    },
+    {
+      "path": "PILOT_CLOSURE.md",
+      "sha256": "ff1eb80415b8bd6231e7025211120377d52e496e13605437687b42a66bdc57e9",
+      "reason": "final pilot decision record (SECTION IX; pilot closed 2026-10-04)"
+    },
+    {
+      "path": "analysis_buffer_policy_v2/analyze_buffer_policy.py",
+      "sha256": "e7d0f96a64c74a7078f79169db5ff0384b0909ed4637bf0d7f4663eed609f221",
+      "reason": "revised buffer-policy analysis: dev/held-out separated, sign counts per seed group, interaction claim withdrawn, input hashes + command recorded (SECTION IX)"
+    },
+    {
+      "path": "analysis_buffer_policy_v2/paired_by_source.csv",
+      "sha256": "0fd2d7302cf1376d670c89cfd1d9a24d689a741405ceb901ab6e6c7a19450a44",
+      "reason": "revised paired per-(seed, round, source, comparison) differences"
+    },
+    {
+      "path": "analysis_buffer_policy_v2/cohort_summary.csv",
+      "sha256": "2beff5b6380e5aa2a08317820c586848f04508988dec22850f20cdeb33074b48",
+      "reason": "revised cohort-level summary (repetitions pre-averaged)"
+    },
+    {
+      "path": "analysis_buffer_policy_v2/report.md",
+      "sha256": "a4793adb0517548a228df7b6c84aec5b74606930688ef2b962c037c6fbf1155a",
+      "reason": "revised buffer-policy report (dev/held-out separated)"
+    },
+    {
+      "path": "analysis_buffer_policy/analyze_buffer_policy.py",
+      "sha256": "58087aa855ea595b6fafd88e4c87c2499f4546a58b936bfa6b8bc6325e389b19",
+      "reason": "saved-artifact buffer-policy/scaling analysis (2026-10-04; no retraining, no candidate evaluation)"
+    },
+    {
+      "path": "analysis_buffer_policy/paired_by_source.csv",
+      "sha256": "0fd2d7302cf1376d670c89cfd1d9a24d689a741405ceb901ab6e6c7a19450a44",
+      "reason": "paired per-(seed, round, source, comparison) differences"
+    },
+    {
+      "path": "analysis_buffer_policy/cohort_summary.csv",
+      "sha256": "2beff5b6380e5aa2a08317820c586848f04508988dec22850f20cdeb33074b48",
+      "reason": "cohort-level summary (repetitions pre-averaged within cohort)"
+    },
+    {
+      "path": "analysis_buffer_policy/report.md",
+      "sha256": "a1d9fbfe16c4d2d961d98e6c2abf560ebd1972700fb092ff24527b60291ed186",
+      "reason": "measured findings vs interpretations for the buffer-policy analysis"
+    },
+    {
+      "path": "audit_stepsize_diag_pilot_20261004_175620/AUDIT.md",
+      "sha256": "7014a796c2f8660cf57aebac10bf531d539940d5e6a3574b76029bb038b7e53a",
+      "reason": "audit + corrected reading of the completed server run (SECTION VII)"
+    },
+    {
+      "path": "scripts/recompute_exploratory_from_artifacts.py",
+      "sha256": "3ab2c172daed58ce7510668b7d690d00b0c6c489aaf0b317d7cd3d7eb07e033d",
+      "reason": "recompute the exploratory analysis of a completed run from saved artifacts only (SECTION VII; no retraining)"
+    },
+    {
+      "path": "scripts/make_distribution_zip.py",
+      "sha256": "578df8b34bc17c2724a14a744c8214e61e879b23c4451116b2ff46202c50be25",
+      "reason": "distribution ZIP builder (2026-10-04): excludes ONLY the root data/ dataset storage (reference_code/data IS shipped); --verify extracts to a clean temp dir and checks imports + snapshot hashes there"
+    },
+    {
+      "path": "PROTOCOL.md",
+      "sha256": "c6bbf861800f3b94577c1e8caa67674fdf2005432bb9d2f39c28d52b898db20b",
+      "reason": "frozen CIFAR-100 pilot protocol v3 (replaces v2 saved as PROTOCOL_v2_2026-10-04.md and v1 saved as PROTOCOL_v1_2026-10-04.md)"
+    },
+    {
+      "path": "PROTOCOL_v1_2026-10-04.md",
+      "sha256": "0857dc9bbc7d892c7fab8bdae18422a5edfc1b00a977cd5edd89d8acfa680bd8",
+      "reason": "v1 of PROTOCOL preserved for audit"
+    },
+    {
+      "path": "PROTOCOL_v2_2026-10-04.md",
+      "sha256": "685823926f66e3f4f00bf54eacb8bbb40835cf1d05df5190451e3907a539e45c",
+      "reason": "v2 of PROTOCOL preserved for audit (HEADROOM-bug; per-cohort-size division in variability; etc.)"
+    },
+    {
+      "path": "GO_NO_GO.md",
+      "sha256": "ffef576fcf35f688054180fa488ba908d227a14c2a796206be8e81a4bdd5036d",
+      "reason": "frozen pilot decision logic v3 (replaces v2 saved as GO_NO_GO_v2_2026-10-04.md and v1 saved as GO_NO_GO_v1_2026-10-04.md)"
+    },
+    {
+      "path": "GO_NO_GO_v1_2026-10-04.md",
+      "sha256": "f5a777499aa101804cf00ea7b409f3b4c82fc2e637b3b4c741468ea098fcb6d4",
+      "reason": "v1 of GO_NO_GO preserved for audit"
+    },
+    {
+      "path": "GO_NO_GO_v2_2026-10-04.md",
+      "sha256": "36c890a7308bcdb8c9f2ed33754c424dc45e1e9bd51abd60b5d1d0110187a472",
+      "reason": "v2 of GO_NO_GO preserved for audit (single-fixed-control claude; loose C1; no two-predictor scheme)"
+    },
+    {
+      "path": "PRE_EXECUTION_AMENDMENT.md",
+      "sha256": "0e5dfc6cda76d75147ff16b1f4bc6a5abe81d371ff71961df0b53c1bc38b582f",
+      "reason": "pre-execution amendment (change record for v1->v2->v3 corrections)"
+    },
+    {
+      "path": "stepsize_diag/pilot_config.py",
+      "sha256": "c97931052dce3cd9e1dd95eee82af1b22510a4102a64f771d26754bb9c06649f",
+      "reason": "PilotConfig dataclass v3 (two frozen fit procedures)"
+    },
+    {
+      "path": "stepsize_diag/pilot_eval.py",
+      "sha256": "854c6f5e1d780b47064f794dc2c72266d1bfd0b51abf9e784b951e59060d3474",
+      "reason": "evaluate_state_per_example with try/finally restoration + PerExampleCSVWriter"
+    },
+    {
+      "path": "stepsize_diag/pilot_variability.py",
+      "sha256": "f4f642ef9e22cd1c8d78750b12a4bed21ebd7f93ad4a16ccb5fce24477fbd325",
+      "reason": "v3 rich variability artifact (dedup by (seed, round, client_id, rep_seed); weighted aggregate; vector_spread_i; between-cohort aggregate diff; honest finite-repetition uncertainty)"
+    },
+    {
+      "path": "stepsize_diag/pilot_decision.py",
+      "sha256": "bff57e7d52eead58aca15eccce174bf5394d72d66a13e6fb2f9555cc3c57624a",
+      "reason": "v3 four-decision verdict logic (HEADROOM requires BOTH seeds AND both controls via two named outcomes headroom_vs_global_fixed and headroom_vs_phase_fixed; claude vs BOTH fixed controls with strict mean_G>=0.001; OLS-with-intercept fit done in two predictor variants side by side; ADAPTIVE_BENEFIT_NOT_ESTABLISHED_IN_THIS_PILOT replaces v2 FIXED_SCALE_SUFFICIENT; decisive_inputs_sha256 hashes ACTUAL numerical loss values)"
+    },
+    {
+      "path": "stepsize_diag/pilot.py",
+      "sha256": "6fb73b19337666b68c0385db2e5d7abee7755d66961a024a082efcb9f89554c0",
+      "reason": "pilot orchestrator v3: per-seed 100-round FedAvg; dev-before-held-out dev-side gamma_dev_global and per-phase fixed controls; bounded-retries alt-cohort sampler; inventory validation before any decide_* call; six policies under policy all_floating_state; secondary policy only at gamma=1; per-example losses via try/finally; results/per_example_losses.csv; results/variability.json; results/pilot_decision.json with two predictors and four decision statuses with their own decisive_inputs_sha256; results/report.md"
+    },
+    {
+      "path": "run_pilot.sh",
+      "sha256": "edc33d090c6533831ca811623f871eefc930dbb0a5187741ed4033ee1052d5e8",
+      "reason": "Linux pilot launcher (mirrors run_smoke.sh; intentionally larger than the smoke test)"
+    },
+    {
+      "path": "run_pilot.ps1",
+      "sha256": "f6fb23342ccf473fe19280bd241f625b54b024bf8462a18a03b2ac09e16bae5c",
+      "reason": "Windows PowerShell pilot launcher v3 (stderr/stdout split into separate files; Start-Process native exit code; relaxed ErrorActionPreference around the launch; always writes exit_status)"
+    }
+  ],
+  "removed_files": [
+    {
+      "path": "server_preflight.sh",
+      "original_sha256": "e4bb931b30e015dd6cd2bd34c0352cd5e44d36dd3a59c79431d85144ea0b73a0",
+      "reason": "server-specific (hardcoded whu-lab paths); replaced by preflight.sh"
+    }
+  ]
+}

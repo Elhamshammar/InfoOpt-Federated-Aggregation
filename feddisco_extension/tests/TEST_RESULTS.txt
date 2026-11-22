@@ -1,0 +1,7 @@
+All FedDisco CPU validation tests passed.
+[PASS] all configs parse and contain expected settings
+[PASS] feddisco controller instantiates and produces valid weights
+[PASS] feddisco_shuffled controller instantiates and shuffles discrepancies
+[PASS] SmallCNN built without AIB for all arms
+
+All config smoke tests passed.

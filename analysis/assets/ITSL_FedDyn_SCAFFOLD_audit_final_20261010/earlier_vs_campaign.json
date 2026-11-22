@@ -1,0 +1,442 @@
+[
+  {
+    "dataset": "cifar100",
+    "method": "scaffold",
+    "seed": 100,
+    "campaign_run": "cifar100_sweep_v2_scaffold_seed100_alpha0.3_20260812_221614",
+    "earlier_complete_runs": [
+      {
+        "run_name": "cifar100_sweep_v2_scaffold_seed100_alpha0.3_20260803_224034",
+        "terminal_accuracy_fraction": 0.0121,
+        "config_differences": {
+          "infoopt.early_stop.enabled": {
+            "earlier": false,
+            "campaign": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "dataset": "cifar100",
+    "method": "scaffold",
+    "seed": 101,
+    "campaign_run": "cifar100_sweep_v2_scaffold_seed101_alpha0.3_20260812_230904",
+    "earlier_complete_runs": [
+      {
+        "run_name": "cifar100_sweep_v2_scaffold_seed101_alpha0.3_20260803_224812",
+        "terminal_accuracy_fraction": 0.0217,
+        "config_differences": {
+          "infoopt.early_stop.enabled": {
+            "earlier": false,
+            "campaign": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "dataset": "cifar100",
+    "method": "scaffold",
+    "seed": 102,
+    "campaign_run": "cifar100_sweep_v2_scaffold_seed102_alpha0.3_20260813_000254",
+    "earlier_complete_runs": [
+      {
+        "run_name": "cifar100_sweep_v2_scaffold_seed102_alpha0.3_20260803_225554",
+        "terminal_accuracy_fraction": 0.014,
+        "config_differences": {
+          "infoopt.early_stop.enabled": {
+            "earlier": false,
+            "campaign": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "dataset": "cifar100",
+    "method": "scaffold",
+    "seed": 103,
+    "campaign_run": "cifar100_sweep_v2_scaffold_seed103_alpha0.3_20260813_005524",
+    "earlier_complete_runs": [
+      {
+        "run_name": "cifar100_sweep_v2_scaffold_seed103_alpha0.3_20260804_133836",
+        "terminal_accuracy_fraction": 0.0167,
+        "config_differences": {
+          "infoopt.early_stop.enabled": {
+            "earlier": false,
+            "campaign": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "dataset": "cifar100",
+    "method": "scaffold",
+    "seed": 104,
+    "campaign_run": "cifar100_sweep_v2_scaffold_seed104_alpha0.3_20260813_014839",
+    "earlier_complete_runs": [
+      {
+        "run_name": "cifar100_sweep_v2_scaffold_seed104_alpha0.3_20260804_134557",
+        "terminal_accuracy_fraction": 0.0237,
+        "config_differences": {
+          "infoopt.early_stop.enabled": {
+            "earlier": false,
+            "campaign": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "dataset": "pathmnist",
+    "method": "scaffold",
+    "seed": 100,
+    "campaign_run": "pathmnist_sweep_scaffold_seed100_alpha0.3_20260813_023249",
+    "earlier_complete_runs": [
+      {
+        "run_name": "pathmnist_sweep_scaffold_seed100_alpha0.3_20260804_004846",
+        "terminal_accuracy_fraction": 0.21671309192200558,
+        "config_differences": {}
+      }
+    ]
+  },
+  {
+    "dataset": "pathmnist",
+    "method": "scaffold",
+    "seed": 101,
+    "campaign_run": "pathmnist_sweep_scaffold_seed101_alpha0.3_20260813_024108",
+    "earlier_complete_runs": [
+      {
+        "run_name": "pathmnist_sweep_scaffold_seed101_alpha0.3_20260804_213754",
+        "terminal_accuracy_fraction": 0.18412256267409471,
+        "config_differences": {}
+      }
+    ]
+  },
+  {
+    "dataset": "pathmnist",
+    "method": "scaffold",
+    "seed": 102,
+    "campaign_run": "pathmnist_sweep_scaffold_seed102_alpha0.3_20260813_024936",
+    "earlier_complete_runs": [
+      {
+        "run_name": "pathmnist_sweep_scaffold_seed102_alpha0.3_20260804_214602",
+        "terminal_accuracy_fraction": 0.26128133704735373,
+        "config_differences": {}
+      }
+    ]
+  },
+  {
+    "dataset": "pathmnist",
+    "method": "scaffold",
+    "seed": 103,
+    "campaign_run": "pathmnist_sweep_scaffold_seed103_alpha0.3_20260813_025809",
+    "earlier_complete_runs": [
+      {
+        "run_name": "pathmnist_sweep_scaffold_seed103_alpha0.3_20260804_215413",
+        "terminal_accuracy_fraction": 0.11114206128133705,
+        "config_differences": {}
+      }
+    ]
+  },
+  {
+    "dataset": "pathmnist",
+    "method": "scaffold",
+    "seed": 104,
+    "campaign_run": "pathmnist_sweep_scaffold_seed104_alpha0.3_20260813_030647",
+    "earlier_complete_runs": [
+      {
+        "run_name": "pathmnist_sweep_scaffold_seed104_alpha0.3_20260804_220223",
+        "terminal_accuracy_fraction": 0.11211699164345404,
+        "config_differences": {}
+      }
+    ]
+  },
+  {
+    "dataset": "eurosat",
+    "method": "scaffold",
+    "seed": 100,
+    "campaign_run": "eurosat_sweep_scaffold_seed100_alpha0.3_20260813_031544",
+    "earlier_complete_runs": [
+      {
+        "run_name": "eurosat_sweep_scaffold_seed100_alpha0.3_20260804_002308",
+        "terminal_accuracy_fraction": 0.13296296296296295,
+        "config_differences": {}
+      }
+    ]
+  },
+  {
+    "dataset": "eurosat",
+    "method": "scaffold",
+    "seed": 101,
+    "campaign_run": "eurosat_sweep_scaffold_seed101_alpha0.3_20260813_032717",
+    "earlier_complete_runs": [
+      {
+        "run_name": "eurosat_sweep_scaffold_seed101_alpha0.3_20260804_163307",
+        "terminal_accuracy_fraction": 0.4703703703703704,
+        "config_differences": {}
+      }
+    ]
+  },
+  {
+    "dataset": "eurosat",
+    "method": "scaffold",
+    "seed": 102,
+    "campaign_run": "eurosat_sweep_scaffold_seed102_alpha0.3_20260813_033906",
+    "earlier_complete_runs": [
+      {
+        "run_name": "eurosat_sweep_scaffold_seed102_alpha0.3_20260804_164303",
+        "terminal_accuracy_fraction": 0.2337037037037037,
+        "config_differences": {}
+      }
+    ]
+  },
+  {
+    "dataset": "eurosat",
+    "method": "scaffold",
+    "seed": 103,
+    "campaign_run": "eurosat_sweep_scaffold_seed103_alpha0.3_20260813_035025",
+    "earlier_complete_runs": [
+      {
+        "run_name": "eurosat_sweep_scaffold_seed103_alpha0.3_20260804_165235",
+        "terminal_accuracy_fraction": 0.26,
+        "config_differences": {}
+      }
+    ]
+  },
+  {
+    "dataset": "eurosat",
+    "method": "scaffold",
+    "seed": 104,
+    "campaign_run": "eurosat_sweep_scaffold_seed104_alpha0.3_20260813_040148",
+    "earlier_complete_runs": [
+      {
+        "run_name": "eurosat_sweep_scaffold_seed104_alpha0.3_20260804_170215",
+        "terminal_accuracy_fraction": 0.21333333333333335,
+        "config_differences": {}
+      }
+    ]
+  },
+  {
+    "dataset": "cifar100",
+    "method": "feddyn",
+    "seed": 100,
+    "campaign_run": "cifar100_sweep_v2_feddyn_seed100_alpha0.3_20260812_221614",
+    "earlier_complete_runs": [
+      {
+        "run_name": "cifar100_sweep_v2_feddyn_seed100_alpha0.3_20260803_230334",
+        "terminal_accuracy_fraction": 0.1882,
+        "config_differences": {
+          "infoopt.early_stop.enabled": {
+            "earlier": false,
+            "campaign": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "dataset": "cifar100",
+    "method": "feddyn",
+    "seed": 101,
+    "campaign_run": "cifar100_sweep_v2_feddyn_seed101_alpha0.3_20260812_224659",
+    "earlier_complete_runs": [
+      {
+        "run_name": "cifar100_sweep_v2_feddyn_seed101_alpha0.3_20260803_231107",
+        "terminal_accuracy_fraction": 0.1969,
+        "config_differences": {
+          "infoopt.early_stop.enabled": {
+            "earlier": false,
+            "campaign": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "dataset": "cifar100",
+    "method": "feddyn",
+    "seed": 102,
+    "campaign_run": "cifar100_sweep_v2_feddyn_seed102_alpha0.3_20260812_231822",
+    "earlier_complete_runs": [
+      {
+        "run_name": "cifar100_sweep_v2_feddyn_seed102_alpha0.3_20260803_231845",
+        "terminal_accuracy_fraction": 0.1661,
+        "config_differences": {
+          "infoopt.early_stop.enabled": {
+            "earlier": false,
+            "campaign": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "dataset": "cifar100",
+    "method": "feddyn",
+    "seed": 103,
+    "campaign_run": "cifar100_sweep_v2_feddyn_seed103_alpha0.3_20260812_234932",
+    "earlier_complete_runs": [
+      {
+        "run_name": "cifar100_sweep_v2_feddyn_seed103_alpha0.3_20260804_135315",
+        "terminal_accuracy_fraction": 0.1997,
+        "config_differences": {
+          "infoopt.early_stop.enabled": {
+            "earlier": false,
+            "campaign": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "dataset": "cifar100",
+    "method": "feddyn",
+    "seed": 104,
+    "campaign_run": "cifar100_sweep_v2_feddyn_seed104_alpha0.3_20260813_002054",
+    "earlier_complete_runs": [
+      {
+        "run_name": "cifar100_sweep_v2_feddyn_seed104_alpha0.3_20260804_140033",
+        "terminal_accuracy_fraction": 0.2001,
+        "config_differences": {
+          "infoopt.early_stop.enabled": {
+            "earlier": false,
+            "campaign": true
+          }
+        }
+      }
+    ]
+  },
+  {
+    "dataset": "pathmnist",
+    "method": "feddyn",
+    "seed": 100,
+    "campaign_run": "pathmnist_sweep_feddyn_seed100_alpha0.3_20260813_005200",
+    "earlier_complete_runs": [
+      {
+        "run_name": "pathmnist_sweep_feddyn_seed100_alpha0.3_20260804_005858",
+        "terminal_accuracy_fraction": 0.655849582172702,
+        "config_differences": {}
+      }
+    ]
+  },
+  {
+    "dataset": "pathmnist",
+    "method": "feddyn",
+    "seed": 101,
+    "campaign_run": "pathmnist_sweep_feddyn_seed101_alpha0.3_20260813_014335",
+    "earlier_complete_runs": [
+      {
+        "run_name": "pathmnist_sweep_feddyn_seed101_alpha0.3_20260804_221048",
+        "terminal_accuracy_fraction": 0.7714484679665738,
+        "config_differences": {}
+      }
+    ]
+  },
+  {
+    "dataset": "pathmnist",
+    "method": "feddyn",
+    "seed": 102,
+    "campaign_run": "pathmnist_sweep_feddyn_seed102_alpha0.3_20260813_023501",
+    "earlier_complete_runs": [
+      {
+        "run_name": "pathmnist_sweep_feddyn_seed102_alpha0.3_20260804_221933",
+        "terminal_accuracy_fraction": 0.8112813370473537,
+        "config_differences": {}
+      }
+    ]
+  },
+  {
+    "dataset": "pathmnist",
+    "method": "feddyn",
+    "seed": 103,
+    "campaign_run": "pathmnist_sweep_feddyn_seed103_alpha0.3_20260813_024635",
+    "earlier_complete_runs": [
+      {
+        "run_name": "pathmnist_sweep_feddyn_seed103_alpha0.3_20260804_222826",
+        "terminal_accuracy_fraction": 0.7249303621169917,
+        "config_differences": {}
+      }
+    ]
+  },
+  {
+    "dataset": "pathmnist",
+    "method": "feddyn",
+    "seed": 104,
+    "campaign_run": "pathmnist_sweep_feddyn_seed104_alpha0.3_20260813_025706",
+    "earlier_complete_runs": [
+      {
+        "run_name": "pathmnist_sweep_feddyn_seed104_alpha0.3_20260804_223715",
+        "terminal_accuracy_fraction": 0.7444289693593314,
+        "config_differences": {}
+      }
+    ]
+  },
+  {
+    "dataset": "eurosat",
+    "method": "feddyn",
+    "seed": 100,
+    "campaign_run": "eurosat_sweep_feddyn_seed100_alpha0.3_20260813_030759",
+    "earlier_complete_runs": [
+      {
+        "run_name": "eurosat_sweep_feddyn_seed100_alpha0.3_20260804_003226",
+        "terminal_accuracy_fraction": 0.667037037037037,
+        "config_differences": {}
+      }
+    ]
+  },
+  {
+    "dataset": "eurosat",
+    "method": "feddyn",
+    "seed": 101,
+    "campaign_run": "eurosat_sweep_feddyn_seed101_alpha0.3_20260813_031946",
+    "earlier_complete_runs": [
+      {
+        "run_name": "eurosat_sweep_feddyn_seed101_alpha0.3_20260804_171238",
+        "terminal_accuracy_fraction": 0.42185185185185187,
+        "config_differences": {}
+      }
+    ]
+  },
+  {
+    "dataset": "eurosat",
+    "method": "feddyn",
+    "seed": 102,
+    "campaign_run": "eurosat_sweep_feddyn_seed102_alpha0.3_20260813_033124",
+    "earlier_complete_runs": [
+      {
+        "run_name": "eurosat_sweep_feddyn_seed102_alpha0.3_20260804_172221",
+        "terminal_accuracy_fraction": 0.7759259259259259,
+        "config_differences": {}
+      }
+    ]
+  },
+  {
+    "dataset": "eurosat",
+    "method": "feddyn",
+    "seed": 103,
+    "campaign_run": "eurosat_sweep_feddyn_seed103_alpha0.3_20260813_034244",
+    "earlier_complete_runs": [
+      {
+        "run_name": "eurosat_sweep_feddyn_seed103_alpha0.3_20260804_173202",
+        "terminal_accuracy_fraction": 0.7092592592592593,
+        "config_differences": {}
+      }
+    ]
+  },
+  {
+    "dataset": "eurosat",
+    "method": "feddyn",
+    "seed": 104,
+    "campaign_run": "eurosat_sweep_feddyn_seed104_alpha0.3_20260813_035400",
+    "earlier_complete_runs": [
+      {
+        "run_name": "eurosat_sweep_feddyn_seed104_alpha0.3_20260804_174129",
+        "terminal_accuracy_fraction": 0.6225925925925926,
+        "config_differences": {}
+      }
+    ]
+  }
+]

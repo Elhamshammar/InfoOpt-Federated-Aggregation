@@ -1,0 +1,401 @@
+1. Primary family recomputation
+  OK   six contrasts, three estimable
+  OK   cifar100: p_raw 0.186774 recomputed 0.186774
+  OK   cifar100: CI recomputed
+  OK   eurosat: p_raw 0.057682 recomputed 0.057682
+  OK   eurosat: CI recomputed
+  OK   pathmnist: p_raw 0.870667 recomputed 0.870667
+  OK   pathmnist: CI recomputed
+  OK   eurosat: Holm(m=6) 0.346093 = reported 0.346093
+  OK   cifar100: Holm(m=6) 0.933870 = reported 0.933870
+  OK   pathmnist: Holm(m=6) 1.000000 = reported 1.000000
+1b. Four-arm experiment: checksums and independent recomputation from per-seed data
+  OK   four-arm package checksums verified (frozen package + data_fourarm/ byte-identical copies)
+  OK   four-arm primary summary has 12 rows (4 arms x 3 datasets)
+  OK   four-arm primary family has six contrasts
+  OK   four-arm interaction family has three contrasts
+  OK   four-arm primary summary cifar100/fedavg_aiboff: mean/sd recomputed from per-seed data match
+  OK   four-arm primary summary eurosat/fedavg_aiboff: mean/sd recomputed from per-seed data match
+  OK   four-arm primary summary pathmnist/fedavg_aiboff: mean/sd recomputed from per-seed data match
+  OK   four-arm primary summary cifar100/fedavg_aibon: mean/sd recomputed from per-seed data match
+  OK   four-arm primary summary eurosat/fedavg_aibon: mean/sd recomputed from per-seed data match
+  OK   four-arm primary summary pathmnist/fedavg_aibon: mean/sd recomputed from per-seed data match
+  OK   four-arm primary summary cifar100/infoopt_aiboff: mean/sd recomputed from per-seed data match
+  OK   four-arm primary summary eurosat/infoopt_aiboff: mean/sd recomputed from per-seed data match
+  OK   four-arm primary summary pathmnist/infoopt_aiboff: mean/sd recomputed from per-seed data match
+  OK   four-arm primary summary cifar100/infoopt_aibon: mean/sd recomputed from per-seed data match
+  OK   four-arm primary summary eurosat/infoopt_aibon: mean/sd recomputed from per-seed data match
+  OK   four-arm primary summary pathmnist/infoopt_aibon: mean/sd recomputed from per-seed data match
+  OK   four-arm contrast cifar100/aiboff: mean/sd/CI/p_raw recomputed match
+  OK   four-arm contrast cifar100/aibon: mean/sd/CI/p_raw recomputed match
+  OK   four-arm contrast eurosat/aiboff: mean/sd/CI/p_raw recomputed match
+  OK   four-arm contrast eurosat/aibon: mean/sd/CI/p_raw recomputed match
+  OK   four-arm contrast pathmnist/aiboff: mean/sd/CI/p_raw recomputed match
+  OK   four-arm contrast pathmnist/aibon: mean/sd/CI/p_raw recomputed match
+  OK   four-arm contrast cifar100/aiboff: Holm(m=6) recomputed 0.687119 = reported 0.687119
+  OK   four-arm contrast cifar100/aibon: Holm(m=6) recomputed 0.735607 = reported 0.735607
+  OK   four-arm contrast eurosat/aiboff: Holm(m=6) recomputed 0.651732 = reported 0.651732
+  OK   four-arm contrast eurosat/aibon: Holm(m=6) recomputed 0.564014 = reported 0.564014
+  OK   four-arm contrast pathmnist/aiboff: Holm(m=6) recomputed 0.735607 = reported 0.735607
+  OK   four-arm contrast pathmnist/aibon: Holm(m=6) recomputed 0.735607 = reported 0.735607
+  OK   four-arm interaction cifar100: mean/sd/CI/p_raw recomputed match
+  OK   four-arm interaction eurosat: mean/sd/CI/p_raw recomputed match
+  OK   four-arm interaction pathmnist: mean/sd/CI/p_raw recomputed match
+  OK   four-arm interaction cifar100: Holm(m=3) recomputed 0.020186 = reported 0.020186
+  OK   four-arm interaction eurosat: Holm(m=3) recomputed 0.891469 = reported 0.891469
+  OK   four-arm interaction pathmnist: Holm(m=3) recomputed 0.891469 = reported 0.891469
+  OK   only the CIFAR-100 interaction's 95% CI excludes zero
+1c. Preservation of earlier evidence (byte-identical to revision 6)
+  OK   preserved historical file byte-identical to revision 6: data/primary_summary.csv
+  OK   preserved historical file byte-identical to revision 6: data/paired_contrasts.json
+  OK   preserved historical file byte-identical to revision 6: data/sensitivity_latest_repeat.json
+  OK   preserved historical file byte-identical to revision 6: data/ra_strata_summaries.json
+  OK   historical primary_summary.csv still has 36 rows (3 datasets x 12 arms), unchanged by revision 7
+  OK   revision-5 four-arm record counts unchanged by revision 7 (12/6/3)
+1d. Matched RA-InfoOpt experiment: checksums and independent recomputation from per-seed data
+  OK   RA-matched package checksums verified (frozen package + data_ra/ byte-identical copies)
+  OK   RA-matched primary summary has 12 rows (4 arms x 3 datasets)
+  OK   RA-matched primary family has six contrasts
+  OK   RA-matched secondary (probe) family has three contrasts
+  OK   RA-matched per_seed_round100.csv has 60 unique (dataset, seed, arm) records (3 x 5 x 4)
+  OK   RA-matched primary summary cifar100/fedavg_aibon: mean/sd recomputed from per-seed data match
+  OK   RA-matched primary summary eurosat/fedavg_aibon: mean/sd recomputed from per-seed data match
+  OK   RA-matched primary summary pathmnist/fedavg_aibon: mean/sd recomputed from per-seed data match
+  OK   RA-matched primary summary cifar100/infoopt_aibon: mean/sd recomputed from per-seed data match
+  OK   RA-matched primary summary eurosat/infoopt_aibon: mean/sd recomputed from per-seed data match
+  OK   RA-matched primary summary pathmnist/infoopt_aibon: mean/sd recomputed from per-seed data match
+  OK   RA-matched primary summary cifar100/ra_probeoff: mean/sd recomputed from per-seed data match
+  OK   RA-matched primary summary eurosat/ra_probeoff: mean/sd recomputed from per-seed data match
+  OK   RA-matched primary summary pathmnist/ra_probeoff: mean/sd recomputed from per-seed data match
+  OK   RA-matched primary summary cifar100/ra_probeon: mean/sd recomputed from per-seed data match
+  OK   RA-matched primary summary eurosat/ra_probeon: mean/sd recomputed from per-seed data match
+  OK   RA-matched primary summary pathmnist/ra_probeon: mean/sd recomputed from per-seed data match
+  OK   RA-matched contrast cifar100/ra_probeoff minus fedavg_aibon: mean/sd/CI/p_raw recomputed match
+  OK   RA-matched contrast cifar100/ra_probeoff minus fedavg_aibon: direction (ra_probeoff minus control) preserved
+  OK   RA-matched contrast cifar100/ra_probeoff minus infoopt_aibon: mean/sd/CI/p_raw recomputed match
+  OK   RA-matched contrast cifar100/ra_probeoff minus infoopt_aibon: direction (ra_probeoff minus control) preserved
+  OK   RA-matched contrast eurosat/ra_probeoff minus fedavg_aibon: mean/sd/CI/p_raw recomputed match
+  OK   RA-matched contrast eurosat/ra_probeoff minus fedavg_aibon: direction (ra_probeoff minus control) preserved
+  OK   RA-matched contrast eurosat/ra_probeoff minus infoopt_aibon: mean/sd/CI/p_raw recomputed match
+  OK   RA-matched contrast eurosat/ra_probeoff minus infoopt_aibon: direction (ra_probeoff minus control) preserved
+  OK   RA-matched contrast pathmnist/ra_probeoff minus fedavg_aibon: mean/sd/CI/p_raw recomputed match
+  OK   RA-matched contrast pathmnist/ra_probeoff minus fedavg_aibon: direction (ra_probeoff minus control) preserved
+  OK   RA-matched contrast pathmnist/ra_probeoff minus infoopt_aibon: mean/sd/CI/p_raw recomputed match
+  OK   RA-matched contrast pathmnist/ra_probeoff minus infoopt_aibon: direction (ra_probeoff minus control) preserved
+  OK   RA-matched contrast cifar100/ra_probeoff minus fedavg_aibon: Holm(m=6) recomputed 0.188819 = reported 0.188819
+  OK   RA-matched contrast cifar100/ra_probeoff minus infoopt_aibon: Holm(m=6) recomputed 1.000000 = reported 1.000000
+  OK   RA-matched contrast eurosat/ra_probeoff minus fedavg_aibon: Holm(m=6) recomputed 0.901306 = reported 0.901306
+  OK   RA-matched contrast eurosat/ra_probeoff minus infoopt_aibon: Holm(m=6) recomputed 0.206429 = reported 0.206429
+  OK   RA-matched contrast pathmnist/ra_probeoff minus fedavg_aibon: Holm(m=6) recomputed 1.000000 = reported 1.000000
+  OK   RA-matched contrast pathmnist/ra_probeoff minus infoopt_aibon: Holm(m=6) recomputed 0.940033 = reported 0.940033
+  OK   exactly the two documented individual CIs exclude zero (CIFAR-100 RA-FedAvg, EuroSAT RA-InfoOpt-Full)
+  OK   smallest Holm-adjusted p-value in the RA-matched primary family is approximately 0.189
+  OK   no RA-matched primary contrast survives Holm correction at alpha=0.05
+  OK   RA-matched probe contrast cifar100: mean/sd/CI/p_raw recomputed match
+  OK   RA-matched probe contrast eurosat: mean/sd/CI/p_raw recomputed match
+  OK   RA-matched probe contrast pathmnist: mean/sd/CI/p_raw recomputed match
+  OK   RA-matched probe contrast cifar100: Holm(m=3) recomputed 0.540843 = reported 0.540843
+  OK   RA-matched probe contrast eurosat: Holm(m=3) recomputed 0.384975 = reported 0.384975
+  OK   RA-matched probe contrast pathmnist: Holm(m=3) recomputed 0.953230 = reported 0.953230
+  OK   all three RA-matched probe (instrumentation-sensitivity) intervals include zero
+  OK   no RA-matched probe contrast survives Holm correction at alpha=0.05
+1e. Saved-checkpoint step-size pilot: checksums and independent recomputation
+  OK   step-size pilot package checksums verified (frozen package + data_stepsize/ byte-identical copies)
+  OK   step-size pilot frozen verdict strings match GO_NO_GO.md v3 (adaptive_headroom=INSUFFICIENT, claude_comparator=NO-GO, exploratory_variability_signal=EXPLORATORY_PROBE, overall_recommendation=ADAPTIVE_BENEFIT_NOT_ESTABLISHED_IN_THIS_PILOT)
+  OK   step-size pilot headroom G (202, 'global'): +0.005737 (pilot_decision.json)
+  OK   step-size pilot headroom G (202, 'phase'): +0.002900 (pilot_decision.json)
+  OK   step-size pilot headroom G (203, 'global'): +0.022656 (pilot_decision.json)
+  OK   step-size pilot headroom G (203, 'phase'): +0.003649 (pilot_decision.json)
+  OK   step-size pilot claude-comparator G (202, 'global'): -0.019722 (pilot_decision.json)
+  OK   step-size pilot claude-comparator G (202, 'phase'): -0.022559 (pilot_decision.json)
+  OK   step-size pilot claude-comparator G (203, 'global'): -0.035515 (pilot_decision.json)
+  OK   step-size pilot claude-comparator G (203, 'phase'): -0.054522 (pilot_decision.json)
+  OK   step-size pilot headroom gate_failure_reason matches frozen record
+  OK   step-size pilot claude_comparator gate_failure_reason matches frozen record
+  OK   step-size pilot: seed 203 has only 1 of 3 phases positive against both fixed controls (quoted in supplement)
+  OK   step-size pilot corrected exploratory phase_only: held MAE 0.009036156 / MSE 0.000313572 (exploratory_signal_held_out_corrected.json, not the stale pilot_decision.json block)
+  OK   step-size pilot corrected exploratory phase_plus_variability: held MAE 0.020016340 / MSE 0.000696180 (exploratory_signal_held_out_corrected.json, not the stale pilot_decision.json block)
+  OK   step-size pilot corrected exploratory: 27 dev cells / 54 held-out cells for both predictors
+  OK   step-size pilot: pilot_decision.json exploratory verdict is EXPLORATORY_PROBE (not a deployability claim)
+  OK   step-size pilot buffer-policy A_freeze_buffers_at_gamma1: held -0.062912 (n=18) / dev -0.070469 (n=9), independently recomputed from cohort_summary.csv
+  OK   step-size pilot buffer-policy B_valsel_vs_full_gamma1: held +0.064642 (n=18) / dev +0.068214 (n=9), independently recomputed from cohort_summary.csv
+  OK   step-size pilot buffer-policy B_valsel_vs_params_only_gamma1: held +0.127554 (n=18) / dev +0.138683 (n=9), independently recomputed from cohort_summary.csv
+  OK   step-size pilot buffer-policy C_valsel_vs_fixed_global: held +0.014196 (n=18) / dev +0.009915 (n=9), independently recomputed from cohort_summary.csv
+  OK   step-size pilot buffer-policy C_valsel_vs_fixed_phase: held +0.003275 (n=18) / dev +0.000371 (n=9), independently recomputed from cohort_summary.csv
+2. Generated tables vs verified outputs
+  OK   Table 3 cifar100/InfoOpt_Full: 43.96 $\pm$ 0.95 (5)
+  OK   Table 3 cifar100/fedavg: 43.14 $\pm$ 1.18 (5)
+  OK   Table 3 cifar100/feddp: 43.01 $\pm$ 1.42 (5)
+  OK   Table 3 cifar100/feddyn: 19.02 $\pm$ 1.43 (5)
+  OK   Table 3 cifar100/fednova: 43.19 $\pm$ 1.22 (5)
+  OK   Table 3 cifar100/fedprox: 43.05 $\pm$ 1.12 (5)
+  OK   Table 3 cifar100/gamma0.5: 40.05 $\pm$ 0.65 (5)
+  OK   Table 3 cifar100/gamma0.75: 42.65 $\pm$ 1.14 (5)
+  OK   Table 3 cifar100/ibfl: 44.23 $\pm$ 0.75 (5)
+  OK   Table 3 cifar100/scaffold: 1.76 $\pm$ 0.50 (5)
+  OK   Table 3 eurosat/InfoOpt_Full: 75.30 $\pm$ 7.02 (5)
+  OK   Table 3 eurosat/fedavg: 80.03 $\pm$ 6.04 (5)
+  OK   Table 3 eurosat/feddp: 79.92 $\pm$ 5.57 (5)
+  OK   Table 3 eurosat/feddyn: 63.93 $\pm$ 13.41 (5)
+  OK   Table 3 eurosat/fednova: 75.41 $\pm$ 6.98 (5)
+  OK   Table 3 eurosat/fedopt: 63.04 $\pm$ 7.71 (5)
+  OK   Table 3 eurosat/fedprox: 79.68 $\pm$ 5.21 (5)
+  OK   Table 3 eurosat/gamma0.5: 80.00 $\pm$ 2.37 (5)
+  OK   Table 3 eurosat/gamma0.75: 80.81 $\pm$ 3.33 (5)
+  OK   Table 3 eurosat/ibfl: 79.26 $\pm$ 5.48 (5)
+  OK   Table 3 eurosat/scaffold: 26.21 $\pm$ 12.57 (5)
+  OK   Table 3 pathmnist/InfoOpt_Full: 85.70 $\pm$ 1.69 (5)
+  OK   Table 3 pathmnist/fedavg: 85.61 $\pm$ 2.77 (5)
+  OK   Table 3 pathmnist/feddp: 86.87 $\pm$ 1.41 (5)
+  OK   Table 3 pathmnist/feddyn: 74.16 $\pm$ 5.78 (5)
+  OK   Table 3 pathmnist/fednova: 85.85 $\pm$ 2.64 (5)
+  OK   Table 3 pathmnist/fedopt: 78.28 $\pm$ 11.58 (5)
+  OK   Table 3 pathmnist/fedprox: 86.77 $\pm$ 2.00 (5)
+  OK   Table 3 pathmnist/gamma0.5: 86.26 $\pm$ 2.10 (5)
+  OK   Table 3 pathmnist/gamma0.75: 87.03 $\pm$ 2.10 (5)
+  OK   Table 3 pathmnist/ibfl: 84.65 $\pm$ 4.93 (5)
+  OK   Table 3 pathmnist/scaffold: 17.71 $\pm$ 6.57 (5)
+  OK   Table 3: three RA-InfoOpt cells withheld
+  OK   Table 3: CIFAR-100 FedOpt excluded (n=0 in primary)
+  OK   FedOpt sensitivity loaded from checksum-verified frozen package
+  OK   Table 3: CIFAR-100 FedOpt sensitivity 44.72 $\pm$ 2.15 (5) only in footnote; primary cell excluded
+  OK   main_revised.tex: FedOpt sensitivity quoted as 44.72 +/- 2.15
+  OK   supplementary.tex: FedOpt sensitivity quoted as 44.72 +/- 2.15
+  OK   table4_primary_contrasts.tex cifar100: +0.822, $-$0.612, +2.256, 0.187, 0.934, +0.71
+  OK   table4_primary_contrasts.tex eurosat: $-$4.733, $-$9.714, +0.248, 0.058, 0.346, $-$1.18
+  OK   table4_primary_contrasts.tex pathmnist: +0.092, $-$1.379, +1.563, 0.871, 1.000, +0.08
+  OK   table4_primary_contrasts.tex: three RA contrasts not estimable
+  OK   tableA_primary.tex cifar100: +0.822, $-$0.612, +2.256, 0.187, 0.934, +0.71
+  OK   tableA_primary.tex eurosat: $-$4.733, $-$9.714, +0.248, 0.058, 0.346, $-$1.18
+  OK   tableA_primary.tex pathmnist: +0.092, $-$1.379, +1.563, 0.871, 1.000, +0.08
+  OK   tableA_primary.tex: three RA contrasts not estimable
+  OK   Table A.2 cifar100/fedavg: 43.142, 43.142, +0.000
+  OK   Table A.2 cifar100/InfoOpt_Full: 43.964, 43.964, +0.000
+  OK   Table A.2 eurosat/fedavg: 80.030, 80.030, +0.000
+  OK   Table A.2 eurosat/InfoOpt_Full: 75.296, 75.259, $-$0.037
+  OK   Table A.2 pathmnist/fedavg: 85.613, 85.613, +0.000
+  OK   Table A.2 pathmnist/InfoOpt_Full: 85.705, 85.540, $-$0.164
+  OK   Table A.2 cifar100/InfoOpt_Full-FedAvg: +0.822, $-$0.612, +2.256, 0.187
+  OK   Table A.2 eurosat/InfoOpt_Full-FedAvg: $-$4.770, $-$10.231, +0.690, 0.072
+  OK   Table A.2 pathmnist/InfoOpt_Full-FedAvg: $-$0.072, $-$2.977, +2.832, 0.948
+  OK   Table A.3 stratum 48515f: 43.29 $\pm$ 1.47
+  OK   Table A.3 stratum 8f68e3: 42.10 (single run)
+  OK   Table A.3 stratum e9827b: 43.20 $\pm$ 0.00
+  OK   Table A.3 stratum 1b6e95: 78.05 $\pm$ 8.06
+  OK   Table A.3 stratum 8c6978: 82.17 $\pm$ 1.81
+  OK   Table A.3 stratum 978905: 81.96 (single run)
+  OK   Table A.3 stratum 058736: 88.12 (single run)
+  OK   Table A.3 stratum 114bfb: 88.15 $\pm$ 0.90
+  OK   Table A.3 stratum b80f3a: 86.53 $\pm$ 1.42
+  OK   Table 5(a) cifar100/fedavg_aiboff: 43.10 $\pm$ 1.10 (5)
+  OK   Table 5(a) cifar100/fedavg_aibon: 43.86 $\pm$ 1.10 (5)
+  OK   Table 5(a) cifar100/infoopt_aiboff: 43.64 $\pm$ 0.70 (5)
+  OK   Table 5(a) cifar100/infoopt_aibon: 43.68 $\pm$ 0.87 (5)
+  OK   Table 5(a) eurosat/fedavg_aiboff: 79.78 $\pm$ 5.88 (5)
+  OK   Table 5(a) eurosat/fedavg_aibon: 79.59 $\pm$ 5.55 (5)
+  OK   Table 5(a) eurosat/infoopt_aiboff: 75.62 $\pm$ 5.95 (5)
+  OK   Table 5(a) eurosat/infoopt_aibon: 75.85 $\pm$ 5.99 (5)
+  OK   Table 5(a) pathmnist/fedavg_aiboff: 86.09 $\pm$ 2.30 (5)
+  OK   Table 5(a) pathmnist/fedavg_aibon: 85.53 $\pm$ 1.63 (5)
+  OK   Table 5(a) pathmnist/infoopt_aiboff: 84.53 $\pm$ 3.22 (5)
+  OK   Table 5(a) pathmnist/infoopt_aibon: 85.23 $\pm$ 2.03 (5)
+  OK   Table 5(b) cifar100/aiboff: +0.536, $-$0.359, +1.431, 0.172, 0.687
+  OK   Table 5(b) cifar100/aibon: $-$0.184, $-$1.249, +0.881, 0.657, 0.736
+  OK   Table 5(b) eurosat/aiboff: $-$4.156, $-$10.230, +1.919, 0.130, 0.652
+  OK   Table 5(b) eurosat/aibon: $-$3.741, $-$8.490, +1.008, 0.094, 0.564
+  OK   Table 5(b) pathmnist/aiboff: $-$1.565, $-$5.225, +2.094, 0.301, 0.736
+  OK   Table 5(b) pathmnist/aibon: $-$0.304, $-$0.923, +0.316, 0.245, 0.736
+  OK   Table A.4 cifar100: $-$0.720, $-$1.108, $-$0.332, 0.0067, 0.0202
+  OK   Table A.4 eurosat: +0.415, $-$1.984, +2.814, 0.6562, 0.8915
+  OK   Table A.4 pathmnist: +1.262, $-$2.885, +5.408, 0.4457, 0.8915
+  OK   Table 6(a) cifar100/fedavg_aibon: 43.70 $\pm$ 1.18 (5)
+  OK   Table 6(a) cifar100/infoopt_aibon: 43.87 $\pm$ 0.71 (5)
+  OK   Table 6(a) cifar100/ra_probeoff: 43.91 $\pm$ 1.19 (5)
+  OK   Table 6(a) cifar100/ra_probeon: 43.35 $\pm$ 0.70 (5)
+  OK   Table 6(a) eurosat/fedavg_aibon: 79.48 $\pm$ 6.06 (5)
+  OK   Table 6(a) eurosat/infoopt_aibon: 74.90 $\pm$ 6.83 (5)
+  OK   Table 6(a) eurosat/ra_probeoff: 81.58 $\pm$ 3.44 (5)
+  OK   Table 6(a) eurosat/ra_probeon: 80.53 $\pm$ 3.52 (5)
+  OK   Table 6(a) pathmnist/fedavg_aibon: 86.39 $\pm$ 1.73 (5)
+  OK   Table 6(a) pathmnist/infoopt_aibon: 85.45 $\pm$ 2.15 (5)
+  OK   Table 6(a) pathmnist/ra_probeoff: 86.36 $\pm$ 2.98 (5)
+  OK   Table 6(a) pathmnist/ra_probeon: 86.30 $\pm$ 2.47 (5)
+  OK   Table 6(b) cifar100/ra_probeoff minus fedavg_aibon: +0.208, +0.030, +0.386, 0.0315, 0.1888
+  OK   Table 6(b) cifar100/ra_probeoff minus infoopt_aibon: +0.038, $-$1.039, +1.115, 0.9267, 1.0000
+  OK   Table 6(b) eurosat/ra_probeoff minus fedavg_aibon: +2.096, $-$1.967, +6.160, 0.2253, 0.9013
+  OK   Table 6(b) eurosat/ra_probeoff minus infoopt_aibon: +6.681, +0.428, +12.935, 0.0413, 0.2064
+  OK   Table 6(b) pathmnist/ra_probeoff minus fedavg_aibon: $-$0.025, $-$2.251, +2.200, 0.9765, 1.0000
+  OK   Table 6(b) pathmnist/ra_probeoff minus infoopt_aibon: +0.919, $-$1.295, +3.134, 0.3133, 0.9400
+  OK   Table A.5 cifar100: $-$0.560, $-$1.777, +0.657, 0.2704, 0.5408
+  OK   Table A.5 eurosat: $-$1.044, $-$2.560, +0.472, 0.1283, 0.3850
+  OK   Table A.5 pathmnist: $-$0.067, $-$3.041, +2.907, 0.9532, 0.9532
+  OK   Table A.6 headroom G (202, 'global'): +0.005737
+  OK   Table A.6 headroom G (202, 'phase'): +0.002900
+  OK   Table A.6 headroom G (203, 'global'): +0.022656
+  OK   Table A.6 headroom G (203, 'phase'): +0.003649
+  OK   Table A.6 claude-comparator G (202, 'global'): $-$0.019722
+  OK   Table A.6 claude-comparator G (202, 'phase'): $-$0.022559
+  OK   Table A.6 claude-comparator G (203, 'global'): $-$0.035515
+  OK   Table A.6 claude-comparator G (203, 'phase'): $-$0.054522
+3. Numbers quoted in prose
+  OK   main text quotes +0.822
+  OK   main text quotes -4.733
+  OK   main text quotes +0.092
+  OK   main text quotes [-0.612,+2.256]
+  OK   main text quotes [-9.714,+0.248]
+  OK   main text quotes [-1.379,+1.563]
+  OK   main text quotes p=0.187
+  OK   main text quotes p=0.934
+  OK   main text quotes p=0.058
+  OK   main text quotes p=0.346
+  OK   main text quotes p=0.871
+  OK   main text quotes p=1.000
+  OK   main text quotes -4.770
+  OK   main text quotes [-10.231,+0.690]
+  OK   main text quotes p=0.072
+  OK   main text quotes -0.072
+  OK   main text quotes [-2.977,+2.832]
+  OK   main text quotes p=0.948
+  OK   main text quotes -0.037
+  OK   main text quotes -0.164
+  OK   main text quotes 0.164
+  OK   main text quotes 165
+  OK   main text quotes 135
+  OK   main text quotes +0.536
+  OK   main text quotes [-0.359,+1.431]
+  OK   main text quotes -0.184
+  OK   main text quotes [-1.249,+0.881]
+  OK   main text quotes -4.156
+  OK   main text quotes [-10.230,+1.919]
+  OK   main text quotes -3.741
+  OK   main text quotes [-8.490,+1.008]
+  OK   main text quotes -1.565
+  OK   main text quotes [-5.225,+2.094]
+  OK   main text quotes -0.304
+  OK   main text quotes [-0.923,+0.316]
+  OK   main text quotes -0.720
+  OK   main text quotes [-1.108,-0.332]
+  OK   main text quotes p=0.0067
+  OK   main text quotes p=0.0202
+  OK   main text quotes +0.415
+  OK   main text quotes [-1.984,+2.814]
+  OK   main text quotes +1.262
+  OK   main text quotes [-2.885,+5.408]
+  OK   quoted +0.822 equals verified 0.822000
+  OK   quoted -4.733 equals verified -4.733333
+  OK   quoted +0.092 equals verified 0.091922
+  OK   quoted sensitivity contrasts equal verified values
+  OK   max |movement| = 0.164 pp (verified)
+  OK   main text quotes four-arm contrast cifar100/aiboff: +0.536
+  OK   main text quotes four-arm contrast cifar100/aibon: -0.184
+  OK   main text quotes four-arm contrast eurosat/aiboff: -4.156
+  OK   main text quotes four-arm contrast eurosat/aibon: -3.741
+  OK   main text quotes four-arm contrast pathmnist/aiboff: -1.565
+  OK   main text quotes four-arm contrast pathmnist/aibon: -0.304
+  OK   main text quotes four-arm interaction cifar100: -0.720
+  OK   main text quotes four-arm interaction eurosat: +0.415
+  OK   main text quotes four-arm interaction pathmnist: +1.262
+  OK   main text quotes RA-matched value +0.208
+  OK   main text quotes RA-matched value [+0.030,+0.386]
+  OK   main text quotes RA-matched value +6.681
+  OK   main text quotes RA-matched value [+0.428,+12.935]
+  OK   main text quotes RA-matched value 0.189
+  OK   main text quotes RA-matched value 0.206
+  OK   main text's two highlighted RA-matched values equal verified contrasts
+  OK   main text's 'approximately 0.189' equals the verified smallest Holm-adjusted p-value in the RA-matched primary family
+  OK   supplement text quotes -4.770
+  OK   supplement text quotes -0.072
+  OK   supplement text quotes -4.733
+  OK   supplement text quotes +0.092
+  OK   supplement text quotes -0.164
+  OK   supplement text quotes 42.65,80.81,and87.03
+  OK   supplement text quotes 43.14,80.03,and85.61
+  OK   supplement text quotes 40.05
+  OK   supplement text quotes 43.20
+  OK   supplement text quotes RA-matched protocol detail 537
+  OK   supplement text quotes RA-matched protocol detail four_arm_20261009
+  OK   supplement describes the counterfactual probe and its instrumentation-sensitivity caveat
+  OK   supplement documents the RA-matched analysis-package file count
+  OK   supplement damping values equal verified summaries
+  OK   supplement states the step-size pilot's adaptive-headroom verdict (INSUFFICIENT)
+  OK   supplement states the step-size pilot's claude-comparator verdict (NO-GO)
+  OK   supplement quotes corrected exploratory value 0.009036
+  OK   supplement quotes corrected exploratory value 0.0003136
+  OK   supplement quotes corrected exploratory value 0.020016
+  OK   supplement quotes corrected exploratory value 0.0006962
+  OK   supplement quotes buffer-freeze held-out/dev loss-improvement values
+  OK   supplement quotes the export-defect affected-source count (77 of 90)
+  OK   supplement quotes the export-defect checked-cell mismatch count (154 of 900)
+  OK   supplement quotes the partial-recovery source counts (9 recovered / 81 unrecoverable)
+  OK   supplement states the pilot's fixed partition seed (42)
+  OK   supplement states the pilot's development (201) and held-out (202, 203) training seeds
+  OK   supplement states the pilot's three saved-checkpoint rounds (5, 50, 100)
+  OK   supplement distinguishes PRE_EXECUTION_AMENDMENT.md as a later change record, not certified original pre-execution bytes
+  OK   main_revised.tex: mentions the step-size pilot
+  OK   supplementary.tex: mentions the step-size pilot
+  OK   main text keeps the step-size pilot separate from the four-arm and matched RA-InfoOpt experiments
+  OK   supplement states the step-size pilot is analyzed separately and does not change either experiment's estimates
+  OK   neither document still uses the ambiguous 'does not bear on' wording for the step-size pilot
+  OK   main Section 4 opening scopes the retrospective reanalysis to the historical comparison results only
+  OK   main Section 4 opening distinguishes the prospective four-arm and matched RA experiments
+4. Superseded-value scan
+  note main_revised.tex: '29.10' appears 1 time(s), only inside its designated revision-6 repair-campaign descriptive-audit passage (historical descriptive evidence, not a primary result; coincides numerically with the withdrawn table row)
+  note main_revised.tex: '42.28' appears 1 time(s), only inside its designated revision-6 repair-campaign descriptive-audit passage (historical descriptive evidence, not a primary result; coincides numerically with the withdrawn table row)
+  note main_revised.tex: '44.72' appears only as an author-supplied sensitivity-only value (footnote/text), not a primary result
+  note main_revised.tex: '74.84' appears 1 time(s), only inside its designated revision-6 repair-campaign descriptive-audit passage (historical descriptive evidence, not a primary result; coincides numerically with the withdrawn table row)
+  note main_revised.tex: '85.10' appears 1 time(s), only inside its designated revision-6 repair-campaign descriptive-audit passage (historical descriptive evidence, not a primary result; coincides numerically with the withdrawn table row)
+  note main_revised.tex: '85.58' appears 1 time(s), only inside its designated revision-6 repair-campaign descriptive-audit passage (historical descriptive evidence, not a primary result; coincides numerically with the withdrawn table row)
+  note main_revised.tex: '87.92' appears 1 time(s), only inside its designated revision-6 repair-campaign descriptive-audit passage (historical descriptive evidence, not a primary result; coincides numerically with the withdrawn table row)
+  note supplementary.tex: '0.048' appears only as an intentional reference to a withdrawn claim
+  note supplementary.tex: '29.10' appears 2 time(s), only inside its designated revision-6 repair-campaign descriptive-audit passage (historical descriptive evidence, not a primary result; coincides numerically with the withdrawn table row)
+  note supplementary.tex: '42.28' appears 2 time(s), only inside its designated revision-6 repair-campaign descriptive-audit passage (historical descriptive evidence, not a primary result; coincides numerically with the withdrawn table row)
+  note supplementary.tex: '44.72' appears only as an author-supplied sensitivity-only value (footnote/text), not a primary result
+  note supplementary.tex: '74.84' appears 2 time(s), only inside its designated revision-6 repair-campaign descriptive-audit passage (historical descriptive evidence, not a primary result; coincides numerically with the withdrawn table row)
+  note supplementary.tex: '85.10' appears 2 time(s), only inside its designated revision-6 repair-campaign descriptive-audit passage (historical descriptive evidence, not a primary result; coincides numerically with the withdrawn table row)
+  note supplementary.tex: '85.58' appears 2 time(s), only inside its designated revision-6 repair-campaign descriptive-audit passage (historical descriptive evidence, not a primary result; coincides numerically with the withdrawn table row)
+  note supplementary.tex: '87.92' appears 4 time(s), only inside its designated revision-6 repair-campaign descriptive-audit passage (historical descriptive evidence, not a primary result; coincides numerically with the withdrawn table row)
+  note table3_retrospective.tex: '44.72' appears only as an author-supplied sensitivity-only value (footnote/text), not a primary result
+  OK   scanned 38 superseded values
+5. Cross-document references
+  OK   supplement app:tab:sensitivity = A.2 (aux: A.2)
+  OK   supplement app:tab:ra_strata = A.3 (aux: A.3)
+  OK   supplement fig:repeat_sensitivity = A.1 (aux: A.1)
+  OK   supplement fig:ra_strata = A.2 (aux: A.2)
+  OK   supplement app:sensitivity = A.4 (aux: A.4)
+  OK   supplement app:diagnostics = D (aux: D)
+  OK   supplement app:record = G (aux: G)
+  OK   supplement app:tab:extended_comparison = E.1 (aux: E.1)
+  OK   supplement app:tab:primary_holm = A.1 (aux: A.1)
+  OK   supplement app:fourarm = A.7 (aux: A.7)
+  OK   supplement app:tab:fourarm_interaction = A.4 (aux: A.4)
+  OK   supplement app:ra_matched = A.8 (aux: A.8)
+  OK   supplement app:tab:ra_probe = A.5 (aux: A.5)
+  OK   supplement app:stepsize_pilot = A.9 (aux: A.9)
+  OK   supplement app:tab:stepsize_pilot = A.6 (aux: A.6)
+  OK   main subsec:provenance = 4.5 (aux: 4.5)
+  OK   main tab:canonical = 3 (aux: 3)
+  OK   main tab:paired = 4 (aux: 4)
+  OK   main fig:framework = 1 (aux: 1)
+  OK   main fig:evaluation_framework = 2 (aux: 2)
+  OK   main fig:accuracy = 3 (aux: 3)
+  OK   main fig:paired = 4 (aux: 4)
+  OK   main subsec:grasp = 3.4 (aux: 3.4)
+  OK   main sec:grasp_provenance = 4.3 (aux: 4.3)
+  OK   main sec:fourarm = 5.4 (aux: 5.4)
+  OK   main tab:fourarm = 5 (aux: 5)
+  OK   main fig:fourarm = 5 (aux: 5)
+  OK   main sec:ra_matched = 5.5 (aux: 5.5)
+  OK   main tab:ra_matched = 6 (aux: 6)
+  OK   main subsec:discussion_diagnostics = 6.2 (aux: 6.2)
+6. LaTeX logs
+  OK   main_revised: no undefined references or citations
+  OK   main_revised: no multiply-defined labels
+  OK   main_revised: no LaTeX errors
+  info main_revised: 2 overfull box(es)
+  OK   supplementary: no undefined references or citations
+  OK   supplementary: no multiply-defined labels
+  OK   supplementary: no LaTeX errors
+  info supplementary: 6 overfull box(es)
+  OK   BibTeX: all cited keys found
+
+RESULT: ALL CHECKS PASSED

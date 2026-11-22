@@ -1,0 +1,263 @@
+{
+  "bundle_dir": "/home/whu/disk1/FL_StepSize_Diagnostic_fixed_20261004",
+  "bundle_sha256": {
+    "GO_NO_GO.md": "ffef576fcf35f688054180fa488ba908d227a14c2a796206be8e81a4bdd5036d",
+    "GO_NO_GO_v1_2026-10-04.md": "f5a777499aa101804cf00ea7b409f3b4c82fc2e637b3b4c741468ea098fcb6d4",
+    "GO_NO_GO_v2_2026-10-04.md": "36c890a7308bcdb8c9f2ed33754c424dc45e1e9bd51abd60b5d1d0110187a472",
+    "INTENTIONAL_DIFFERENCES.md": "44d54f12ee5f23b4fb91ea2cf77e0ae06a500c470bbfbea15ec26760ebbfd6c1",
+    "PRE_EXECUTION_AMENDMENT.md": "5fa880774f4048b02fae5c804b4b485733ae4ec9a5d98164fcc1d1602bfece5f",
+    "PROTOCOL.md": "c6bbf861800f3b94577c1e8caa67674fdf2005432bb9d2f39c28d52b898db20b",
+    "PROTOCOL_v1_2026-10-04.md": "0857dc9bbc7d892c7fab8bdae18422a5edfc1b00a977cd5edd89d8acfa680bd8",
+    "PROTOCOL_v2_2026-10-04.md": "685823926f66e3f4f00bf54eacb8bbb40835cf1d05df5190451e3907a539e45c",
+    "README.md": "9277293bb3983591557be3755c26fe41b491b7b87f3268a165edc7b5dbe3c311",
+    "preflight.sh": "cd96ec017c840331dcd14c895cacc3b106da2dd0971e919c5ef4d89d69775278",
+    "reference_code/__init__.py": "57b85a989d62c876056030e74cf1b75bafb3c365f2c88ba09dc3b313e16e115d",
+    "reference_code/data/__init__.py": "33779ad32746acf7d67491accf5d1b0886df641c3cbeca91ec1f145e7e80454e",
+    "reference_code/data/datasets.py": "9637acdcc178857b1aae5d1670208b2ffbc961e769ff5e783d932bce79fa15d7",
+    "reference_code/data/partition.py": "cb06abaf240da7dba0a6efa62dc6bc76d950391172604453bd4f5d5ced1c901b",
+    "reference_code/methods/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reference_code/methods/client.py": "bce31365c8a4cdd31772ffe66e3f05bfe595ba144ba17065941b1adfa49784b9",
+    "reference_code/models/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reference_code/models/aib.py": "fa6624db3d77684c591949de8f664124f9ed55241d11e5ecaa1e88def3fe6788",
+    "reference_code/models/build.py": "0cdf973e1c6686e914aa90a0d14337ec0fdc06927f3c541e1a5d0c763e4fac44",
+    "reference_code/models/cnn.py": "93629daa211af2a23800e6bcbb8b941294f6e553e307489699fca776c1e59513",
+    "reference_code/utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "reference_code/utils/aggregation.py": "b9f4cb3a354fe01952b4c65da1959b84dcf67a677cd48f957e55f0a80c7a8bb7",
+    "reference_code/utils/feddyn.py": "601b6d9f1ed04d22d25b311cd5b73c28cc89af1ea6a793619f5fc86aa5d8a405",
+    "reference_code/utils/info_metrics.py": "d5f964382d083071501cf69aeeeebbb45bc5edc5638e13492f99065ce6e22f4f",
+    "reference_code/utils/seed.py": "6483b26a05eb93f445e2a0d6daa43a397d7d1f50c2df0d9aa2366e02f7d829c3",
+    "run_diag.py": "6910096f60ef9dd8e9fc148fcdfdad6d3b2bc7c3e66ec783245125d2bce5f7d2",
+    "run_pilot.ps1": "f6fb23342ccf473fe19280bd241f625b54b024bf8462a18a03b2ac09e16bae5c",
+    "run_pilot.sh": "edc33d090c6533831ca811623f871eefc930dbb0a5187741ed4033ee1052d5e8",
+    "run_smoke.ps1": "8ad920ae1a491e526a55d7babfb447a0ef23fe5aa03eb8a8462bd8acbfffe873",
+    "run_smoke.sh": "a6f263910370ee5b2f2c8ea0a9e7b4f4db6f9254de2b12a4ef1114a92c0c1414",
+    "scripts/make_distribution_zip.py": "578df8b34bc17c2724a14a744c8214e61e879b23c4451116b2ff46202c50be25",
+    "scripts/regenerate_report.py": "eda88e0047fc9178c6c88a4dc552165e590c5f8a1ce3dd61ca2726f95b2cd9aa",
+    "scripts/test_report_generation.py": "e00a63eaafaeb26cf3a5d1399d72072863837eefb04d38714f9aa77f0a30cf87",
+    "scripts/update_adapted_hashes.py": "8b69fbd55252d613563494399befafb91727c02aef545d623e68d9549083836c",
+    "selftest_cpu.py": "58a3adb1765edddda900c326a7ca7d745d718c73682cd1978ab176e6d6a6eaff",
+    "source_notes/original_train.py": "ab5953500d4cdaeaae36df543dd9dbced3bbf96818fccc14ad86f41e5e8d969d",
+    "stepsize_diag/__init__.py": "3b5124c3b0f42506d09a2b07768a7029614b30ce8d2975ef8279a1274dbe4da4",
+    "stepsize_diag/candidates.py": "1b0e73c73690a0423b40bf25053c880bef52d213e997fbfae474b2f9b2cfb909",
+    "stepsize_diag/config.py": "5367da450510c609b171ce4d30f0af9d689e5055cf8082fd6df3f122feaa4ce9",
+    "stepsize_diag/data.py": "1b4d02d441c429020dfdd0779b8516d0154a11abc3960041fec93b2dac588f74",
+    "stepsize_diag/fedavg.py": "850e6e7b1ed60da854b8da0554f02a4e5a9f63827d2190dc0c43c022bcb89765",
+    "stepsize_diag/harness.py": "001f6e9d24abae38533603175da82cf98057a652952efa8a638d710cf5d6d89b",
+    "stepsize_diag/pilot.py": "1ac28c23b7ca8c3a4f53da5f69204660df6da7751bd4f81d8a004d8019a7b471",
+    "stepsize_diag/pilot_config.py": "c97931052dce3cd9e1dd95eee82af1b22510a4102a64f771d26754bb9c06649f",
+    "stepsize_diag/pilot_decision.py": "423690105aba1b0c68c7f865d75cebf79aa01357d829642e35f011c3c8c1d5be",
+    "stepsize_diag/pilot_eval.py": "854c6f5e1d780b47064f794dc2c72266d1bfd0b51abf9e784b951e59060d3474",
+    "stepsize_diag/pilot_variability.py": "f4f642ef9e22cd1c8d78750b12a4bed21ebd7f93ad4a16ccb5fce24477fbd325",
+    "stepsize_diag/ref_adapter.py": "6634094b3cfe69575f89da5b3dc8ce0e280d6bedbb627dff3e8dafc6e67c11e0",
+    "stepsize_diag/ref_compare.py": "5065a837a8667116f2698fc466bb81e4f90fdc7b0ba0455e7fd3c6add457dd41",
+    "stepsize_diag/reference_impl.py": "67bdc4267d049d141a9f2f351203010c6dea94d6bee37f093f682107499d5f1c",
+    "stepsize_diag/stats.py": "9fa364316725cf5297505646857fea7141eeb56075c2d5ff4db0eae7e88b77cd",
+    "stepsize_diag/verify.py": "cc26e9fb25630c9a434487b2bea7cd662812c4e445a7d171091d392d96fc12fd"
+  },
+  "pilot_config": {
+    "smoke": {
+      "dataset": "cifar100",
+      "data_root": "/home/whu/disk1/FL_StepSize_Diagnostic_fixed_20261004/data",
+      "num_classes": 100,
+      "model_name": "smallcnn_recovered",
+      "use_aib": false,
+      "channels": [
+        64,
+        128,
+        256
+      ],
+      "num_clients": 10,
+      "num_participants": 5,
+      "dirichlet_alpha": 0.3,
+      "min_client_size": 50,
+      "partition_seed": 42,
+      "local_epochs": 2,
+      "batch_size": 64,
+      "lr": 0.01,
+      "momentum": 0.9,
+      "weight_decay": 0.0005,
+      "grad_clip": 5.0,
+      "training_seed": 200,
+      "rounds": 5,
+      "checkpoint_round": 5,
+      "selection_frac": 0.05,
+      "eval_frac": 0.05,
+      "split_seed": 999,
+      "gamma_grid": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0,
+        1.25,
+        1.5,
+        2.0
+      ],
+      "rep_seeds": [
+        1001,
+        1002,
+        1003
+      ],
+      "n_alt_cohorts": 2,
+      "cohort_seed": 777,
+      "require_reference": true,
+      "device": "cuda",
+      "output_dir": "/home/whu/disk1/FL_StepSize_Diagnostic_fixed_20261004/results/stepsize_diag_pilot_20261004_175620",
+      "checkpoint_path": "",
+      "strict_checks": true
+    },
+    "pilot_training_seed_dev": 201,
+    "pilot_training_seeds_held_out": [
+      202,
+      203
+    ],
+    "pilot_checkpoint_rounds": [
+      5,
+      50,
+      100
+    ],
+    "pilot_total_rounds": 100,
+    "pilot_rep_seeds": [
+      1001,
+      1002,
+      1003
+    ],
+    "pilot_n_alt_cohorts": 2,
+    "pilot_cohort_seed_offset": 777,
+    "pilot_alt_cohort_retry_cap": 64,
+    "pilot_headroom_mean_improvement_min": 0.01,
+    "pilot_headroom_phases_positive_min": 2,
+    "pilot_headroom_max_deterioration": 0.02,
+    "pilot_headroom_validation_gamma_max": 1.5,
+    "pilot_claude_max_abs_swing": 0.1,
+    "pilot_claude_n_worse_max": 1,
+    "pilot_dev_fit_procedure": "np_lstsq_with_intercept_phase_plus_variability",
+    "pilot_dev_fit_procedure_v2": "np_lstsq_with_intercept_phase_only",
+    "pilot_exploratory_cluster_by_phase": true,
+    "pilot_exploratory_phase_indicators": [
+      "phase_50",
+      "phase_100"
+    ],
+    "pilot_exploratory_feature_list": [
+      "cohort_within_client_norm_cv_mean",
+      "cohort_persistent_client_diff",
+      "cohort_aggregate_vector_norm",
+      "cohort_client_reps_count"
+    ],
+    "pilot_selection_rule_id": "argmin_gamma_mean_over_(checkpoints_x_cohorts_x_reps)_selection_loss_on_dev_seed_only",
+    "pilot_tiebreak_rule_id": "smallest_gamma_in_grid"
+  },
+  "pilot_config_fingerprint": "281ecf3f1bbb56ee6607f4df096e9825ba0250167501d8a46e7bd69f9079ef06",
+  "reference_snapshot": "/home/whu/disk1/FL_StepSize_Diagnostic_fixed_20261004/reference_code",
+  "reference_access": "bundled verbatim snapshot (COPY_MANIFEST.json); hash-validated at runtime; read-only",
+  "reference_snapshot_hashes": {
+    "reference_dir": "/home/whu/disk1/FL_StepSize_Diagnostic_fixed_20261004/reference_code",
+    "files": {
+      "reference_code/__init__.py": {
+        "status": "ok",
+        "sha256": "57b85a989d62c876056030e74cf1b75bafb3c365f2c88ba09dc3b313e16e115d",
+        "expected_sha256": "57b85a989d62c876056030e74cf1b75bafb3c365f2c88ba09dc3b313e16e115d",
+        "record": "ADAPTED_HASHES.json (added: package marker (snapshot importability))"
+      },
+      "reference_code/data/__init__.py": {
+        "status": "ok",
+        "sha256": "33779ad32746acf7d67491accf5d1b0886df641c3cbeca91ec1f145e7e80454e",
+        "expected_sha256": "33779ad32746acf7d67491accf5d1b0886df641c3cbeca91ec1f145e7e80454e",
+        "record": "ADAPTED_HASHES.json (added: package marker (source repo imported data/ via sys.path))"
+      },
+      "reference_code/data/datasets.py": {
+        "status": "ok",
+        "sha256": "9637acdcc178857b1aae5d1670208b2ffbc961e769ff5e783d932bce79fa15d7",
+        "expected_sha256": "9637acdcc178857b1aae5d1670208b2ffbc961e769ff5e783d932bce79fa15d7",
+        "record": "COPY_MANIFEST.json (verbatim copy)"
+      },
+      "reference_code/data/partition.py": {
+        "status": "ok",
+        "sha256": "cb06abaf240da7dba0a6efa62dc6bc76d950391172604453bd4f5d5ced1c901b",
+        "expected_sha256": "cb06abaf240da7dba0a6efa62dc6bc76d950391172604453bd4f5d5ced1c901b",
+        "record": "COPY_MANIFEST.json (verbatim copy)"
+      },
+      "reference_code/methods/__init__.py": {
+        "status": "ok",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "record": "COPY_MANIFEST.json (verbatim copy)"
+      },
+      "reference_code/methods/client.py": {
+        "status": "ok",
+        "sha256": "bce31365c8a4cdd31772ffe66e3f05bfe595ba144ba17065941b1adfa49784b9",
+        "expected_sha256": "bce31365c8a4cdd31772ffe66e3f05bfe595ba144ba17065941b1adfa49784b9",
+        "record": "ADAPTED_HASHES.json (adapted: import namespacing only: 'from utils.feddyn/info_metrics import' -> 'from reference_code.utils.feddyn/info_metrics import')"
+      },
+      "reference_code/models/__init__.py": {
+        "status": "ok",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "record": "COPY_MANIFEST.json (verbatim copy)"
+      },
+      "reference_code/models/aib.py": {
+        "status": "ok",
+        "sha256": "fa6624db3d77684c591949de8f664124f9ed55241d11e5ecaa1e88def3fe6788",
+        "expected_sha256": "fa6624db3d77684c591949de8f664124f9ed55241d11e5ecaa1e88def3fe6788",
+        "record": "COPY_MANIFEST.json (verbatim copy)"
+      },
+      "reference_code/models/build.py": {
+        "status": "ok",
+        "sha256": "0cdf973e1c6686e914aa90a0d14337ec0fdc06927f3c541e1a5d0c763e4fac44",
+        "expected_sha256": "0cdf973e1c6686e914aa90a0d14337ec0fdc06927f3c541e1a5d0c763e4fac44",
+        "record": "COPY_MANIFEST.json (verbatim copy)"
+      },
+      "reference_code/models/cnn.py": {
+        "status": "ok",
+        "sha256": "93629daa211af2a23800e6bcbb8b941294f6e553e307489699fca776c1e59513",
+        "expected_sha256": "93629daa211af2a23800e6bcbb8b941294f6e553e307489699fca776c1e59513",
+        "record": "COPY_MANIFEST.json (verbatim copy)"
+      },
+      "reference_code/utils/__init__.py": {
+        "status": "ok",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "expected_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "record": "COPY_MANIFEST.json (verbatim copy)"
+      },
+      "reference_code/utils/aggregation.py": {
+        "status": "ok",
+        "sha256": "b9f4cb3a354fe01952b4c65da1959b84dcf67a677cd48f957e55f0a80c7a8bb7",
+        "expected_sha256": "b9f4cb3a354fe01952b4c65da1959b84dcf67a677cd48f957e55f0a80c7a8bb7",
+        "record": "COPY_MANIFEST.json (verbatim copy)"
+      },
+      "reference_code/utils/feddyn.py": {
+        "status": "ok",
+        "sha256": "601b6d9f1ed04d22d25b311cd5b73c28cc89af1ea6a793619f5fc86aa5d8a405",
+        "expected_sha256": "601b6d9f1ed04d22d25b311cd5b73c28cc89af1ea6a793619f5fc86aa5d8a405",
+        "record": "COPY_MANIFEST.json (verbatim copy)"
+      },
+      "reference_code/utils/info_metrics.py": {
+        "status": "ok",
+        "sha256": "d5f964382d083071501cf69aeeeebbb45bc5edc5638e13492f99065ce6e22f4f",
+        "expected_sha256": "d5f964382d083071501cf69aeeeebbb45bc5edc5638e13492f99065ce6e22f4f",
+        "record": "COPY_MANIFEST.json (verbatim copy)"
+      },
+      "reference_code/utils/seed.py": {
+        "status": "ok",
+        "sha256": "6483b26a05eb93f445e2a0d6daa43a397d7d1f50c2df0d9aa2366e02f7d829c3",
+        "expected_sha256": "6483b26a05eb93f445e2a0d6daa43a397d7d1f50c2df0d9aa2366e02f7d829c3",
+        "record": "COPY_MANIFEST.json (verbatim copy)"
+      }
+    },
+    "ok": true
+  },
+  "model": {
+    "model_source": "bundled_reference_snapshot",
+    "builder": "reference_code.models.cnn.SmallCNN",
+    "builder_kwargs": {
+      "num_classes": 100,
+      "input_channels": 3,
+      "use_aib": false
+    },
+    "source_file": "/home/whu/disk1/FL_StepSize_Diagnostic_fixed_20261004/reference_code/models/cnn.py",
+    "source_sha256": "93629daa211af2a23800e6bcbb8b941294f6e553e307489699fca776c1e59513",
+    "snapshot_hash_validation": "ok",
+    "fact_validation": "ok"
+  },
+  "determinism_policy": "cudnn_deterministic_true_benchmark_false"
+}

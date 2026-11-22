@@ -1,0 +1,87 @@
+dataset:
+  input_channels: 3
+  name: PathMNIST
+  num_classes: 9
+  root: ./datasets/pathmnist
+device: cuda
+evaluation:
+  eval_every: 1
+  test_batch_size: 256
+experiment_name: fourarm_pathmnist_fedavg_aibon
+infoopt:
+  early_stop:
+    enabled: false
+  epsilon_rel: 1.0
+  fedavg_mix: 0.0
+  js_mode: constraint
+  kappa_frac: 0.6
+  lambda_entropy: 0.5
+  lambda_mi: 1.0
+  lambda_stability: 0.2
+  min_weight: 0.0
+  min_weight_fraction: 0.0
+  normalize_mi: true
+  probe_batch_size: 256
+  probe_size: 256
+  robust_scale: true
+  signal_ema_beta: 0.5
+  temperature: 1.0
+model:
+  aib_channels:
+  - 64
+  - 128
+  name: SmallCNN
+  use_aib: true
+output:
+  dir: runs
+partition:
+  alpha: 0.3
+  min_samples_per_client: 50
+  num_clients: 10
+regime_reliability_controller:
+  enabled: true
+  gate:
+    bias: 0.5
+    heterogeneity_weight: 0.25
+    interaction_weight: 0.5
+    reliability_weight: 0.25
+    temperature: 6.0
+  logging:
+    log_client_weights: true
+    log_controller_metrics: true
+  reliability:
+    beta_rank: 0.3
+    beta_separation: 0.4
+    beta_temporal: 0.3
+    separation_scale: 0.25
+  safety:
+    alpha_binary_search_steps: 20
+    enc_deviation_limit: 1.0
+    enforce_enc_after_blending: true
+    enforce_js_after_blending: true
+    js_deviation_limit: 0.05
+    numerical_tolerance: 1.0e-08
+  smoothing:
+    alpha_ema: 0.8
+  warmup_rounds: 5
+seed: 42
+training:
+  batch_size: 64
+  clients_per_round: 5
+  clip_grad_norm: 5.0
+  feddp_lambda: 0.1
+  feddyn_alpha: 0.01
+  fedopt_beta1: 0.9
+  fedopt_beta2: 0.99
+  fedopt_eps: 1e-8
+  fedopt_server_lr: 0.001
+  fedprox_mu: 0.01
+  ib_lambda_entropy: 0.1
+  ib_lambda_mi: 0.1
+  local_epochs: 2
+  lr: 0.01
+  momentum: 0.9
+  num_workers: 2
+  pin_memory: true
+  rounds: 100
+  weight_decay: 0.0005

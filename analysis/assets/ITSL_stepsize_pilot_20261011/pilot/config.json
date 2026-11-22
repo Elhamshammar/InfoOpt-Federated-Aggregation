@@ -1,0 +1,93 @@
+{
+  "smoke": {
+    "dataset": "cifar100",
+    "data_root": "/home/whu/disk1/FL_StepSize_Diagnostic_fixed_20261004/data",
+    "num_classes": 100,
+    "model_name": "smallcnn_recovered",
+    "use_aib": false,
+    "channels": [
+      64,
+      128,
+      256
+    ],
+    "num_clients": 10,
+    "num_participants": 5,
+    "dirichlet_alpha": 0.3,
+    "min_client_size": 50,
+    "partition_seed": 42,
+    "local_epochs": 2,
+    "batch_size": 64,
+    "lr": 0.01,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "grad_clip": 5.0,
+    "training_seed": 200,
+    "rounds": 5,
+    "checkpoint_round": 5,
+    "selection_frac": 0.05,
+    "eval_frac": 0.05,
+    "split_seed": 999,
+    "gamma_grid": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0,
+      1.25,
+      1.5,
+      2.0
+    ],
+    "rep_seeds": [
+      1001,
+      1002,
+      1003
+    ],
+    "n_alt_cohorts": 2,
+    "cohort_seed": 777,
+    "require_reference": true,
+    "device": "cuda",
+    "output_dir": "/home/whu/disk1/FL_StepSize_Diagnostic_fixed_20261004/results/stepsize_diag_pilot_20261004_175620",
+    "checkpoint_path": "",
+    "strict_checks": true
+  },
+  "pilot_training_seed_dev": 201,
+  "pilot_training_seeds_held_out": [
+    202,
+    203
+  ],
+  "pilot_checkpoint_rounds": [
+    5,
+    50,
+    100
+  ],
+  "pilot_total_rounds": 100,
+  "pilot_rep_seeds": [
+    1001,
+    1002,
+    1003
+  ],
+  "pilot_n_alt_cohorts": 2,
+  "pilot_cohort_seed_offset": 777,
+  "pilot_alt_cohort_retry_cap": 64,
+  "pilot_headroom_mean_improvement_min": 0.01,
+  "pilot_headroom_phases_positive_min": 2,
+  "pilot_headroom_max_deterioration": 0.02,
+  "pilot_headroom_validation_gamma_max": 1.5,
+  "pilot_claude_max_abs_swing": 0.1,
+  "pilot_claude_n_worse_max": 1,
+  "pilot_dev_fit_procedure": "np_lstsq_with_intercept_phase_plus_variability",
+  "pilot_dev_fit_procedure_v2": "np_lstsq_with_intercept_phase_only",
+  "pilot_exploratory_cluster_by_phase": true,
+  "pilot_exploratory_phase_indicators": [
+    "phase_50",
+    "phase_100"
+  ],
+  "pilot_exploratory_feature_list": [
+    "cohort_within_client_norm_cv_mean",
+    "cohort_persistent_client_diff",
+    "cohort_aggregate_vector_norm",
+    "cohort_client_reps_count"
+  ],
+  "pilot_selection_rule_id": "argmin_gamma_mean_over_(checkpoints_x_cohorts_x_reps)_selection_loss_on_dev_seed_only",
+  "pilot_tiebreak_rule_id": "smallest_gamma_in_grid"
+}

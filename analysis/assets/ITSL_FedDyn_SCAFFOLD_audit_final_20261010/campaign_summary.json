@@ -1,0 +1,50 @@
+[
+  {
+    "dataset": "cifar100",
+    "method": "scaffold",
+    "n": 5,
+    "mean_accuracy_percent": 29.099999999999998,
+    "sd_accuracy_pp": 0.8754141876848932,
+    "status": "campaign-linked descriptive audit only; no source-version certification"
+  },
+  {
+    "dataset": "eurosat",
+    "method": "scaffold",
+    "n": 5,
+    "mean_accuracy_percent": 74.84444444444445,
+    "sd_accuracy_pp": 3.6623056744656877,
+    "status": "campaign-linked descriptive audit only; no source-version certification"
+  },
+  {
+    "dataset": "pathmnist",
+    "method": "scaffold",
+    "n": 5,
+    "mean_accuracy_percent": 85.0974930362117,
+    "sd_accuracy_pp": 4.293987287897441,
+    "status": "campaign-linked descriptive audit only; no source-version certification"
+  },
+  {
+    "dataset": "cifar100",
+    "method": "feddyn",
+    "n": 5,
+    "mean_accuracy_percent": 42.278,
+    "sd_accuracy_pp": 1.269889758994851,
+    "status": "campaign-linked descriptive audit only; no source-version certification"
+  },
+  {
+    "dataset": "eurosat",
+    "method": "feddyn",
+    "n": 5,
+    "mean_accuracy_percent": 87.91851851851852,
+    "sd_accuracy_pp": 1.0268681326565599,
+    "status": "campaign-linked descriptive audit only; no source-version certification"
+  },
+  {
+    "dataset": "pathmnist",
+    "method": "feddyn",
+    "n": 5,
+    "mean_accuracy_percent": 85.58217270194986,
+    "sd_accuracy_pp": 2.229465280447467,
+    "status": "campaign-linked descriptive audit only; no source-version certification"
+  }
+]

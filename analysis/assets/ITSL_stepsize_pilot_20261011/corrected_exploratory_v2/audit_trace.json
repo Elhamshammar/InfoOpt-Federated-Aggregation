@@ -1,0 +1,53 @@
+{
+  "run_dir": "results\\stepsize_diag_pilot_20261004_175620",
+  "out_dir": "results\\stepsize_diag_pilot_20261004_175620_audit_corrected_v2",
+  "frozen_inputs_unchanged": "features, targets, splits, thresholds are the frozen ones; only the join/labeling defects are repaired",
+  "stages": [
+    {
+      "stage": "source plan",
+      "dev_candidate_cells": 27,
+      "held_candidate_cells": 54,
+      "note": "9 sources/round (3 same-cohort reps + 2 alt cohorts x 3 reps); trajectory excluded"
+    },
+    {
+      "stage": "target join, DEV (pre-repair)",
+      "cells_with_finite_target": 0,
+      "excluded": 27,
+      "exclusion_reason": "fixed_global_gamma_dev split-metric keys never existed for the dev seed (dev processed before the dev-side freeze)"
+    },
+    {
+      "stage": "target join, HELD-OUT (pre-repair)",
+      "cells_with_finite_target_under_defective_dev_seed_lookup": 0,
+      "cells_with_finite_target_under_correct_held_seed_lookup": 54,
+      "exclusion_reason": "decide_exploratory_signal looked up held-out targets under the DEV seed"
+    },
+    {
+      "stage": "post-repair labeling",
+      "dev_fixed_policy_keys_recovered_from_grid_rows": 120,
+      "dev_cells_with_finite_target_post_repair": 27,
+      "note": "recovered from aggregate_evaluation.json grid rows at the frozen gammas; NO re-evaluation"
+    },
+    {
+      "stage": "feature availability from persisted variability",
+      "dev_(seed,round)_cells": 3,
+      "held_(seed,round)_cells": 6
+    },
+    {
+      "stage": "corrected fit",
+      "predictors": [
+        {
+          "predictor_id": "phase_only",
+          "fit_status": "fit",
+          "n_dev_cells_used": 27,
+          "n_held_cells_used": 54
+        },
+        {
+          "predictor_id": "phase_plus_variability",
+          "fit_status": "fit",
+          "n_dev_cells_used": 27,
+          "n_held_cells_used": 54
+        }
+      ]
+    }
+  ]
+}

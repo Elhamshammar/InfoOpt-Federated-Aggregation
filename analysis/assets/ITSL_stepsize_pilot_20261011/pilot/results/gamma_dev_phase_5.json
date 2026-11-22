@@ -1,0 +1,47 @@
+{
+  "gamma_dev_phase": 0.75,
+  "phase_round": 5,
+  "rule_id": "argmin_gamma_mean_over_(checkpoints_x_cohorts_x_reps)_selection_loss_on_dev_seed_only",
+  "tiebreak_id": "smallest_gamma_in_grid",
+  "selection_table_summary": {
+    "rule_id": "argmin_gamma_mean_over_(checkpoints_x_cohorts_x_reps)_selection_loss_on_dev_seed_only",
+    "per_gamma_mean_loss": {
+      "0.0": 3.9362376220703124,
+      "0.25": 3.8480720187717017,
+      "0.5": 3.791096899414063,
+      "0.75": 3.7644730767144097,
+      "1.0": 3.7704452446831596,
+      "1.25": 3.813263180881077,
+      "1.5": 3.9000136610243055,
+      "2.0": NaN
+    },
+    "per_gamma_all_valid": {
+      "0.0": true,
+      "0.25": true,
+      "0.5": true,
+      "0.75": true,
+      "1.0": true,
+      "1.25": true,
+      "1.5": true,
+      "2.0": false
+    },
+    "per_gamma_n_records": {
+      "0.0": 9,
+      "0.25": 9,
+      "0.5": 9,
+      "0.75": 9,
+      "1.0": 9,
+      "1.25": 9,
+      "1.5": 9,
+      "2.0": 9
+    },
+    "tied_with_selected": [
+      0.75
+    ],
+    "selected_gamma": 0.75,
+    "selection_loss_at_selected": 3.7644730767144097,
+    "tie_broken_by": "lowest_gamma_in_grid"
+  },
+  "frozen_at": "2026-10-04 18:48:17",
+  "pilot_config_fingerprint": "281ecf3f1bbb56ee6607f4df096e9825ba0250167501d8a46e7bd69f9079ef06"
+}

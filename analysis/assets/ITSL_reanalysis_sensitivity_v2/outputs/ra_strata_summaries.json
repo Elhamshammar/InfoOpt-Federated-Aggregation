@@ -1,0 +1,176 @@
+{
+ "label": "RA-InfoOpt per-stratum summaries from VERIFIED frozen inventory records; per-seed earliest; run identities exported; no combined estimate",
+ "strata": [
+  {
+   "dataset": "cifar100",
+   "stratum": "48515f52d8c9",
+   "n_seeds": 3,
+   "per_seed": [
+    {
+     "seed": 100,
+     "run_name": "cifar100_sweep_v2_RA_InfoOpt_seed100_alpha0.3_20260717_204258",
+     "round100_acc_pct": 41.660000000000004
+    },
+    {
+     "seed": 101,
+     "run_name": "cifar100_sweep_v2_RA_InfoOpt_seed101_alpha0.3_20260717_205208",
+     "round100_acc_pct": 44.529999999999994
+    },
+    {
+     "seed": 102,
+     "run_name": "cifar100_sweep_v2_RA_InfoOpt_seed102_alpha0.3_20260717_210117",
+     "round100_acc_pct": 43.68
+    }
+   ],
+   "mean": 43.29,
+   "sd": 1.4742116537322538
+  },
+  {
+   "dataset": "cifar100",
+   "stratum": "8f68e3b5926d",
+   "n_seeds": 1,
+   "per_seed": [
+    {
+     "seed": 100,
+     "run_name": "cifar100_sweep_v2_RA_InfoOpt_seed100_alpha0.3_20260719_134510",
+     "round100_acc_pct": 42.1
+    }
+   ],
+   "mean": 42.1,
+   "sd": null
+  },
+  {
+   "dataset": "cifar100",
+   "stratum": "e9827b8cdda6",
+   "n_seeds": 2,
+   "per_seed": [
+    {
+     "seed": 103,
+     "run_name": "cifar100_sweep_v2_RA_InfoOpt_seed103_alpha0.3_20260803_190056",
+     "round100_acc_pct": 43.2
+    },
+    {
+     "seed": 104,
+     "run_name": "cifar100_sweep_v2_RA_InfoOpt_seed104_alpha0.3_20260803_190056",
+     "round100_acc_pct": 43.2
+    }
+   ],
+   "mean": 43.2,
+   "sd": 0.0
+  },
+  {
+   "dataset": "eurosat",
+   "stratum": "1b6e952f31f4",
+   "n_seeds": 3,
+   "per_seed": [
+    {
+     "seed": 100,
+     "run_name": "eurosat_sweep_RA_InfoOpt_seed100_alpha0.3_20260718_021221",
+     "round100_acc_pct": 81.03703703703704
+    },
+    {
+     "seed": 101,
+     "run_name": "eurosat_sweep_RA_InfoOpt_seed101_alpha0.3_20260718_022259",
+     "round100_acc_pct": 68.92592592592592
+    },
+    {
+     "seed": 102,
+     "run_name": "eurosat_sweep_RA_InfoOpt_seed102_alpha0.3_20260718_023341",
+     "round100_acc_pct": 84.18518518518519
+    }
+   ],
+   "mean": 78.04938271604938,
+   "sd": 8.056414031168554
+  },
+  {
+   "dataset": "eurosat",
+   "stratum": "8c6978eece2c",
+   "n_seeds": 2,
+   "per_seed": [
+    {
+     "seed": 103,
+     "run_name": "eurosat_sweep_RA_InfoOpt_seed103_alpha0.3_20260803_163604",
+     "round100_acc_pct": 83.44444444444444
+    },
+    {
+     "seed": 104,
+     "run_name": "eurosat_sweep_RA_InfoOpt_seed104_alpha0.3_20260803_165656",
+     "round100_acc_pct": 80.88888888888889
+    }
+   ],
+   "mean": 82.16666666666666,
+   "sd": 1.8070506630322893
+  },
+  {
+   "dataset": "eurosat",
+   "stratum": "978905a0078f",
+   "n_seeds": 1,
+   "per_seed": [
+    {
+     "seed": 100,
+     "run_name": "eurosat_sweep_RA_InfoOpt_seed100_alpha0.3_20260718_104548",
+     "round100_acc_pct": 81.96296296296296
+    }
+   ],
+   "mean": 81.96296296296296,
+   "sd": null
+  },
+  {
+   "dataset": "pathmnist",
+   "stratum": "058736c295a5",
+   "n_seeds": 1,
+   "per_seed": [
+    {
+     "seed": 100,
+     "run_name": "pathmnist_sweep_RA_InfoOpt_seed100_alpha0.3_20260718_103428",
+     "round100_acc_pct": 88.11977715877437
+    }
+   ],
+   "mean": 88.11977715877437,
+   "sd": null
+  },
+  {
+   "dataset": "pathmnist",
+   "stratum": "114bfb4fe7f5",
+   "n_seeds": 3,
+   "per_seed": [
+    {
+     "seed": 100,
+     "run_name": "pathmnist_sweep_RA_InfoOpt_seed100_alpha0.3_20260717_232437",
+     "round100_acc_pct": 89.025069637883
+    },
+    {
+     "seed": 101,
+     "run_name": "pathmnist_sweep_RA_InfoOpt_seed101_alpha0.3_20260717_233607",
+     "round100_acc_pct": 88.20334261838441
+    },
+    {
+     "seed": 102,
+     "run_name": "pathmnist_sweep_RA_InfoOpt_seed102_alpha0.3_20260717_234743",
+     "round100_acc_pct": 87.2284122562674
+    }
+   ],
+   "mean": 88.1522748375116,
+   "sd": 0.899416686197734
+  },
+  {
+   "dataset": "pathmnist",
+   "stratum": "b80f3a552e9e",
+   "n_seeds": 2,
+   "per_seed": [
+    {
+     "seed": 103,
+     "run_name": "pathmnist_sweep_RA_InfoOpt_seed103_alpha0.3_20260803_164631",
+     "round100_acc_pct": 85.52924791086352
+    },
+    {
+     "seed": 104,
+     "run_name": "pathmnist_sweep_RA_InfoOpt_seed104_alpha0.3_20260803_170730",
+     "round100_acc_pct": 87.53481894150418
+    }
+   ],
+   "mean": 86.53203342618386,
+   "sd": 1.4181528759173085
+  }
+ ]
+}

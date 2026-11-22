@@ -1,0 +1,291 @@
+{
+ "stage": "stage2b_corrected_ra_20261022 (server)",
+ "started": "2026-10-23 03:03:18",
+ "cells": [
+  {
+   "dataset": "cifar100",
+   "seed": 100,
+   "arm": "ra_corrected_probeoff",
+   "status": "complete",
+   "terminal_acc": 0.4284,
+   "fallback_rounds": 0,
+   "run_dir": "./datasets",
+   "problems": [],
+   "runtime_min": 7.3,
+   "evidence_hashes": {
+    "config_used.json": "a9b3c9ebf4ef01b2df2b22a3246da515a3a54a15ad3228b77d2e0329f8d3d15e",
+    "final_model.pt": "a556fb08a3c575a0c779d4816e1a8aa61b1c0a4d0ab9fecac0964fa7139a5e8b",
+    "metrics.csv": "b3c3f443f6aa96eec5447d064d22c1de23670c2f83486c38d5f3d211b4d9e683",
+    "partition_used.json": "b8fbd7d779b21e4654cddbbdf714ceabe3aa98cabdaad1a22ee99ae46b02fed8",
+    "per_class_f1_per_round.json": "7f63cac223be9e20185e85e42620b8bf493ca55e5c87be9f2ab17dc39d330fed",
+    "summary.json": "7fbb1307bab0d8f9313c6f627588060f8193b40b75f3184b1160128fb347b7e5"
+   }
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 101,
+   "arm": "ra_corrected_probeoff",
+   "status": "complete",
+   "terminal_acc": 0.4356,
+   "fallback_rounds": 0,
+   "run_dir": "./datasets",
+   "problems": [],
+   "runtime_min": 7.3,
+   "evidence_hashes": {
+    "config_used.json": "df4ea191fae4e84ac3bf6913d8c93a981c67644f5af28c3c4c3b8bc1ae477653",
+    "final_model.pt": "1c2229c6a4be2276838e172ad43c6c8d10f03de47281558b19404609cb16b750",
+    "metrics.csv": "f82109645720b27f224ef87b699e3eb46cedd6688119a3cb28170c81acdb971b",
+    "partition_used.json": "588c54039273b4b1dff486a57d6c27e376573434ac08b41784bd65d82050bf67",
+    "per_class_f1_per_round.json": "ac62ee618b832148dbed0e5031b0f3daa16c72cbebf081dc5d66e3cf500ea0fd",
+    "summary.json": "57146645257056af01140e270dcd97e6b3011ee77d49a116be223db229150186"
+   }
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 102,
+   "arm": "ra_corrected_probeoff",
+   "status": "complete",
+   "terminal_acc": 0.438,
+   "fallback_rounds": 0,
+   "run_dir": "./datasets",
+   "problems": [],
+   "runtime_min": 7.3,
+   "evidence_hashes": {
+    "config_used.json": "9eb26dc41eb7c73cb820d2fd77864ef3f898c7afdafb1c8b84c208d1231c4e03",
+    "final_model.pt": "d2cfa2575756d2b7ef7a3b83298ca49292a8924926636c75e09ccd9e83d32a1e",
+    "metrics.csv": "351d7f128a9079f439226f7496c443008c17e86cc10edf84f734a402fe9a0c96",
+    "partition_used.json": "caab8bcd8d1a545ddf65c670d344008d63a5ff36187077badee482775b5f081a",
+    "per_class_f1_per_round.json": "40fb104bf1017d0655561e6c9aed7fa11c02ca261fd6a6907f9dff31634bfbec",
+    "summary.json": "74d98507348767621a88ff554f3f3384d85294122b863db3155a9e700acad987"
+   }
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 103,
+   "arm": "ra_corrected_probeoff",
+   "status": "complete",
+   "terminal_acc": 0.4404,
+   "fallback_rounds": 0,
+   "run_dir": "./datasets",
+   "problems": [],
+   "runtime_min": 7.4,
+   "evidence_hashes": {
+    "config_used.json": "0ffeb0db3403f34bc9520648e5d4fe27f7d86249c014166890b6f0edc1e3dcce",
+    "final_model.pt": "1058d608176b51854c93c5ea2a3e6f1de6927d9fcb4dc522f40a91d4c60da8a5",
+    "metrics.csv": "ab41b91bd7ae9dc3a1a58f32216fc5d3725975ca8c482185bc445931a335de18",
+    "partition_used.json": "1643fcd2dfea49e9dea09fe027df0714c372d32c3f81ac1860ef38affd1b16c0",
+    "per_class_f1_per_round.json": "6e176a6782e9ad3cc9267d22439d2d2600247b56e0b63d466c4cc4b8c8b79aac",
+    "summary.json": "d3860b5e501635288258964f3f1b0419ebdc5b970f9f0e2dfe93f639ece986a2"
+   }
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 104,
+   "arm": "ra_corrected_probeoff",
+   "status": "complete",
+   "terminal_acc": 0.4473,
+   "fallback_rounds": 0,
+   "run_dir": "./datasets",
+   "problems": [],
+   "runtime_min": 7.5,
+   "evidence_hashes": {
+    "config_used.json": "6395b260ac1beb3cd24616f0a55b52037ff4c3879fa5f13f9c33d0c50031aff0",
+    "final_model.pt": "b050cfb41e54e27f86e52b6d82eb7184b06d0bab9b4c8bea2280058ac1e62687",
+    "metrics.csv": "aa70dfc98b3febdb950e58dbaaef78095a6549b144d28fcc41c2389a6f2aebe9",
+    "partition_used.json": "6921c8279a9df9878e7a970e4643b7bf5e4b7a0a66f0bc2f98f7ada7cbf380c8",
+    "per_class_f1_per_round.json": "2de60d1b7f3a4410ae4637da8028b9806b201f41652bb928973b013909b20009",
+    "summary.json": "b840033775911c95cb7501f91c93aac0ee79a8a9d3003247c930e8e68635f4d0"
+   }
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 100,
+   "arm": "ra_corrected_probeoff",
+   "status": "complete",
+   "terminal_acc": 0.812962962962963,
+   "fallback_rounds": 0,
+   "run_dir": "./datasets",
+   "problems": [],
+   "runtime_min": 17.5,
+   "evidence_hashes": {
+    "config_used.json": "078f71a2d608ccdbbdfbab856ddfe33ebe58d971d3bcba0d6d1f8b41070fcb05",
+    "final_model.pt": "e7eaf21c3245805b0f7ac679f79baef848695f309d248ecf5501fd2a7fad2a7c",
+    "metrics.csv": "099026eb87520784807a6e3493187128d6b36f409317a0a88fe1967b5655d0e3",
+    "partition_used.json": "c87e7669d9ef30e4cccbdd72094c1761cbd1ea814ee2db8064cf3d4c1f49237d",
+    "per_class_f1_per_round.json": "fe077e0ebaa0eecdf79ed223d71f4705757c58f4707aed011269a247eeb83d0c",
+    "summary.json": "b0ab60282f9b5b8ac6039e4decf346f4442b0fa5256cb338b47b1c7bd44bdac8"
+   }
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 101,
+   "arm": "ra_corrected_probeoff",
+   "status": "complete",
+   "terminal_acc": 0.7114814814814815,
+   "fallback_rounds": 0,
+   "run_dir": "./datasets",
+   "problems": [],
+   "runtime_min": 12.2,
+   "evidence_hashes": {
+    "config_used.json": "6fe1d6e461c41d9ccdbd674018f7e2aff704c7f2e405ac31b66a5144e925e053",
+    "final_model.pt": "7f8449ad5040bd9e4ce22354b4c5fb06332d0c47a63dad5b0d85728b83a322a1",
+    "metrics.csv": "8c320a57868fa75c756564826d7edae92df3031a3e48e1eb84519ec6d3dd8277",
+    "partition_used.json": "50b7d4cfe919034246a8056096c954cfaa6cd18ed18d1156b6b85a45bbedb53f",
+    "per_class_f1_per_round.json": "00f4c3c29191749e322a0b2ad25a5266d5928db0bc39507b70a272735b9ede59",
+    "summary.json": "de8b35b10a23e2513176821c9c3cf364c4cd2b341a1bc61d7465ad29a09f8f5e"
+   }
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 102,
+   "arm": "ra_corrected_probeoff",
+   "status": "complete",
+   "terminal_acc": 0.8348148148148148,
+   "fallback_rounds": 0,
+   "run_dir": "./datasets",
+   "problems": [],
+   "runtime_min": 11.9,
+   "evidence_hashes": {
+    "config_used.json": "dd3fd31958199c002afee727b73cb2b0a6cbe8be060762bb6accc6b1742ae4f4",
+    "final_model.pt": "443474d16c309c66d2ff5fd2b726cd6bd943cd4772ebf2e017592883881533ea",
+    "metrics.csv": "2989d2b43e3eb74d2b7bc9e24641d94cf8607111d0ecd1ac3504e1f3041ea8ee",
+    "partition_used.json": "dc9b17d303d3d5af73479082f385aac3cba5f1ea4bb05941677d0dc86417ce69",
+    "per_class_f1_per_round.json": "3fbb5c315f75975c5c86bba71412d465a6ce27b46358516ee674400ff078f73b",
+    "summary.json": "eee8755fe939cd6dd212ee189c337662d010502a96d40ca176dd8db98536c6e6"
+   }
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 103,
+   "arm": "ra_corrected_probeoff",
+   "status": "complete",
+   "terminal_acc": 0.7677777777777778,
+   "fallback_rounds": 0,
+   "run_dir": "./datasets",
+   "problems": [],
+   "runtime_min": 12.0,
+   "evidence_hashes": {
+    "config_used.json": "e4f11d5361adf963e1928b5b23e92bc439108b01c0f121f4b4ea9dbf21d7db53",
+    "final_model.pt": "d5b55c845da4a0460f43f7d6731c20011cfd66a30461ee8bf630098e56415f90",
+    "metrics.csv": "bc95ec4bbef6e2d0773a5fbe82251709b5043008f170d6cc2775c1813067968d",
+    "partition_used.json": "5dede6f4b0540b995e60776884d397577e760ae9eda6b5c930157f896b1518aa",
+    "per_class_f1_per_round.json": "a91257e63cdbfc3029062c3bcfb41cf74ca7636d8f446c14652a9a49205874a3",
+    "summary.json": "63fba1ad091ed863118002dae0d1ee6464e97b1e5560544cfc2f20b0a8247f3d"
+   }
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 104,
+   "arm": "ra_corrected_probeoff",
+   "status": "complete",
+   "terminal_acc": 0.7555555555555555,
+   "fallback_rounds": 0,
+   "run_dir": "./datasets",
+   "problems": [],
+   "runtime_min": 12.2,
+   "evidence_hashes": {
+    "config_used.json": "4c84e29e2861a53165bbbab724df854702693d976da69d29a0409be74cc5bacc",
+    "final_model.pt": "7db6440950e42d5ade0c4d03a7c19a82fcad3b553e7048df34a48e2f018e17c5",
+    "metrics.csv": "3ed30b54c0b33cc14a10e8da7bb131c5f52358c0f36ef161e7c008e21092c32b",
+    "partition_used.json": "a4e4d4cf65643b78d9716065caa167b55d478f6e4ef532de3ea2767908b05e62",
+    "per_class_f1_per_round.json": "d53c6683299cdc278824ef4e7680e2e70b51089090327a8a2437e63aa9768e88",
+    "summary.json": "02de5a75244f69d9e4b170ad5c5e020f81f31bed08ab6e602d87b2d33a03f276"
+   }
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 100,
+   "arm": "ra_corrected_probeoff",
+   "status": "complete",
+   "terminal_acc": 0.8552924791086352,
+   "fallback_rounds": 0,
+   "run_dir": "./datasets",
+   "problems": [],
+   "runtime_min": 7.4,
+   "evidence_hashes": {
+    "config_used.json": "692e0bd2b80ec2fda668d7e02a39383d35635278f1c527bbfcadcf558285de79",
+    "final_model.pt": "f836f59cae15eb128cf52b9ac27ab035922f6568dd3df5196411b35c74194e08",
+    "metrics.csv": "58fb11fe0b9d0eb89546d3c4ce14b42d251edd840c0589f7b394ac7ce33b692e",
+    "partition_used.json": "74f4fa7ba44c813d183c5f33842b6a1d8f1ef71778dc4e011eb64cc01855e14e",
+    "per_class_f1_per_round.json": "9fa93ff3388a827d036535c694273dff01571af66e3df3c0460ed961b6ee0dbe",
+    "summary.json": "8af9a192f606b032edbe82d4d6f62983145bfda5cdd4b43d71a9f497d0d0a3d1"
+   }
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 101,
+   "arm": "ra_corrected_probeoff",
+   "status": "complete",
+   "terminal_acc": 0.8856545961002785,
+   "fallback_rounds": 0,
+   "run_dir": "./datasets",
+   "problems": [],
+   "runtime_min": 7.5,
+   "evidence_hashes": {
+    "config_used.json": "8bd8a65a453b1afb3cfebd8c8b61fdfb493283e81c01b65e646f9edc98a09b1d",
+    "final_model.pt": "ea51ba6b5a70e611d4a734765f7dd61a7da98970aaf4f9c7eb426cc7d12c1acc",
+    "metrics.csv": "c636ad3e1cd454f6d2f6803a12ce7f44377938ff85a46ebf3ac3ff1b83e9aa2e",
+    "partition_used.json": "e904a1982ff52856e7c75a0d21da2a30d6c815acf43740fccf733235269892c3",
+    "per_class_f1_per_round.json": "c04664f64c65fa2093e3cec4a28d569de249328a98e1a4f19436a5f3f07ccbdc",
+    "summary.json": "c65c79b270bf7be7303793ce85d9ba1aad8854952dacedfa3ec9044f1056460a"
+   }
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 102,
+   "arm": "ra_corrected_probeoff",
+   "status": "complete",
+   "terminal_acc": 0.8881615598885794,
+   "fallback_rounds": 0,
+   "run_dir": "./datasets",
+   "problems": [],
+   "runtime_min": 7.5,
+   "evidence_hashes": {
+    "config_used.json": "4b518ec78a22fc4ac2a94b6848e23e9f2953621199533295276b91fd6ba3b153",
+    "final_model.pt": "5844afd7c90023fc85eee5772e86b9c2db54cc597ad61e23f6313afe20d24570",
+    "metrics.csv": "655fb8e1e06218d230e4a0b851a5dda5c0c66d6c53834de5ef01476fa18617e5",
+    "partition_used.json": "fd2f2c89abb2f9c9a476149eab8577e831282d4e3103199f448d8d303c07fd17",
+    "per_class_f1_per_round.json": "1058ffee0b07471bcd53c443d8ada2aba1f15e0de10f10e00bbdcd57542fc4ff",
+    "summary.json": "9ac8a427369690a9cdd7769631b6e05b256bf288a0210325a0a003dde783a011"
+   }
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 103,
+   "arm": "ra_corrected_probeoff",
+   "status": "complete",
+   "terminal_acc": 0.7994428969359332,
+   "fallback_rounds": 0,
+   "run_dir": "./datasets",
+   "problems": [],
+   "runtime_min": 7.5,
+   "evidence_hashes": {
+    "config_used.json": "edfdf8a9c0432589ecde6d453b323b30c5068d059f37665173b11b02b6ac76c2",
+    "final_model.pt": "95ddb1b13654ed570ff4a5f00a150ca2ef361e17504db0511403339f194f1fc0",
+    "metrics.csv": "34f25c36d7ff6eedabf776fc3b2d68c4bc2573129141b649a39e9e0b9cb7b3f9",
+    "partition_used.json": "b6a80f546f7cd36a146119504c28a2b74f8e5b509ab565d77bf769d92ebf8070",
+    "per_class_f1_per_round.json": "63b609bce5fea1b5877484ae2afad7470241b241856d43dcb786673cd04368bc",
+    "summary.json": "6075f339b29a8d821a9f2ea14642d6f492366bab865a66758bfe36ea70b8d4ca"
+   }
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 104,
+   "arm": "ra_corrected_probeoff",
+   "status": "complete",
+   "terminal_acc": 0.7979108635097493,
+   "fallback_rounds": 0,
+   "run_dir": "./datasets",
+   "problems": [],
+   "runtime_min": 7.8,
+   "evidence_hashes": {
+    "config_used.json": "0564692ed7875889d645c0b197f9835434ba6902a6376bc440471d14f02cad9e",
+    "final_model.pt": "6a0d28f15260895754ddb9b8781f94a389e9aaf3e4da043bae8ba66d7029e600",
+    "metrics.csv": "9b81fa38664e60f62b73c8fc49e2b6d03be170f81d07dff9a5389b091d411c1b",
+    "partition_used.json": "58483c117a962b32cee99ca481a3f588f6da0927af2d0b75f64bfb2ab1d2d0e6",
+    "per_class_f1_per_round.json": "49bd3b20ae793e6bca6d176ae6c28bb7b75b0c0c36154bf751c67b7ac6b1b77c",
+    "summary.json": "0531ca51a440ed6c4f44835a4798227eaf831694ec52eed654b6445faee0ff72"
+   }
+  }
+ ]
+}

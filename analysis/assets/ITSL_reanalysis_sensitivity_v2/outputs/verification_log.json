@@ -1,0 +1,383 @@
+{
+ "verified_sources": 54,
+ "log": [
+  {
+   "role": "latest_repeat_sensitivity",
+   "cell": "latest_repeat_sensitivity:eurosat|InfoOpt_Full|100",
+   "run_name": "eurosat_sweep_InfoOpt_Full_seed100_alpha0.3_20260717_090826",
+   "verified": true,
+   "identical_copies": 2
+  },
+  {
+   "role": "latest_repeat_sensitivity",
+   "cell": "latest_repeat_sensitivity:eurosat|InfoOpt_Full|101",
+   "run_name": "eurosat_sweep_InfoOpt_Full_seed101_alpha0.3_20260717_091952",
+   "verified": true,
+   "identical_copies": 2
+  },
+  {
+   "role": "latest_repeat_sensitivity",
+   "cell": "latest_repeat_sensitivity:eurosat|InfoOpt_Full|102",
+   "run_name": "eurosat_sweep_InfoOpt_Full_seed102_alpha0.3_20260717_093120",
+   "verified": true,
+   "identical_copies": 2
+  },
+  {
+   "role": "latest_repeat_sensitivity",
+   "cell": "latest_repeat_sensitivity:eurosat|InfoOpt_Full|103",
+   "run_name": "eurosat_sweep_InfoOpt_Full_seed103_alpha0.3_20260717_122712",
+   "verified": true,
+   "identical_copies": 2
+  },
+  {
+   "role": "latest_repeat_sensitivity",
+   "cell": "latest_repeat_sensitivity:eurosat|InfoOpt_Full|104",
+   "run_name": "eurosat_sweep_InfoOpt_Full_seed104_alpha0.3_20260717_133520",
+   "verified": true,
+   "identical_copies": 2
+  },
+  {
+   "role": "latest_repeat_sensitivity",
+   "cell": "latest_repeat_sensitivity:eurosat|feddyn|100",
+   "run_name": "eurosat_sweep_feddyn_seed100_alpha0.3_20260813_030759",
+   "verified": true,
+   "identical_copies": 1
+  },
+  {
+   "role": "latest_repeat_sensitivity",
+   "cell": "latest_repeat_sensitivity:eurosat|feddyn|101",
+   "run_name": "eurosat_sweep_feddyn_seed101_alpha0.3_20260813_031946",
+   "verified": true,
+   "identical_copies": 1
+  },
+  {
+   "role": "latest_repeat_sensitivity",
+   "cell": "latest_repeat_sensitivity:eurosat|feddyn|102",
+   "run_name": "eurosat_sweep_feddyn_seed102_alpha0.3_20260813_033124",
+   "verified": true,
+   "identical_copies": 1
+  },
+  {
+   "role": "latest_repeat_sensitivity",
+   "cell": "latest_repeat_sensitivity:eurosat|feddyn|103",
+   "run_name": "eurosat_sweep_feddyn_seed103_alpha0.3_20260813_034244",
+   "verified": true,
+   "identical_copies": 1
+  },
+  {
+   "role": "latest_repeat_sensitivity",
+   "cell": "latest_repeat_sensitivity:eurosat|feddyn|104",
+   "run_name": "eurosat_sweep_feddyn_seed104_alpha0.3_20260813_035400",
+   "verified": true,
+   "identical_copies": 1
+  },
+  {
+   "role": "latest_repeat_sensitivity",
+   "cell": "latest_repeat_sensitivity:eurosat|scaffold|100",
+   "run_name": "eurosat_sweep_scaffold_seed100_alpha0.3_20260813_031544",
+   "verified": true,
+   "identical_copies": 1
+  },
+  {
+   "role": "latest_repeat_sensitivity",
+   "cell": "latest_repeat_sensitivity:eurosat|scaffold|101",
+   "run_name": "eurosat_sweep_scaffold_seed101_alpha0.3_20260813_032717",
+   "verified": true,
+   "identical_copies": 1
+  },
+  {
+   "role": "latest_repeat_sensitivity",
+   "cell": "latest_repeat_sensitivity:eurosat|scaffold|102",
+   "run_name": "eurosat_sweep_scaffold_seed102_alpha0.3_20260813_033906",
+   "verified": true,
+   "identical_copies": 1
+  },
+  {
+   "role": "latest_repeat_sensitivity",
+   "cell": "latest_repeat_sensitivity:eurosat|scaffold|103",
+   "run_name": "eurosat_sweep_scaffold_seed103_alpha0.3_20260813_035025",
+   "verified": true,
+   "identical_copies": 1
+  },
+  {
+   "role": "latest_repeat_sensitivity",
+   "cell": "latest_repeat_sensitivity:eurosat|scaffold|104",
+   "run_name": "eurosat_sweep_scaffold_seed104_alpha0.3_20260813_040148",
+   "verified": true,
+   "identical_copies": 1
+  },
+  {
+   "role": "latest_repeat_sensitivity",
+   "cell": "latest_repeat_sensitivity:pathmnist|InfoOpt_Full|100",
+   "run_name": "pathmnist_sweep_InfoOpt_Full_seed100_alpha0.3_20260717_083443",
+   "verified": true,
+   "identical_copies": 2
+  },
+  {
+   "role": "latest_repeat_sensitivity",
+   "cell": "latest_repeat_sensitivity:pathmnist|InfoOpt_Full|101",
+   "run_name": "pathmnist_sweep_InfoOpt_Full_seed101_alpha0.3_20260717_084557",
+   "verified": true,
+   "identical_copies": 2
+  },
+  {
+   "role": "latest_repeat_sensitivity",
+   "cell": "latest_repeat_sensitivity:pathmnist|InfoOpt_Full|102",
+   "run_name": "pathmnist_sweep_InfoOpt_Full_seed102_alpha0.3_20260717_085702",
+   "verified": true,
+   "identical_copies": 2
+  },
+  {
+   "role": "latest_repeat_sensitivity",
+   "cell": "latest_repeat_sensitivity:pathmnist|InfoOpt_Full|103",
+   "run_name": "pathmnist_sweep_InfoOpt_Full_seed103_alpha0.3_20260717_115314",
+   "verified": true,
+   "identical_copies": 2
+  },
+  {
+   "role": "latest_repeat_sensitivity",
+   "cell": "latest_repeat_sensitivity:pathmnist|InfoOpt_Full|104",
+   "run_name": "pathmnist_sweep_InfoOpt_Full_seed104_alpha0.3_20260717_130047",
+   "verified": true,
+   "identical_copies": 2
+  },
+  {
+   "role": "latest_repeat_sensitivity",
+   "cell": "latest_repeat_sensitivity:pathmnist|feddyn|100",
+   "run_name": "pathmnist_sweep_feddyn_seed100_alpha0.3_20260813_005200",
+   "verified": true,
+   "identical_copies": 1
+  },
+  {
+   "role": "latest_repeat_sensitivity",
+   "cell": "latest_repeat_sensitivity:pathmnist|feddyn|101",
+   "run_name": "pathmnist_sweep_feddyn_seed101_alpha0.3_20260813_014335",
+   "verified": true,
+   "identical_copies": 1
+  },
+  {
+   "role": "latest_repeat_sensitivity",
+   "cell": "latest_repeat_sensitivity:pathmnist|feddyn|102",
+   "run_name": "pathmnist_sweep_feddyn_seed102_alpha0.3_20260813_023501",
+   "verified": true,
+   "identical_copies": 1
+  },
+  {
+   "role": "latest_repeat_sensitivity",
+   "cell": "latest_repeat_sensitivity:pathmnist|feddyn|103",
+   "run_name": "pathmnist_sweep_feddyn_seed103_alpha0.3_20260813_024635",
+   "verified": true,
+   "identical_copies": 1
+  },
+  {
+   "role": "latest_repeat_sensitivity",
+   "cell": "latest_repeat_sensitivity:pathmnist|feddyn|104",
+   "run_name": "pathmnist_sweep_feddyn_seed104_alpha0.3_20260813_025706",
+   "verified": true,
+   "identical_copies": 1
+  },
+  {
+   "role": "latest_repeat_sensitivity",
+   "cell": "latest_repeat_sensitivity:pathmnist|scaffold|100",
+   "run_name": "pathmnist_sweep_scaffold_seed100_alpha0.3_20260813_023249",
+   "verified": true,
+   "identical_copies": 1
+  },
+  {
+   "role": "latest_repeat_sensitivity",
+   "cell": "latest_repeat_sensitivity:pathmnist|scaffold|101",
+   "run_name": "pathmnist_sweep_scaffold_seed101_alpha0.3_20260813_024108",
+   "verified": true,
+   "identical_copies": 1
+  },
+  {
+   "role": "latest_repeat_sensitivity",
+   "cell": "latest_repeat_sensitivity:pathmnist|scaffold|102",
+   "run_name": "pathmnist_sweep_scaffold_seed102_alpha0.3_20260813_024936",
+   "verified": true,
+   "identical_copies": 1
+  },
+  {
+   "role": "latest_repeat_sensitivity",
+   "cell": "latest_repeat_sensitivity:pathmnist|scaffold|103",
+   "run_name": "pathmnist_sweep_scaffold_seed103_alpha0.3_20260813_025809",
+   "verified": true,
+   "identical_copies": 1
+  },
+  {
+   "role": "latest_repeat_sensitivity",
+   "cell": "latest_repeat_sensitivity:pathmnist|scaffold|104",
+   "run_name": "pathmnist_sweep_scaffold_seed104_alpha0.3_20260813_030647",
+   "verified": true,
+   "identical_copies": 1
+  },
+  {
+   "role": "cifar_fedopt_sensitivity_only",
+   "cell": "cifar_fedopt_sensitivity_only:cifar100|fedopt|100",
+   "run_name": "cifar100_sweep_v2_fedopt_slr0.01_seed100_alpha0.3_20260813_041224",
+   "verified": true,
+   "identical_copies": 1
+  },
+  {
+   "role": "cifar_fedopt_sensitivity_only",
+   "cell": "cifar_fedopt_sensitivity_only:cifar100|fedopt|101",
+   "run_name": "cifar100_sweep_v2_fedopt_slr0.01_seed101_alpha0.3_20260813_041854",
+   "verified": true,
+   "identical_copies": 1
+  },
+  {
+   "role": "cifar_fedopt_sensitivity_only",
+   "cell": "cifar_fedopt_sensitivity_only:cifar100|fedopt|102",
+   "run_name": "cifar100_sweep_v2_fedopt_slr0.01_seed102_alpha0.3_20260813_042529",
+   "verified": true,
+   "identical_copies": 1
+  },
+  {
+   "role": "cifar_fedopt_sensitivity_only",
+   "cell": "cifar_fedopt_sensitivity_only:cifar100|fedopt|103",
+   "run_name": "cifar100_sweep_v2_fedopt_slr0.01_seed103_alpha0.3_20260813_043226",
+   "verified": true,
+   "identical_copies": 1
+  },
+  {
+   "role": "cifar_fedopt_sensitivity_only",
+   "cell": "cifar_fedopt_sensitivity_only:cifar100|fedopt|104",
+   "run_name": "cifar100_sweep_v2_fedopt_slr0.01_seed104_alpha0.3_20260813_043856",
+   "verified": true,
+   "identical_copies": 1
+  },
+  {
+   "role": "ra_stratum_member",
+   "cell": "ra_stratum_member:cifar100|RA_InfoOpt|100",
+   "run_name": "cifar100_sweep_v2_RA_InfoOpt_seed100_alpha0.3_20260717_204258",
+   "verified": true,
+   "identical_copies": 2
+  },
+  {
+   "role": "ra_stratum_member",
+   "cell": "ra_stratum_member:cifar100|RA_InfoOpt|100",
+   "run_name": "cifar100_sweep_v2_RA_InfoOpt_seed100_alpha0.3_20260719_134510",
+   "verified": true,
+   "identical_copies": 2
+  },
+  {
+   "role": "ra_stratum_member",
+   "cell": "ra_stratum_member:cifar100|RA_InfoOpt|101",
+   "run_name": "cifar100_sweep_v2_RA_InfoOpt_seed101_alpha0.3_20260717_205208",
+   "verified": true,
+   "identical_copies": 2
+  },
+  {
+   "role": "ra_stratum_member",
+   "cell": "ra_stratum_member:cifar100|RA_InfoOpt|102",
+   "run_name": "cifar100_sweep_v2_RA_InfoOpt_seed102_alpha0.3_20260717_210117",
+   "verified": true,
+   "identical_copies": 2
+  },
+  {
+   "role": "ra_stratum_member",
+   "cell": "ra_stratum_member:cifar100|RA_InfoOpt|103",
+   "run_name": "cifar100_sweep_v2_RA_InfoOpt_seed103_alpha0.3_20260803_190056",
+   "verified": true,
+   "identical_copies": 2
+  },
+  {
+   "role": "ra_stratum_member",
+   "cell": "ra_stratum_member:cifar100|RA_InfoOpt|104",
+   "run_name": "cifar100_sweep_v2_RA_InfoOpt_seed104_alpha0.3_20260803_190056",
+   "verified": true,
+   "identical_copies": 2
+  },
+  {
+   "role": "ra_stratum_member",
+   "cell": "ra_stratum_member:eurosat|RA_InfoOpt|100",
+   "run_name": "eurosat_sweep_RA_InfoOpt_seed100_alpha0.3_20260718_021221",
+   "verified": true,
+   "identical_copies": 2
+  },
+  {
+   "role": "ra_stratum_member",
+   "cell": "ra_stratum_member:eurosat|RA_InfoOpt|100",
+   "run_name": "eurosat_sweep_RA_InfoOpt_seed100_alpha0.3_20260718_104548",
+   "verified": true,
+   "identical_copies": 2
+  },
+  {
+   "role": "ra_stratum_member",
+   "cell": "ra_stratum_member:eurosat|RA_InfoOpt|100",
+   "run_name": "eurosat_sweep_RA_InfoOpt_seed100_alpha0.3_20260719_140059",
+   "verified": true,
+   "identical_copies": 2
+  },
+  {
+   "role": "ra_stratum_member",
+   "cell": "ra_stratum_member:eurosat|RA_InfoOpt|101",
+   "run_name": "eurosat_sweep_RA_InfoOpt_seed101_alpha0.3_20260718_022259",
+   "verified": true,
+   "identical_copies": 2
+  },
+  {
+   "role": "ra_stratum_member",
+   "cell": "ra_stratum_member:eurosat|RA_InfoOpt|102",
+   "run_name": "eurosat_sweep_RA_InfoOpt_seed102_alpha0.3_20260718_023341",
+   "verified": true,
+   "identical_copies": 2
+  },
+  {
+   "role": "ra_stratum_member",
+   "cell": "ra_stratum_member:eurosat|RA_InfoOpt|103",
+   "run_name": "eurosat_sweep_RA_InfoOpt_seed103_alpha0.3_20260803_163604",
+   "verified": true,
+   "identical_copies": 2
+  },
+  {
+   "role": "ra_stratum_member",
+   "cell": "ra_stratum_member:eurosat|RA_InfoOpt|104",
+   "run_name": "eurosat_sweep_RA_InfoOpt_seed104_alpha0.3_20260803_165656",
+   "verified": true,
+   "identical_copies": 2
+  },
+  {
+   "role": "ra_stratum_member",
+   "cell": "ra_stratum_member:pathmnist|RA_InfoOpt|100",
+   "run_name": "pathmnist_sweep_RA_InfoOpt_seed100_alpha0.3_20260717_232437",
+   "verified": true,
+   "identical_copies": 2
+  },
+  {
+   "role": "ra_stratum_member",
+   "cell": "ra_stratum_member:pathmnist|RA_InfoOpt|100",
+   "run_name": "pathmnist_sweep_RA_InfoOpt_seed100_alpha0.3_20260718_103428",
+   "verified": true,
+   "identical_copies": 2
+  },
+  {
+   "role": "ra_stratum_member",
+   "cell": "ra_stratum_member:pathmnist|RA_InfoOpt|101",
+   "run_name": "pathmnist_sweep_RA_InfoOpt_seed101_alpha0.3_20260717_233607",
+   "verified": true,
+   "identical_copies": 2
+  },
+  {
+   "role": "ra_stratum_member",
+   "cell": "ra_stratum_member:pathmnist|RA_InfoOpt|102",
+   "run_name": "pathmnist_sweep_RA_InfoOpt_seed102_alpha0.3_20260717_234743",
+   "verified": true,
+   "identical_copies": 2
+  },
+  {
+   "role": "ra_stratum_member",
+   "cell": "ra_stratum_member:pathmnist|RA_InfoOpt|103",
+   "run_name": "pathmnist_sweep_RA_InfoOpt_seed103_alpha0.3_20260803_164631",
+   "verified": true,
+   "identical_copies": 2
+  },
+  {
+   "role": "ra_stratum_member",
+   "cell": "ra_stratum_member:pathmnist|RA_InfoOpt|104",
+   "run_name": "pathmnist_sweep_RA_InfoOpt_seed104_alpha0.3_20260803_170730",
+   "verified": true,
+   "identical_copies": 2
+  }
+ ]
+}

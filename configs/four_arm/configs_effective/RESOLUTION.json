@@ -1,0 +1,74 @@
+[
+ {
+  "config": "fourarm_cifar100_fedavg_aiboff.yaml",
+  "dataset": "CIFAR100",
+  "root": "./datasets",
+  "sha256": "d2a19cc59c5cb997b00f621207b486d5b865a59e1e814c5ceeb014d18881c29d"
+ },
+ {
+  "config": "fourarm_cifar100_fedavg_aibon.yaml",
+  "dataset": "CIFAR100",
+  "root": "./datasets",
+  "sha256": "886fba21de7773abdc7e344889fc6853a1676b2213b3a09d61c22aad45cae423"
+ },
+ {
+  "config": "fourarm_cifar100_infoopt_aiboff.yaml",
+  "dataset": "CIFAR100",
+  "root": "./datasets",
+  "sha256": "d130c178ca74f82241409417e00b0e24e449ef6b1604ca41e6d44480ce679a87"
+ },
+ {
+  "config": "fourarm_cifar100_infoopt_aibon.yaml",
+  "dataset": "CIFAR100",
+  "root": "./datasets",
+  "sha256": "0304895168b45456b5706b6c1ab5339b8f0103ee0d70cf8f4436fe1adb89c712"
+ },
+ {
+  "config": "fourarm_eurosat_fedavg_aiboff.yaml",
+  "dataset": "EuroSAT",
+  "root": "./datasets",
+  "sha256": "9c5da852c2168ef471133cc8415a345bbf9109290d1a78493df3acabb75185f0"
+ },
+ {
+  "config": "fourarm_eurosat_fedavg_aibon.yaml",
+  "dataset": "EuroSAT",
+  "root": "./datasets",
+  "sha256": "575c4ba95adf40ae19cd6c75f310b8671ef3edf38143841fa3c9ef29a88e66c9"
+ },
+ {
+  "config": "fourarm_eurosat_infoopt_aiboff.yaml",
+  "dataset": "EuroSAT",
+  "root": "./datasets",
+  "sha256": "3f9f784e4d60ece7fe8b215864124faf7eee5128636d41d8364e73ce3c98eeb6"
+ },
+ {
+  "config": "fourarm_eurosat_infoopt_aibon.yaml",
+  "dataset": "EuroSAT",
+  "root": "./datasets",
+  "sha256": "f42426bb490f06ca51d24691892cea438514366acf63ba8382e43d80bfab7014"
+ },
+ {
+  "config": "fourarm_pathmnist_fedavg_aiboff.yaml",
+  "dataset": "PathMNIST",
+  "root": "./datasets",
+  "sha256": "dbcbd2246ccb19925aef9235241689568b27ce4edd734231bae43a632255309c"
+ },
+ {
+  "config": "fourarm_pathmnist_fedavg_aibon.yaml",
+  "dataset": "PathMNIST",
+  "root": "./datasets",
+  "sha256": "5a82d3f49e83a5090a04aac10546edf29c1825bfbf7f5dd12db771d615c36ade"
+ },
+ {
+  "config": "fourarm_pathmnist_infoopt_aiboff.yaml",
+  "dataset": "PathMNIST",
+  "root": "./datasets",
+  "sha256": "b52085ebbf8e581ff9c3a3c8d311eed3ae3abf98f99f9e61a9d71503d0ec0c0b"
+ },
+ {
+  "config": "fourarm_pathmnist_infoopt_aibon.yaml",
+  "dataset": "PathMNIST",
+  "root": "./datasets",
+  "sha256": "1dfae9ceae4785dd5c8e8574dd9dcd7126cceb4d3d8c47e1b6730aaa4e3f823e"
+ }
+]

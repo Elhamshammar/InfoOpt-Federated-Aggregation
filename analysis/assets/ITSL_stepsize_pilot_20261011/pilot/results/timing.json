@@ -1,0 +1,13 @@
+{
+  "data_and_partition": 1623.930737733841,
+  "checkpoint_generation_dev_seed": 0.0,
+  "checkpoint_generation_held_seeds_total": 0.0,
+  "stage_2_dev_only": 203.52976775169373,
+  "stage_5_held_out": 403.87277483940125,
+  "total": 3799.2155900001526,
+  "phase_breaks_sec": {
+    "stage_0_setup_and_verify": 1623.930737733841,
+    "stage_2_dev_only": 203.52976775169373,
+    "stage_5_held_out": 403.87277483940125
+  }
+}

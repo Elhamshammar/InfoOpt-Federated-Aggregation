@@ -1,0 +1,767 @@
+{
+  "per_example_file": "results\\stepsize_diag_pilot_20261004_175620\\results\\per_example_losses.csv",
+  "run_dir": "results\\stepsize_diag_pilot_20261004_175620",
+  "buffer_policy_filter": "all_floating_state",
+  "total_rows": 2250000,
+  "cells_present": 900,
+  "cells_checked": 900,
+  "n_mismatched": 154,
+  "mismatches": [
+    {
+      "cell": [
+        "201",
+        "100",
+        "alt_cohort_alt_0_rep_1001",
+        "alt_0",
+        "1001",
+        "evaluation",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.5",
+        "mean_loss 2.230330 != summary 2.036115 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "100",
+        "alt_cohort_alt_0_rep_1001",
+        "alt_0",
+        "1001",
+        "selection",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.5",
+        "mean_loss 2.282747 != summary 2.087752 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "100",
+        "alt_cohort_alt_0_rep_1002",
+        "alt_0",
+        "1002",
+        "evaluation",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.5",
+        "mean_loss 2.210741 != summary 2.044689 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "100",
+        "alt_cohort_alt_0_rep_1002",
+        "alt_0",
+        "1002",
+        "selection",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.5",
+        "mean_loss 2.279498 != summary 2.103421 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "100",
+        "alt_cohort_alt_0_rep_1003",
+        "alt_0",
+        "1003",
+        "evaluation",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.5",
+        "mean_loss 2.206427 != summary 2.034974 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "100",
+        "alt_cohort_alt_0_rep_1003",
+        "alt_0",
+        "1003",
+        "selection",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.5",
+        "mean_loss 2.279272 != summary 2.096967 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "100",
+        "alt_cohort_alt_1_rep_1001",
+        "alt_1",
+        "1001",
+        "evaluation",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.5",
+        "mean_loss 2.215698 != summary 2.084890 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "100",
+        "alt_cohort_alt_1_rep_1001",
+        "alt_1",
+        "1001",
+        "selection",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.5",
+        "mean_loss 2.253560 != summary 2.127706 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "100",
+        "alt_cohort_alt_1_rep_1002",
+        "alt_1",
+        "1002",
+        "evaluation",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.5",
+        "mean_loss 2.218963 != summary 2.098043 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "100",
+        "alt_cohort_alt_1_rep_1002",
+        "alt_1",
+        "1002",
+        "selection",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.5",
+        "mean_loss 2.270262 != summary 2.145405 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "100",
+        "alt_cohort_alt_1_rep_1003",
+        "alt_1",
+        "1003",
+        "evaluation",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.5",
+        "mean_loss 2.207949 != summary 2.086999 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "100",
+        "alt_cohort_alt_1_rep_1003",
+        "alt_1",
+        "1003",
+        "selection",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.5",
+        "mean_loss 2.267766 != summary 2.140612 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "100",
+        "original_cohort_rep_1001",
+        "original",
+        "1001",
+        "evaluation",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.5",
+        "mean_loss 2.145674 != summary 2.083278 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "100",
+        "original_cohort_rep_1001",
+        "original",
+        "1001",
+        "selection",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.5",
+        "mean_loss 2.207813 != summary 2.139472 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "100",
+        "original_cohort_rep_1002",
+        "original",
+        "1002",
+        "evaluation",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.5",
+        "mean_loss 2.146242 != summary 2.096837 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "100",
+        "original_cohort_rep_1002",
+        "original",
+        "1002",
+        "selection",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.5",
+        "mean_loss 2.209325 != summary 2.152654 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "100",
+        "original_cohort_rep_1003",
+        "original",
+        "1003",
+        "evaluation",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.5",
+        "mean_loss 2.168906 != summary 2.089437 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "100",
+        "original_cohort_rep_1003",
+        "original",
+        "1003",
+        "selection",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.5",
+        "mean_loss 2.233197 != summary 2.146087 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "100",
+        "trajectory_cohort",
+        "trajectory",
+        "trajectory",
+        "evaluation",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.5",
+        "mean_loss 2.139482 != summary 2.085265 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "100",
+        "trajectory_cohort",
+        "trajectory",
+        "trajectory",
+        "selection",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.5",
+        "mean_loss 2.197590 != summary 2.139444 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "5",
+        "alt_cohort_alt_0_rep_1001",
+        "alt_0",
+        "1001",
+        "evaluation",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.75",
+        "mean_loss 3.666765 != summary 3.661353 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "5",
+        "alt_cohort_alt_0_rep_1001",
+        "alt_0",
+        "1001",
+        "selection",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.75",
+        "mean_loss 3.689036 != summary 3.680487 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "5",
+        "alt_cohort_alt_0_rep_1002",
+        "alt_0",
+        "1002",
+        "evaluation",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.75",
+        "mean_loss 3.785041 != summary 3.756808 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "5",
+        "alt_cohort_alt_0_rep_1002",
+        "alt_0",
+        "1002",
+        "selection",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.75",
+        "mean_loss 3.799004 != summary 3.769690 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "5",
+        "alt_cohort_alt_0_rep_1003",
+        "alt_0",
+        "1003",
+        "evaluation",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.75",
+        "mean_loss 3.693405 != summary 3.687192 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "5",
+        "alt_cohort_alt_0_rep_1003",
+        "alt_0",
+        "1003",
+        "selection",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.75",
+        "mean_loss 3.712553 != summary 3.703874 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "5",
+        "alt_cohort_alt_1_rep_1001",
+        "alt_1",
+        "1001",
+        "evaluation",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.75",
+        "mean_loss 3.729830 != summary 3.727472 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "5",
+        "alt_cohort_alt_1_rep_1001",
+        "alt_1",
+        "1001",
+        "selection",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.75",
+        "mean_loss 3.755984 != summary 3.751009 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "5",
+        "alt_cohort_alt_1_rep_1002",
+        "alt_1",
+        "1002",
+        "evaluation",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.75",
+        "mean_loss 3.723157 != summary 3.724840 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "5",
+        "alt_cohort_alt_1_rep_1002",
+        "alt_1",
+        "1002",
+        "selection",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.75",
+        "mean_loss 3.755120 != summary 3.752064 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "5",
+        "alt_cohort_alt_1_rep_1003",
+        "alt_1",
+        "1003",
+        "evaluation",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.75",
+        "mean_loss 3.729490 != summary 3.731710 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "5",
+        "alt_cohort_alt_1_rep_1003",
+        "alt_1",
+        "1003",
+        "selection",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.75",
+        "mean_loss 3.758463 != summary 3.756749 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "5",
+        "original_cohort_rep_1002",
+        "original",
+        "1002",
+        "evaluation",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.75",
+        "mean_loss 3.825405 != summary 3.822304 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "5",
+        "original_cohort_rep_1002",
+        "original",
+        "1002",
+        "selection",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.75",
+        "mean_loss 3.840128 != summary 3.835194 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "50",
+        "alt_cohort_alt_0_rep_1001",
+        "alt_0",
+        "1001",
+        "evaluation",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.5",
+        "mean_loss 2.440574 != summary 2.390346 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "50",
+        "alt_cohort_alt_0_rep_1001",
+        "alt_0",
+        "1001",
+        "selection",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.5",
+        "mean_loss 2.500075 != summary 2.449986 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "50",
+        "alt_cohort_alt_0_rep_1002",
+        "alt_0",
+        "1002",
+        "evaluation",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.5",
+        "mean_loss 2.452918 != summary 2.368748 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "50",
+        "alt_cohort_alt_0_rep_1002",
+        "alt_0",
+        "1002",
+        "selection",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.5",
+        "mean_loss 2.517356 != summary 2.431300 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "50",
+        "alt_cohort_alt_0_rep_1003",
+        "alt_0",
+        "1003",
+        "evaluation",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.5",
+        "mean_loss 2.423731 != summary 2.363830 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "50",
+        "alt_cohort_alt_0_rep_1003",
+        "alt_0",
+        "1003",
+        "selection",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.5",
+        "mean_loss 2.484147 != summary 2.424587 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "50",
+        "alt_cohort_alt_1_rep_1001",
+        "alt_1",
+        "1001",
+        "evaluation",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.5",
+        "mean_loss 2.547516 != summary 2.427322 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "50",
+        "alt_cohort_alt_1_rep_1001",
+        "alt_1",
+        "1001",
+        "selection",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.5",
+        "mean_loss 2.574748 != summary 2.467750 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "50",
+        "alt_cohort_alt_1_rep_1002",
+        "alt_1",
+        "1002",
+        "evaluation",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.5",
+        "mean_loss 2.523773 != summary 2.402988 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "50",
+        "alt_cohort_alt_1_rep_1002",
+        "alt_1",
+        "1002",
+        "selection",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.5",
+        "mean_loss 2.557625 != summary 2.446638 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "50",
+        "alt_cohort_alt_1_rep_1003",
+        "alt_1",
+        "1003",
+        "evaluation",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.5",
+        "mean_loss 2.497121 != summary 2.400552 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "50",
+        "alt_cohort_alt_1_rep_1003",
+        "alt_1",
+        "1003",
+        "selection",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.5",
+        "mean_loss 2.528355 != summary 2.442618 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "50",
+        "original_cohort_rep_1001",
+        "original",
+        "1001",
+        "evaluation",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.5",
+        "mean_loss 2.445778 != summary 2.398895 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "50",
+        "original_cohort_rep_1001",
+        "original",
+        "1001",
+        "selection",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.5",
+        "mean_loss 2.499134 != summary 2.456411 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "50",
+        "original_cohort_rep_1002",
+        "original",
+        "1002",
+        "evaluation",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.5",
+        "mean_loss 2.485736 != summary 2.407093 (atol 0.0003)"
+      ]
+    },
+    {
+      "cell": [
+        "201",
+        "50",
+        "original_cohort_rep_1002",
+        "original",
+        "1002",
+        "selection",
+        "validation_selected_scaling"
+      ],
+      "problems": [
+        "gamma 1.0 != expected 0.5",
+        "mean_loss 2.557950 != summary 2.473638 (atol 0.0003)"
+      ]
+    }
+  ],
+  "n_undecidable": 0,
+  "undecidable_cells": [],
+  "n_missing_cells": 0,
+  "missing_cells_sample": [],
+  "expect_inventory": null,
+  "verdict": "FAIL"
+}

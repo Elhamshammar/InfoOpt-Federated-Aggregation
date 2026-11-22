@@ -1,0 +1,16 @@
+{
+  "per_example_file": "results\\per_example_correction_20261008\\per_example_losses_validation_selected_trajectory_only.csv",
+  "run_dir": "results\\stepsize_diag_pilot_20261004_175620",
+  "buffer_policy_filter": "all_floating_state",
+  "total_rows": 45000,
+  "cells_present": 18,
+  "cells_checked": 18,
+  "n_mismatched": 0,
+  "mismatches": [],
+  "n_undecidable": 0,
+  "undecidable_cells": [],
+  "n_missing_cells": 0,
+  "missing_cells_sample": [],
+  "expect_inventory": "results/per_example_correction_20261008/expected_inventory_trajectory_only.json",
+  "verdict": "PASS"
+}

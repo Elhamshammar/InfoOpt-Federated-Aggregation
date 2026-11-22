@@ -1,0 +1,9 @@
+{
+  "archive_sha256": "0a56c0080cb8da42566be1ca4a976937d50f1f273b10eb06d4eb76d4b660f385",
+  "collection_files_hash_verified": 406,
+  "unique_runs_verified": 60,
+  "partitions_and_cohorts_verified": 60,
+  "full_common_configs_match": true,
+  "endpoint": "round100 test_acc",
+  "limitation": "Checkpoints omitted from collection: server verifier reports and checkpoint hashes inspected, checkpoint load not independently repeated."
+}

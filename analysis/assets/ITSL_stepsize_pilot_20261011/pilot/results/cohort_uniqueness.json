@@ -1,0 +1,506 @@
+{
+  "201|5": {
+    "identities_ledger": [
+      {
+        "cohort_index": "original",
+        "clients": [
+          1,
+          3,
+          5,
+          6,
+          7
+        ],
+        "base_seed": null,
+        "retry_attempt": 0,
+        "sample_index": 0
+      },
+      {
+        "cohort_index": "alt_0",
+        "clients": [
+          0,
+          3,
+          6,
+          7,
+          9
+        ],
+        "base_seed": 1063,
+        "retry_attempt": 1,
+        "sample_index": 0
+      },
+      {
+        "cohort_index": "alt_1",
+        "clients": [
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        "base_seed": 1320,
+        "retry_attempt": 1,
+        "sample_index": 1
+      }
+    ],
+    "retries_per_cohort": [
+      {
+        "retry_cap": 64,
+        "n_tried": 1,
+        "exhausted": false
+      },
+      {
+        "retry_cap": 64,
+        "n_tried": 1,
+        "exhausted": false
+      }
+    ],
+    "n_alt_cohorts": 2
+  },
+  "201|50": {
+    "identities_ledger": [
+      {
+        "cohort_index": "original",
+        "clients": [
+          0,
+          1,
+          3,
+          5,
+          8
+        ],
+        "base_seed": null,
+        "retry_attempt": 0,
+        "sample_index": 0
+      },
+      {
+        "cohort_index": "alt_0",
+        "clients": [
+          1,
+          2,
+          3,
+          5,
+          7
+        ],
+        "base_seed": 1828,
+        "retry_attempt": 1,
+        "sample_index": 0
+      },
+      {
+        "cohort_index": "alt_1",
+        "clients": [
+          2,
+          6,
+          7,
+          8,
+          9
+        ],
+        "base_seed": 2085,
+        "retry_attempt": 1,
+        "sample_index": 1
+      }
+    ],
+    "retries_per_cohort": [
+      {
+        "retry_cap": 64,
+        "n_tried": 1,
+        "exhausted": false
+      },
+      {
+        "retry_cap": 64,
+        "n_tried": 1,
+        "exhausted": false
+      }
+    ],
+    "n_alt_cohorts": 2
+  },
+  "201|100": {
+    "identities_ledger": [
+      {
+        "cohort_index": "original",
+        "clients": [
+          1,
+          3,
+          4,
+          5,
+          9
+        ],
+        "base_seed": null,
+        "retry_attempt": 0,
+        "sample_index": 0
+      },
+      {
+        "cohort_index": "alt_0",
+        "clients": [
+          0,
+          1,
+          3,
+          6,
+          8
+        ],
+        "base_seed": 2678,
+        "retry_attempt": 1,
+        "sample_index": 0
+      },
+      {
+        "cohort_index": "alt_1",
+        "clients": [
+          1,
+          2,
+          7,
+          8,
+          9
+        ],
+        "base_seed": 2935,
+        "retry_attempt": 1,
+        "sample_index": 1
+      }
+    ],
+    "retries_per_cohort": [
+      {
+        "retry_cap": 64,
+        "n_tried": 1,
+        "exhausted": false
+      },
+      {
+        "retry_cap": 64,
+        "n_tried": 1,
+        "exhausted": false
+      }
+    ],
+    "n_alt_cohorts": 2
+  },
+  "202|5": {
+    "identities_ledger": [
+      {
+        "cohort_index": "original",
+        "clients": [
+          1,
+          5,
+          6,
+          7,
+          8
+        ],
+        "base_seed": null,
+        "retry_attempt": 0,
+        "sample_index": 0
+      },
+      {
+        "cohort_index": "alt_0",
+        "clients": [
+          0,
+          1,
+          3,
+          4,
+          6
+        ],
+        "base_seed": 1064,
+        "retry_attempt": 1,
+        "sample_index": 0
+      },
+      {
+        "cohort_index": "alt_1",
+        "clients": [
+          0,
+          1,
+          4,
+          5,
+          9
+        ],
+        "base_seed": 1321,
+        "retry_attempt": 1,
+        "sample_index": 1
+      }
+    ],
+    "retries_per_cohort": [
+      {
+        "retry_cap": 64,
+        "n_tried": 1,
+        "exhausted": false
+      },
+      {
+        "retry_cap": 64,
+        "n_tried": 1,
+        "exhausted": false
+      }
+    ],
+    "n_alt_cohorts": 2
+  },
+  "202|50": {
+    "identities_ledger": [
+      {
+        "cohort_index": "original",
+        "clients": [
+          0,
+          2,
+          5,
+          6,
+          8
+        ],
+        "base_seed": null,
+        "retry_attempt": 0,
+        "sample_index": 0
+      },
+      {
+        "cohort_index": "alt_0",
+        "clients": [
+          0,
+          4,
+          7,
+          8,
+          9
+        ],
+        "base_seed": 1829,
+        "retry_attempt": 1,
+        "sample_index": 0
+      },
+      {
+        "cohort_index": "alt_1",
+        "clients": [
+          0,
+          1,
+          4,
+          5,
+          7
+        ],
+        "base_seed": 2086,
+        "retry_attempt": 1,
+        "sample_index": 1
+      }
+    ],
+    "retries_per_cohort": [
+      {
+        "retry_cap": 64,
+        "n_tried": 1,
+        "exhausted": false
+      },
+      {
+        "retry_cap": 64,
+        "n_tried": 1,
+        "exhausted": false
+      }
+    ],
+    "n_alt_cohorts": 2
+  },
+  "202|100": {
+    "identities_ledger": [
+      {
+        "cohort_index": "original",
+        "clients": [
+          1,
+          3,
+          5,
+          7,
+          8
+        ],
+        "base_seed": null,
+        "retry_attempt": 0,
+        "sample_index": 0
+      },
+      {
+        "cohort_index": "alt_0",
+        "clients": [
+          1,
+          2,
+          5,
+          6,
+          8
+        ],
+        "base_seed": 2679,
+        "retry_attempt": 1,
+        "sample_index": 0
+      },
+      {
+        "cohort_index": "alt_1",
+        "clients": [
+          0,
+          2,
+          4,
+          5,
+          6
+        ],
+        "base_seed": 2936,
+        "retry_attempt": 1,
+        "sample_index": 1
+      }
+    ],
+    "retries_per_cohort": [
+      {
+        "retry_cap": 64,
+        "n_tried": 1,
+        "exhausted": false
+      },
+      {
+        "retry_cap": 64,
+        "n_tried": 1,
+        "exhausted": false
+      }
+    ],
+    "n_alt_cohorts": 2
+  },
+  "203|5": {
+    "identities_ledger": [
+      {
+        "cohort_index": "original",
+        "clients": [
+          3,
+          5,
+          7,
+          8,
+          9
+        ],
+        "base_seed": null,
+        "retry_attempt": 0,
+        "sample_index": 0
+      },
+      {
+        "cohort_index": "alt_0",
+        "clients": [
+          0,
+          1,
+          4,
+          6,
+          9
+        ],
+        "base_seed": 1065,
+        "retry_attempt": 1,
+        "sample_index": 0
+      },
+      {
+        "cohort_index": "alt_1",
+        "clients": [
+          0,
+          3,
+          4,
+          5,
+          7
+        ],
+        "base_seed": 1322,
+        "retry_attempt": 1,
+        "sample_index": 1
+      }
+    ],
+    "retries_per_cohort": [
+      {
+        "retry_cap": 64,
+        "n_tried": 1,
+        "exhausted": false
+      },
+      {
+        "retry_cap": 64,
+        "n_tried": 1,
+        "exhausted": false
+      }
+    ],
+    "n_alt_cohorts": 2
+  },
+  "203|50": {
+    "identities_ledger": [
+      {
+        "cohort_index": "original",
+        "clients": [
+          0,
+          2,
+          5,
+          8,
+          9
+        ],
+        "base_seed": null,
+        "retry_attempt": 0,
+        "sample_index": 0
+      },
+      {
+        "cohort_index": "alt_0",
+        "clients": [
+          0,
+          1,
+          4,
+          5,
+          9
+        ],
+        "base_seed": 1830,
+        "retry_attempt": 1,
+        "sample_index": 0
+      },
+      {
+        "cohort_index": "alt_1",
+        "clients": [
+          2,
+          6,
+          7,
+          8,
+          9
+        ],
+        "base_seed": 2087,
+        "retry_attempt": 1,
+        "sample_index": 1
+      }
+    ],
+    "retries_per_cohort": [
+      {
+        "retry_cap": 64,
+        "n_tried": 1,
+        "exhausted": false
+      },
+      {
+        "retry_cap": 64,
+        "n_tried": 1,
+        "exhausted": false
+      }
+    ],
+    "n_alt_cohorts": 2
+  },
+  "203|100": {
+    "identities_ledger": [
+      {
+        "cohort_index": "original",
+        "clients": [
+          0,
+          3,
+          5,
+          7,
+          9
+        ],
+        "base_seed": null,
+        "retry_attempt": 0,
+        "sample_index": 0
+      },
+      {
+        "cohort_index": "alt_0",
+        "clients": [
+          1,
+          2,
+          3,
+          5,
+          8
+        ],
+        "base_seed": 2680,
+        "retry_attempt": 1,
+        "sample_index": 0
+      },
+      {
+        "cohort_index": "alt_1",
+        "clients": [
+          2,
+          4,
+          5,
+          6,
+          8
+        ],
+        "base_seed": 2937,
+        "retry_attempt": 1,
+        "sample_index": 1
+      }
+    ],
+    "retries_per_cohort": [
+      {
+        "retry_cap": 64,
+        "n_tried": 1,
+        "exhausted": false
+      },
+      {
+        "retry_cap": 64,
+        "n_tried": 1,
+        "exhausted": false
+      }
+    ],
+    "n_alt_cohorts": 2
+  }
+}

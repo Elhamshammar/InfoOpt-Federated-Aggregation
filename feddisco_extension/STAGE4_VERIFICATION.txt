@@ -1,0 +1,240 @@
+
+=== Locating run directories ===
+  seed 100 fedavg: feddisco_stage4_cifar100_fedavg_fedavg_seed100_alpha0.3_20261122_183239
+  seed 100 uniform: feddisco_stage4_cifar100_uniform_fedavg_seed100_alpha0.3_20261122_183939
+  seed 100 feddisco: feddisco_stage4_cifar100_feddisco_feddisco_seed100_alpha0.3_20261122_184652
+  seed 100 feddisco_shuffled: feddisco_stage4_cifar100_feddisco_shuffled_feddisco_shuffled_seed100_alpha0.3_20261122_185420
+  seed 101 fedavg: feddisco_stage4_cifar100_fedavg_fedavg_seed101_alpha0.3_20261122_190135
+  seed 101 uniform: feddisco_stage4_cifar100_uniform_fedavg_seed101_alpha0.3_20261122_190853
+  seed 101 feddisco: feddisco_stage4_cifar100_feddisco_feddisco_seed101_alpha0.3_20261122_191636
+  seed 101 feddisco_shuffled: feddisco_stage4_cifar100_feddisco_shuffled_feddisco_shuffled_seed101_alpha0.3_20261122_192401
+  seed 102 fedavg: feddisco_stage4_cifar100_fedavg_fedavg_seed102_alpha0.3_20261122_193154
+  seed 102 uniform: feddisco_stage4_cifar100_uniform_fedavg_seed102_alpha0.3_20261122_193854
+  seed 102 feddisco: feddisco_stage4_cifar100_feddisco_feddisco_seed102_alpha0.3_20261122_194600
+  seed 102 feddisco_shuffled: feddisco_stage4_cifar100_feddisco_shuffled_feddisco_shuffled_seed102_alpha0.3_20261122_195246
+  seed 103 fedavg: feddisco_stage4_cifar100_fedavg_fedavg_seed103_alpha0.3_20261122_183329
+  seed 103 uniform: feddisco_stage4_cifar100_uniform_fedavg_seed103_alpha0.3_20261122_184032
+  seed 103 feddisco: feddisco_stage4_cifar100_feddisco_feddisco_seed103_alpha0.3_20261122_184741
+  seed 103 feddisco_shuffled: feddisco_stage4_cifar100_feddisco_shuffled_feddisco_shuffled_seed103_alpha0.3_20261122_185450
+  seed 104 fedavg: feddisco_stage4_cifar100_fedavg_fedavg_seed104_alpha0.3_20261122_190229
+  seed 104 uniform: feddisco_stage4_cifar100_uniform_fedavg_seed104_alpha0.3_20261122_190951
+  seed 104 feddisco: feddisco_stage4_cifar100_feddisco_feddisco_seed104_alpha0.3_20261122_191712
+  seed 104 feddisco_shuffled: feddisco_stage4_cifar100_feddisco_shuffled_feddisco_shuffled_seed104_alpha0.3_20261122_192503
+
+=== Round counts ===
+  seed 100 fedavg: diagnostics=100 metrics=100 [OK]
+  seed 100 uniform: diagnostics=100 metrics=100 [OK]
+  seed 100 feddisco: diagnostics=100 metrics=100 [OK]
+  seed 100 feddisco_shuffled: diagnostics=100 metrics=100 [OK]
+  seed 101 fedavg: diagnostics=100 metrics=100 [OK]
+  seed 101 uniform: diagnostics=100 metrics=100 [OK]
+  seed 101 feddisco: diagnostics=100 metrics=100 [OK]
+  seed 101 feddisco_shuffled: diagnostics=100 metrics=100 [OK]
+  seed 102 fedavg: diagnostics=100 metrics=100 [OK]
+  seed 102 uniform: diagnostics=100 metrics=100 [OK]
+  seed 102 feddisco: diagnostics=100 metrics=100 [OK]
+  seed 102 feddisco_shuffled: diagnostics=100 metrics=100 [OK]
+  seed 103 fedavg: diagnostics=100 metrics=100 [OK]
+  seed 103 uniform: diagnostics=100 metrics=100 [OK]
+  seed 103 feddisco: diagnostics=100 metrics=100 [OK]
+  seed 103 feddisco_shuffled: diagnostics=100 metrics=100 [OK]
+  seed 104 fedavg: diagnostics=100 metrics=100 [OK]
+  seed 104 uniform: diagnostics=100 metrics=100 [OK]
+  seed 104 feddisco: diagnostics=100 metrics=100 [OK]
+  seed 104 feddisco_shuffled: diagnostics=100 metrics=100 [OK]
+
+=== Cross-arm identity checks (per seed) ===
+  seed 100 fedavg: partition=True init_hash=True [OK]
+  seed 100 uniform: partition=True init_hash=True [OK]
+  seed 100 feddisco: partition=True init_hash=True [OK]
+  seed 100 feddisco_shuffled: partition=True init_hash=True [OK]
+  seed 101 fedavg: partition=True init_hash=True [OK]
+  seed 101 uniform: partition=True init_hash=True [OK]
+  seed 101 feddisco: partition=True init_hash=True [OK]
+  seed 101 feddisco_shuffled: partition=True init_hash=True [OK]
+  seed 102 fedavg: partition=True init_hash=True [OK]
+  seed 102 uniform: partition=True init_hash=True [OK]
+  seed 102 feddisco: partition=True init_hash=True [OK]
+  seed 102 feddisco_shuffled: partition=True init_hash=True [OK]
+  seed 103 fedavg: partition=True init_hash=True [OK]
+  seed 103 uniform: partition=True init_hash=True [OK]
+  seed 103 feddisco: partition=True init_hash=True [OK]
+  seed 103 feddisco_shuffled: partition=True init_hash=True [OK]
+  seed 104 fedavg: partition=True init_hash=True [OK]
+  seed 104 uniform: partition=True init_hash=True [OK]
+  seed 104 feddisco: partition=True init_hash=True [OK]
+  seed 104 feddisco_shuffled: partition=True init_hash=True [OK]
+
+=== Participation schedule checks (per seed) ===
+  seed 100 fedavg: schedule matches fedavg=True [OK]
+  seed 100 uniform: schedule matches fedavg=True [OK]
+  seed 100 feddisco: schedule matches fedavg=True [OK]
+  seed 100 feddisco_shuffled: schedule matches fedavg=True [OK]
+  seed 101 fedavg: schedule matches fedavg=True [OK]
+  seed 101 uniform: schedule matches fedavg=True [OK]
+  seed 101 feddisco: schedule matches fedavg=True [OK]
+  seed 101 feddisco_shuffled: schedule matches fedavg=True [OK]
+  seed 102 fedavg: schedule matches fedavg=True [OK]
+  seed 102 uniform: schedule matches fedavg=True [OK]
+  seed 102 feddisco: schedule matches fedavg=True [OK]
+  seed 102 feddisco_shuffled: schedule matches fedavg=True [OK]
+  seed 103 fedavg: schedule matches fedavg=True [OK]
+  seed 103 uniform: schedule matches fedavg=True [OK]
+  seed 103 feddisco: schedule matches fedavg=True [OK]
+  seed 103 feddisco_shuffled: schedule matches fedavg=True [OK]
+  seed 104 fedavg: schedule matches fedavg=True [OK]
+  seed 104 uniform: schedule matches fedavg=True [OK]
+  seed 104 feddisco: schedule matches fedavg=True [OK]
+  seed 104 feddisco_shuffled: schedule matches fedavg=True [OK]
+
+=== FedDisco weight reconstruction ===
+  seed 100 feddisco: mismatches=0 missing=0/100 [OK]
+  seed 100 feddisco_shuffled: mismatches=0 missing=0/100 [OK]
+  seed 101 feddisco: mismatches=0 missing=0/100 [OK]
+  seed 101 feddisco_shuffled: mismatches=0 missing=0/100 [OK]
+  seed 102 feddisco: mismatches=0 missing=0/100 [OK]
+  seed 102 feddisco_shuffled: mismatches=0 missing=0/100 [OK]
+  seed 103 feddisco: mismatches=0 missing=0/100 [OK]
+  seed 103 feddisco_shuffled: mismatches=0 missing=0/100 [OK]
+  seed 104 feddisco: mismatches=0 missing=0/100 [OK]
+  seed 104 feddisco_shuffled: mismatches=0 missing=0/100 [OK]
+
+=== Shuffled-arm checks (per seed) ===
+  seed 100: discrepancy_multiset=True nonidentity=100/100 differ_from_orig=100/100 mean_l1_diff=0.046723 [OK]
+  seed 101: discrepancy_multiset=True nonidentity=100/100 differ_from_orig=100/100 mean_l1_diff=0.061454 [OK]
+  seed 102: discrepancy_multiset=True nonidentity=98/100 differ_from_orig=98/100 mean_l1_diff=0.026604 [OK]
+  seed 103: discrepancy_multiset=True nonidentity=100/100 differ_from_orig=100/100 mean_l1_diff=0.051612 [OK]
+  seed 104: discrepancy_multiset=True nonidentity=100/100 differ_from_orig=100/100 mean_l1_diff=0.057865 [OK]
+
+=== Finite outputs ===
+  seed 100 fedavg: bad_rounds=0/100 [OK]
+  seed 100 uniform: bad_rounds=0/100 [OK]
+  seed 100 feddisco: bad_rounds=0/100 [OK]
+  seed 100 feddisco_shuffled: bad_rounds=0/100 [OK]
+  seed 101 fedavg: bad_rounds=0/100 [OK]
+  seed 101 uniform: bad_rounds=0/100 [OK]
+  seed 101 feddisco: bad_rounds=0/100 [OK]
+  seed 101 feddisco_shuffled: bad_rounds=0/100 [OK]
+  seed 102 fedavg: bad_rounds=0/100 [OK]
+  seed 102 uniform: bad_rounds=0/100 [OK]
+  seed 102 feddisco: bad_rounds=0/100 [OK]
+  seed 102 feddisco_shuffled: bad_rounds=0/100 [OK]
+  seed 103 fedavg: bad_rounds=0/100 [OK]
+  seed 103 uniform: bad_rounds=0/100 [OK]
+  seed 103 feddisco: bad_rounds=0/100 [OK]
+  seed 103 feddisco_shuffled: bad_rounds=0/100 [OK]
+  seed 104 fedavg: bad_rounds=0/100 [OK]
+  seed 104 uniform: bad_rounds=0/100 [OK]
+  seed 104 feddisco: bad_rounds=0/100 [OK]
+  seed 104 feddisco_shuffled: bad_rounds=0/100 [OK]
+
+=== FedDisco diagnostic measurements ===
+
+  seed 100 feddisco:
+    discrepancy mean=0.200000, range=[0.157313, 0.234677]
+    mean L1 deviation from FedAvg weights: 0.035688
+    mean effective client number: 4.90
+    fallback events: 0/100
+
+  seed 100 feddisco_shuffled:
+    discrepancy mean=0.200000, range=[0.157313, 0.234677]
+    mean L1 deviation from FedAvg weights: 0.035688
+    mean effective client number: 4.93
+    fallback events: 0/100
+
+  seed 101 feddisco:
+    discrepancy mean=0.200000, range=[0.157082, 0.251507]
+    mean L1 deviation from FedAvg weights: 0.047595
+    mean effective client number: 4.92
+    fallback events: 0/100
+
+  seed 101 feddisco_shuffled:
+    discrepancy mean=0.200000, range=[0.157082, 0.251507]
+    mean L1 deviation from FedAvg weights: 0.047595
+    mean effective client number: 4.92
+    fallback events: 0/100
+
+  seed 102 feddisco:
+    discrepancy mean=0.200000, range=[0.179795, 0.224737]
+    mean L1 deviation from FedAvg weights: 0.022004
+    mean effective client number: 4.94
+    fallback events: 0/100
+
+  seed 102 feddisco_shuffled:
+    discrepancy mean=0.200000, range=[0.179795, 0.224737]
+    mean L1 deviation from FedAvg weights: 0.022004
+    mean effective client number: 4.95
+    fallback events: 0/100
+
+  seed 103 feddisco:
+    discrepancy mean=0.200000, range=[0.154025, 0.242872]
+    mean L1 deviation from FedAvg weights: 0.037859
+    mean effective client number: 4.87
+    fallback events: 0/100
+
+  seed 103 feddisco_shuffled:
+    discrepancy mean=0.200000, range=[0.154025, 0.242872]
+    mean L1 deviation from FedAvg weights: 0.037859
+    mean effective client number: 4.91
+    fallback events: 0/100
+
+  seed 104 feddisco:
+    discrepancy mean=0.200000, range=[0.157215, 0.241507]
+    mean L1 deviation from FedAvg weights: 0.044920
+    mean effective client number: 4.92
+    fallback events: 0/100
+
+  seed 104 feddisco_shuffled:
+    discrepancy mean=0.200000, range=[0.157215, 0.241507]
+    mean L1 deviation from FedAvg weights: 0.044920
+    mean effective client number: 4.93
+    fallback events: 0/100
+
+=== Final test accuracy per seed/arm (descriptive only) ===
+  seed 100 fedavg: round=100 acc=0.4184 loss=2.1977
+  seed 100 uniform: round=100 acc=0.4191 loss=2.1955
+  seed 100 feddisco: round=100 acc=0.4195 loss=2.1966
+  seed 100 feddisco_shuffled: round=100 acc=0.4183 loss=2.1929
+  seed 101 fedavg: round=100 acc=0.4370 loss=2.1075
+  seed 101 uniform: round=100 acc=0.4350 loss=2.1110
+  seed 101 feddisco: round=100 acc=0.4339 loss=2.1098
+  seed 101 feddisco_shuffled: round=100 acc=0.4349 loss=2.1250
+  seed 102 fedavg: round=100 acc=0.4249 loss=2.1583
+  seed 102 uniform: round=100 acc=0.4241 loss=2.1606
+  seed 102 feddisco: round=100 acc=0.4239 loss=2.1554
+  seed 102 feddisco_shuffled: round=100 acc=0.4269 loss=2.1539
+  seed 103 fedavg: round=100 acc=0.4488 loss=2.0744
+  seed 103 uniform: round=100 acc=0.4469 loss=2.0824
+  seed 103 feddisco: round=100 acc=0.4499 loss=2.0794
+  seed 103 feddisco_shuffled: round=100 acc=0.4450 loss=2.0911
+  seed 104 fedavg: round=100 acc=0.4275 loss=2.1711
+  seed 104 uniform: round=100 acc=0.4313 loss=2.1621
+  seed 104 feddisco: round=100 acc=0.4288 loss=2.1737
+  seed 104 feddisco_shuffled: round=100 acc=0.4286 loss=2.1844
+
+=== Marking verified runs ===
+  seed 100 fedavg: runs/feddisco_stage4_cifar100_fedavg_fedavg_seed100_alpha0.3_20261122_183239/.verified
+  seed 100 uniform: runs/feddisco_stage4_cifar100_uniform_fedavg_seed100_alpha0.3_20261122_183939/.verified
+  seed 100 feddisco: runs/feddisco_stage4_cifar100_feddisco_feddisco_seed100_alpha0.3_20261122_184652/.verified
+  seed 100 feddisco_shuffled: runs/feddisco_stage4_cifar100_feddisco_shuffled_feddisco_shuffled_seed100_alpha0.3_20261122_185420/.verified
+  seed 101 fedavg: runs/feddisco_stage4_cifar100_fedavg_fedavg_seed101_alpha0.3_20261122_190135/.verified
+  seed 101 uniform: runs/feddisco_stage4_cifar100_uniform_fedavg_seed101_alpha0.3_20261122_190853/.verified
+  seed 101 feddisco: runs/feddisco_stage4_cifar100_feddisco_feddisco_seed101_alpha0.3_20261122_191636/.verified
+  seed 101 feddisco_shuffled: runs/feddisco_stage4_cifar100_feddisco_shuffled_feddisco_shuffled_seed101_alpha0.3_20261122_192401/.verified
+  seed 102 fedavg: runs/feddisco_stage4_cifar100_fedavg_fedavg_seed102_alpha0.3_20261122_193154/.verified
+  seed 102 uniform: runs/feddisco_stage4_cifar100_uniform_fedavg_seed102_alpha0.3_20261122_193854/.verified
+  seed 102 feddisco: runs/feddisco_stage4_cifar100_feddisco_feddisco_seed102_alpha0.3_20261122_194600/.verified
+  seed 102 feddisco_shuffled: runs/feddisco_stage4_cifar100_feddisco_shuffled_feddisco_shuffled_seed102_alpha0.3_20261122_195246/.verified
+  seed 103 fedavg: runs/feddisco_stage4_cifar100_fedavg_fedavg_seed103_alpha0.3_20261122_183329/.verified
+  seed 103 uniform: runs/feddisco_stage4_cifar100_uniform_fedavg_seed103_alpha0.3_20261122_184032/.verified
+  seed 103 feddisco: runs/feddisco_stage4_cifar100_feddisco_feddisco_seed103_alpha0.3_20261122_184741/.verified
+  seed 103 feddisco_shuffled: runs/feddisco_stage4_cifar100_feddisco_shuffled_feddisco_shuffled_seed103_alpha0.3_20261122_185450/.verified
+  seed 104 fedavg: runs/feddisco_stage4_cifar100_fedavg_fedavg_seed104_alpha0.3_20261122_190229/.verified
+  seed 104 uniform: runs/feddisco_stage4_cifar100_uniform_fedavg_seed104_alpha0.3_20261122_190951/.verified
+  seed 104 feddisco: runs/feddisco_stage4_cifar100_feddisco_feddisco_seed104_alpha0.3_20261122_191712/.verified
+  seed 104 feddisco_shuffled: runs/feddisco_stage4_cifar100_feddisco_shuffled_feddisco_shuffled_seed104_alpha0.3_20261122_192503/.verified
+
+=== Verification summary ===
+  failures: 0
+
+[PASS] All critical verification checks passed.

@@ -1,0 +1,70 @@
+dataset:
+  input_channels: 3
+  name: PathMNIST
+  num_classes: 9
+  root: ./datasets
+device: cuda
+evaluation:
+  eval_every: 1
+  test_batch_size: 256
+experiment_name: stage1_pathmnist_infoopt
+infoopt:
+  early_stop:
+    enabled: false
+  epsilon_rel: 1.0
+  fedavg_mix: 0.0
+  js_mode: constraint
+  kappa_frac: 0.6
+  lambda_entropy: 0.5
+  lambda_mi: 1.0
+  lambda_stability: 0.2
+  min_weight: 0.0
+  min_weight_fraction: 0.0
+  normalize_mi: true
+  probe_batch_size: 256
+  probe_size: 256
+  robust_scale: true
+  signal_ema_beta: 0.5
+  temperature: 1.0
+model:
+  aib_channels:
+  - 64
+  - 128
+  name: SmallCNN
+  use_aib: false
+output:
+  dir: runs
+partition:
+  alpha: 0.3
+  min_samples_per_client: 50
+  num_clients: 10
+seed: 42
+stage1_design:
+  aib_override: false
+  arm: infoopt
+  gamma: 1.0
+  method: InfoOpt-Full
+  shared_signal_collection: true
+  shuffle_composite_scores: false
+  status: DRAFT_NOT_RUNNABLE
+training:
+  batch_size: 64
+  clients_per_round: 5
+  clip_grad_norm: 5.0
+  feddp_lambda: 0.1
+  feddyn_alpha: 0.01
+  fedopt_beta1: 0.9
+  fedopt_beta2: 0.99
+  fedopt_eps: 1e-8
+  fedopt_server_lr: 0.001
+  fedprox_mu: 0.01
+  ib_lambda_entropy: 0.1
+  ib_lambda_mi: 0.1
+  local_epochs: 2
+  lr: 0.01
+  momentum: 0.9
+  num_workers: 2
+  pin_memory: true
+  rounds: 100
+  uniform_agg: false
+  weight_decay: 0.0005

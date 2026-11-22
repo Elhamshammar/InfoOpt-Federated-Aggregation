@@ -1,0 +1,380 @@
+{
+  "statuses": {
+    "adaptive_headroom": "INSUFFICIENT",
+    "claude_comparator": "NO-GO",
+    "exploratory_variability_signal": "EXPLORATORY_PROBE",
+    "overall_recommendation": "ADAPTIVE_BENEFIT_NOT_ESTABLISHED_IN_THIS_PILOT"
+  },
+  "details": {
+    "adaptive_headroom": {
+      "verdict": "INSUFFICIENT",
+      "named_outcomes": {
+        "headroom_vs_global_fixed": {
+          "per_seed": {
+            "202": {
+              "mean_overall_G": 0.005736845793547451,
+              "per_round_G": {
+                "5": 0.01681300998263888,
+                "50": 0.00039752739800347214,
+                "100": 0.0
+              },
+              "n_positive_phases": 2,
+              "worst_phase_G": 0.0,
+              "missing_cells": false,
+              "n_missing_cells": 0
+            },
+            "203": {
+              "mean_overall_G": 0.022655942563657442,
+              "per_round_G": {
+                "5": 0.06796782769097233,
+                "50": 0.0,
+                "100": 0.0
+              },
+              "n_positive_phases": 1,
+              "worst_phase_G": 0.0,
+              "missing_cells": false,
+              "n_missing_cells": 0
+            }
+          },
+          "n_seeds_passed": 0,
+          "n_seeds_total": 2,
+          "all_seeds_passed": false,
+          "any_missing": false
+        },
+        "headroom_vs_phase_fixed": {
+          "per_seed": {
+            "202": {
+              "mean_overall_G": 0.0029000836407696694,
+              "per_round_G": {
+                "5": 0.008302723524305536,
+                "50": 0.00039752739800347214,
+                "100": 0.0
+              },
+              "n_positive_phases": 2,
+              "worst_phase_G": 0.0,
+              "missing_cells": false,
+              "n_missing_cells": 0
+            },
+            "203": {
+              "mean_overall_G": 0.0036493037471065012,
+              "per_round_G": {
+                "5": 0.010947911241319504,
+                "50": 0.0,
+                "100": 0.0
+              },
+              "n_positive_phases": 1,
+              "worst_phase_G": 0.0,
+              "missing_cells": false,
+              "n_missing_cells": 0
+            }
+          },
+          "n_seeds_passed": 0,
+          "n_seeds_total": 2,
+          "all_seeds_passed": false,
+          "any_missing": false
+        }
+      },
+      "per_seed_per_control": {
+        "202": {
+          "global": {
+            "mean_overall_G": 0.005736845793547451,
+            "per_round_G": {
+              "5": 0.01681300998263888,
+              "50": 0.00039752739800347214,
+              "100": 0.0
+            },
+            "n_positive_phases": 2,
+            "worst_phase_G": 0.0,
+            "missing_cells": false,
+            "n_missing_cells": 0
+          },
+          "phase": {
+            "mean_overall_G": 0.0029000836407696694,
+            "per_round_G": {
+              "5": 0.008302723524305536,
+              "50": 0.00039752739800347214,
+              "100": 0.0
+            },
+            "n_positive_phases": 2,
+            "worst_phase_G": 0.0,
+            "missing_cells": false,
+            "n_missing_cells": 0
+          }
+        },
+        "203": {
+          "global": {
+            "mean_overall_G": 0.022655942563657442,
+            "per_round_G": {
+              "5": 0.06796782769097233,
+              "50": 0.0,
+              "100": 0.0
+            },
+            "n_positive_phases": 1,
+            "worst_phase_G": 0.0,
+            "missing_cells": false,
+            "n_missing_cells": 0
+          },
+          "phase": {
+            "mean_overall_G": 0.0036493037471065012,
+            "per_round_G": {
+              "5": 0.010947911241319504,
+              "50": 0.0,
+              "100": 0.0
+            },
+            "n_positive_phases": 1,
+            "worst_phase_G": 0.0,
+            "missing_cells": false,
+            "n_missing_cells": 0
+          }
+        }
+      },
+      "gate_failure_reason": "screen_unsatisfied_against_both_controls_on_at_least_one_held_out_seed",
+      "gamma_invariance_diagnostic": {
+        "mean_validation_gamma_overall": 0.6111111111111112,
+        "max_validation_gamma_overall": 1.0,
+        "config_only_cap": 1.5,
+        "note": "config cap is exposed for diagnostic visibility; not used as an active gate."
+      },
+      "decisive_inputs_sha256": "b151871c182f8d87244109ee7a4bd1a90341fcf0286debd3b86c7cc40eb140cd"
+    },
+    "claude_comparator": {
+      "verdict": "NO-GO",
+      "per_seed_per_control": {
+        "vs_global_fixed": {
+          "per_seed": {
+            "202": {
+              "per_round_G": {
+                "5": -0.00845712076822923,
+                "50": -0.024022706434461683,
+                "100": -0.026687482367621557
+              },
+              "mean_G": -0.01972243652343749,
+              "n_worse": 3,
+              "max_abs_swing": 0.026687482367621557,
+              "missing_cells": false
+            },
+            "203": {
+              "per_round_G": {
+                "5": -0.03593488226996517,
+                "50": -0.026418596733940928,
+                "100": -0.04419136284722228
+              },
+              "mean_G": -0.035514947283709464,
+              "n_worse": 3,
+              "max_abs_swing": 0.04419136284722228,
+              "missing_cells": false
+            }
+          },
+          "n_seeds_passed": 0,
+          "n_seeds_total": 2,
+          "all_seeds_passed": false,
+          "any_missing": false
+        },
+        "vs_phase_fixed": {
+          "per_seed": {
+            "202": {
+              "per_round_G": {
+                "5": -0.016967407226562575,
+                "50": -0.024022706434461683,
+                "100": -0.026687482367621557
+              },
+              "mean_G": -0.02255919867621527,
+              "n_worse": 3,
+              "max_abs_swing": 0.026687482367621557,
+              "missing_cells": false
+            },
+            "203": {
+              "per_round_G": {
+                "5": -0.092954798719618,
+                "50": -0.026418596733940928,
+                "100": -0.04419136284722228
+              },
+              "mean_G": -0.0545215861002604,
+              "n_worse": 3,
+              "max_abs_swing": 0.092954798719618,
+              "missing_cells": false
+            }
+          },
+          "n_seeds_passed": 0,
+          "n_seeds_total": 2,
+          "all_seeds_passed": false,
+          "any_missing": false
+        }
+      },
+      "gate_failure_reason": "at_least_one_seed_or_control_failed_claude_screen",
+      "claude_comparator_strict_threshold": 0.001,
+      "decisive_inputs_sha256": "c4e28864e59f595df6a63adec91ca2fc1e12a448413b2a2db9a7781352fd898d"
+    },
+    "exploratory_variability_signal": {
+      "verdict": "EXPLORATORY_PROBE",
+      "predictors": [
+        {
+          "predictor_id": "phase_only",
+          "fit_status": "no_cells",
+          "n_dev_cells_used": 0,
+          "n_held_cells_used": 0,
+          "dev_cells_too_few": true,
+          "rank_deficient": false,
+          "max_predict_inconsistency": NaN,
+          "mae_held": NaN,
+          "mse_held": NaN,
+          "sign_agreement_held_overall": NaN,
+          "sign_agreement_by_phase": {},
+          "predict_tolerance": 1e-09,
+          "feature_order": [
+            "phase_50",
+            "phase_100"
+          ],
+          "n_features_X": 2,
+          "decisive_inputs_sha256": "f14e3a359519781b30a5d9fbbe80611282dd5804579c8537052e4646c9bd276d"
+        },
+        {
+          "predictor_id": "phase_plus_variability",
+          "fit_status": "no_cells",
+          "n_dev_cells_used": 0,
+          "n_held_cells_used": 0,
+          "dev_cells_too_few": true,
+          "rank_deficient": false,
+          "max_predict_inconsistency": NaN,
+          "mae_held": NaN,
+          "mse_held": NaN,
+          "sign_agreement_held_overall": NaN,
+          "sign_agreement_by_phase": {},
+          "predict_tolerance": 1e-09,
+          "feature_order": [
+            "phase_50",
+            "phase_100",
+            "cohort_within_client_norm_cv_mean",
+            "cohort_persistent_client_diff",
+            "cohort_aggregate_vector_norm",
+            "cohort_client_reps_count"
+          ],
+          "n_features_X": 6,
+          "decisive_inputs_sha256": "1556f54252718683acffdf7e76e646cc37f924d69e188c1b1b34a54bd9cb2642"
+        }
+      ],
+      "n_dev_cells_used_total": 0,
+      "n_held_cells_used_total": 0,
+      "common_held_keys_count": 0,
+      "feature_order": [
+        "phase_50",
+        "phase_100",
+        "cohort_within_client_norm_cv_mean",
+        "cohort_persistent_client_diff",
+        "cohort_aggregate_vector_norm",
+        "cohort_client_reps_count"
+      ],
+      "phase_indicators": [
+        "phase_50",
+        "phase_100"
+      ],
+      "n_features_X": 6,
+      "intercept_equals_posterior": false,
+      "sign_agreement_definition": "sign(actual) == sign(pred)",
+      "gate_failure_reason": "EXPLORATORY only; not a deployability claim. Two predictors fit side by side (phase_only and phase_plus_variability); phase encoding uses two indicators (phase_5 implicit reference) so the design matrix is not structurally collinear.  Each predictor records intercept, dev-only Standardization, raw and standardized coefficients, sign-agreement (sign(actual)== sign(predict)), MAE, MSE, predictions, targets, and per-feature constant-flag.  Standardized intercept is stored separately from unstandardized intercept; both must agree within predict_tolerance.  Decisive inputs are HASHED over actual numerical payload; changing any loss, feature, or coefficient changes the hash.",
+      "decisive_inputs_sha256": "f38b1da30b03883f0e64adbe212f294b05e6f4291a844fa1745190db297cff92"
+    }
+  },
+  "gamma_dev_global": 0.5,
+  "gamma_dev_phase_per_round": {
+    "5": 0.75,
+    "50": 0.5,
+    "100": 0.5
+  },
+  "per_source_validation_gamma": {
+    "201|5|trajectory_cohort": 1.0,
+    "201|5|original_cohort_rep_1001": 1.0,
+    "201|5|original_cohort_rep_1002": 0.75,
+    "201|5|original_cohort_rep_1003": 1.0,
+    "201|5|alt_cohort_alt_0_rep_1001": 0.75,
+    "201|5|alt_cohort_alt_0_rep_1002": 0.75,
+    "201|5|alt_cohort_alt_0_rep_1003": 0.75,
+    "201|5|alt_cohort_alt_1_rep_1001": 0.75,
+    "201|5|alt_cohort_alt_1_rep_1002": 0.75,
+    "201|5|alt_cohort_alt_1_rep_1003": 0.75,
+    "201|50|trajectory_cohort": 0.5,
+    "201|50|original_cohort_rep_1001": 0.5,
+    "201|50|original_cohort_rep_1002": 0.5,
+    "201|50|original_cohort_rep_1003": 0.5,
+    "201|50|alt_cohort_alt_0_rep_1001": 0.5,
+    "201|50|alt_cohort_alt_0_rep_1002": 0.5,
+    "201|50|alt_cohort_alt_0_rep_1003": 0.5,
+    "201|50|alt_cohort_alt_1_rep_1001": 0.5,
+    "201|50|alt_cohort_alt_1_rep_1002": 0.5,
+    "201|50|alt_cohort_alt_1_rep_1003": 0.5,
+    "201|100|trajectory_cohort": 0.5,
+    "201|100|original_cohort_rep_1001": 0.5,
+    "201|100|original_cohort_rep_1002": 0.5,
+    "201|100|original_cohort_rep_1003": 0.5,
+    "201|100|alt_cohort_alt_0_rep_1001": 0.5,
+    "201|100|alt_cohort_alt_0_rep_1002": 0.5,
+    "201|100|alt_cohort_alt_0_rep_1003": 0.5,
+    "201|100|alt_cohort_alt_1_rep_1001": 0.5,
+    "201|100|alt_cohort_alt_1_rep_1002": 0.5,
+    "201|100|alt_cohort_alt_1_rep_1003": 0.5,
+    "202|5|trajectory_cohort": 0.5,
+    "202|5|original_cohort_rep_1001": 0.5,
+    "202|5|original_cohort_rep_1002": 0.5,
+    "202|5|original_cohort_rep_1003": 0.5,
+    "202|5|alt_cohort_alt_0_rep_1001": 0.75,
+    "202|5|alt_cohort_alt_0_rep_1002": 0.75,
+    "202|5|alt_cohort_alt_0_rep_1003": 0.75,
+    "202|5|alt_cohort_alt_1_rep_1001": 1.0,
+    "202|5|alt_cohort_alt_1_rep_1002": 0.75,
+    "202|5|alt_cohort_alt_1_rep_1003": 0.75,
+    "202|50|trajectory_cohort": 0.5,
+    "202|50|original_cohort_rep_1001": 0.5,
+    "202|50|original_cohort_rep_1002": 0.5,
+    "202|50|original_cohort_rep_1003": 0.5,
+    "202|50|alt_cohort_alt_0_rep_1001": 0.5,
+    "202|50|alt_cohort_alt_0_rep_1002": 0.5,
+    "202|50|alt_cohort_alt_0_rep_1003": 0.5,
+    "202|50|alt_cohort_alt_1_rep_1001": 0.5,
+    "202|50|alt_cohort_alt_1_rep_1002": 0.5,
+    "202|50|alt_cohort_alt_1_rep_1003": 0.75,
+    "202|100|trajectory_cohort": 0.5,
+    "202|100|original_cohort_rep_1001": 0.5,
+    "202|100|original_cohort_rep_1002": 0.5,
+    "202|100|original_cohort_rep_1003": 0.5,
+    "202|100|alt_cohort_alt_0_rep_1001": 0.5,
+    "202|100|alt_cohort_alt_0_rep_1002": 0.5,
+    "202|100|alt_cohort_alt_0_rep_1003": 0.5,
+    "202|100|alt_cohort_alt_1_rep_1001": 0.5,
+    "202|100|alt_cohort_alt_1_rep_1002": 0.5,
+    "202|100|alt_cohort_alt_1_rep_1003": 0.5,
+    "203|5|trajectory_cohort": 1.0,
+    "203|5|original_cohort_rep_1001": 1.0,
+    "203|5|original_cohort_rep_1002": 1.0,
+    "203|5|original_cohort_rep_1003": 1.0,
+    "203|5|alt_cohort_alt_0_rep_1001": 1.0,
+    "203|5|alt_cohort_alt_0_rep_1002": 1.0,
+    "203|5|alt_cohort_alt_0_rep_1003": 1.0,
+    "203|5|alt_cohort_alt_1_rep_1001": 1.0,
+    "203|5|alt_cohort_alt_1_rep_1002": 1.0,
+    "203|5|alt_cohort_alt_1_rep_1003": 0.75,
+    "203|50|trajectory_cohort": 0.5,
+    "203|50|original_cohort_rep_1001": 0.5,
+    "203|50|original_cohort_rep_1002": 0.5,
+    "203|50|original_cohort_rep_1003": 0.5,
+    "203|50|alt_cohort_alt_0_rep_1001": 0.5,
+    "203|50|alt_cohort_alt_0_rep_1002": 0.5,
+    "203|50|alt_cohort_alt_0_rep_1003": 0.5,
+    "203|50|alt_cohort_alt_1_rep_1001": 0.5,
+    "203|50|alt_cohort_alt_1_rep_1002": 0.5,
+    "203|50|alt_cohort_alt_1_rep_1003": 0.5,
+    "203|100|trajectory_cohort": 0.5,
+    "203|100|original_cohort_rep_1001": 0.5,
+    "203|100|original_cohort_rep_1002": 0.5,
+    "203|100|original_cohort_rep_1003": 0.5,
+    "203|100|alt_cohort_alt_0_rep_1001": 0.5,
+    "203|100|alt_cohort_alt_0_rep_1002": 0.5,
+    "203|100|alt_cohort_alt_0_rep_1003": 0.5,
+    "203|100|alt_cohort_alt_1_rep_1001": 0.5,
+    "203|100|alt_cohort_alt_1_rep_1002": 0.5,
+    "203|100|alt_cohort_alt_1_rep_1003": 0.5
+  },
+  "source_keys_dev_only_sha256": "f48ac4d0d157cc5c397c5e21e464a1948ebf2171f7e16fd5e8ee8468530ddd0d",
+  "protocol_sha256_glob": "2abedacdb04eaedd71da2d1f0d7529bd008d79c2d723c740e17d7fdbf2f2aa82",
+  "decision_at": "2026-10-04 18:55:05",
+  "pilot_config_fingerprint": "281ecf3f1bbb56ee6607f4df096e9825ba0250167501d8a46e7bd69f9079ef06"
+}

@@ -1,0 +1,71 @@
+=== Phase 2 Canonical Launch Provenance ===
+2026年 08月 12日 星期三 22:16:09 CST
+whu-lab
+whu
+Wed Aug 12 22:16:09 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.126.20             Driver Version: 580.126.20     CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA RTX A6000               On  |   00000000:01:00.0 Off |                  Off |
+| 83%   89C    P2            277W /  300W |   16490MiB /  49140MiB |     94%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA RTX A6000               On  |   00000000:05:00.0 Off |                  Off |
+| 75%   86C    P2            269W /  300W |   22275MiB /  49140MiB |     95%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A            3550      G   /usr/lib/xorg/Xorg                        4MiB |
+|    0   N/A  N/A            3691    C+G   ...c/gnome-remote-desktop-daemon        266MiB |
+|    0   N/A  N/A          291612      C   python                                16186MiB |
+|    1   N/A  N/A            3550      G   /usr/lib/xorg/Xorg                        4MiB |
+|    1   N/A  N/A          291636      C   python                                22252MiB |
++-----------------------------------------------------------------------------------------+
+
+Python: /home/whu/miniconda3/envs/infoopt_dl/bin/python
+Python 3.10.20
+PyTorch: 2.12.0+cu130
+CUDA available: True 2
+
+Canonical configs:
+-rwxr-xr-x 1 whu whu 1798 2026-07-19 23:55:07.326703400 +0800 configs/eurosat_sweep.yaml
+-rwxr-xr-x 1 whu whu 1803 2026-07-19 23:55:07.326509700 +0800 configs/pathmnist_sweep.yaml
+-rwxr-xr-x 1 whu whu 1918 2026-07-19 23:16:12.958179300 +0800 configs/sweep_v2.yaml
+
+Modified code files:
+-rwxr-xr-x 1 whu whu  8989 2026-08-12 14:45:20.579481300 +0800 methods/client.py
+-rwxr-xr-x 1 whu whu 29692 2026-08-12 14:45:13.439273600 +0800 train.py
+-rwxr-xr-x 1 whu whu  3880 2026-08-12 14:45:29.251586400 +0800 utils/feddyn.py
+
+Git commit (if any):
+  (no git)
+
+FedOpt LR protocol:
+  CIFAR-100: 0.01  (bracketing, seed 999, 6 rounds)
+  PathMNIST: 0.01  (bracketing, seed 999, 6 rounds)
+  EuroSAT:   0.1   (bracketing, seed 999, 6 rounds)
+  Canonical seeds 100-104 were NOT used for hyperparameter selection.
+
+Early stop check:
+configs/sweep_v2.yaml:  early_stop:
+configs/pathmnist_sweep.yaml:  early_stop:
+configs/eurosat_sweep.yaml:  early_stop:
+
+Code integrity checks:
+2
+  local_momentum: OK
+2
+  feddyn_server_update: OK
+2
+  feddyn_local_penalty: OK
+1
+  gamma feature: OK

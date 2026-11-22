@@ -1,0 +1,9 @@
+{
+  "sha256_combined": "2abedacdb04eaedd71da2d1f0d7529bd008d79c2d723c740e17d7fdbf2f2aa82",
+  "per_file": {
+    "PROTOCOL.md": "c6bbf861800f3b94577c1e8caa67674fdf2005432bb9d2f39c28d52b898db20b",
+    "GO_NO_GO.md": "ffef576fcf35f688054180fa488ba908d227a14c2a796206be8e81a4bdd5036d",
+    "PRE_EXECUTION_AMENDMENT.md": "5fa880774f4048b02fae5c804b4b485733ae4ec9a5d98164fcc1d1602bfece5f"
+  },
+  "frozen_at": "2026-10-04 17:56:22"
+}

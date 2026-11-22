@@ -1,0 +1,549 @@
+{
+ "experiment": "four_arm_20261009",
+ "grid": "3 datasets x 5 seeds x 4 arms = 60 cells",
+ "counts": {
+  "pending": 60
+ },
+ "cells": [
+  {
+   "dataset": "cifar100",
+   "seed": 100,
+   "arm": "fedavg_aiboff",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 100,
+   "arm": "fedavg_aibon",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 100,
+   "arm": "infoopt_aiboff",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 100,
+   "arm": "infoopt_aibon",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 101,
+   "arm": "fedavg_aiboff",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 101,
+   "arm": "fedavg_aibon",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 101,
+   "arm": "infoopt_aiboff",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 101,
+   "arm": "infoopt_aibon",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 102,
+   "arm": "fedavg_aiboff",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 102,
+   "arm": "fedavg_aibon",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 102,
+   "arm": "infoopt_aiboff",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 102,
+   "arm": "infoopt_aibon",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 103,
+   "arm": "fedavg_aiboff",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 103,
+   "arm": "fedavg_aibon",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 103,
+   "arm": "infoopt_aiboff",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 103,
+   "arm": "infoopt_aibon",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 104,
+   "arm": "fedavg_aiboff",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 104,
+   "arm": "fedavg_aibon",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 104,
+   "arm": "infoopt_aiboff",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 104,
+   "arm": "infoopt_aibon",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 100,
+   "arm": "fedavg_aiboff",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 100,
+   "arm": "fedavg_aibon",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 100,
+   "arm": "infoopt_aiboff",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 100,
+   "arm": "infoopt_aibon",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 101,
+   "arm": "fedavg_aiboff",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 101,
+   "arm": "fedavg_aibon",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 101,
+   "arm": "infoopt_aiboff",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 101,
+   "arm": "infoopt_aibon",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 102,
+   "arm": "fedavg_aiboff",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 102,
+   "arm": "fedavg_aibon",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 102,
+   "arm": "infoopt_aiboff",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 102,
+   "arm": "infoopt_aibon",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 103,
+   "arm": "fedavg_aiboff",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 103,
+   "arm": "fedavg_aibon",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 103,
+   "arm": "infoopt_aiboff",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 103,
+   "arm": "infoopt_aibon",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 104,
+   "arm": "fedavg_aiboff",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 104,
+   "arm": "fedavg_aibon",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 104,
+   "arm": "infoopt_aiboff",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 104,
+   "arm": "infoopt_aibon",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 100,
+   "arm": "fedavg_aiboff",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 100,
+   "arm": "fedavg_aibon",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 100,
+   "arm": "infoopt_aiboff",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 100,
+   "arm": "infoopt_aibon",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 101,
+   "arm": "fedavg_aiboff",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 101,
+   "arm": "fedavg_aibon",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 101,
+   "arm": "infoopt_aiboff",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 101,
+   "arm": "infoopt_aibon",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 102,
+   "arm": "fedavg_aiboff",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 102,
+   "arm": "fedavg_aibon",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 102,
+   "arm": "infoopt_aiboff",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 102,
+   "arm": "infoopt_aibon",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 103,
+   "arm": "fedavg_aiboff",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 103,
+   "arm": "fedavg_aibon",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 103,
+   "arm": "infoopt_aiboff",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 103,
+   "arm": "infoopt_aibon",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 104,
+   "arm": "fedavg_aiboff",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 104,
+   "arm": "fedavg_aibon",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 104,
+   "arm": "infoopt_aiboff",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 104,
+   "arm": "infoopt_aibon",
+   "status": "pending",
+   "run_dir": null,
+   "hashes": {},
+   "terminal_acc": null
+  }
+ ]
+}

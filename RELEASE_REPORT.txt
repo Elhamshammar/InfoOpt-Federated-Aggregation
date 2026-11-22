@@ -1,0 +1,23 @@
+InfoOpt GitHub release candidate — Stage 2C final preparation
+Source: D:\InfoOpt Latex\Code\InfoOpt_Public_Release
+Destination: (not yet uploaded)
+Manifest entries: 1,321 (SHA256SUMS_Public_Release.txt)
+Manifest hash file: SHA256SUMS_Public_Release.txt.sha256
+Total files: 1,323
+Total size: ~47 MB
+Warnings: 159
+Potential secret/path flags: 159
+
+Stage 2C deliverables:
+- INFOOPT_REPRO_STAGE2C_FINAL_VALIDATION.md
+- INFOOPT_REPRO_STAGE2C_LICENSE_REVIEW.md
+- INFOOPT_REPRO_STAGE2C_RELEASE_MANIFEST.md
+- INFOOPT_REPRO_STAGE2C_DECISION.md
+
+Remaining author decisions before private GitHub upload:
+1. Replace LICENSE placeholder with the final approved open-source license.
+2. Optionally add the frozen LaTeX manuscript source to manuscript/.
+3. Review the 159 path/secret-flagged files listed in RELEASE_WARNINGS.txt.
+
+Do NOT publish until the license is applied and the manuscript source
+is either added or explicitly accepted as absent.

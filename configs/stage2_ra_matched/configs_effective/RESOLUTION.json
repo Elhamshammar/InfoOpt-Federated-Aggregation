@@ -1,0 +1,74 @@
+[
+ {
+  "config": "raexp_cifar100_fedavg_aibon.yaml",
+  "dataset": "CIFAR100",
+  "root": "./datasets",
+  "sha256": "09cdab1fa2b892ded82d82a6e740818c7c59d458f4cc2db599af9a1da42fe4aa"
+ },
+ {
+  "config": "raexp_cifar100_infoopt_aibon.yaml",
+  "dataset": "CIFAR100",
+  "root": "./datasets",
+  "sha256": "939ee154c570eabd080595b92bcf9526539e6ba4ca621bf7e2332c513f19341e"
+ },
+ {
+  "config": "raexp_cifar100_ra_probeoff.yaml",
+  "dataset": "CIFAR100",
+  "root": "./datasets",
+  "sha256": "19e80076b49807084d3c78ef791b88ed5ace49381b7066a17ed17e1ddd014050"
+ },
+ {
+  "config": "raexp_cifar100_ra_probeon.yaml",
+  "dataset": "CIFAR100",
+  "root": "./datasets",
+  "sha256": "a5e3629802f1132ea01ea2d5778ad2af3e8145cf991cb4c2da1346656de420e8"
+ },
+ {
+  "config": "raexp_eurosat_fedavg_aibon.yaml",
+  "dataset": "EuroSAT",
+  "root": "./datasets",
+  "sha256": "fcf532aa400bac994815604fa84f78538a6211964a0d1e7c13873b7658653d67"
+ },
+ {
+  "config": "raexp_eurosat_infoopt_aibon.yaml",
+  "dataset": "EuroSAT",
+  "root": "./datasets",
+  "sha256": "789f538e465d58c831c68f691b1bf3d02e75c2079a988a89e084739b377fed83"
+ },
+ {
+  "config": "raexp_eurosat_ra_probeoff.yaml",
+  "dataset": "EuroSAT",
+  "root": "./datasets",
+  "sha256": "6028e94f2789d3cc4ffd19b5191a5731cbe8d0edd21b80b1a184871e7823b084"
+ },
+ {
+  "config": "raexp_eurosat_ra_probeon.yaml",
+  "dataset": "EuroSAT",
+  "root": "./datasets",
+  "sha256": "177929844702cac4f494cd335a1bf2f0b5d4365007c71204a664e5485fdd0877"
+ },
+ {
+  "config": "raexp_pathmnist_fedavg_aibon.yaml",
+  "dataset": "PathMNIST",
+  "root": "./datasets",
+  "sha256": "c3ed68ede01ff6548b0e6e88326c965fcf3946496f6fd2502a336f98e9252874"
+ },
+ {
+  "config": "raexp_pathmnist_infoopt_aibon.yaml",
+  "dataset": "PathMNIST",
+  "root": "./datasets",
+  "sha256": "cdf70bc4de164b12d792f7fda52329e5f110239375d4f3d98a336ff7bd49f305"
+ },
+ {
+  "config": "raexp_pathmnist_ra_probeoff.yaml",
+  "dataset": "PathMNIST",
+  "root": "./datasets",
+  "sha256": "1c0cd2dbc5749d60754fa068f4eb70a5ebbc3fb4c2612f15011e2d63c492e186"
+ },
+ {
+  "config": "raexp_pathmnist_ra_probeon.yaml",
+  "dataset": "PathMNIST",
+  "root": "./datasets",
+  "sha256": "cb6aef219dc8ebad6ceced6ce034466ccf39e907c8dda2501f83fd3eff648e07"
+ }
+]

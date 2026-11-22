@@ -1,0 +1,2412 @@
+{
+  "all_passed": true,
+  "checks": {
+    "bundled_reference_snapshot": {
+      "passed": true,
+      "ok_count": 15,
+      "bad": {}
+    },
+    "cuda_eval_path_probe": {
+      "passed": true,
+      "probe_loss": 4.611967086791992,
+      "n_samples": 128,
+      "note": "evaluate_state on CUDA with shared_model restore"
+    },
+    "gamma0_primary_matches_checkpoint": {
+      "passed": true,
+      "max_float_diff": 0.0,
+      "nonfloat_exact": true
+    },
+    "gamma1_primary_matches_fedavg_fullstate": {
+      "passed": true,
+      "max_float_diff": 0.0,
+      "nonfloat_exact": true
+    },
+    "gamma0_secondary_matches_checkpoint": {
+      "passed": true
+    },
+    "weighted_aggregation_independent": {
+      "passed": true,
+      "max_diff": 0.0
+    },
+    "rule_safeguards": {
+      "passed": true,
+      "cases": {
+        "zero_updates": {
+          "gamma": 1.0,
+          "safeguards": [
+            "zero_aggregate_norm=0.00e+00"
+          ],
+          "ok": true
+        },
+        "zero_updates_fedexp": {
+          "eta": 1.0,
+          "safeguards": [
+            "zero_aggregate"
+          ],
+          "ok": true
+        },
+        "cancellation": {
+          "gamma": 0.25,
+          "safeguards": [
+            "clipped_low=-456854005329850.4375"
+          ],
+          "ok": true
+        },
+        "degenerate_single_client": {
+          "gamma": 1.0,
+          "safeguards": [
+            "degenerate_kappa=0.00e+00"
+          ],
+          "ok": true
+        },
+        "non_finite": {
+          "gamma": 1.0,
+          "safeguards": [
+            "non_finite_inputs"
+          ],
+          "ok": true
+        },
+        "non_finite_fedexp": {
+          "eta": 1.0,
+          "safeguards": [
+            "non_finite_inputs"
+          ],
+          "ok": true
+        }
+      }
+    },
+    "config_rejection": {
+      "passed": true,
+      "cases": {
+        "unmodified_accepted": true,
+        "rejects_mutated_lr": true,
+        "rejects_mutated_partition_seed": true,
+        "rejects_mutated_selection_frac": true,
+        "rejects_mutated_training_seed": true
+      }
+    },
+    "evaluation_restores_state_mode_rng": {
+      "passed": true,
+      "state_unchanged": true,
+      "mode_unchanged": true,
+      "cpu_rng_unchanged": true,
+      "cuda_rng_unchanged": true,
+      "probe_loss": 3.8590614795684814
+    },
+    "holdout_disjointness_and_eval_determinism": {
+      "passed": true,
+      "disjoint": true,
+      "eval_deterministic": true,
+      "loss_1": 3.9362376220703124,
+      "loss_2": 3.9362376220703124
+    },
+    "identical_seed_retrain": {
+      "passed": true,
+      "max_diff": 0.0,
+      "client": 1,
+      "rep_seed": 1001
+    },
+    "shared_client_matched_seed": {
+      "passed": true,
+      "max_diff": 0.0,
+      "client": 1,
+      "rep_seed": 1001
+    },
+    "per_example_eval_restores_state": {
+      "passed": true,
+      "state_unchanged": true,
+      "mode_unchanged": true,
+      "cpu_rng_unchanged": true,
+      "cuda_rng_unchanged": true,
+      "probe_loss_normal_call": 4.332095175981522,
+      "raise_inside_no_grad_caught": true,
+      "state_unchanged_after_raise": true,
+      "mode_unchanged_after_raise": true,
+      "cpu_rng_unchanged_after_raise": true,
+      "cuda_rng_unchanged_after_raise": true,
+      "note": "evaluate_state_per_example MUST restore state under EXCEPTION (verify.check_per_example_eval_restores_state monkeypatches no_grad to raise and asserts restoration afterwards); PROTCOL.md \u00a79"
+    },
+    "model_compatibility": {
+      "passed": true,
+      "status": "reference_model_used_and_validated",
+      "reference_model": {
+        "model_source": "bundled_reference_snapshot",
+        "builder": "reference_code.models.cnn.SmallCNN",
+        "builder_kwargs": {
+          "num_classes": 100,
+          "input_channels": 3,
+          "use_aib": false
+        },
+        "source_file": "/home/whu/disk1/FL_StepSize_Diagnostic_fixed_20261004/reference_code/models/cnn.py",
+        "source_sha256": "93629daa211af2a23800e6bcbb8b941294f6e553e307489699fca776c1e59513",
+        "snapshot_hash_validation": "ok",
+        "fact_validation": "ok"
+      },
+      "note": "the model under test IS the bundled reference SmallCNN (use_aib=False), hash- and fact-validated by ref_adapter"
+    },
+    "reconstruction_divergence": {
+      "keys_only_in_reference": [
+        "conv1.0.weight",
+        "conv1.1.bias",
+        "conv1.1.num_batches_tracked",
+        "conv1.1.running_mean",
+        "conv1.1.running_var",
+        "conv1.1.weight",
+        "conv2.0.weight",
+        "conv2.1.bias",
+        "conv2.1.num_batches_tracked",
+        "conv2.1.running_mean",
+        "conv2.1.running_var",
+        "conv2.1.weight",
+        "conv3.0.weight",
+        "conv3.1.bias",
+        "conv3.1.num_batches_tracked",
+        "conv3.1.running_mean",
+        "conv3.1.running_var",
+        "conv3.1.weight"
+      ],
+      "keys_only_in_reconstruction": [
+        "bn1.bias",
+        "bn1.num_batches_tracked",
+        "bn1.running_mean",
+        "bn1.running_var",
+        "bn1.weight",
+        "bn2.bias",
+        "bn2.num_batches_tracked",
+        "bn2.running_mean",
+        "bn2.running_var",
+        "bn2.weight",
+        "bn3.bias",
+        "bn3.num_batches_tracked",
+        "bn3.running_mean",
+        "bn3.running_var",
+        "bn3.weight",
+        "conv1.weight",
+        "conv2.weight",
+        "conv3.weight"
+      ],
+      "param_count_reference": 396964,
+      "param_count_reconstruction": 396964,
+      "shape_mismatches": [],
+      "forward_shape_reference": [
+        4,
+        100
+      ],
+      "forward_shape_reconstruction": [
+        4,
+        100
+      ],
+      "architecturally_identical": false,
+      "passed": false,
+      "informational": true
+    },
+    "reference_aggregation_equivalence": {
+      "passed": true,
+      "detail": {
+        "component": "aggregation",
+        "reference_module": "reference_code.utils.aggregation",
+        "function": "average_states",
+        "source_sha256": "b9f4cb3a354fe01952b4c65da1959b84dcf67a677cd48f957e55f0a80c7a8bb7",
+        "call_signature_used": "average_states(states, weights)",
+        "status": "match",
+        "max_float_diff": 0.0,
+        "note": "the diagnostic aggregates with the REAL reference function (fedavg.average_states wraps it); this check records that the pre-snapshot reconstruction agreed"
+      }
+    },
+    "reference_behavioral_comparison": {
+      "passed": true,
+      "component_status": {
+        "aggregation": "match",
+        "set_seed": "match",
+        "partition": "match",
+        "preprocessing": "match",
+        "train_client": "match"
+      },
+      "detail": {
+        "aggregation": {
+          "component": "aggregation",
+          "reference_module": "reference_code.utils.aggregation",
+          "function": "average_states",
+          "source_sha256": "b9f4cb3a354fe01952b4c65da1959b84dcf67a677cd48f957e55f0a80c7a8bb7",
+          "call_signature_used": "average_states(states, weights)",
+          "status": "match",
+          "max_float_diff": 0.0,
+          "note": "the diagnostic aggregates with the REAL reference function (fedavg.average_states wraps it); this check records that the pre-snapshot reconstruction agreed"
+        },
+        "set_seed": {
+          "component": "set_seed",
+          "reference_module": "reference_code.utils.seed",
+          "status": "match",
+          "function": "set_seed",
+          "cudnn_deterministic_after_call": false,
+          "cudnn_benchmark_after_call": true,
+          "source_sha256": "6483b26a05eb93f445e2a0d6daa43a397d7d1f50c2df0d9aa2366e02f7d829c3",
+          "diagnostic_policy": "deterministic=True, benchmark=False reapplied after every set_seed call (intentional difference, see INTENTIONAL_DIFFERENCES.md D1)"
+        },
+        "partition": {
+          "component": "partition",
+          "reference_module": "reference_code.data.partition",
+          "function": "dirichlet_partition",
+          "source_sha256": "cb06abaf240da7dba0a6efa62dc6bc76d950391172604453bd4f5d5ced1c901b",
+          "status": "match",
+          "reference_sizes": [
+            32,
+            44,
+            58,
+            81,
+            94,
+            95,
+            112,
+            115,
+            163,
+            206
+          ],
+          "wrapper_sizes": [
+            32,
+            44,
+            58,
+            81,
+            94,
+            95,
+            112,
+            115,
+            163,
+            206
+          ],
+          "note": "the diagnostic delegates the core Dirichlet draw to the reference partitioner; holdout removal and the retained-size acceptance loop are intentional differences D2/D6"
+        },
+        "preprocessing": {
+          "component": "preprocessing",
+          "reference_module": "reference_code.data.datasets",
+          "source_sha256": "9637acdcc178857b1aae5d1670208b2ffbc961e769ff5e783d932bce79fa15d7",
+          "reference_normalize_lines": [
+            "transforms.Normalize(mean, std),",
+            "transforms.Normalize(mean, std),",
+            "transforms.Normalize(mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5)),",
+            "transforms.Normalize(mean=(0.5, 0.5, 0.5), std=(0.5, 0.5, 0.5)),",
+            "transforms.Normalize(mean, std),",
+            "transforms.Normalize(mean, std),"
+          ],
+          "reference_augment_lines": [
+            "transforms.RandomCrop(32, padding=4),",
+            "transforms.RandomHorizontalFlip(),",
+            "transforms.RandomHorizontalFlip(),",
+            "transforms.RandomHorizontalFlip(),",
+            "transforms.RandomRotation(15),",
+            "transforms.ColorJitter(brightness=0.2, contrast=0.2),"
+          ],
+          "cifar100_mean_found_in_reference": true,
+          "cifar100_std_found_in_reference": true,
+          "constants_imported_from_reference": true,
+          "ours": {
+            "mean": [
+              "0.5071",
+              "0.4865",
+              "0.4409"
+            ],
+            "std": [
+              "0.2673",
+              "0.2564",
+              "0.2762"
+            ],
+            "train_augment": "pad-4 random crop + horizontal flip + normalize (identical recipe to reference train_tf, applied functionally per batch; D4)",
+            "eval": "normalize only (identical to reference test_tf)"
+          },
+          "status": "match"
+        },
+        "train_client": {
+          "component": "train_client",
+          "reference_module": "reference_code.methods.client",
+          "source_sha256": "bce31365c8a4cdd31772ffe66e3f05bfe595ba144ba17065941b1adfa49784b9",
+          "train_client_excerpt": "def train_client(\n    client_id: int,\n    global_model,\n    dataset,\n    indices,\n    cfg: dict,\n    device: str,\n    method: str = \"fedavg\",\n    scaffold_server_c: dict | None = None,\n    scaffold_client_c: dict | None = None,\n    feddyn_y: dict | None = None,\n    global_prototypes: torch.Tensor | None = None,\n    compute_info_signals: bool = True,\n) -> ClientResult:\n    model = copy.deepcopy(global_model).to(device)\n    model.train()\n    old_state = {k: v.detach().cpu().clone() for k, v in global_model.state_dict().items()}\n\n    use_cuda = str(device).startswith(\"cuda\")\n    loader = DataLoader(\n        Subset(dataset, indices),\n        batch_size=cfg[\"training\"][\"batch_size\"],\n        shuffle=True,\n        num_workers=int(cfg[\"training\"].get(\"num_workers\", 2)),\n        pin_memory=bool(cfg[\"training\"].get(\"pin_memory\", use_cuda)),\n    )\n    opt = torch.optim.SGD(\n        model.parameters(),\n        lr=cfg[\"training\"][\"lr\"],\n        momentum=local_momentum(cfg, method),\n        weight_decay=cfg[\"training\"].get(\"weight_decay\", 0.0),\n    )\n    criterion = torch.nn.CrossEntropyLoss()\n    global_params = [p.detach().clone() for p in global_model.to(device).parameters()]\n    fedprox_mu = float(cfg[\"training\"].get(\"fedprox_mu\", 0.0))\n    feddyn_alpha = float(cfg[\"training\"].get(\"feddyn_alpha\", 0.01))\n    global_state_ref = None\n    if method == \"feddyn\" and feddyn_y is not None:\n        global_state_ref = {k: v.detach() for k, v in global_model.state_dict().items()}\n    ib_lambda_mi = float(cfg[\"training\"].get(\"ib_lambda_mi\", 0.1))\n    ib_lambda_entropy = float(cfg[\"training\"].get(\"ib_lambda_entropy\", 0.1))\n    feddp_lambda = float(cfg[\"training\"].get(\"feddp_lambda\", 0.1))\n    clip_grad_norm = float(cfg[\"training\"].get(\"clip_grad_norm\", 0.0))\n    is_scaffold = method == \"scaffold\" and scaffold_server_c is not None and scaffold_client_c is not None\n\n    num_classes = cfg[\"dataset\"][\"num_classes\"]\n    label_hist = _precompute_label_hist(dataset, indices, num_classes)\n\n    loss_sum_t = torch.zeros((), device=device)\n    n = 0\n    step_losses_t: list[torch.Tensor] = []\n    local_steps = 0\n\n    local_prototypes = None\n    local_proto_counts = None\n    feat_dim = getattr(getattr(model, \"classifier\", None), \"in_features\", 0)\n    if method == \"feddp\" and feat_dim > 0:\n        local_prototypes = torch.zeros(num_classes, feat_dim, device=device)\n        local_proto_counts = torch.zeros(num_classes, device=device)\n\n    for _ in range(cfg[\"training\"][\"local_epochs\"]):\n        for x, y in loader:\n            x = x.to(device, non_blocking=True)\n            y = y.to(device, non_blocking=True)\n            opt.zero_grad(set_to_none=True)\n\n            if method == \"feddp\":\n                logits, feat = model(x, return_features=True)\n            else:\n                logits = model(x)\n                feat = None\n\n            loss = criterion(logits, y)\n\n            if method == \"fedprox\" and fedprox_mu > 0:\n                prox = 0.0\n                for p, gp in zip(mod",
+          "facts": {
+            "uses_deepcopy": true,
+            "creates_sgd": true,
+            "fresh_optimizer_per_call": true,
+            "mentions_momentum": true,
+            "mentions_weight_decay": true,
+            "uses_clip_grad_norm": true,
+            "deepcopy_inside_train_client": true
+          },
+          "status": "match",
+          "reconstruction_note": "The diagnostic's train_client_local keeps the agreed repairs: fresh model instance + load_state_dict instead of deepcopy (D3), functional per-batch transforms with num_workers=0 and explicit generators (D4), and checkpoint-derived epoch seeds (D5). Optimizer/loss/clip/epoch protocol matches the reference; see INTENTIONAL_DIFFERENCES.md"
+        }
+      }
+    },
+    "weights_sum_one|seed=201|round=5|source=trajectory_cohort": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.23112219895754443,
+        0.16679288991847463,
+        0.24453156323784916,
+        0.1561010380006237,
+        0.20145230988550808
+      ]
+    },
+    "gamma0_endpoint|seed=201|round=5|source=trajectory_cohort": {
+      "passed": true,
+      "candidate_loss": 3.9214091064453127,
+      "direct_loss": 3.9214091064453127,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=trajectory|seed=201|round=5|source=trajectory_cohort": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=201|round=5|source=original_cohort_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.23112219895754443,
+        0.16679288991847463,
+        0.24453156323784916,
+        0.1561010380006237,
+        0.20145230988550808
+      ]
+    },
+    "gamma0_endpoint|seed=201|round=5|source=original_cohort_rep_1001": {
+      "passed": true,
+      "candidate_loss": 3.9214091064453127,
+      "direct_loss": 3.9214091064453127,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=original|seed=201|round=5|source=original_cohort_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=201|round=5|source=original_cohort_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.23112219895754443,
+        0.16679288991847463,
+        0.24453156323784916,
+        0.1561010380006237,
+        0.20145230988550808
+      ]
+    },
+    "gamma0_endpoint|seed=201|round=5|source=original_cohort_rep_1002": {
+      "passed": true,
+      "candidate_loss": 3.9214091064453127,
+      "direct_loss": 3.9214091064453127,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=original|seed=201|round=5|source=original_cohort_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=201|round=5|source=original_cohort_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.23112219895754443,
+        0.16679288991847463,
+        0.24453156323784916,
+        0.1561010380006237,
+        0.20145230988550808
+      ]
+    },
+    "gamma0_endpoint|seed=201|round=5|source=original_cohort_rep_1003": {
+      "passed": true,
+      "candidate_loss": 3.9214091064453127,
+      "direct_loss": 3.9214091064453127,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=original|seed=201|round=5|source=original_cohort_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=201|round=5|source=alt_cohort_alt_0_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.24521649193737954,
+        0.17601429175873254,
+        0.16473132433830098,
+        0.21258991114663156,
+        0.20144798081895537
+      ]
+    },
+    "gamma0_endpoint|seed=201|round=5|source=alt_cohort_alt_0_rep_1001": {
+      "passed": true,
+      "candidate_loss": 3.9214091064453127,
+      "direct_loss": 3.9214091064453127,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_0|seed=201|round=5|source=alt_cohort_alt_0_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=201|round=5|source=alt_cohort_alt_0_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.24521649193737954,
+        0.17601429175873254,
+        0.16473132433830098,
+        0.21258991114663156,
+        0.20144798081895537
+      ]
+    },
+    "gamma0_endpoint|seed=201|round=5|source=alt_cohort_alt_0_rep_1002": {
+      "passed": true,
+      "candidate_loss": 3.9214091064453127,
+      "direct_loss": 3.9214091064453127,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_0|seed=201|round=5|source=alt_cohort_alt_0_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=201|round=5|source=alt_cohort_alt_0_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.24521649193737954,
+        0.17601429175873254,
+        0.16473132433830098,
+        0.21258991114663156,
+        0.20144798081895537
+      ]
+    },
+    "gamma0_endpoint|seed=201|round=5|source=alt_cohort_alt_0_rep_1003": {
+      "passed": true,
+      "candidate_loss": 3.9214091064453127,
+      "direct_loss": 3.9214091064453127,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_0|seed=201|round=5|source=alt_cohort_alt_0_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=201|round=5|source=alt_cohort_alt_1_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.2310501469671328,
+        0.17052640954841009,
+        0.19791573884385855,
+        0.2444553308987263,
+        0.15605237374187228
+      ]
+    },
+    "gamma0_endpoint|seed=201|round=5|source=alt_cohort_alt_1_rep_1001": {
+      "passed": true,
+      "candidate_loss": 3.9214091064453127,
+      "direct_loss": 3.9214091064453127,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_1|seed=201|round=5|source=alt_cohort_alt_1_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=201|round=5|source=alt_cohort_alt_1_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.2310501469671328,
+        0.17052640954841009,
+        0.19791573884385855,
+        0.2444553308987263,
+        0.15605237374187228
+      ]
+    },
+    "gamma0_endpoint|seed=201|round=5|source=alt_cohort_alt_1_rep_1002": {
+      "passed": true,
+      "candidate_loss": 3.9214091064453127,
+      "direct_loss": 3.9214091064453127,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_1|seed=201|round=5|source=alt_cohort_alt_1_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=201|round=5|source=alt_cohort_alt_1_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.2310501469671328,
+        0.17052640954841009,
+        0.19791573884385855,
+        0.2444553308987263,
+        0.15605237374187228
+      ]
+    },
+    "gamma0_endpoint|seed=201|round=5|source=alt_cohort_alt_1_rep_1003": {
+      "passed": true,
+      "candidate_loss": 3.9214091064453127,
+      "direct_loss": 3.9214091064453127,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_1|seed=201|round=5|source=alt_cohort_alt_1_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=201|round=50|source=trajectory_cohort": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.21363040629095675,
+        0.21248361730013107,
+        0.15334207077326342,
+        0.2248115989515072,
+        0.19573230668414154
+      ]
+    },
+    "gamma0_endpoint|seed=201|round=50|source=trajectory_cohort": {
+      "passed": true,
+      "candidate_loss": 2.5080240478515625,
+      "direct_loss": 2.5080240478515625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=trajectory|seed=201|round=50|source=trajectory_cohort": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=201|round=50|source=original_cohort_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.21363040629095675,
+        0.21248361730013107,
+        0.15334207077326342,
+        0.2248115989515072,
+        0.19573230668414154
+      ]
+    },
+    "gamma0_endpoint|seed=201|round=50|source=original_cohort_rep_1001": {
+      "passed": true,
+      "candidate_loss": 2.5080240478515625,
+      "direct_loss": 2.5080240478515625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=original|seed=201|round=50|source=original_cohort_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=201|round=50|source=original_cohort_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.21363040629095675,
+        0.21248361730013107,
+        0.15334207077326342,
+        0.2248115989515072,
+        0.19573230668414154
+      ]
+    },
+    "gamma0_endpoint|seed=201|round=50|source=original_cohort_rep_1002": {
+      "passed": true,
+      "candidate_loss": 2.5080240478515625,
+      "direct_loss": 2.5080240478515625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=original|seed=201|round=50|source=original_cohort_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=201|round=50|source=original_cohort_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.21363040629095675,
+        0.21248361730013107,
+        0.15334207077326342,
+        0.2248115989515072,
+        0.19573230668414154
+      ]
+    },
+    "gamma0_endpoint|seed=201|round=50|source=original_cohort_rep_1003": {
+      "passed": true,
+      "candidate_loss": 2.5080240478515625,
+      "direct_loss": 2.5080240478515625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=original|seed=201|round=50|source=original_cohort_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=201|round=50|source=alt_cohort_alt_0_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.22782364307043737,
+        0.16814509046197085,
+        0.16441243632531177,
+        0.24104163007201826,
+        0.19857720007026172
+      ]
+    },
+    "gamma0_endpoint|seed=201|round=50|source=alt_cohort_alt_0_rep_1001": {
+      "passed": true,
+      "candidate_loss": 2.5080240478515625,
+      "direct_loss": 2.5080240478515625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_0|seed=201|round=50|source=alt_cohort_alt_0_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=201|round=50|source=alt_cohort_alt_0_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.22782364307043737,
+        0.16814509046197085,
+        0.16441243632531177,
+        0.24104163007201826,
+        0.19857720007026172
+      ]
+    },
+    "gamma0_endpoint|seed=201|round=50|source=alt_cohort_alt_0_rep_1002": {
+      "passed": true,
+      "candidate_loss": 2.5080240478515625,
+      "direct_loss": 2.5080240478515625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_0|seed=201|round=50|source=alt_cohort_alt_0_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=201|round=50|source=alt_cohort_alt_0_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.22782364307043737,
+        0.16814509046197085,
+        0.16441243632531177,
+        0.24104163007201826,
+        0.19857720007026172
+      ]
+    },
+    "gamma0_endpoint|seed=201|round=50|source=alt_cohort_alt_0_rep_1003": {
+      "passed": true,
+      "candidate_loss": 2.5080240478515625,
+      "direct_loss": 2.5080240478515625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_0|seed=201|round=50|source=alt_cohort_alt_0_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=201|round=50|source=alt_cohort_alt_1_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.18303934222477175,
+        0.16750322673167933,
+        0.2161671207992734,
+        0.22845260289688799,
+        0.20483770734738754
+      ]
+    },
+    "gamma0_endpoint|seed=201|round=50|source=alt_cohort_alt_1_rep_1001": {
+      "passed": true,
+      "candidate_loss": 2.5080240478515625,
+      "direct_loss": 2.5080240478515625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_1|seed=201|round=50|source=alt_cohort_alt_1_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=201|round=50|source=alt_cohort_alt_1_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.18303934222477175,
+        0.16750322673167933,
+        0.2161671207992734,
+        0.22845260289688799,
+        0.20483770734738754
+      ]
+    },
+    "gamma0_endpoint|seed=201|round=50|source=alt_cohort_alt_1_rep_1002": {
+      "passed": true,
+      "candidate_loss": 2.5080240478515625,
+      "direct_loss": 2.5080240478515625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_1|seed=201|round=50|source=alt_cohort_alt_1_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=201|round=50|source=alt_cohort_alt_1_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.18303934222477175,
+        0.16750322673167933,
+        0.2161671207992734,
+        0.22845260289688799,
+        0.20483770734738754
+      ]
+    },
+    "gamma0_endpoint|seed=201|round=50|source=alt_cohort_alt_1_rep_1003": {
+      "passed": true,
+      "candidate_loss": 2.5080240478515625,
+      "direct_loss": 2.5080240478515625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_1|seed=201|round=50|source=alt_cohort_alt_1_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=201|round=100|source=trajectory_cohort": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.2241036717062635,
+        0.16172786177105833,
+        0.19196544276457883,
+        0.23710583153347733,
+        0.18509719222462204
+      ]
+    },
+    "gamma0_endpoint|seed=201|round=100|source=trajectory_cohort": {
+      "passed": true,
+      "candidate_loss": 2.1437151977539064,
+      "direct_loss": 2.1437151977539064,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=trajectory|seed=201|round=100|source=trajectory_cohort": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=201|round=100|source=original_cohort_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.2241036717062635,
+        0.16172786177105833,
+        0.19196544276457883,
+        0.23710583153347733,
+        0.18509719222462204
+      ]
+    },
+    "gamma0_endpoint|seed=201|round=100|source=original_cohort_rep_1001": {
+      "passed": true,
+      "candidate_loss": 2.1437151977539064,
+      "direct_loss": 2.1437151977539064,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=original|seed=201|round=100|source=original_cohort_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=201|round=100|source=original_cohort_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.2241036717062635,
+        0.16172786177105833,
+        0.19196544276457883,
+        0.23710583153347733,
+        0.18509719222462204
+      ]
+    },
+    "gamma0_endpoint|seed=201|round=100|source=original_cohort_rep_1002": {
+      "passed": true,
+      "candidate_loss": 2.1437151977539064,
+      "direct_loss": 2.1437151977539064,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=original|seed=201|round=100|source=original_cohort_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=201|round=100|source=original_cohort_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.2241036717062635,
+        0.16172786177105833,
+        0.19196544276457883,
+        0.23710583153347733,
+        0.18509719222462204
+      ]
+    },
+    "gamma0_endpoint|seed=201|round=100|source=original_cohort_rep_1003": {
+      "passed": true,
+      "candidate_loss": 2.1437151977539064,
+      "direct_loss": 2.1437151977539064,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=original|seed=201|round=100|source=original_cohort_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=201|round=100|source=alt_cohort_alt_0_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.23253533056930142,
+        0.23128705808925148,
+        0.16691186304667646,
+        0.1562123846462485,
+        0.21305336364852215
+      ]
+    },
+    "gamma0_endpoint|seed=201|round=100|source=alt_cohort_alt_0_rep_1001": {
+      "passed": true,
+      "candidate_loss": 2.1437151977539064,
+      "direct_loss": 2.1437151977539064,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_0|seed=201|round=100|source=alt_cohort_alt_0_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=201|round=100|source=alt_cohort_alt_0_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.23253533056930142,
+        0.23128705808925148,
+        0.16691186304667646,
+        0.1562123846462485,
+        0.21305336364852215
+      ]
+    },
+    "gamma0_endpoint|seed=201|round=100|source=alt_cohort_alt_0_rep_1002": {
+      "passed": true,
+      "candidate_loss": 2.1437151977539064,
+      "direct_loss": 2.1437151977539064,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_0|seed=201|round=100|source=alt_cohort_alt_0_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=201|round=100|source=alt_cohort_alt_0_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.23253533056930142,
+        0.23128705808925148,
+        0.16691186304667646,
+        0.1562123846462485,
+        0.21305336364852215
+      ]
+    },
+    "gamma0_endpoint|seed=201|round=100|source=alt_cohort_alt_0_rep_1003": {
+      "passed": true,
+      "candidate_loss": 2.1437151977539064,
+      "direct_loss": 2.1437151977539064,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_0|seed=201|round=100|source=alt_cohort_alt_0_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=201|round=100|source=alt_cohort_alt_1_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.22952705393089412,
+        0.16940229173118612,
+        0.2000619386807061,
+        0.21143211078175464,
+        0.18957660487545902
+      ]
+    },
+    "gamma0_endpoint|seed=201|round=100|source=alt_cohort_alt_1_rep_1001": {
+      "passed": true,
+      "candidate_loss": 2.1437151977539064,
+      "direct_loss": 2.1437151977539064,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_1|seed=201|round=100|source=alt_cohort_alt_1_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=201|round=100|source=alt_cohort_alt_1_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.22952705393089412,
+        0.16940229173118612,
+        0.2000619386807061,
+        0.21143211078175464,
+        0.18957660487545902
+      ]
+    },
+    "gamma0_endpoint|seed=201|round=100|source=alt_cohort_alt_1_rep_1002": {
+      "passed": true,
+      "candidate_loss": 2.1437151977539064,
+      "direct_loss": 2.1437151977539064,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_1|seed=201|round=100|source=alt_cohort_alt_1_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=201|round=100|source=alt_cohort_alt_1_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.22952705393089412,
+        0.16940229173118612,
+        0.2000619386807061,
+        0.21143211078175464,
+        0.18957660487545902
+      ]
+    },
+    "gamma0_endpoint|seed=201|round=100|source=alt_cohort_alt_1_rep_1003": {
+      "passed": true,
+      "candidate_loss": 2.1437151977539064,
+      "direct_loss": 2.1437151977539064,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_1|seed=201|round=100|source=alt_cohort_alt_1_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=202|round=5|source=trajectory_cohort": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.22093518439655907,
+        0.23375351332935865,
+        0.14922067966953412,
+        0.19257303466484968,
+        0.20351758793969849
+      ]
+    },
+    "gamma0_endpoint|seed=202|round=5|source=trajectory_cohort": {
+      "passed": true,
+      "candidate_loss": 3.845763134765625,
+      "direct_loss": 3.845763134765625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=trajectory|seed=202|round=5|source=trajectory_cohort": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=202|round=5|source=original_cohort_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.22093518439655907,
+        0.23375351332935865,
+        0.14922067966953412,
+        0.19257303466484968,
+        0.20351758793969849
+      ]
+    },
+    "gamma0_endpoint|seed=202|round=5|source=original_cohort_rep_1001": {
+      "passed": true,
+      "candidate_loss": 3.845763134765625,
+      "direct_loss": 3.845763134765625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=original|seed=202|round=5|source=original_cohort_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=202|round=5|source=original_cohort_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.22093518439655907,
+        0.23375351332935865,
+        0.14922067966953412,
+        0.19257303466484968,
+        0.20351758793969849
+      ]
+    },
+    "gamma0_endpoint|seed=202|round=5|source=original_cohort_rep_1002": {
+      "passed": true,
+      "candidate_loss": 3.845763134765625,
+      "direct_loss": 3.845763134765625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=original|seed=202|round=5|source=original_cohort_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=202|round=5|source=original_cohort_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.22093518439655907,
+        0.23375351332935865,
+        0.14922067966953412,
+        0.19257303466484968,
+        0.20351758793969849
+      ]
+    },
+    "gamma0_endpoint|seed=202|round=5|source=original_cohort_rep_1003": {
+      "passed": true,
+      "candidate_loss": 3.845763134765625,
+      "direct_loss": 3.845763134765625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=original|seed=202|round=5|source=original_cohort_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=202|round=5|source=alt_cohort_alt_0_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.23606082548877624,
+        0.23479362780593774,
+        0.16944243301955106,
+        0.20112237509051412,
+        0.15858073859522084
+      ]
+    },
+    "gamma0_endpoint|seed=202|round=5|source=alt_cohort_alt_0_rep_1001": {
+      "passed": true,
+      "candidate_loss": 3.845763134765625,
+      "direct_loss": 3.845763134765625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_0|seed=202|round=5|source=alt_cohort_alt_0_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=202|round=5|source=alt_cohort_alt_0_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.23606082548877624,
+        0.23479362780593774,
+        0.16944243301955106,
+        0.20112237509051412,
+        0.15858073859522084
+      ]
+    },
+    "gamma0_endpoint|seed=202|round=5|source=alt_cohort_alt_0_rep_1002": {
+      "passed": true,
+      "candidate_loss": 3.845763134765625,
+      "direct_loss": 3.845763134765625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_0|seed=202|round=5|source=alt_cohort_alt_0_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=202|round=5|source=alt_cohort_alt_0_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.23606082548877624,
+        0.23479362780593774,
+        0.16944243301955106,
+        0.20112237509051412,
+        0.15858073859522084
+      ]
+    },
+    "gamma0_endpoint|seed=202|round=5|source=alt_cohort_alt_0_rep_1003": {
+      "passed": true,
+      "candidate_loss": 3.845763134765625,
+      "direct_loss": 3.845763134765625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_0|seed=202|round=5|source=alt_cohort_alt_0_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=202|round=5|source=alt_cohort_alt_1_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.21184306717569654,
+        0.2107058727966859,
+        0.18048899358297457,
+        0.22293071237105028,
+        0.17403135407359271
+      ]
+    },
+    "gamma0_endpoint|seed=202|round=5|source=alt_cohort_alt_1_rep_1001": {
+      "passed": true,
+      "candidate_loss": 3.845763134765625,
+      "direct_loss": 3.845763134765625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_1|seed=202|round=5|source=alt_cohort_alt_1_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=202|round=5|source=alt_cohort_alt_1_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.21184306717569654,
+        0.2107058727966859,
+        0.18048899358297457,
+        0.22293071237105028,
+        0.17403135407359271
+      ]
+    },
+    "gamma0_endpoint|seed=202|round=5|source=alt_cohort_alt_1_rep_1002": {
+      "passed": true,
+      "candidate_loss": 3.845763134765625,
+      "direct_loss": 3.845763134765625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_1|seed=202|round=5|source=alt_cohort_alt_1_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=202|round=5|source=alt_cohort_alt_1_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.21184306717569654,
+        0.2107058727966859,
+        0.18048899358297457,
+        0.22293071237105028,
+        0.17403135407359271
+      ]
+    },
+    "gamma0_endpoint|seed=202|round=5|source=alt_cohort_alt_1_rep_1003": {
+      "passed": true,
+      "candidate_loss": 3.845763134765625,
+      "direct_loss": 3.845763134765625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_1|seed=202|round=5|source=alt_cohort_alt_1_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=202|round=50|source=trajectory_cohort": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.22860148135162378,
+        0.16781347241092168,
+        0.2405662444668449,
+        0.1535697067975632,
+        0.20944909497304642
+      ]
+    },
+    "gamma0_endpoint|seed=202|round=50|source=trajectory_cohort": {
+      "passed": true,
+      "candidate_loss": 2.486535400390625,
+      "direct_loss": 2.486535400390625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=trajectory|seed=202|round=50|source=trajectory_cohort": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=202|round=50|source=original_cohort_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.22860148135162378,
+        0.16781347241092168,
+        0.2405662444668449,
+        0.1535697067975632,
+        0.20944909497304642
+      ]
+    },
+    "gamma0_endpoint|seed=202|round=50|source=original_cohort_rep_1001": {
+      "passed": true,
+      "candidate_loss": 2.486535400390625,
+      "direct_loss": 2.486535400390625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=original|seed=202|round=50|source=original_cohort_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=202|round=50|source=original_cohort_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.22860148135162378,
+        0.16781347241092168,
+        0.2405662444668449,
+        0.1535697067975632,
+        0.20944909497304642
+      ]
+    },
+    "gamma0_endpoint|seed=202|round=50|source=original_cohort_rep_1002": {
+      "passed": true,
+      "candidate_loss": 2.486535400390625,
+      "direct_loss": 2.486535400390625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=original|seed=202|round=50|source=original_cohort_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=202|round=50|source=original_cohort_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.22860148135162378,
+        0.16781347241092168,
+        0.2405662444668449,
+        0.1535697067975632,
+        0.20944909497304642
+      ]
+    },
+    "gamma0_endpoint|seed=202|round=50|source=original_cohort_rep_1003": {
+      "passed": true,
+      "candidate_loss": 2.486535400390625,
+      "direct_loss": 2.486535400390625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=original|seed=202|round=50|source=original_cohort_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=202|round=50|source=alt_cohort_alt_0_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.22438268949496687,
+        0.19117267486879463,
+        0.19452809085434053,
+        0.20558375634517767,
+        0.1843327884367203
+      ]
+    },
+    "gamma0_endpoint|seed=202|round=50|source=alt_cohort_alt_0_rep_1001": {
+      "passed": true,
+      "candidate_loss": 2.486535400390625,
+      "direct_loss": 2.486535400390625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_0|seed=202|round=50|source=alt_cohort_alt_0_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=202|round=50|source=alt_cohort_alt_0_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.22438268949496687,
+        0.19117267486879463,
+        0.19452809085434053,
+        0.20558375634517767,
+        0.1843327884367203
+      ]
+    },
+    "gamma0_endpoint|seed=202|round=50|source=alt_cohort_alt_0_rep_1002": {
+      "passed": true,
+      "candidate_loss": 2.486535400390625,
+      "direct_loss": 2.486535400390625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_0|seed=202|round=50|source=alt_cohort_alt_0_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=202|round=50|source=alt_cohort_alt_0_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.22438268949496687,
+        0.19117267486879463,
+        0.19452809085434053,
+        0.20558375634517767,
+        0.1843327884367203
+      ]
+    },
+    "gamma0_endpoint|seed=202|round=50|source=alt_cohort_alt_0_rep_1003": {
+      "passed": true,
+      "candidate_loss": 2.486535400390625,
+      "direct_loss": 2.486535400390625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_0|seed=202|round=50|source=alt_cohort_alt_0_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=202|round=50|source=alt_cohort_alt_1_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.20982340399855184,
+        0.20869705136972524,
+        0.17876825294661894,
+        0.220805342129611,
+        0.18190594955549297
+      ]
+    },
+    "gamma0_endpoint|seed=202|round=50|source=alt_cohort_alt_1_rep_1001": {
+      "passed": true,
+      "candidate_loss": 2.486535400390625,
+      "direct_loss": 2.486535400390625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_1|seed=202|round=50|source=alt_cohort_alt_1_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=202|round=50|source=alt_cohort_alt_1_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.20982340399855184,
+        0.20869705136972524,
+        0.17876825294661894,
+        0.220805342129611,
+        0.18190594955549297
+      ]
+    },
+    "gamma0_endpoint|seed=202|round=50|source=alt_cohort_alt_1_rep_1002": {
+      "passed": true,
+      "candidate_loss": 2.486535400390625,
+      "direct_loss": 2.486535400390625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_1|seed=202|round=50|source=alt_cohort_alt_1_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=202|round=50|source=alt_cohort_alt_1_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.20982340399855184,
+        0.20869705136972524,
+        0.17876825294661894,
+        0.220805342129611,
+        0.18190594955549297
+      ]
+    },
+    "gamma0_endpoint|seed=202|round=50|source=alt_cohort_alt_1_rep_1003": {
+      "passed": true,
+      "candidate_loss": 2.486535400390625,
+      "direct_loss": 2.486535400390625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_1|seed=202|round=50|source=alt_cohort_alt_1_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=202|round=100|source=trajectory_cohort": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.2186999409830537,
+        0.15782817637635949,
+        0.23138858443638816,
+        0.19062473653148976,
+        0.20145856167270887
+      ]
+    },
+    "gamma0_endpoint|seed=202|round=100|source=trajectory_cohort": {
+      "passed": true,
+      "candidate_loss": 2.2076338134765625,
+      "direct_loss": 2.2076338134765625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=trajectory|seed=202|round=100|source=trajectory_cohort": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=202|round=100|source=original_cohort_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.2186999409830537,
+        0.15782817637635949,
+        0.23138858443638816,
+        0.19062473653148976,
+        0.20145856167270887
+      ]
+    },
+    "gamma0_endpoint|seed=202|round=100|source=original_cohort_rep_1001": {
+      "passed": true,
+      "candidate_loss": 2.2076338134765625,
+      "direct_loss": 2.2076338134765625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=original|seed=202|round=100|source=original_cohort_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=202|round=100|source=original_cohort_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.2186999409830537,
+        0.15782817637635949,
+        0.23138858443638816,
+        0.19062473653148976,
+        0.20145856167270887
+      ]
+    },
+    "gamma0_endpoint|seed=202|round=100|source=original_cohort_rep_1002": {
+      "passed": true,
+      "candidate_loss": 2.2076338134765625,
+      "direct_loss": 2.2076338134765625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=original|seed=202|round=100|source=original_cohort_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=202|round=100|source=original_cohort_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.2186999409830537,
+        0.15782817637635949,
+        0.23138858443638816,
+        0.19062473653148976,
+        0.20145856167270887
+      ]
+    },
+    "gamma0_endpoint|seed=202|round=100|source=original_cohort_rep_1003": {
+      "passed": true,
+      "candidate_loss": 2.2076338134765625,
+      "direct_loss": 2.2076338134765625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=original|seed=202|round=100|source=original_cohort_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=202|round=100|source=alt_cohort_alt_0_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.22765369257097723,
+        0.1680196586072228,
+        0.2408618192987845,
+        0.15375839220676643,
+        0.20970643731624908
+      ]
+    },
+    "gamma0_endpoint|seed=202|round=100|source=alt_cohort_alt_0_rep_1001": {
+      "passed": true,
+      "candidate_loss": 2.2076338134765625,
+      "direct_loss": 2.2076338134765625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_0|seed=202|round=100|source=alt_cohort_alt_0_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=202|round=100|source=alt_cohort_alt_0_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.22765369257097723,
+        0.1680196586072228,
+        0.2408618192987845,
+        0.15375839220676643,
+        0.20970643731624908
+      ]
+    },
+    "gamma0_endpoint|seed=202|round=100|source=alt_cohort_alt_0_rep_1002": {
+      "passed": true,
+      "candidate_loss": 2.2076338134765625,
+      "direct_loss": 2.2076338134765625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_0|seed=202|round=100|source=alt_cohort_alt_0_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=202|round=100|source=alt_cohort_alt_0_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.22765369257097723,
+        0.1680196586072228,
+        0.2408618192987845,
+        0.15375839220676643,
+        0.20970643731624908
+      ]
+    },
+    "gamma0_endpoint|seed=202|round=100|source=alt_cohort_alt_0_rep_1003": {
+      "passed": true,
+      "candidate_loss": 2.2076338134765625,
+      "direct_loss": 2.2076338134765625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_0|seed=202|round=100|source=alt_cohort_alt_0_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=202|round=100|source=alt_cohort_alt_1_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.23200782848501023,
+        0.17031402900097856,
+        0.19766924650831777,
+        0.24415087625656082,
+        0.15585801974913263
+      ]
+    },
+    "gamma0_endpoint|seed=202|round=100|source=alt_cohort_alt_1_rep_1001": {
+      "passed": true,
+      "candidate_loss": 2.2076338134765625,
+      "direct_loss": 2.2076338134765625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_1|seed=202|round=100|source=alt_cohort_alt_1_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=202|round=100|source=alt_cohort_alt_1_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.23200782848501023,
+        0.17031402900097856,
+        0.19766924650831777,
+        0.24415087625656082,
+        0.15585801974913263
+      ]
+    },
+    "gamma0_endpoint|seed=202|round=100|source=alt_cohort_alt_1_rep_1002": {
+      "passed": true,
+      "candidate_loss": 2.2076338134765625,
+      "direct_loss": 2.2076338134765625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_1|seed=202|round=100|source=alt_cohort_alt_1_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=202|round=100|source=alt_cohort_alt_1_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.23200782848501023,
+        0.17031402900097856,
+        0.19766924650831777,
+        0.24415087625656082,
+        0.15585801974913263
+      ]
+    },
+    "gamma0_endpoint|seed=202|round=100|source=alt_cohort_alt_1_rep_1003": {
+      "passed": true,
+      "candidate_loss": 2.2076338134765625,
+      "direct_loss": 2.2076338134765625,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_1|seed=202|round=100|source=alt_cohort_alt_1_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=203|round=5|source=trajectory_cohort": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.16407379815066392,
+        0.2405451597353083,
+        0.19816819317235637,
+        0.20943073754327535,
+        0.18778211139839607
+      ]
+    },
+    "gamma0_endpoint|seed=203|round=5|source=trajectory_cohort": {
+      "passed": true,
+      "candidate_loss": 4.048294995117187,
+      "direct_loss": 4.048294995117187,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=trajectory|seed=203|round=5|source=trajectory_cohort": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=203|round=5|source=original_cohort_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.16407379815066392,
+        0.2405451597353083,
+        0.19816819317235637,
+        0.20943073754327535,
+        0.18778211139839607
+      ]
+    },
+    "gamma0_endpoint|seed=203|round=5|source=original_cohort_rep_1001": {
+      "passed": true,
+      "candidate_loss": 4.048294995117187,
+      "direct_loss": 4.048294995117187,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=original|seed=203|round=5|source=original_cohort_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=203|round=5|source=original_cohort_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.16407379815066392,
+        0.2405451597353083,
+        0.19816819317235637,
+        0.20943073754327535,
+        0.18778211139839607
+      ]
+    },
+    "gamma0_endpoint|seed=203|round=5|source=original_cohort_rep_1002": {
+      "passed": true,
+      "candidate_loss": 4.048294995117187,
+      "direct_loss": 4.048294995117187,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=original|seed=203|round=5|source=original_cohort_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=203|round=5|source=original_cohort_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.16407379815066392,
+        0.2405451597353083,
+        0.19816819317235637,
+        0.20943073754327535,
+        0.18778211139839607
+      ]
+    },
+    "gamma0_endpoint|seed=203|round=5|source=original_cohort_rep_1003": {
+      "passed": true,
+      "candidate_loss": 4.048294995117187,
+      "direct_loss": 4.048294995117187,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=original|seed=203|round=5|source=original_cohort_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=203|round=5|source=alt_cohort_alt_0_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.23041922516234484,
+        0.2291823121438353,
+        0.1963157662234395,
+        0.15479082917347706,
+        0.1892918672969033
+      ]
+    },
+    "gamma0_endpoint|seed=203|round=5|source=alt_cohort_alt_0_rep_1001": {
+      "passed": true,
+      "candidate_loss": 4.048294995117187,
+      "direct_loss": 4.048294995117187,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_0|seed=203|round=5|source=alt_cohort_alt_0_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=203|round=5|source=alt_cohort_alt_0_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.23041922516234484,
+        0.2291823121438353,
+        0.1963157662234395,
+        0.15479082917347706,
+        0.1892918672969033
+      ]
+    },
+    "gamma0_endpoint|seed=203|round=5|source=alt_cohort_alt_0_rep_1002": {
+      "passed": true,
+      "candidate_loss": 4.048294995117187,
+      "direct_loss": 4.048294995117187,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_0|seed=203|round=5|source=alt_cohort_alt_0_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=203|round=5|source=alt_cohort_alt_0_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.23041922516234484,
+        0.2291823121438353,
+        0.1963157662234395,
+        0.15479082917347706,
+        0.1892918672969033
+      ]
+    },
+    "gamma0_endpoint|seed=203|round=5|source=alt_cohort_alt_0_rep_1003": {
+      "passed": true,
+      "candidate_loss": 4.048294995117187,
+      "direct_loss": 4.048294995117187,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_0|seed=203|round=5|source=alt_cohort_alt_0_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=203|round=5|source=alt_cohort_alt_1_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.22276318599188555,
+        0.15989750160153748,
+        0.18979286781977364,
+        0.23442237881699765,
+        0.19312406576980568
+      ]
+    },
+    "gamma0_endpoint|seed=203|round=5|source=alt_cohort_alt_1_rep_1001": {
+      "passed": true,
+      "candidate_loss": 4.048294995117187,
+      "direct_loss": 4.048294995117187,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_1|seed=203|round=5|source=alt_cohort_alt_1_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=203|round=5|source=alt_cohort_alt_1_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.22276318599188555,
+        0.15989750160153748,
+        0.18979286781977364,
+        0.23442237881699765,
+        0.19312406576980568
+      ]
+    },
+    "gamma0_endpoint|seed=203|round=5|source=alt_cohort_alt_1_rep_1002": {
+      "passed": true,
+      "candidate_loss": 4.048294995117187,
+      "direct_loss": 4.048294995117187,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_1|seed=203|round=5|source=alt_cohort_alt_1_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=203|round=5|source=alt_cohort_alt_1_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.22276318599188555,
+        0.15989750160153748,
+        0.18979286781977364,
+        0.23442237881699765,
+        0.19312406576980568
+      ]
+    },
+    "gamma0_endpoint|seed=203|round=5|source=alt_cohort_alt_1_rep_1003": {
+      "passed": true,
+      "candidate_loss": 4.048294995117187,
+      "direct_loss": 4.048294995117187,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_1|seed=203|round=5|source=alt_cohort_alt_1_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=203|round=50|source=trajectory_cohort": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.2210356809899144,
+        0.16225951351809476,
+        0.23260445800491567,
+        0.20251716247139587,
+        0.1815831850156793
+      ]
+    },
+    "gamma0_endpoint|seed=203|round=50|source=trajectory_cohort": {
+      "passed": true,
+      "candidate_loss": 2.495171240234375,
+      "direct_loss": 2.495171240234375,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=trajectory|seed=203|round=50|source=trajectory_cohort": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=203|round=50|source=original_cohort_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.2210356809899144,
+        0.16225951351809476,
+        0.23260445800491567,
+        0.20251716247139587,
+        0.1815831850156793
+      ]
+    },
+    "gamma0_endpoint|seed=203|round=50|source=original_cohort_rep_1001": {
+      "passed": true,
+      "candidate_loss": 2.495171240234375,
+      "direct_loss": 2.495171240234375,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=original|seed=203|round=50|source=original_cohort_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=203|round=50|source=original_cohort_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.2210356809899144,
+        0.16225951351809476,
+        0.23260445800491567,
+        0.20251716247139587,
+        0.1815831850156793
+      ]
+    },
+    "gamma0_endpoint|seed=203|round=50|source=original_cohort_rep_1002": {
+      "passed": true,
+      "candidate_loss": 2.495171240234375,
+      "direct_loss": 2.495171240234375,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=original|seed=203|round=50|source=original_cohort_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=203|round=50|source=original_cohort_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.2210356809899144,
+        0.16225951351809476,
+        0.23260445800491567,
+        0.20251716247139587,
+        0.1815831850156793
+      ]
+    },
+    "gamma0_endpoint|seed=203|round=50|source=original_cohort_rep_1003": {
+      "passed": true,
+      "candidate_loss": 2.495171240234375,
+      "direct_loss": 2.495171240234375,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=original|seed=203|round=50|source=original_cohort_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=203|round=50|source=alt_cohort_alt_0_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.21184306717569654,
+        0.2107058727966859,
+        0.18048899358297457,
+        0.22293071237105028,
+        0.17403135407359271
+      ]
+    },
+    "gamma0_endpoint|seed=203|round=50|source=alt_cohort_alt_0_rep_1001": {
+      "passed": true,
+      "candidate_loss": 2.495171240234375,
+      "direct_loss": 2.495171240234375,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_0|seed=203|round=50|source=alt_cohort_alt_0_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=203|round=50|source=alt_cohort_alt_0_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.21184306717569654,
+        0.2107058727966859,
+        0.18048899358297457,
+        0.22293071237105028,
+        0.17403135407359271
+      ]
+    },
+    "gamma0_endpoint|seed=203|round=50|source=alt_cohort_alt_0_rep_1002": {
+      "passed": true,
+      "candidate_loss": 2.495171240234375,
+      "direct_loss": 2.495171240234375,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_0|seed=203|round=50|source=alt_cohort_alt_0_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=203|round=50|source=alt_cohort_alt_0_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.21184306717569654,
+        0.2107058727966859,
+        0.18048899358297457,
+        0.22293071237105028,
+        0.17403135407359271
+      ]
+    },
+    "gamma0_endpoint|seed=203|round=50|source=alt_cohort_alt_0_rep_1003": {
+      "passed": true,
+      "candidate_loss": 2.495171240234375,
+      "direct_loss": 2.495171240234375,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_0|seed=203|round=50|source=alt_cohort_alt_0_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=203|round=50|source=alt_cohort_alt_1_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.18303934222477175,
+        0.16750322673167933,
+        0.2161671207992734,
+        0.22845260289688799,
+        0.20483770734738754
+      ]
+    },
+    "gamma0_endpoint|seed=203|round=50|source=alt_cohort_alt_1_rep_1001": {
+      "passed": true,
+      "candidate_loss": 2.495171240234375,
+      "direct_loss": 2.495171240234375,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_1|seed=203|round=50|source=alt_cohort_alt_1_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=203|round=50|source=alt_cohort_alt_1_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.18303934222477175,
+        0.16750322673167933,
+        0.2161671207992734,
+        0.22845260289688799,
+        0.20483770734738754
+      ]
+    },
+    "gamma0_endpoint|seed=203|round=50|source=alt_cohort_alt_1_rep_1002": {
+      "passed": true,
+      "candidate_loss": 2.495171240234375,
+      "direct_loss": 2.495171240234375,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_1|seed=203|round=50|source=alt_cohort_alt_1_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=203|round=50|source=alt_cohort_alt_1_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.18303934222477175,
+        0.16750322673167933,
+        0.2161671207992734,
+        0.22845260289688799,
+        0.20483770734738754
+      ]
+    },
+    "gamma0_endpoint|seed=203|round=50|source=alt_cohort_alt_1_rep_1003": {
+      "passed": true,
+      "candidate_loss": 2.495171240234375,
+      "direct_loss": 2.495171240234375,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_1|seed=203|round=50|source=alt_cohort_alt_1_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=203|round=100|source=trajectory_cohort": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.22428620571035432,
+        0.1609907120743034,
+        0.2360251117991056,
+        0.19444444444444445,
+        0.18425352597179223
+      ]
+    },
+    "gamma0_endpoint|seed=203|round=100|source=trajectory_cohort": {
+      "passed": true,
+      "candidate_loss": 2.251671765136719,
+      "direct_loss": 2.251671765136719,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=trajectory|seed=203|round=100|source=trajectory_cohort": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=203|round=100|source=original_cohort_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.22428620571035432,
+        0.1609907120743034,
+        0.2360251117991056,
+        0.19444444444444445,
+        0.18425352597179223
+      ]
+    },
+    "gamma0_endpoint|seed=203|round=100|source=original_cohort_rep_1001": {
+      "passed": true,
+      "candidate_loss": 2.251671765136719,
+      "direct_loss": 2.251671765136719,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=original|seed=203|round=100|source=original_cohort_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=203|round=100|source=original_cohort_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.22428620571035432,
+        0.1609907120743034,
+        0.2360251117991056,
+        0.19444444444444445,
+        0.18425352597179223
+      ]
+    },
+    "gamma0_endpoint|seed=203|round=100|source=original_cohort_rep_1002": {
+      "passed": true,
+      "candidate_loss": 2.251671765136719,
+      "direct_loss": 2.251671765136719,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=original|seed=203|round=100|source=original_cohort_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=203|round=100|source=original_cohort_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.22428620571035432,
+        0.1609907120743034,
+        0.2360251117991056,
+        0.19444444444444445,
+        0.18425352597179223
+      ]
+    },
+    "gamma0_endpoint|seed=203|round=100|source=original_cohort_rep_1003": {
+      "passed": true,
+      "candidate_loss": 2.251671765136719,
+      "direct_loss": 2.251671765136719,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=original|seed=203|round=100|source=original_cohort_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=203|round=100|source=alt_cohort_alt_0_rep_1001": {
+      "passed": true,
+      "weight_sum": 0.9999999999999999,
+      "n_clients": 5,
+      "weights": [
+        0.22528116722393504,
+        0.166268617829693,
+        0.16257761952320987,
+        0.23835164357983413,
+        0.20752095184332797
+      ]
+    },
+    "gamma0_endpoint|seed=203|round=100|source=alt_cohort_alt_0_rep_1001": {
+      "passed": true,
+      "candidate_loss": 2.251671765136719,
+      "direct_loss": 2.251671765136719,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_0|seed=203|round=100|source=alt_cohort_alt_0_rep_1001": {
+      "passed": true,
+      "weight_sum": 0.9999999999999999
+    },
+    "weights_sum_one|seed=203|round=100|source=alt_cohort_alt_0_rep_1002": {
+      "passed": true,
+      "weight_sum": 0.9999999999999999,
+      "n_clients": 5,
+      "weights": [
+        0.22528116722393504,
+        0.166268617829693,
+        0.16257761952320987,
+        0.23835164357983413,
+        0.20752095184332797
+      ]
+    },
+    "gamma0_endpoint|seed=203|round=100|source=alt_cohort_alt_0_rep_1002": {
+      "passed": true,
+      "candidate_loss": 2.251671765136719,
+      "direct_loss": 2.251671765136719,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_0|seed=203|round=100|source=alt_cohort_alt_0_rep_1002": {
+      "passed": true,
+      "weight_sum": 0.9999999999999999
+    },
+    "weights_sum_one|seed=203|round=100|source=alt_cohort_alt_0_rep_1003": {
+      "passed": true,
+      "weight_sum": 0.9999999999999999,
+      "n_clients": 5,
+      "weights": [
+        0.22528116722393504,
+        0.166268617829693,
+        0.16257761952320987,
+        0.23835164357983413,
+        0.20752095184332797
+      ]
+    },
+    "gamma0_endpoint|seed=203|round=100|source=alt_cohort_alt_0_rep_1003": {
+      "passed": true,
+      "candidate_loss": 2.251671765136719,
+      "direct_loss": 2.251671765136719,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_0|seed=203|round=100|source=alt_cohort_alt_0_rep_1003": {
+      "passed": true,
+      "weight_sum": 0.9999999999999999
+    },
+    "weights_sum_one|seed=203|round=100|source=alt_cohort_alt_1_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.17369017917895213,
+        0.20158766160127012,
+        0.24899070083919256,
+        0.15894760716715808,
+        0.21678385121342708
+      ]
+    },
+    "gamma0_endpoint|seed=203|round=100|source=alt_cohort_alt_1_rep_1001": {
+      "passed": true,
+      "candidate_loss": 2.251671765136719,
+      "direct_loss": 2.251671765136719,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_1|seed=203|round=100|source=alt_cohort_alt_1_rep_1001": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=203|round=100|source=alt_cohort_alt_1_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.17369017917895213,
+        0.20158766160127012,
+        0.24899070083919256,
+        0.15894760716715808,
+        0.21678385121342708
+      ]
+    },
+    "gamma0_endpoint|seed=203|round=100|source=alt_cohort_alt_1_rep_1002": {
+      "passed": true,
+      "candidate_loss": 2.251671765136719,
+      "direct_loss": 2.251671765136719,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_1|seed=203|round=100|source=alt_cohort_alt_1_rep_1002": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "weights_sum_one|seed=203|round=100|source=alt_cohort_alt_1_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0,
+      "n_clients": 5,
+      "weights": [
+        0.17369017917895213,
+        0.20158766160127012,
+        0.24899070083919256,
+        0.15894760716715808,
+        0.21678385121342708
+      ]
+    },
+    "gamma0_endpoint|seed=203|round=100|source=alt_cohort_alt_1_rep_1003": {
+      "passed": true,
+      "candidate_loss": 2.251671765136719,
+      "direct_loss": 2.251671765136719,
+      "abs_diff": 0.0,
+      "note": "\u03b3=0 candidate is exact clone of sd0; eval loss agreeswith direct eval of sd0 (PROTOCOL.md \u00a79)."
+    },
+    "gamma1_weight_sum_to_one|cohort=alt_1|seed=203|round=100|source=alt_cohort_alt_1_rep_1003": {
+      "passed": true,
+      "weight_sum": 1.0
+    },
+    "per_example_reversed_order_identity": {
+      "passed": true,
+      "compare_mode": "data_rows_sorted_canonical"
+    }
+  }
+}

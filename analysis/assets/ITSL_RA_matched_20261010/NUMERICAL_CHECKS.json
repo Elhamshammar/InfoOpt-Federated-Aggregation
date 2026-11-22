@@ -1,0 +1,8 @@
+{
+  "independent_scipy_paired_test_and_interval_comparisons": 9,
+  "holm_families_verified": [
+    6,
+    3
+  ],
+  "verdict": "PASS"
+}

@@ -1,0 +1,1106 @@
+{
+ "experiment": "four_arm_20261009",
+ "grid": "3 datasets x 5 seeds x 4 arms = 60 cells",
+ "completion_rule": "a cell is 'complete' only if the full verifier passes for that exact run and arm",
+ "counts": {
+  "complete": 60
+ },
+ "problems": [],
+ "cells": [
+  {
+   "dataset": "cifar100",
+   "seed": 100,
+   "arm": "fedavg_aibon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_cifar100_fedavg_aibon_fedavg_seed100_alpha0.3_20261010_123750",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/cifar100_fedavg_aibon_seed100.json",
+   "hashes": {
+    "config_used.json": "9a874e06b91cb8aebbf8a1d1fc7a4f8a9cd696cd3c959169c05c38632845dbb6",
+    "metrics.csv": "bca40e31d2b5a4e4f8c8b63d02e000c0285ccec587589cae172e1c49c1aa4c9f",
+    "summary.json": "34af66392e01a048a3180a28fc19a7349418070c68bb9b41aa3dd051427b6869",
+    "final_model.pt": "544a2838b1d8016500dbb4640797d7fc11ff7cb93b71a3c2985776cb8cf7b3d6",
+    "partition_used.json": "b8fbd7d779b21e4654cddbbdf714ceabe3aa98cabdaad1a22ee99ae46b02fed8"
+   },
+   "terminal_acc": 0.4184,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 100,
+   "arm": "infoopt_aibon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_cifar100_infoopt_aibon_InfoOpt_Full_seed100_alpha0.3_20261010_124437",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/cifar100_infoopt_aibon_seed100.json",
+   "hashes": {
+    "config_used.json": "ce9e4fa71a061d0a1fd5da4f1cbcce4f5e0f40d8e3401bea000aac4555a4c1cb",
+    "metrics.csv": "33f9182cb69b744738625d94950e806c60911ed0f39fdba7381ab86b3a73f8eb",
+    "summary.json": "debe521568a6f94f96574687426cd2f4127cc0e711b78f7ff5b1a018db7041f3",
+    "final_model.pt": "2e465ac6d7d5ede2dd96088e05ee402c9aa70f50846196353ac28cbbaae63abd",
+    "partition_used.json": "b8fbd7d779b21e4654cddbbdf714ceabe3aa98cabdaad1a22ee99ae46b02fed8"
+   },
+   "terminal_acc": 0.4353,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 100,
+   "arm": "ra_probeoff",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_cifar100_ra_probeoff_RA_InfoOpt_seed100_alpha0.3_20261010_125141",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/cifar100_ra_probeoff_seed100.json",
+   "hashes": {
+    "config_used.json": "f0376a75c56e84a68ececfb2ce4421f0ccfb08d4912bf73e4789dbab643562b6",
+    "metrics.csv": "b8744e232cfcaec763974579e43b2688388030e11bc642eb473bca9d854fa876",
+    "summary.json": "2e188cce065a41095f1b078107b15eb9387d90815d3bb0e9d83358d9bc6a5fde",
+    "final_model.pt": "20d1a1be78e7550f4f15d320efbb18eceb5f9e77fdd6c652bb603abe1d4146c6",
+    "partition_used.json": "b8fbd7d779b21e4654cddbbdf714ceabe3aa98cabdaad1a22ee99ae46b02fed8"
+   },
+   "terminal_acc": 0.4209,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 100,
+   "arm": "ra_probeon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_cifar100_ra_probeon_RA_InfoOpt_seed100_alpha0.3_20261010_125829",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/cifar100_ra_probeon_seed100.json",
+   "hashes": {
+    "config_used.json": "a2ae44a2a224670d91679e68e30b3e41a1254b21a8bac8c215cb6b3b2e721c64",
+    "metrics.csv": "906f363a4c4891b9151a29d6cc1960fdddea26f364eeb898f02c7ce379d68bf4",
+    "summary.json": "724a2224bd4718ff1e1a9c6a39a2d2ffacabc3be96eb6336bfe22d96318d9d1b",
+    "final_model.pt": "a6ebe4dfbbc601fd81d8b2d3bc08b9a00978dece12cdcad16c9362e4326fba06",
+    "partition_used.json": "b8fbd7d779b21e4654cddbbdf714ceabe3aa98cabdaad1a22ee99ae46b02fed8",
+    "counterfactual_probe.csv": "e09d177f9db35ecc78188c0abfc3c73edfade9e15cbdc60b61b30b998e94b7b6"
+   },
+   "terminal_acc": 0.4223,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 101,
+   "arm": "fedavg_aibon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_cifar100_fedavg_aibon_fedavg_seed101_alpha0.3_20261010_130602",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/cifar100_fedavg_aibon_seed101.json",
+   "hashes": {
+    "config_used.json": "0ea06810d079953deda793ecd12beb6bd6f04e0616ba4baeecf26a18569617cb",
+    "metrics.csv": "c0f8f40585288bfd560b475e730d11162db8dafaefc6ef1e7960ec621ce4f4a7",
+    "summary.json": "ddaa4d07735dfd5c858534517728933cb347c70869b3cddbc3c39e1947637348",
+    "final_model.pt": "3d6e5a0f70bada4a1752228a642d674fd9a21084581f6457249573373965369b",
+    "partition_used.json": "588c54039273b4b1dff486a57d6c27e376573434ac08b41784bd65d82050bf67"
+   },
+   "terminal_acc": 0.4389,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 101,
+   "arm": "infoopt_aibon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_cifar100_infoopt_aibon_InfoOpt_Full_seed101_alpha0.3_20261010_131250",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/cifar100_infoopt_aibon_seed101.json",
+   "hashes": {
+    "config_used.json": "c4ac04fca071741b0ab282fc33f856f34b8a56b6695d0b0a2ad626a5cca9cea5",
+    "metrics.csv": "7430c5a83f8433f0adcf72769c274c7a7c923d2dd83cd3e87d87cc35ce174c94",
+    "summary.json": "0a6c1a43b0b07d525c24ea2feeef9c613862d2ed2253408d22d47f5b05475471",
+    "final_model.pt": "bfa2dc5920c0b23807605a29b4929c8f6f9ae6843ed906c9836f00cbe607dddf",
+    "partition_used.json": "588c54039273b4b1dff486a57d6c27e376573434ac08b41784bd65d82050bf67"
+   },
+   "terminal_acc": 0.4308,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 101,
+   "arm": "ra_probeoff",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_cifar100_ra_probeoff_RA_InfoOpt_seed101_alpha0.3_20261010_131954",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/cifar100_ra_probeoff_seed101.json",
+   "hashes": {
+    "config_used.json": "24e5b02625875c34e8a0fefe8d6fafe6e3abb7a86bd0aece0baa46c9dac5f5de",
+    "metrics.csv": "25cb88c45af867cda40bc1f4127f909e0f83b8ed3118788a8dee84034f663694",
+    "summary.json": "2e04785197af51c015db30394751253e342dd9b7264194bc0b12467b138bb5ec",
+    "final_model.pt": "ca42b365f3123817537ed0f11361f81c0305f2d66c145539fc6ef0b9d6e75718",
+    "partition_used.json": "588c54039273b4b1dff486a57d6c27e376573434ac08b41784bd65d82050bf67"
+   },
+   "terminal_acc": 0.4388,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 101,
+   "arm": "ra_probeon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_cifar100_ra_probeon_RA_InfoOpt_seed101_alpha0.3_20261010_132654",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/cifar100_ra_probeon_seed101.json",
+   "hashes": {
+    "config_used.json": "be3a650532dca696ae6f15500f6d1fa11d2c9f9d025d8a60db7a4f376c2e5e04",
+    "metrics.csv": "3e73974b8575e15b402a523ee04f2c08a3f2ef7502c8a3755e57e5437ec957c4",
+    "summary.json": "91ae56f6f431899c8fd12f54a24a611c0f8d3dd6635205a4df223323eaebd2de",
+    "final_model.pt": "41c1c108809dff4661e76c83d8c0e6c8c185eb9e8adf3117945ae746ad8c4785",
+    "partition_used.json": "588c54039273b4b1dff486a57d6c27e376573434ac08b41784bd65d82050bf67",
+    "counterfactual_probe.csv": "41ee9ea1d596f1681a9ce1760d0327d3427d33a84916a12411fd0702c6b6b6df"
+   },
+   "terminal_acc": 0.4405,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 102,
+   "arm": "fedavg_aibon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_cifar100_fedavg_aibon_fedavg_seed102_alpha0.3_20261010_133404",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/cifar100_fedavg_aibon_seed102.json",
+   "hashes": {
+    "config_used.json": "3c95696aac67d994d4c491ee866a74fbee69bcbe56b0109327559e156aae30b6",
+    "metrics.csv": "0acaf4a322cbdefc572fa3f09a3274ad42a421c9accdf9c50278c9089aea7ac8",
+    "summary.json": "5abcc554eb00702d4197fdb8ae53e5b92bfc652b2a657c93077983b8a6471286",
+    "final_model.pt": "aea8d6d8ca574f23eae6c304390e314c30e83e337cc29ba1b7364464868a52c2",
+    "partition_used.json": "caab8bcd8d1a545ddf65c670d344008d63a5ff36187077badee482775b5f081a"
+   },
+   "terminal_acc": 0.4352,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 102,
+   "arm": "infoopt_aibon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_cifar100_infoopt_aibon_InfoOpt_Full_seed102_alpha0.3_20261010_134053",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/cifar100_infoopt_aibon_seed102.json",
+   "hashes": {
+    "config_used.json": "a1501b5964a2c7bfc05ff5a923d19a15a927146f38b3f86dbd013e8a84309126",
+    "metrics.csv": "0474e27a2560948a863499a9d63cf1c60c8242eb4ecaf6b96bb5b13799d14b77",
+    "summary.json": "bfe782273f7a3889d41b2bda36cba40662bf25e6152617ad0ee2d8c615162028",
+    "final_model.pt": "c416ff2903083834ffe86fdcb2bade21ddc4a177d6d933733c4cfeace9711320",
+    "partition_used.json": "caab8bcd8d1a545ddf65c670d344008d63a5ff36187077badee482775b5f081a"
+   },
+   "terminal_acc": 0.4363,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 102,
+   "arm": "ra_probeoff",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_cifar100_ra_probeoff_RA_InfoOpt_seed102_alpha0.3_20261010_134800",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/cifar100_ra_probeoff_seed102.json",
+   "hashes": {
+    "config_used.json": "3d6c1f81d6419d128f010cc5d9834a3a92e8d4b80bab6bf310aa52f403ad42e1",
+    "metrics.csv": "cc85afd1bd3ad3ae65e82b426fe59cd137cb0089017212e77242f86a4ea275dd",
+    "summary.json": "0721757cf1150940bb01a82a54a792a70c7a09d6782025cbed645cb9338afcb4",
+    "final_model.pt": "662f599de784d9355b9fe1b22450dc3d92f7fc9fb52c39ceb9eb6bc37ac4b968",
+    "partition_used.json": "caab8bcd8d1a545ddf65c670d344008d63a5ff36187077badee482775b5f081a"
+   },
+   "terminal_acc": 0.4369,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 102,
+   "arm": "ra_probeon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_cifar100_ra_probeon_RA_InfoOpt_seed102_alpha0.3_20261010_135515",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/cifar100_ra_probeon_seed102.json",
+   "hashes": {
+    "config_used.json": "bf2ce63e505660bf7b731a34e162b0e7bf416acdb61f6c24243d55739c467658",
+    "metrics.csv": "a3056fa19cb36e9821e457b96d34da9b4bb1394a146232e0347ec206b3eb648f",
+    "summary.json": "23a55547b77ec0df40fabfb5ff0c61956b7de70290d26b481e072a9dc217f73c",
+    "final_model.pt": "3caf658e368c3b147ebbc04bcfb1b69e9157c29c1e0eaff13541f3b3c7ab2fd9",
+    "partition_used.json": "caab8bcd8d1a545ddf65c670d344008d63a5ff36187077badee482775b5f081a",
+    "counterfactual_probe.csv": "9f00c33ffc36b754c9821408685379644779fd6df0dac41c373805d396cc52a9"
+   },
+   "terminal_acc": 0.4379,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 103,
+   "arm": "fedavg_aibon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_cifar100_fedavg_aibon_fedavg_seed103_alpha0.3_20261010_140224",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/cifar100_fedavg_aibon_seed103.json",
+   "hashes": {
+    "config_used.json": "c46147b7cc0c8de95c4aa9d3297a5c836f77b911561803996deb1ce606efb8cc",
+    "metrics.csv": "95822abcbcef8252fe2ae6aca49b79a751fe1246e2403929d257816d1c73bdd1",
+    "summary.json": "d3449ad947cda8b6df0d4191e89aef79ae548009c64456d2cd05e579bd0db7a0",
+    "final_model.pt": "8460e5f0ebaac056d46e8399986390c1eaa7a18d7e293df15522d3ab4a807206",
+    "partition_used.json": "1643fcd2dfea49e9dea09fe027df0714c372d32c3f81ac1860ef38affd1b16c0"
+   },
+   "terminal_acc": 0.4503,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 103,
+   "arm": "infoopt_aibon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_cifar100_infoopt_aibon_InfoOpt_Full_seed103_alpha0.3_20261010_140935",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/cifar100_infoopt_aibon_seed103.json",
+   "hashes": {
+    "config_used.json": "8043bb9913489aed8bd85ff50aa9f9163b73714939e3e4e4510765fbffc76554",
+    "metrics.csv": "2f8b1c6e2d6c849564f64ef226333f75f978462aaa6f4d67aa8a78c72da39067",
+    "summary.json": "988d89af85661f8ee9c3f83b73da0a52213da85554b753dae88b06c2f33bcba6",
+    "final_model.pt": "b648fae0263bc22c9088e4b679de279dec33896b645e89617b9173e4b3b0e02d",
+    "partition_used.json": "1643fcd2dfea49e9dea09fe027df0714c372d32c3f81ac1860ef38affd1b16c0"
+   },
+   "terminal_acc": 0.4494,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 103,
+   "arm": "ra_probeoff",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_cifar100_ra_probeoff_RA_InfoOpt_seed103_alpha0.3_20261010_141705",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/cifar100_ra_probeoff_seed103.json",
+   "hashes": {
+    "config_used.json": "cff0fbf2e014b3453912c34660f1c635294ad9f29b55b6b74d07230e88e0e3a4",
+    "metrics.csv": "011df532e5065c8608dc15a0bb9065a4b094a61c0bf1e4f67c2e7ab3f979e7a8",
+    "summary.json": "3e59de8fe87b6784ca0c5f9a53af61a3e7871ecc25f63b337899320deba20c84",
+    "final_model.pt": "9ef03d0af07f40683eef407051982ecc03420433ff3200579d1d034ff8fff347",
+    "partition_used.json": "1643fcd2dfea49e9dea09fe027df0714c372d32c3f81ac1860ef38affd1b16c0"
+   },
+   "terminal_acc": 0.4528,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 103,
+   "arm": "ra_probeon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_cifar100_ra_probeon_RA_InfoOpt_seed103_alpha0.3_20261010_142356",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/cifar100_ra_probeon_seed103.json",
+   "hashes": {
+    "config_used.json": "20b76f147e72bc288252240406e8b31ec7eae9631173a8f0d362f08d739f46aa",
+    "metrics.csv": "8dd28b415ff3aa04b2b3ef73a2b2168f777f4d22d3a68934360dc9cd966d8f52",
+    "summary.json": "0600ea578b8d87373f66d979aa627a0f679e8ec0f981eb9dd43e91d12d17f32c",
+    "final_model.pt": "b48cc397b1c9855a47b851096a4ac0c855dcb04a1966305138128b8501a421dd",
+    "partition_used.json": "1643fcd2dfea49e9dea09fe027df0714c372d32c3f81ac1860ef38affd1b16c0",
+    "counterfactual_probe.csv": "6dd0bb210dfce0530bbbe6a71f1bbb1e24ccc2e4047011b153821986db239f2c"
+   },
+   "terminal_acc": 0.4336,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 104,
+   "arm": "fedavg_aibon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_cifar100_fedavg_aibon_fedavg_seed104_alpha0.3_20261010_143107",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/cifar100_fedavg_aibon_seed104.json",
+   "hashes": {
+    "config_used.json": "4f8a47c6aba6d405a5b5aad1eccc0a758b6421155b95e2151d7515148debd1cd",
+    "metrics.csv": "fc2f2b5ae046e96d69097dc2750c6a691017ec3410afedcf02e219e808cb7c8f",
+    "summary.json": "f08ab8de1fe7d14ebf6bd3672814bc28337f2e26a4854146d83166d543d551f9",
+    "final_model.pt": "3c70cde2bcdd869dee20a80d7c6f545ecb17cfb4f8f48271ddf679227276d07a",
+    "partition_used.json": "6921c8279a9df9878e7a970e4643b7bf5e4b7a0a66f0bc2f98f7ada7cbf380c8"
+   },
+   "terminal_acc": 0.4421,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 104,
+   "arm": "infoopt_aibon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_cifar100_infoopt_aibon_InfoOpt_Full_seed104_alpha0.3_20261010_143817",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/cifar100_infoopt_aibon_seed104.json",
+   "hashes": {
+    "config_used.json": "c6b5e89f16e1333a929fd972a83e2bd50144f4716179e7f1dfd48f9c8c7eb952",
+    "metrics.csv": "340866d0b7064be60dd83fe032dca50b4599160f2d02ef773d860f74e21bba35",
+    "summary.json": "c5f08c8c4acb7f948ab01461294c676e9fa1d99798a4a4801c665bc0c9b9d761",
+    "final_model.pt": "ec082ff403ceba74a42f4817be99435ea208fc39951f90c291b35aae10f6b97b",
+    "partition_used.json": "6921c8279a9df9878e7a970e4643b7bf5e4b7a0a66f0bc2f98f7ada7cbf380c8"
+   },
+   "terminal_acc": 0.4416,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 104,
+   "arm": "ra_probeoff",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_cifar100_ra_probeoff_RA_InfoOpt_seed104_alpha0.3_20261010_144551",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/cifar100_ra_probeoff_seed104.json",
+   "hashes": {
+    "config_used.json": "52cae11e6ca916ad7aec824ccf947a40f905bbd85517f4f571c946571619d073",
+    "metrics.csv": "3e51406873732bd235ecdfef3cb36071b4e25ad55832bb69dcafbdb498809bb1",
+    "summary.json": "6e90986e84dda40f1fc94255813372fd4cb6f905d9927aa9e681f1ec4769dc17",
+    "final_model.pt": "e4da421ddc5b1b8a92a7513db222b02a238eed81ff4503b1d05488ae009d4dae",
+    "partition_used.json": "6921c8279a9df9878e7a970e4643b7bf5e4b7a0a66f0bc2f98f7ada7cbf380c8"
+   },
+   "terminal_acc": 0.4459,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "cifar100",
+   "seed": 104,
+   "arm": "ra_probeon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_cifar100_ra_probeon_RA_InfoOpt_seed104_alpha0.3_20261010_145242",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/cifar100_ra_probeon_seed104.json",
+   "hashes": {
+    "config_used.json": "91485498361b8b52859cf696caf071662ea73e1199b531263be84f3cc634c795",
+    "metrics.csv": "b2fd2f196d39417dace9dd9ed372480add399bea5c0a241dd4be3101dd7a7843",
+    "summary.json": "a6f720eaf990f7ed33c0020f0a5674551080ba3555335aed8620e731c6543612",
+    "final_model.pt": "def40ddb1d2daad5d76f5bc446886e5d141dca1088b1885d4c9fb7541fff8433",
+    "partition_used.json": "6921c8279a9df9878e7a970e4643b7bf5e4b7a0a66f0bc2f98f7ada7cbf380c8",
+    "counterfactual_probe.csv": "12261a7b23bc216e8df1c324ffc88769b5802f71502be7d69ca675b3b4a0c4b4"
+   },
+   "terminal_acc": 0.433,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 100,
+   "arm": "fedavg_aibon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_eurosat_fedavg_aibon_fedavg_seed100_alpha0.3_20261010_150004",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/eurosat_fedavg_aibon_seed100.json",
+   "hashes": {
+    "config_used.json": "c7c3e201980c2bbd641f6a15a27fb3488c21abb96af10ab7387dd6ec15cdc59a",
+    "metrics.csv": "7bcf77a47581dc78848b581c43f908b66ff87d79a399e53d1901600477357b1f",
+    "summary.json": "69148634274eb48de94bf96b53c1113a275b4969b5cda924b6c0ce76ca95bb63",
+    "final_model.pt": "597590d0da039d435e28a09eedd4f762fe9c9bcfe81e2e79245b1f1aee459e30",
+    "partition_used.json": "c87e7669d9ef30e4cccbdd72094c1761cbd1ea814ee2db8064cf3d4c1f49237d"
+   },
+   "terminal_acc": 0.8303703703703704,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 100,
+   "arm": "infoopt_aibon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_eurosat_infoopt_aibon_InfoOpt_Full_seed100_alpha0.3_20261010_151057",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/eurosat_infoopt_aibon_seed100.json",
+   "hashes": {
+    "config_used.json": "fa4bab739675f9a91966c569620932395e0304721537027bb058bd728b1c8356",
+    "metrics.csv": "fb9b1818f7a27aec149b04014693b1c32f6b5f9bc4809a83c13c899529ecc929",
+    "summary.json": "a3a4831eefd69bee8dc51d839494aadb766ac944931df9a1b598390857703da5",
+    "final_model.pt": "00fbc802df7cccb7b77c48ba23e216943d6399723cedf3a5de751d0be52512bb",
+    "partition_used.json": "c87e7669d9ef30e4cccbdd72094c1761cbd1ea814ee2db8064cf3d4c1f49237d"
+   },
+   "terminal_acc": 0.8244444444444444,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 100,
+   "arm": "ra_probeoff",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_eurosat_ra_probeoff_RA_InfoOpt_seed100_alpha0.3_20261010_152249",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/eurosat_ra_probeoff_seed100.json",
+   "hashes": {
+    "config_used.json": "2dba939febae544c3d899a772444e2442644fe35f21064cb2f4489551e94e603",
+    "metrics.csv": "932e26fdd1a251735aab5cb7271521c3297e91b08e7d032b71b72968784d3772",
+    "summary.json": "f2e1d2fd2ab7153111fd65d8a795333a2ac07ff5626af9450536d810676b663e",
+    "final_model.pt": "0a3fa7cbae3dc9d2d02e551014e78cb5f72401311f88640c62eab40bd2107115",
+    "partition_used.json": "c87e7669d9ef30e4cccbdd72094c1761cbd1ea814ee2db8064cf3d4c1f49237d"
+   },
+   "terminal_acc": 0.8148148148148148,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 100,
+   "arm": "ra_probeon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_eurosat_ra_probeon_RA_InfoOpt_seed100_alpha0.3_20261010_153355",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/eurosat_ra_probeon_seed100.json",
+   "hashes": {
+    "config_used.json": "740bffbf1c5dd722c02175dc9a355453dde16620b95c52b936e104d8865cbb6e",
+    "metrics.csv": "caa949e3dda9592b03d918b4a88f84275fab186e8ecfb81e61d93c1b812259b9",
+    "summary.json": "ce600f331d2d974f33eac4b84339e62fa1c29f9dbddd0a04f2911f3db727ffd1",
+    "final_model.pt": "d2baadb758a4675ae324880467cb867f06453e1fffd8bdec95e4c3889e7c71b9",
+    "partition_used.json": "c87e7669d9ef30e4cccbdd72094c1761cbd1ea814ee2db8064cf3d4c1f49237d",
+    "counterfactual_probe.csv": "3b5a402d3bc1c49508df13f2fb1b2fe9e4bfe8f2b016cfc5ffe5b1392a534ab2"
+   },
+   "terminal_acc": 0.8103703703703704,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 101,
+   "arm": "fedavg_aibon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_eurosat_fedavg_aibon_fedavg_seed101_alpha0.3_20261010_154534",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/eurosat_fedavg_aibon_seed101.json",
+   "hashes": {
+    "config_used.json": "3a599df800efb135a3c357035a8bb93cc471edc7af486e6c9363e6133530b365",
+    "metrics.csv": "4ebdadc0f43e7fe609ba405b0a8f33bae0c05d2bb1da2746f00fde8b5c3b7052",
+    "summary.json": "1f46ae076a333623c1aae72317f23172b5828ffb4aea503dd6bbc042c29dd5d3",
+    "final_model.pt": "74869b29c51ed21ed8dc48afa7894254e2c5d617fbb41dbe8f47d71dde1d6c63",
+    "partition_used.json": "50b7d4cfe919034246a8056096c954cfaa6cd18ed18d1156b6b85a45bbedb53f"
+   },
+   "terminal_acc": 0.697037037037037,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 101,
+   "arm": "infoopt_aibon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_eurosat_infoopt_aibon_InfoOpt_Full_seed101_alpha0.3_20261010_155640",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/eurosat_infoopt_aibon_seed101.json",
+   "hashes": {
+    "config_used.json": "d2e585df25498df4065fa1eb0a3cdffb5ddf5d6779c5b940f2c6d0064e83bf7c",
+    "metrics.csv": "f4345b13b3115ff96c857b2b19ba1ff81667c1dca7b7343d779b6eba9af3f088",
+    "summary.json": "31ba395db8e9c2b1d2f63845b26f0194d909113341d44eeecef2175847f3ae90",
+    "final_model.pt": "49f9979aa791746e29d1371657a7c9308d94e586417fa3a26fe368c249ecd4a1",
+    "partition_used.json": "50b7d4cfe919034246a8056096c954cfaa6cd18ed18d1156b6b85a45bbedb53f"
+   },
+   "terminal_acc": 0.6659259259259259,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 101,
+   "arm": "ra_probeoff",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_eurosat_ra_probeoff_RA_InfoOpt_seed101_alpha0.3_20261010_160956",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/eurosat_ra_probeoff_seed101.json",
+   "hashes": {
+    "config_used.json": "7fe60eee22d4c19320fc47fb1142f6fdbca5ff269716de9d32689062248ab7ff",
+    "metrics.csv": "4e9625c23e63cd37584a06f45f37361cb83f3cd7c56b2addf5db5f9afea3ac64",
+    "summary.json": "fa1c557bd67caa0b91dd1092b899ffcfa927135052724415dee31202f6c9c3ce",
+    "final_model.pt": "237483e6a031e3d913b45be63f43652ed7bd15e1ec15d15f9a35d74c809b1e92",
+    "partition_used.json": "50b7d4cfe919034246a8056096c954cfaa6cd18ed18d1156b6b85a45bbedb53f"
+   },
+   "terminal_acc": 0.7677777777777778,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 101,
+   "arm": "ra_probeon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_eurosat_ra_probeon_RA_InfoOpt_seed101_alpha0.3_20261010_162151",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/eurosat_ra_probeon_seed101.json",
+   "hashes": {
+    "config_used.json": "643628da29b96bc5ab71b9fd4dd713194356ea426468ab9868314d4d335a164a",
+    "metrics.csv": "23f6c721948f65404a00882e822f59db7e285c9a589f3e8192566ecc37d5894c",
+    "summary.json": "967e803c86452e6bf097719d1c8ef6b33f848518166556ca7377b60be0c65892",
+    "final_model.pt": "3f705e8f5c61a1742fd9291c05d700f58cb7f254a96e1595b76909fb66a910ce",
+    "partition_used.json": "50b7d4cfe919034246a8056096c954cfaa6cd18ed18d1156b6b85a45bbedb53f",
+    "counterfactual_probe.csv": "8a401a5c0b63e4c161eeff44be6cc5824b48f17f1266dfe4e50665bc15e4f697"
+   },
+   "terminal_acc": 0.7540740740740741,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 102,
+   "arm": "fedavg_aibon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_eurosat_fedavg_aibon_fedavg_seed102_alpha0.3_20261010_163435",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/eurosat_fedavg_aibon_seed102.json",
+   "hashes": {
+    "config_used.json": "cb40d171e06d9fac12615ef866e59fa9df1fc377f30de99199fd775ea05e375e",
+    "metrics.csv": "d7aea08d5ed26d9f49aa51911c29664f548894d83f1c4037d52fd13a3ffcfc54",
+    "summary.json": "ac75bfd24f9bfff87d59430c2bbae3f1a97703c059cafbe2e43181ca784d592b",
+    "final_model.pt": "0896a4abc9e17e66a0881e31864e40f9a708ee783fb11f14f14f910a2c5e0774",
+    "partition_used.json": "dc9b17d303d3d5af73479082f385aac3cba5f1ea4bb05941677d0dc86417ce69"
+   },
+   "terminal_acc": 0.8403703703703703,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 102,
+   "arm": "infoopt_aibon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_eurosat_infoopt_aibon_InfoOpt_Full_seed102_alpha0.3_20261010_164620",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/eurosat_infoopt_aibon_seed102.json",
+   "hashes": {
+    "config_used.json": "b8d2243ef7909d392d235c43ad6cd9222f9b7f2095c6a795890f4382e47e5b12",
+    "metrics.csv": "b177c8d4f58fee76e9a2aaf2615f2ade55416085dcd8dbd1a97321bf6bfad574",
+    "summary.json": "a5a2ab0ca72d6edf61c65f28098d32dc18a036b999eb526fa33db9148c3d0ab9",
+    "final_model.pt": "e173cdf308287408853aad57574d37d8bfa351f5998ad1451976279bf64b87b1",
+    "partition_used.json": "dc9b17d303d3d5af73479082f385aac3cba5f1ea4bb05941677d0dc86417ce69"
+   },
+   "terminal_acc": 0.8148148148148148,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 102,
+   "arm": "ra_probeoff",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_eurosat_ra_probeoff_RA_InfoOpt_seed102_alpha0.3_20261010_165912",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/eurosat_ra_probeoff_seed102.json",
+   "hashes": {
+    "config_used.json": "7175d03d55fe722f8e4c14946988d2842d8f8742aef9f37efe91cef2046bbc7f",
+    "metrics.csv": "dce4b47ebc957c9435450c36bf79eb3a261d001da05a2a68d7a6e5299239b459",
+    "summary.json": "361f9e475ff68466ed8bbf131b1cadb54ed5c0adbbdcf5c6c49b64c239080dad",
+    "final_model.pt": "1208ad571d67cdb82061887a82b9e1ef259d1ed7936ebb357d78959000212c90",
+    "partition_used.json": "dc9b17d303d3d5af73479082f385aac3cba5f1ea4bb05941677d0dc86417ce69"
+   },
+   "terminal_acc": 0.8603703703703703,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 102,
+   "arm": "ra_probeon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_eurosat_ra_probeon_RA_InfoOpt_seed102_alpha0.3_20261010_171039",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/eurosat_ra_probeon_seed102.json",
+   "hashes": {
+    "config_used.json": "08d7060ef3b01eb87aa92a0cdfecbfc6579798e452b48b93e1b523bf89590d6f",
+    "metrics.csv": "3b5a7489cf3aebc2425878a5d510cf87a48b01d1e5af4b9751ac05e6cd565aac",
+    "summary.json": "eb972fbfded45911d94709e4113aa911cb941d12ddb3587cc60000c89fae5a75",
+    "final_model.pt": "a6fc53cdcf243a7e6a983beda036083f22c01bc4fe9cd56b495bd616fcaa817c",
+    "partition_used.json": "dc9b17d303d3d5af73479082f385aac3cba5f1ea4bb05941677d0dc86417ce69",
+    "counterfactual_probe.csv": "c495bcd6894f80539f65782591512ee8b9e5703617cb582d422cdaaf90db2d32"
+   },
+   "terminal_acc": 0.8533333333333334,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 103,
+   "arm": "fedavg_aibon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_eurosat_fedavg_aibon_fedavg_seed103_alpha0.3_20261010_172257",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/eurosat_fedavg_aibon_seed103.json",
+   "hashes": {
+    "config_used.json": "6bb2d538cbc26eb6b51ed540b05da72a182aae3a970ed624048b092348a030e6",
+    "metrics.csv": "c2be1808d92c87457a8d248b8a45fad96c9289359b64b8ec956069ac8049ab0a",
+    "summary.json": "7679da880276afffb8b7c94517e8e4aea4220ef00894dce9dd26c51a44811fea",
+    "final_model.pt": "773eca25318105567ef7d525856457bfb512c0eae50f05b3a325bf27f901f39f",
+    "partition_used.json": "5dede6f4b0540b995e60776884d397577e760ae9eda6b5c930157f896b1518aa"
+   },
+   "terminal_acc": 0.8318518518518518,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 103,
+   "arm": "infoopt_aibon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_eurosat_infoopt_aibon_InfoOpt_Full_seed103_alpha0.3_20261010_173438",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/eurosat_infoopt_aibon_seed103.json",
+   "hashes": {
+    "config_used.json": "fb4923afc68e666070dba767e827039e1e7b5f3881dec5cadfaac89f0429eea4",
+    "metrics.csv": "aed320575ed5ff477f26fd5137a6ea97382e54176719ad32aff1344d3bae9371",
+    "summary.json": "85f1895288229458e5cd3131994236f47c9756a45811379625d4898e3d068a24",
+    "final_model.pt": "5ec5e9dce1469dc2736a38e87e801d1bb534bdfe78471252c5c5adb7dc640d3e",
+    "partition_used.json": "5dede6f4b0540b995e60776884d397577e760ae9eda6b5c930157f896b1518aa"
+   },
+   "terminal_acc": 0.7162962962962963,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 103,
+   "arm": "ra_probeoff",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_eurosat_ra_probeoff_RA_InfoOpt_seed103_alpha0.3_20261010_174721",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/eurosat_ra_probeoff_seed103.json",
+   "hashes": {
+    "config_used.json": "9b74e5611d8a9d12f1c762f0c962643f1d763fcf66d866bcc0e492e18c9809b3",
+    "metrics.csv": "ad31ef9f780a745020afbf797e8f2e4945b4ae42ab8c3346fef5f49002181047",
+    "summary.json": "255bac4ff2d357f8bdeeddeb41dd5704aed82686f4c93795130319f80b89c566",
+    "final_model.pt": "4ef8bb0ece694a3b1f875cd4a165cac8c66755c56c8934bdf86b6d4468e02400",
+    "partition_used.json": "5dede6f4b0540b995e60776884d397577e760ae9eda6b5c930157f896b1518aa"
+   },
+   "terminal_acc": 0.8325925925925926,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 103,
+   "arm": "ra_probeon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_eurosat_ra_probeon_RA_InfoOpt_seed103_alpha0.3_20261010_175856",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/eurosat_ra_probeon_seed103.json",
+   "hashes": {
+    "config_used.json": "3ac6f31dc2c2380f38380caaa0a2c218dcc5059abb03527dad9f1abde7483491",
+    "metrics.csv": "aeb9e83bb6b0e2d7c723fd87da45e458fbc54b113a939e9f020be7a080d9468c",
+    "summary.json": "24c07a3e92cf3c3a1d2778ccbf271f875776f9aa844b81b3654f9db6f3ef116e",
+    "final_model.pt": "c85d2662c4e37edf989aad430ec3393b59070d593ac1281cf55b4e18a65eecfa",
+    "partition_used.json": "5dede6f4b0540b995e60776884d397577e760ae9eda6b5c930157f896b1518aa",
+    "counterfactual_probe.csv": "6e10d7d79555202a2691f549c029cb7eaffa3194f080f2906b9275f5d32f345e"
+   },
+   "terminal_acc": 0.802962962962963,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 104,
+   "arm": "fedavg_aibon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_eurosat_fedavg_aibon_fedavg_seed104_alpha0.3_20261010_181115",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/eurosat_fedavg_aibon_seed104.json",
+   "hashes": {
+    "config_used.json": "aef2bf8e207215589a064abd7ce8ab2f760c720490a74298c17495a9eb4d3121",
+    "metrics.csv": "c73e5fc211d94008788c87304336e56b5baca7af6c62c69061050a1a42f6ce74",
+    "summary.json": "909a88a13b442fed5c50b5a2b57a677ea0d0bc8b670ddd63d5b70a40a3be6c6d",
+    "final_model.pt": "5cb0fe9395bb8c3df0910697311a2824fb9925362ddcfc6532d8f6de32ce248b",
+    "partition_used.json": "a4e4d4cf65643b78d9716065caa167b55d478f6e4ef532de3ea2767908b05e62"
+   },
+   "terminal_acc": 0.7744444444444445,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 104,
+   "arm": "infoopt_aibon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_eurosat_infoopt_aibon_InfoOpt_Full_seed104_alpha0.3_20261010_182300",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/eurosat_infoopt_aibon_seed104.json",
+   "hashes": {
+    "config_used.json": "97a8daddc1b5ee138efb5e5fbdb265e81d7af373a749c09e9f6f27f3c7313d7e",
+    "metrics.csv": "ce066ed8cb3f386f3ce33247dacafde22960c0694d34f2b67d928c96fd779f97",
+    "summary.json": "d2b28d388ed59734c09f89a1de8c4c983100498c2bd96a0857befb3fc416cf3a",
+    "final_model.pt": "8b66b1b319130276c0af70624bece8d9c77c3c8766e6413b466ea92c3a6f9d45",
+    "partition_used.json": "a4e4d4cf65643b78d9716065caa167b55d478f6e4ef532de3ea2767908b05e62"
+   },
+   "terminal_acc": 0.7233333333333334,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 104,
+   "arm": "ra_probeoff",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_eurosat_ra_probeoff_RA_InfoOpt_seed104_alpha0.3_20261010_183555",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/eurosat_ra_probeoff_seed104.json",
+   "hashes": {
+    "config_used.json": "bb4648f523cde0ac782ef65e4dc9e0bbdb2921ef5d31843c34da89698f283ad8",
+    "metrics.csv": "5ece8613e8b312bec4b1821e63b7dd298d37f5494237bd5e391d556e014ca708",
+    "summary.json": "5db1780c631ef66cd889cea6239aa2d637008f05dd1505a02608174f0f40e99b",
+    "final_model.pt": "2d89a87854d5bd2082dd55062acc0739fe1e2eceadb00253380636ba1c6e3e63",
+    "partition_used.json": "a4e4d4cf65643b78d9716065caa167b55d478f6e4ef532de3ea2767908b05e62"
+   },
+   "terminal_acc": 0.8033333333333333,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "eurosat",
+   "seed": 104,
+   "arm": "ra_probeon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_eurosat_ra_probeon_RA_InfoOpt_seed104_alpha0.3_20261010_184803",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/eurosat_ra_probeon_seed104.json",
+   "hashes": {
+    "config_used.json": "dc73a056e8b78db3333f29ec9bc471a9837ac3bbc0287696f2119dfb74cc560c",
+    "metrics.csv": "7c181c95233cc45c943257294d79f822db363aa12fdb2f411eb3ea9e3c9b4714",
+    "summary.json": "4cae4680539da09d7abeda8daaf964721c2e30035efcad367a36a1b5fdc48328",
+    "final_model.pt": "d71be7db249535e4ae3f66f2e7d997f4a5489afcd7703f6c4868bebf7c294dcc",
+    "partition_used.json": "a4e4d4cf65643b78d9716065caa167b55d478f6e4ef532de3ea2767908b05e62",
+    "counterfactual_probe.csv": "69f5a15376e1ea71f4e9a6806c3152926f4b7e42b4dc3c165c5a6ec33acb5cca"
+   },
+   "terminal_acc": 0.8059259259259259,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 100,
+   "arm": "fedavg_aibon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_pathmnist_fedavg_aibon_fedavg_seed100_alpha0.3_20261010_190035",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/pathmnist_fedavg_aibon_seed100.json",
+   "hashes": {
+    "config_used.json": "be7bf9e5f39bad630a7d52b3e6dc14e62a5d648e668cff4a40b974cc67e80312",
+    "metrics.csv": "83aed0301ec94e5ec2f9551f7b623507f04b0b9c594848ef517171563223912c",
+    "summary.json": "863350f248e548afaa7f3365e567355fc5e18c87392b21e96f14a6e3e2062d06",
+    "final_model.pt": "8af6a38da10109aee0809600bdbfdffc284110d54f77d9b50b1d55b04420f84a",
+    "partition_used.json": "74f4fa7ba44c813d183c5f33842b6a1d8f1ef71778dc4e011eb64cc01855e14e"
+   },
+   "terminal_acc": 0.8554317548746518,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 100,
+   "arm": "infoopt_aibon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_pathmnist_infoopt_aibon_InfoOpt_Full_seed100_alpha0.3_20261010_191159",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/pathmnist_infoopt_aibon_seed100.json",
+   "hashes": {
+    "config_used.json": "5f2ad42cc2d877cc65d94c9c87c0286fd14b1ae1b75463feff290deea0c31a11",
+    "metrics.csv": "ae2821f4a39d977d8e20f457b5f386c34429b028d0b50b07385daa5763d22215",
+    "summary.json": "947583ef254cc963172b2bd2bd1b504aa141b241a75b366080634938519bdfb9",
+    "final_model.pt": "0685031c30e786bae3bb57ba3467ad008bc25f9f99c0e1838411b8d94af0b382",
+    "partition_used.json": "74f4fa7ba44c813d183c5f33842b6a1d8f1ef71778dc4e011eb64cc01855e14e"
+   },
+   "terminal_acc": 0.8565459610027855,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 100,
+   "arm": "ra_probeoff",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_pathmnist_ra_probeoff_RA_InfoOpt_seed100_alpha0.3_20261010_192331",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/pathmnist_ra_probeoff_seed100.json",
+   "hashes": {
+    "config_used.json": "3b1131c98f9499655cf95aa3779f9fe93719be6346529cb9585b31621391a6ea",
+    "metrics.csv": "d78cf8371d8838d9aa72329943781a2f38b12d90b305c88e1d1dd0ac2c5948a6",
+    "summary.json": "abe70c420faa92cf543d087845d4ad833ca8e5c30bcdc50c5be0e60c0395aacb",
+    "final_model.pt": "3e380e448734d1c483c5907bc8b3c3ec864a6a5a38ffae4b2488faf1ee3b0ebf",
+    "partition_used.json": "74f4fa7ba44c813d183c5f33842b6a1d8f1ef71778dc4e011eb64cc01855e14e"
+   },
+   "terminal_acc": 0.8777158774373259,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 100,
+   "arm": "ra_probeon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_pathmnist_ra_probeon_RA_InfoOpt_seed100_alpha0.3_20261010_193505",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/pathmnist_ra_probeon_seed100.json",
+   "hashes": {
+    "config_used.json": "8561c54e818786a1136336974efa068f7fa37dc90e41a902779cfab8030a4eea",
+    "metrics.csv": "ac4d576ef9e04be614511065b3705b55ccc1fd92da5e620c45ec385334b8ad84",
+    "summary.json": "d85fff0f16fa603278d5eb2157cd5ffcde4d96c64e056c9ac63fc14689177208",
+    "final_model.pt": "df85d4b4f5c97d69301dcf65be43f6839fa17d3bf30c8fecfdc3fb3ad63d5932",
+    "partition_used.json": "74f4fa7ba44c813d183c5f33842b6a1d8f1ef71778dc4e011eb64cc01855e14e",
+    "counterfactual_probe.csv": "5642bf72de96bdf4bc96f65dbdfabc0d419395cfe38636801eec4b36cb53e33c"
+   },
+   "terminal_acc": 0.8409470752089137,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 101,
+   "arm": "fedavg_aibon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_pathmnist_fedavg_aibon_fedavg_seed101_alpha0.3_20261010_194955",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/pathmnist_fedavg_aibon_seed101.json",
+   "hashes": {
+    "config_used.json": "bc2aa50d8bc9e95e64c0c6b1198734666ff24fb3d7fe07c77df7c236c3eb85bb",
+    "metrics.csv": "9ac2c55963f727c92f8f01afef9d5951b4870f4f811b708dd7d2ae4eb49daa1c",
+    "summary.json": "a42ed9631f5daf00a00423ed66456744e3113550623da3bad8beee818af86de7",
+    "final_model.pt": "7169cd881eb6f064b962854b79a2426767714fdce5dfa0f9e6249f7b9f5f7465",
+    "partition_used.json": "e904a1982ff52856e7c75a0d21da2a30d6c815acf43740fccf733235269892c3"
+   },
+   "terminal_acc": 0.8714484679665738,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 101,
+   "arm": "infoopt_aibon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_pathmnist_infoopt_aibon_InfoOpt_Full_seed101_alpha0.3_20261010_200126",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/pathmnist_infoopt_aibon_seed101.json",
+   "hashes": {
+    "config_used.json": "72b5f4a2b8f73719f67e71f13d02e4b70c4527b7ca4769f003d02a9ba6ac95b7",
+    "metrics.csv": "1ecca647a6b117fd217a39bf08e943eb6c23f7d6d2f06a0e1db39fa58b33176f",
+    "summary.json": "200be3d6415680b739467e7a301c667884b8e36f4ae8bcdea899274cfa7012dc",
+    "final_model.pt": "6a6527105cb4c64a8f0dfeab482a3a5d70983b41caaae5bee28f44400f17452b",
+    "partition_used.json": "e904a1982ff52856e7c75a0d21da2a30d6c815acf43740fccf733235269892c3"
+   },
+   "terminal_acc": 0.874233983286908,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 101,
+   "arm": "ra_probeoff",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_pathmnist_ra_probeoff_RA_InfoOpt_seed101_alpha0.3_20261010_201314",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/pathmnist_ra_probeoff_seed101.json",
+   "hashes": {
+    "config_used.json": "fb13fc82c67f5f8088282fbcaa6bf1ade0d1f3b7f7fece261b5f6dc470962d16",
+    "metrics.csv": "990c38b90b83b18f96ff8c0626d83e900c9ebac10875d61fdcdcc8361fd5057c",
+    "summary.json": "e30c8e0485a02b476ad507d2233dafb9d4b0401f9034e75c54c7e7e128127c23",
+    "final_model.pt": "1bc8aa54a66174b8d8bfb03b0db0b4325d1ecd68d0667df37ef3ac6a1dee3cfb",
+    "partition_used.json": "e904a1982ff52856e7c75a0d21da2a30d6c815acf43740fccf733235269892c3"
+   },
+   "terminal_acc": 0.8668523676880223,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 101,
+   "arm": "ra_probeon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_pathmnist_ra_probeon_RA_InfoOpt_seed101_alpha0.3_20261010_202444",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/pathmnist_ra_probeon_seed101.json",
+   "hashes": {
+    "config_used.json": "4e897d8963fc90cb6efa99267bd3cbd64fd42e87054868f2e9b1490904f941b4",
+    "metrics.csv": "65aacc0c2d1b5a838db1eca29b9ee2f0c9959d124d16f931d557038f8649eb7a",
+    "summary.json": "bf2cccb1b206692f931272ba4125e171fc01e481b7fb46db62b0c1d15c67e608",
+    "final_model.pt": "f9bb7defff63db305d4912b968da76c0b25b3bafc4710c664e84f99fcbb5a112",
+    "partition_used.json": "e904a1982ff52856e7c75a0d21da2a30d6c815acf43740fccf733235269892c3",
+    "counterfactual_probe.csv": "2c370c3c42889cec7f239860f27cea0872dbd6d1cc6195b4f51669254a65be03"
+   },
+   "terminal_acc": 0.8583565459610027,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 102,
+   "arm": "fedavg_aibon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_pathmnist_fedavg_aibon_fedavg_seed102_alpha0.3_20261010_203706",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/pathmnist_fedavg_aibon_seed102.json",
+   "hashes": {
+    "config_used.json": "6589bdafb2dc012ef2537c7a7ec3d8552e68e63f6c7b0c1fe5d381bb104fee6a",
+    "metrics.csv": "1892c936d7f679eb950818050860e15303b8ec21706c3b2171a10d460fd01fcb",
+    "summary.json": "9c105a2d27a296b8b9591d6cec93606a33e95ed80660a15bbdec132b604495e9",
+    "final_model.pt": "3c0d52028600272d9678dc9e5e20fab8ae5f124305eabf08a7a6b423a19af772",
+    "partition_used.json": "fd2f2c89abb2f9c9a476149eab8577e831282d4e3103199f448d8d303c07fd17"
+   },
+   "terminal_acc": 0.8828690807799443,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 102,
+   "arm": "infoopt_aibon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_pathmnist_infoopt_aibon_InfoOpt_Full_seed102_alpha0.3_20261010_204849",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/pathmnist_infoopt_aibon_seed102.json",
+   "hashes": {
+    "config_used.json": "ce90ad2ed8c953abfc23060f923e992139bc543e4e2e6465a44f9afb134cd31f",
+    "metrics.csv": "2648ee946ce00916718840a81f67dca74b3911a9dbae31b9544a761efde1aaf0",
+    "summary.json": "47624fed5d21f55ce58265f6d35f042ef283e265a0f8c20a8dad449cdbeb99ba",
+    "final_model.pt": "a4c210001d15469a005ea14945750facc68b146fc6466a61ae82befe8a5e343e",
+    "partition_used.json": "fd2f2c89abb2f9c9a476149eab8577e831282d4e3103199f448d8d303c07fd17"
+   },
+   "terminal_acc": 0.876183844011142,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 102,
+   "arm": "ra_probeoff",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_pathmnist_ra_probeoff_RA_InfoOpt_seed102_alpha0.3_20261010_210043",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/pathmnist_ra_probeoff_seed102.json",
+   "hashes": {
+    "config_used.json": "a275ca367dac13414d97806f7265614e4ecaa47b7bdc3fae2fef12397002bace",
+    "metrics.csv": "cead676f78b463e8726ed2cb7bb636e6b935ed92f54c1f1a29ef44d42035a871",
+    "summary.json": "843b4d2c752f6dd71ec664eaebf1b0c2472cf81df788040260dd73db159dfe17",
+    "final_model.pt": "3059572b7f68093cd7c74a58a94ffa170e39c0049c1f0aabec4311e87134bb34",
+    "partition_used.json": "fd2f2c89abb2f9c9a476149eab8577e831282d4e3103199f448d8d303c07fd17"
+   },
+   "terminal_acc": 0.8958217270194986,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 102,
+   "arm": "ra_probeon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_pathmnist_ra_probeon_RA_InfoOpt_seed102_alpha0.3_20261010_211213",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/pathmnist_ra_probeon_seed102.json",
+   "hashes": {
+    "config_used.json": "8e9a4286ef1ad5cdc53d087c40a4239140c793c5fa50332b7ae97f6f94b4dec6",
+    "metrics.csv": "e5ff4e8368e5b878f5943ce1c21f4e49f074a91c07c10c144efae29cd3b96231",
+    "summary.json": "2e829dbcb471ffb011591ae52a9a6bc8b242323919b5b6ac2d2933ca927ed250",
+    "final_model.pt": "2792c010e3d37f3169a712b98a40096717411df42ee12097c3fb1f549306cd96",
+    "partition_used.json": "fd2f2c89abb2f9c9a476149eab8577e831282d4e3103199f448d8d303c07fd17",
+    "counterfactual_probe.csv": "c11f4359d9860b7d51ea4ec2101f2085820229d71ddd98f6d40ada8c00696c5c"
+   },
+   "terminal_acc": 0.9015320334261838,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 103,
+   "arm": "fedavg_aibon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_pathmnist_fedavg_aibon_fedavg_seed103_alpha0.3_20261010_212449",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/pathmnist_fedavg_aibon_seed103.json",
+   "hashes": {
+    "config_used.json": "fe661780eacdfd791e71e533005490d77548383c7e4545c107ceb96f927309b1",
+    "metrics.csv": "2932df9e92365fd5585f53d5c6f6d989574c9718863c540d3fbd55c179f319c0",
+    "summary.json": "b4640405dad1e2045863a85a76bfa632fbbf26f7749f9af8c95fb9fa11a60ad0",
+    "final_model.pt": "6504cac2ba7f11cf410d1362237ed32993e692a6810bbb97cccd5998808ae741",
+    "partition_used.json": "b6a80f546f7cd36a146119504c28a2b74f8e5b509ab565d77bf769d92ebf8070"
+   },
+   "terminal_acc": 0.8383008356545961,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 103,
+   "arm": "infoopt_aibon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_pathmnist_infoopt_aibon_InfoOpt_Full_seed103_alpha0.3_20261010_213633",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/pathmnist_infoopt_aibon_seed103.json",
+   "hashes": {
+    "config_used.json": "35a9531a10d1aea53aaa2e6f88e561bdb72672e2ef4f8aeb800f1b91f1fb3690",
+    "metrics.csv": "6a95abd0fc1c07940e048027505cb038294fe320d3f4f052843762fb78e86ef8",
+    "summary.json": "1d76a384f5117f2eb6c591e853453531e4a66a51273db5af3c85dc90c2304c0b",
+    "final_model.pt": "2a33b8f99d0ef3ef3f2bc959bafa401ec3764b7941f5133f06ee57d5f46dd6aa",
+    "partition_used.json": "b6a80f546f7cd36a146119504c28a2b74f8e5b509ab565d77bf769d92ebf8070"
+   },
+   "terminal_acc": 0.8284122562674094,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 103,
+   "arm": "ra_probeoff",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_pathmnist_ra_probeoff_RA_InfoOpt_seed103_alpha0.3_20261010_214627",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/pathmnist_ra_probeoff_seed103.json",
+   "hashes": {
+    "config_used.json": "d5214ad320b08b14d2c07367fcb6e4dc3e91fb1183397edd2188fb6634a38a22",
+    "metrics.csv": "42dc98569196f0861c005eac7a2b434a75c0339d09bbbc677e48ea4eebfe8783",
+    "summary.json": "28b9fb2edc4331300ccbfe302947a4395efc9e278f75a4a64438ab118a701014",
+    "final_model.pt": "8ac8061c14f6485585b96cd7758fc460542f70547673b4d1d363874d537d9462",
+    "partition_used.json": "b6a80f546f7cd36a146119504c28a2b74f8e5b509ab565d77bf769d92ebf8070"
+   },
+   "terminal_acc": 0.8155988857938719,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 103,
+   "arm": "ra_probeon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_pathmnist_ra_probeon_RA_InfoOpt_seed103_alpha0.3_20261010_215332",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/pathmnist_ra_probeon_seed103.json",
+   "hashes": {
+    "config_used.json": "8d8fe005b23de1a5e5088aacb0d499bb5d6ef9c8e5c75a02a7f12a58e4c9140b",
+    "metrics.csv": "58c0a81779024114442de27a7fc975739369c036c3d220ea3e9b6bd90e20dbe0",
+    "summary.json": "c7007f62e053f16f5541e24e60f1d410c9ebd81aebcef1016fefa1fb3a33a2cf",
+    "final_model.pt": "54b3d43980762fd595b8643b823a1324ac21d0ded80b283b0d1fb201c4cc255e",
+    "partition_used.json": "b6a80f546f7cd36a146119504c28a2b74f8e5b509ab565d77bf769d92ebf8070",
+    "counterfactual_probe.csv": "6498ae2211ab5e8b21d2671e18e82f1cfe18671875d40787f7a690c0dd85de04"
+   },
+   "terminal_acc": 0.8433147632311978,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 104,
+   "arm": "fedavg_aibon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_pathmnist_fedavg_aibon_fedavg_seed104_alpha0.3_20261010_220058",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/pathmnist_fedavg_aibon_seed104.json",
+   "hashes": {
+    "config_used.json": "d50cccf3b112d74c3f59bb72ef1aef0c173002a6f8b439a5a7e83ce4fd3c4f86",
+    "metrics.csv": "9b38f6679fef50b40db7b3500c2878adc45d5ef0b6309c15916cfb36420b4db5",
+    "summary.json": "eb6089f8848ec6e94dbbd51163ba1892b165909bfcecf6fcf170b77b6b0342b0",
+    "final_model.pt": "13b8d500916a4100c777c57ff3865ffe41efe1d58266e90f3cfdd5e1d1980c6b",
+    "partition_used.json": "58483c117a962b32cee99ca481a3f588f6da0927af2d0b75f64bfb2ab1d2d0e6"
+   },
+   "terminal_acc": 0.8714484679665738,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 104,
+   "arm": "infoopt_aibon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_pathmnist_infoopt_aibon_InfoOpt_Full_seed104_alpha0.3_20261010_220816",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/pathmnist_infoopt_aibon_seed104.json",
+   "hashes": {
+    "config_used.json": "2e5e4dbca3bf782f3a0e06dc0425fe2f620ee2fd23bbaf6d7255045d9336b88e",
+    "metrics.csv": "5e0c53821ae14f0859ac9bebde1a02db15427cf47eb2f57e8b4ee54ef7cbf385",
+    "summary.json": "93d330015e1afb699f3197206ac358cc360f4952a421ec85c2969a82c4d805f5",
+    "final_model.pt": "18a2d2720f6d01407172b75891afe91d42c462b2ce558848b9e84d452ad40e38",
+    "partition_used.json": "58483c117a962b32cee99ca481a3f588f6da0927af2d0b75f64bfb2ab1d2d0e6"
+   },
+   "terminal_acc": 0.836908077994429,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 104,
+   "arm": "ra_probeoff",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_pathmnist_ra_probeoff_RA_InfoOpt_seed104_alpha0.3_20261010_221545",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/pathmnist_ra_probeoff_seed104.json",
+   "hashes": {
+    "config_used.json": "715f8d4f851e7e1c33a9f2c5098eb55f352de32382e0c49ac56df94d69b5e327",
+    "metrics.csv": "929514c14d2b95d8714e1f99fd3bcc0821076d42a86d1ddd53680bbaa85608f0",
+    "summary.json": "a4a7093ad0f8011630f70fe2f4f3485ace9fcfbe7e85586a44a0e242981ba6b4",
+    "final_model.pt": "fc1ab22b26a17bf3c57ad9f58a45a39f26845f9464e4ed4d99733faa4a233743",
+    "partition_used.json": "58483c117a962b32cee99ca481a3f588f6da0927af2d0b75f64bfb2ab1d2d0e6"
+   },
+   "terminal_acc": 0.8622562674094707,
+   "failed_attempts": []
+  },
+  {
+   "dataset": "pathmnist",
+   "seed": 104,
+   "arm": "ra_probeon",
+   "status": "complete",
+   "reason": "",
+   "run_dir": "/home/whu/disk1/ITSL_RA_matched_20261010/runs/raexp_pathmnist_ra_probeon_RA_InfoOpt_seed104_alpha0.3_20261010_222306",
+   "verification_report": "/home/whu/disk1/ITSL_RA_matched_20261010/verification/pathmnist_ra_probeon_seed104.json",
+   "hashes": {
+    "config_used.json": "8a8e8bffbc347e037edb36afe26447283f76298c932bc3a713a25c115f2eb87f",
+    "metrics.csv": "f059cf65e4dea1e2acb0aef230a2aa9306070db043f1ce91442e28589a009d62",
+    "summary.json": "babae108a5b37ade3069c6ead3aef3eb55c50d0fdb907ced900768a4432e0ce3",
+    "final_model.pt": "944962af08db680848c74e19a462aa776b7410093a3e7c0b36c84d0534d26b50",
+    "partition_used.json": "58483c117a962b32cee99ca481a3f588f6da0927af2d0b75f64bfb2ab1d2d0e6",
+    "counterfactual_probe.csv": "d2688bed0f3935db2eed2333be4748d69de2ea6cb53e9ce679caac09c9a1625c"
+   },
+   "terminal_acc": 0.8707520891364903,
+   "failed_attempts": []
+  }
+ ]
+}

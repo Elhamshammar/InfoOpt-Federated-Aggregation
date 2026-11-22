@@ -1,0 +1,7 @@
+{
+ "freeze_date": "2026-10-08",
+ "label": "Retrospective freeze of the sensitivity/RA source inventory. NOT historical preregistration.",
+ "sha256": {
+  "sensitivity_source_inventory_FROZEN_20261008.csv": "b44e65fa8c14cbd1288ee97c6a7550e8cad96ae1971b9f278c0b0bc689cb6456"
+ }
+}

@@ -1,0 +1,130 @@
+{
+  "config": {
+    "experiment_name": "cifar100_sweep_v2",
+    "seed": 102,
+    "device": "cuda",
+    "dataset": {
+      "name": "CIFAR100",
+      "root": "./datasets",
+      "num_classes": 100,
+      "input_channels": 3
+    },
+    "partition": {
+      "num_clients": 10,
+      "alpha": 0.3,
+      "min_samples_per_client": 50
+    },
+    "model": {
+      "name": "SmallCNN",
+      "use_aib": false,
+      "aib_channels": [
+        64,
+        128
+      ]
+    },
+    "training": {
+      "rounds": 100,
+      "clients_per_round": 5,
+      "local_epochs": 2,
+      "batch_size": 64,
+      "num_workers": 2,
+      "pin_memory": true,
+      "lr": 0.01,
+      "momentum": 0.9,
+      "weight_decay": 0.0005,
+      "clip_grad_norm": 5.0,
+      "fedprox_mu": 0.01,
+      "feddyn_alpha": 0.01,
+      "fedopt_server_lr": 0.001,
+      "fedopt_beta1": 0.9,
+      "fedopt_beta2": 0.99,
+      "fedopt_eps": "1e-8",
+      "ib_lambda_mi": 0.1,
+      "ib_lambda_entropy": 0.1,
+      "feddp_lambda": 0.1
+    },
+    "infoopt": {
+      "lambda_mi": 1.0,
+      "lambda_entropy": 0.5,
+      "lambda_stability": 0.2,
+      "robust_scale": true,
+      "signal_ema_beta": 0.5,
+      "js_mode": "constraint",
+      "epsilon_rel": 1.0,
+      "temperature": 1.0,
+      "kappa_frac": 0.6,
+      "probe_size": 256,
+      "probe_batch_size": 256,
+      "normalize_mi": true,
+      "fedavg_mix": 0.0,
+      "min_weight": 0.0,
+      "min_weight_fraction": 0.0,
+      "early_stop": {
+        "enabled": true
+      }
+    },
+    "regime_reliability_controller": {
+      "enabled": true,
+      "warmup_rounds": 5,
+      "reliability": {
+        "beta_separation": 0.4,
+        "beta_rank": 0.3,
+        "beta_temporal": 0.3,
+        "separation_scale": 0.25
+      },
+      "gate": {
+        "heterogeneity_weight": 0.25,
+        "reliability_weight": 0.25,
+        "interaction_weight": 0.5,
+        "bias": 0.5,
+        "temperature": 6.0
+      },
+      "smoothing": {
+        "alpha_ema": 0.8
+      },
+      "safety": {
+        "enforce_js_after_blending": true,
+        "enforce_enc_after_blending": true,
+        "js_deviation_limit": 0.05,
+        "enc_deviation_limit": 1.0,
+        "alpha_binary_search_steps": 20,
+        "numerical_tolerance": 1e-08
+      },
+      "logging": {
+        "log_controller_metrics": true,
+        "log_client_weights": true
+      }
+    },
+    "evaluation": {
+      "test_batch_size": 256,
+      "eval_every": 1
+    },
+    "output": {
+      "dir": "runs"
+    },
+    "counterfactual_probe": {
+      "enabled": true,
+      "probe_every": 5,
+      "val_ratio": 0.15
+    },
+    "validation": {
+      "fraction": 0.1,
+      "seed": 10000,
+      "batch_size": 256
+    }
+  },
+  "method": "feddyn",
+  "client_sizes": {
+    "0": 4588,
+    "1": 4799,
+    "2": 4971,
+    "3": 5524,
+    "4": 5202,
+    "5": 6190,
+    "6": 5131,
+    "7": 4816,
+    "8": 4384,
+    "9": 4395
+  },
+  "gamma": null
+}

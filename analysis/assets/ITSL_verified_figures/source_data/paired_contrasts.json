@@ -1,0 +1,83 @@
+{
+ "family": "six primary contrasts (preserved); non-estimable count as non-rejections",
+ "contrasts": [
+  {
+   "dataset": "cifar100",
+   "contrast": "InfoOpt_Full - FedAvg",
+   "estimable": true,
+   "reason": "",
+   "n": 5,
+   "mean_diff_pp": 0.8220000000000013,
+   "sd_diff": 1.15512769856843,
+   "ci95": [
+    -0.6122804766403908,
+    2.256280476640393
+   ],
+   "p_raw": 0.18677397653911393,
+   "p_holm": 0.9338698826955696
+  },
+  {
+   "dataset": "cifar100",
+   "contrast": "RA_InfoOpt - FedAvg",
+   "estimable": false,
+   "reason": "RA-InfoOpt cells unresolved (separate strata; combined estimate withheld)",
+   "n": null,
+   "mean_diff_pp": null,
+   "ci95": null,
+   "p_raw": null,
+   "p_holm": null
+  },
+  {
+   "dataset": "eurosat",
+   "contrast": "InfoOpt_Full - FedAvg",
+   "estimable": true,
+   "reason": "",
+   "n": 5,
+   "mean_diff_pp": -4.733333333333337,
+   "sd_diff": 4.011677057300515,
+   "ci95": [
+    -9.714488307803414,
+    0.2478216411367411
+   ],
+   "p_raw": 0.05768213700886916,
+   "p_holm": 0.34609282205321495
+  },
+  {
+   "dataset": "eurosat",
+   "contrast": "RA_InfoOpt - FedAvg",
+   "estimable": false,
+   "reason": "RA-InfoOpt cells unresolved (separate strata; combined estimate withheld)",
+   "n": null,
+   "mean_diff_pp": null,
+   "ci95": null,
+   "p_raw": null,
+   "p_holm": null
+  },
+  {
+   "dataset": "pathmnist",
+   "contrast": "InfoOpt_Full - FedAvg",
+   "estimable": true,
+   "reason": "",
+   "n": 5,
+   "mean_diff_pp": 0.09192200557102978,
+   "sd_diff": 1.1845238094077633,
+   "ci95": [
+    -1.3788585635857697,
+    1.5627025747278291
+   ],
+   "p_raw": 0.8706666529412608,
+   "p_holm": 1.0
+  },
+  {
+   "dataset": "pathmnist",
+   "contrast": "RA_InfoOpt - FedAvg",
+   "estimable": false,
+   "reason": "RA-InfoOpt cells unresolved (separate strata; combined estimate withheld)",
+   "n": null,
+   "mean_diff_pp": null,
+   "ci95": null,
+   "p_raw": null,
+   "p_holm": null
+  }
+ ]
+}
