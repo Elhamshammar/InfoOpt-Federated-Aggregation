@@ -61,7 +61,7 @@ Before any new baseline experiment, numerically test the intended implementation
 
 ## Reproduction and scope
 
-Run `audit_feddyn_scaffold.py` from the recovered workspace root, which must contain `itsl_followup/home/whu/disk1/infoopt_dl_server/` and `run_metadata_recovery/runs/`. The packaged evidence copies preserve the inspected code and repair logs; the outputs preserve exact identity hashes and config differences. The script verifies saved evidence and calculates descriptive endpoints only. It does not load models or execute training.
+Run `audit_feddyn_scaffold.py` from the recovered workspace root, which must contain `itsl_followup<REDACTED_HOME>/disk1/infoopt_dl_server/` and `run_metadata_recovery/runs/`. The packaged evidence copies preserve the inspected code and repair logs; the outputs preserve exact identity hashes and config differences. The script verifies saved evidence and calculates descriptive endpoints only. It does not load models or execute training.
 
 This audit uses recovered local copies. It did not inspect the live server, reload historical checkpoints, certify historical partitions, or run algorithm regression tests. The code comparison is static. Originals and frozen primary analyses remain untouched.
 

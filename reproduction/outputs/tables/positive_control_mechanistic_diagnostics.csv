@@ -1,0 +1,8 @@
+Diagnostic,Value
+FedAvg corrupted-client weight mass,0.2948
+Aligned corrupted-client weight mass,0.0567
+Shuffled corrupted-client weight mass,0.3242
+Corrupted-weight reduction,0.2675
+Mean aligned-shuffled L1 weight distance,0.5350
+Weight-multiset matched rounds,500/500
+Minimum oracle effective-client count,3.3332

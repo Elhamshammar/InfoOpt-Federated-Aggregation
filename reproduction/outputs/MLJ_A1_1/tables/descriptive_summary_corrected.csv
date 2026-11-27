@@ -1,0 +1,7 @@
+Summary,Value,Note
+Equal-setting-weighted descriptive mean,-0.8239 pp,Not an inferential estimate; settings share design.
+Across-setting SD,1.0545 pp,
+Direction count,"3 positive, 9 negative, 0 zero",
+Dataset cifar100 descriptive mean,0.0105 pp,Descriptive mean of setting-level effects for this dataset. Not a pooled inferential estimate.
+Dataset eurosat descriptive mean,-1.7630 pp,Descriptive mean of setting-level effects for this dataset. Not a pooled inferential estimate.
+Dataset pathmnist descriptive mean,-0.7194 pp,Descriptive mean of setting-level effects for this dataset. Not a pooled inferential estimate.

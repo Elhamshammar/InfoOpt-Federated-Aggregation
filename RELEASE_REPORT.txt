@@ -1,5 +1,5 @@
 InfoOpt GitHub release candidate — Stage 2C final preparation
-Source: D:\InfoOpt Latex\Code\InfoOpt_Public_Release
+Source: <REDACTED_LOCAL_PATH>/InfoOpt_Public_Release
 Destination: (not yet uploaded)
 Manifest entries: 1,321 (SHA256SUMS_Public_Release.txt)
 Manifest hash file: SHA256SUMS_Public_Release.txt.sha256

@@ -1,5 +1,5 @@
 {
-  "bundle_dir": "/home/whu/disk1/FL_StepSize_Diagnostic_fixed_20261004",
+  "bundle_dir": "<REDACTED_HOME>/disk1/FL_StepSize_Diagnostic_fixed_20261004",
   "bundle_sha256": {
     "GO_NO_GO.md": "ffef576fcf35f688054180fa488ba908d227a14c2a796206be8e81a4bdd5036d",
     "GO_NO_GO_v1_2026-10-04.md": "f5a777499aa101804cf00ea7b409f3b4c82fc2e637b3b4c741468ea098fcb6d4",
@@ -57,7 +57,7 @@
   "pilot_config": {
     "smoke": {
       "dataset": "cifar100",
-      "data_root": "/home/whu/disk1/FL_StepSize_Diagnostic_fixed_20261004/data",
+      "data_root": "<REDACTED_HOME>/disk1/FL_StepSize_Diagnostic_fixed_20261004/data",
       "num_classes": 100,
       "model_name": "smallcnn_recovered",
       "use_aib": false,
@@ -102,7 +102,7 @@
       "cohort_seed": 777,
       "require_reference": true,
       "device": "cuda",
-      "output_dir": "/home/whu/disk1/FL_StepSize_Diagnostic_fixed_20261004/results/stepsize_diag_pilot_20261004_175620",
+      "output_dir": "<REDACTED_HOME>/disk1/FL_StepSize_Diagnostic_fixed_20261004/results/stepsize_diag_pilot_20261004_175620",
       "checkpoint_path": "",
       "strict_checks": true
     },
@@ -148,10 +148,10 @@
     "pilot_tiebreak_rule_id": "smallest_gamma_in_grid"
   },
   "pilot_config_fingerprint": "281ecf3f1bbb56ee6607f4df096e9825ba0250167501d8a46e7bd69f9079ef06",
-  "reference_snapshot": "/home/whu/disk1/FL_StepSize_Diagnostic_fixed_20261004/reference_code",
+  "reference_snapshot": "<REDACTED_HOME>/disk1/FL_StepSize_Diagnostic_fixed_20261004/reference_code",
   "reference_access": "bundled verbatim snapshot (COPY_MANIFEST.json); hash-validated at runtime; read-only",
   "reference_snapshot_hashes": {
-    "reference_dir": "/home/whu/disk1/FL_StepSize_Diagnostic_fixed_20261004/reference_code",
+    "reference_dir": "<REDACTED_HOME>/disk1/FL_StepSize_Diagnostic_fixed_20261004/reference_code",
     "files": {
       "reference_code/__init__.py": {
         "status": "ok",
@@ -254,7 +254,7 @@
       "input_channels": 3,
       "use_aib": false
     },
-    "source_file": "/home/whu/disk1/FL_StepSize_Diagnostic_fixed_20261004/reference_code/models/cnn.py",
+    "source_file": "<REDACTED_HOME>/disk1/FL_StepSize_Diagnostic_fixed_20261004/reference_code/models/cnn.py",
     "source_sha256": "93629daa211af2a23800e6bcbb8b941294f6e553e307489699fca776c1e59513",
     "snapshot_hash_validation": "ok",
     "fact_validation": "ok"

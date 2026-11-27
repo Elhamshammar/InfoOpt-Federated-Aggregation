@@ -2,7 +2,7 @@
 
 ## Package location
 
-`D:\InfoOpt Latex\Code\InfoOpt_Public_Release`
+`<REDACTED_LOCAL_PATH>/InfoOpt_Public_Release`
 
 ## Package statistics
 

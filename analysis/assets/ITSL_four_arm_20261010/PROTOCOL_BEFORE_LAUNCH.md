@@ -1,7 +1,7 @@
 # FOUR-ARM EXPERIMENT PROTOCOL — frozen for review (not launched)
 
 **Frozen:** 2026-10-09. This protocol is for a NEW experiment directory
-(`/home/whu/disk1/ITSL_four_arm_20261009/`). It does not modify the
+(`<REDACTED_HOME>/disk1/ITSL_four_arm_20261009/`). It does not modify the
 manuscript, existing runs, or any frozen audit artifact.
 
 ## Purpose
@@ -77,7 +77,7 @@ recovered sources (hashes in `SNAPSHOT_HASHES.sha256`).
 - Datasets are resolved to ABSOLUTE, existence-checked roots at launch by
   `resolve_dataset_roots.py` (order: `$DATASETS_ROOT/<subdir>` →
   `EXP_ROOT/datasets/<subdir>` → canonical
-  `/home/whu/disk1/infoopt_dl_server/datasets/<subdir>`), and effective
+  `<REDACTED_HOME>/disk1/infoopt_dl_server/datasets/<subdir>`), and effective
   configs are written to `EXP_ROOT/configs_effective/` with hashes.
   All three datasets must be present before any training starts; the
   check runs from any working directory.

@@ -17,4 +17,4 @@ tensorboard/
 *.zip
 *.rar
 *.7z
-.DS_Store
+.DS_Store_dataset_cache/

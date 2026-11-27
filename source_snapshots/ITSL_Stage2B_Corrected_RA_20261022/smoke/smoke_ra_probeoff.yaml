@@ -6,7 +6,7 @@ dataset:
   input_channels: 3
   name: CIFAR100
   num_classes: 100
-  root: D:\Tried exoeriments\FL_StepSize_Diagnostic\data\cifar100
+  root: ./datasets/cifar100
 device: cuda
 evaluation:
   eval_every: 1

@@ -995,7 +995,7 @@ performed. Seeds, tau, training settings, split fractions, endpoints, and
 decision criteria are UNCHANGED from v3.
 
 - Server dataset layout CONFIRMED:
-  `/home/whu/disk1/infoopt_dl_server/datasets/eurosat`; `train.csv`
+  `<REDACTED_HOME>/disk1/infoopt_dl_server/datasets/eurosat`; `train.csv`
   header `,Filename,Label,ClassName` (18,900 data rows; the leading
   unnamed column is a saved index, NOT the label); `label_map.json`
   authoritative (AnnualCrop=0 ... SeaLake=9) and cross-checked against

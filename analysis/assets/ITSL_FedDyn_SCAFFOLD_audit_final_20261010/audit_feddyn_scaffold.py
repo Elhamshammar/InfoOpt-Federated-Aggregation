@@ -1,6 +1,6 @@
 from pathlib import Path
 import csv,json,re,hashlib,math,statistics
-B=Path('itsl_followup/home/whu/disk1/infoopt_dl_server');R=Path('run_metadata_recovery/runs');O=Path('outputs/feddyn_scaffold_audit_20261010');O.mkdir(parents=True,exist_ok=True)
+B=Path('itsl_followup<REDACTED_HOME>/disk1/infoopt_dl_server');R=Path('run_metadata_recovery/runs');O=Path('outputs/feddyn_scaffold_audit_20261010');O.mkdir(parents=True,exist_ok=True)
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def load(p):return json.loads(p.read_text(encoding='utf-8'))
 def flat(x,p=''):

@@ -1,0 +1,18 @@
+metric,value
+FedAvg final accuracy (%),31.939999999999998
+Oracle aligned final accuracy (%),33.928
+Oracle shuffled final accuracy (%),28.628000000000004
+Aligned minus shuffled mean (pp),5.300000000000001
+Aligned minus shuffled SD (pp),2.7984995979989002
+Aligned minus shuffled 95% CI lower (pp),1.8252038001770527
+Aligned minus shuffled 95% CI upper (pp),8.774796199822948
+Aligned minus shuffled paired t p-value,0.013318522696706617
+Cohen's dz,1.8938719890436388
+Exact sign-test p-value,0.0625
+FedAvg corrupt weight mass,0.29481294398102403
+Aligned corrupt weight mass,0.05674610693277192
+Shuffled corrupt weight mass,0.3242282747734898
+Corrupt-weight reduction,0.2674821678407179
+Mean aligned-shuffled L1 weight distance,0.5349643356814356
+Weight-multiset matched rounds,500/500
+Minimum oracle effective-client number,3.3331977508136035

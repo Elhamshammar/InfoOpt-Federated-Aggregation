@@ -1,0 +1,13 @@
+Setting,Stage,Dataset,Alpha,Model,n,Mean diff (pp),SD (pp),95% CI (pp),Raw p,Holm p,TOST p (±0.5 pp),Equivalent at ±0.5 pp
+S01,Stage1,cifar100,0.3,SmallCNN,5,0.154,0.424,"[-0.372, 0.680]",0.4621,1.0000,0.9290,No
+S04,Stage3,cifar100,0.1,SmallCNN,5,0.196,0.467,"[-0.384, 0.776]",0.4011,1.0000,0.8904,No
+S05,Stage3,cifar100,1.0,SmallCNN,5,-0.098,0.398,"[-0.592, 0.396]",0.6112,1.0000,0.9858,Yes
+S10,Stage4,cifar100,0.3,ResNet18SmallImage,5,-0.210,0.940,"[-1.377, 0.957]",0.6435,1.0000,0.9168,No
+S02,Stage1,eurosat,0.3,SmallCNN,5,-2.422,4.849,"[-8.443, 3.599]",0.3266,1.0000,0.8755,No
+S06,Stage3,eurosat,0.1,SmallCNN,5,-2.289,6.615,"[-10.503, 5.925]",0.4823,1.0000,0.8004,No
+S07,Stage3,eurosat,1.0,SmallCNN,5,-2.385,1.663,"[-4.451, -0.320]",0.0327,0.8831,0.9911,No
+S11,Stage4,eurosat,0.3,ResNet18SmallImage,5,0.044,1.270,"[-1.533, 1.622]",0.9414,1.0000,0.7662,No
+S03,Stage1,pathmnist,0.3,SmallCNN,5,-1.730,3.240,"[-5.753, 2.294]",0.2985,1.0000,0.9007,No
+S08,Stage3,pathmnist,0.1,SmallCNN,5,-0.237,3.576,"[-4.677, 4.203]",0.8895,1.0000,0.6655,No
+S09,Stage3,pathmnist,1.0,SmallCNN,5,-0.429,1.333,"[-2.084, 1.226]",0.5116,1.0000,0.9029,No
+S12,Stage4,pathmnist,0.3,ResNet18SmallImage,5,-0.482,2.307,"[-3.347, 2.383]",0.6648,1.0000,0.8024,No

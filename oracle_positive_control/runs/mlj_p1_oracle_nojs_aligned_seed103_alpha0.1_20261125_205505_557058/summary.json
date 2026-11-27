@@ -1,0 +1,21 @@
+{
+  "method": "oracle_nojs_aligned",
+  "controller_method": "InfoOpt-NoJS",
+  "seed": 103,
+  "alpha": 0.1,
+  "rounds_completed": 100,
+  "early_stop_triggered": false,
+  "best_acc": 0.3689,
+  "best_round": 98,
+  "rounds_to_90": -1,
+  "rounds_to_95": -1,
+  "final_acc": 0.3659,
+  "final_loss": 2.4924361602783205,
+  "final_macro_f1": 0.33049669061747855,
+  "corrupted_clients": [
+    0,
+    2,
+    4
+  ],
+  "run_dir": "./runs/mlj_p1_oracle_nojs_aligned_seed103_alpha0.1_20261125_205505_557058"
+}

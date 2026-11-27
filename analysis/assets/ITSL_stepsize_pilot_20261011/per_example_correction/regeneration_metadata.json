@@ -28,7 +28,7 @@
       "input_channels": 3,
       "use_aib": false
     },
-    "source_file": "D:\\FL_StepSize_Diagnostic\\reference_code\\models\\cnn.py",
+    "source_file": "<REDACTED_LOCAL_PATH>\\FL_StepSize_Diagnostic\\reference_code\\models\\cnn.py",
     "source_sha256": "93629daa211af2a23800e6bcbb8b941294f6e553e307489699fca776c1e59513",
     "snapshot_hash_validation": "ok",
     "fact_validation": "ok"

@@ -470,7 +470,7 @@
     {
       "path": "server_preflight.sh",
       "original_sha256": "e4bb931b30e015dd6cd2bd34c0352cd5e44d36dd3a59c79431d85144ea0b73a0",
-      "reason": "server-specific (hardcoded whu-lab paths); replaced by preflight.sh"
+      "reason": "server-specific (hardcoded <REDACTED_USER> paths); replaced by preflight.sh"
     }
   ]
 }

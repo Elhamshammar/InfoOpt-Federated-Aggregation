@@ -1,0 +1,6 @@
+{
+  "init_state_sha256": "84b9dcc10d297c8d73fa91f83bdcdad73caa214857eca680076c1050212799c3",
+  "dataset": "CIFAR100",
+  "alpha": "0.1",
+  "seed": 102
+}

@@ -6,7 +6,7 @@
     "run_name": "cifar100_sweep_v2_scaffold_seed100_alpha0.3_20260812_221614",
     "selection_basis": "exact saved path in repair-campaign log; not accuracy",
     "terminal_accuracy_fraction": 0.2845,
-    "log_path": "itsl_followup/home/whu/disk1/infoopt_dl_server/runs/_logs/phase2_scaffold_run_1.log",
+    "log_path": "itsl_followup<REDACTED_HOME>/disk1/infoopt_dl_server/runs/_logs/phase2_scaffold_run_1.log",
     "log_sha256": "89a62798fab7e5f988611ab69908239b1a39ad497a066224d473dbdaf8a5771f",
     "evidence_hashes": {
       "metrics.csv": "613b387cb2badebff8c22532da99e123450f21df5ee7700748dcb72d274910ee",
@@ -26,7 +26,7 @@
     "run_name": "cifar100_sweep_v2_scaffold_seed101_alpha0.3_20260812_230904",
     "selection_basis": "exact saved path in repair-campaign log; not accuracy",
     "terminal_accuracy_fraction": 0.298,
-    "log_path": "itsl_followup/home/whu/disk1/infoopt_dl_server/runs/_logs/phase2_scaffold_run_2.log",
+    "log_path": "itsl_followup<REDACTED_HOME>/disk1/infoopt_dl_server/runs/_logs/phase2_scaffold_run_2.log",
     "log_sha256": "ff8bac07b1761c1ea60b11406a9da440914403ea7ac8515938b8405460519894",
     "evidence_hashes": {
       "metrics.csv": "33ecaef89f8513e1d818f6d66aacdde2d16018fde392afa8f51f339ee6f10c9b",
@@ -46,7 +46,7 @@
     "run_name": "cifar100_sweep_v2_scaffold_seed102_alpha0.3_20260813_000254",
     "selection_basis": "exact saved path in repair-campaign log; not accuracy",
     "terminal_accuracy_fraction": 0.3028,
-    "log_path": "itsl_followup/home/whu/disk1/infoopt_dl_server/runs/_logs/phase2_scaffold_run_3.log",
+    "log_path": "itsl_followup<REDACTED_HOME>/disk1/infoopt_dl_server/runs/_logs/phase2_scaffold_run_3.log",
     "log_sha256": "f0606df907e39145380ff95e3e1c67c6f82e0e3ecbb69389518c15749e7cf7af",
     "evidence_hashes": {
       "metrics.csv": "dbf4d0fc912a9a3b13b3a3301804e015ea326509a044bcbc1b1fb56f93020709",
@@ -66,7 +66,7 @@
     "run_name": "cifar100_sweep_v2_scaffold_seed103_alpha0.3_20260813_005524",
     "selection_basis": "exact saved path in repair-campaign log; not accuracy",
     "terminal_accuracy_fraction": 0.2844,
-    "log_path": "itsl_followup/home/whu/disk1/infoopt_dl_server/runs/_logs/phase2_scaffold_run_4.log",
+    "log_path": "itsl_followup<REDACTED_HOME>/disk1/infoopt_dl_server/runs/_logs/phase2_scaffold_run_4.log",
     "log_sha256": "d641318beb8699bb4f93697ad8e082fcf0b4f3f6f5a57cf7fd9638a2cad626c2",
     "evidence_hashes": {
       "metrics.csv": "c934a04c10e7deed706aca48bea06bcc6f1163109535b50d7bfa1b16fb65c835",
@@ -86,7 +86,7 @@
     "run_name": "cifar100_sweep_v2_scaffold_seed104_alpha0.3_20260813_014839",
     "selection_basis": "exact saved path in repair-campaign log; not accuracy",
     "terminal_accuracy_fraction": 0.2853,
-    "log_path": "itsl_followup/home/whu/disk1/infoopt_dl_server/runs/_logs/phase2_scaffold_run_5.log",
+    "log_path": "itsl_followup<REDACTED_HOME>/disk1/infoopt_dl_server/runs/_logs/phase2_scaffold_run_5.log",
     "log_sha256": "519a5a7407c310922461774f2938376da4d034482e7a1254122699ceeb06929f",
     "evidence_hashes": {
       "metrics.csv": "4a8a58474b5e678bec5487b86cd5f72a2044f77083facae22d081c41fea73665",
@@ -106,7 +106,7 @@
     "run_name": "pathmnist_sweep_scaffold_seed100_alpha0.3_20260813_023249",
     "selection_basis": "exact saved path in repair-campaign log; not accuracy",
     "terminal_accuracy_fraction": 0.8662952646239555,
-    "log_path": "itsl_followup/home/whu/disk1/infoopt_dl_server/runs/_logs/phase2_scaffold_run_6.log",
+    "log_path": "itsl_followup<REDACTED_HOME>/disk1/infoopt_dl_server/runs/_logs/phase2_scaffold_run_6.log",
     "log_sha256": "ccebaf2c56b57455bdfe239edaddb88ec6d6d1c3b17cef87f95359c6c598cdb2",
     "evidence_hashes": {
       "metrics.csv": "29644769ea4fce1427df01904ddc27fc5c3b6ff6c7edcbada8c59ef4b4e695ed",
@@ -126,7 +126,7 @@
     "run_name": "pathmnist_sweep_scaffold_seed101_alpha0.3_20260813_024108",
     "selection_basis": "exact saved path in repair-campaign log; not accuracy",
     "terminal_accuracy_fraction": 0.8828690807799443,
-    "log_path": "itsl_followup/home/whu/disk1/infoopt_dl_server/runs/_logs/phase2_scaffold_run_7.log",
+    "log_path": "itsl_followup<REDACTED_HOME>/disk1/infoopt_dl_server/runs/_logs/phase2_scaffold_run_7.log",
     "log_sha256": "7ee38f622e888ad7c6835dd90a4979e1f5009a1270365ea294ff8b698d55f2c1",
     "evidence_hashes": {
       "metrics.csv": "cb585e602314c0c43f0d2226a4f2509ce5fc5696d96e643f32f0b1d1e6e00542",
@@ -146,7 +146,7 @@
     "run_name": "pathmnist_sweep_scaffold_seed102_alpha0.3_20260813_024936",
     "selection_basis": "exact saved path in repair-campaign log; not accuracy",
     "terminal_accuracy_fraction": 0.8647632311977715,
-    "log_path": "itsl_followup/home/whu/disk1/infoopt_dl_server/runs/_logs/phase2_scaffold_run_8.log",
+    "log_path": "itsl_followup<REDACTED_HOME>/disk1/infoopt_dl_server/runs/_logs/phase2_scaffold_run_8.log",
     "log_sha256": "8c09f6830e109ce2e69ea224575dce6f03769790951a35d98ead1a33f5173fbe",
     "evidence_hashes": {
       "metrics.csv": "f98358728d371d966d126f022871314f0c7a31a360d6c13804a86f17b99486b5",
@@ -166,7 +166,7 @@
     "run_name": "pathmnist_sweep_scaffold_seed103_alpha0.3_20260813_025809",
     "selection_basis": "exact saved path in repair-campaign log; not accuracy",
     "terminal_accuracy_fraction": 0.7753481894150418,
-    "log_path": "itsl_followup/home/whu/disk1/infoopt_dl_server/runs/_logs/phase2_scaffold_run_9.log",
+    "log_path": "itsl_followup<REDACTED_HOME>/disk1/infoopt_dl_server/runs/_logs/phase2_scaffold_run_9.log",
     "log_sha256": "522a2cb02287a1077648555deec45069e19100a5676671a64b11a99562021401",
     "evidence_hashes": {
       "metrics.csv": "e9bc5a6dcdf63fe6a4307767ec66d4ca0da2cd152d1e04ab14635fbe4c61c587",
@@ -186,7 +186,7 @@
     "run_name": "pathmnist_sweep_scaffold_seed104_alpha0.3_20260813_030647",
     "selection_basis": "exact saved path in repair-campaign log; not accuracy",
     "terminal_accuracy_fraction": 0.8655988857938719,
-    "log_path": "itsl_followup/home/whu/disk1/infoopt_dl_server/runs/_logs/phase2_scaffold_run_10.log",
+    "log_path": "itsl_followup<REDACTED_HOME>/disk1/infoopt_dl_server/runs/_logs/phase2_scaffold_run_10.log",
     "log_sha256": "0c42d95e8ee9668dd8c7109c2c3d84a9d00827341cc4c95a8b5e9923d94bf33a",
     "evidence_hashes": {
       "metrics.csv": "248bd02fe52662c884ed5be4a2aa635406c511d937be47ead7dec097b8930247",
@@ -206,7 +206,7 @@
     "run_name": "eurosat_sweep_scaffold_seed100_alpha0.3_20260813_031544",
     "selection_basis": "exact saved path in repair-campaign log; not accuracy",
     "terminal_accuracy_fraction": 0.702962962962963,
-    "log_path": "itsl_followup/home/whu/disk1/infoopt_dl_server/runs/_logs/phase2_scaffold_run_11.log",
+    "log_path": "itsl_followup<REDACTED_HOME>/disk1/infoopt_dl_server/runs/_logs/phase2_scaffold_run_11.log",
     "log_sha256": "36190597b5fff6a856017cb421b03b593bba01f36d30d0efb8e8d36304d12e5e",
     "evidence_hashes": {
       "metrics.csv": "6f2f1517f2644a4d4b115887d3bf8629c786ae08a597b341c75f16334593ecdc",
@@ -226,7 +226,7 @@
     "run_name": "eurosat_sweep_scaffold_seed101_alpha0.3_20260813_032717",
     "selection_basis": "exact saved path in repair-campaign log; not accuracy",
     "terminal_accuracy_fraction": 0.7148148148148148,
-    "log_path": "itsl_followup/home/whu/disk1/infoopt_dl_server/runs/_logs/phase2_scaffold_run_12.log",
+    "log_path": "itsl_followup<REDACTED_HOME>/disk1/infoopt_dl_server/runs/_logs/phase2_scaffold_run_12.log",
     "log_sha256": "f4674acb1426fe72431ff828ad3f7f3900bf9867f092fcee670ec74fcf591996",
     "evidence_hashes": {
       "metrics.csv": "bcab8de87cb3c88560d21b8b375421fea3d2f6d116366a996947bfbcd2a92904",
@@ -246,7 +246,7 @@
     "run_name": "eurosat_sweep_scaffold_seed102_alpha0.3_20260813_033906",
     "selection_basis": "exact saved path in repair-campaign log; not accuracy",
     "terminal_accuracy_fraction": 0.7685185185185185,
-    "log_path": "itsl_followup/home/whu/disk1/infoopt_dl_server/runs/_logs/phase2_scaffold_run_13.log",
+    "log_path": "itsl_followup<REDACTED_HOME>/disk1/infoopt_dl_server/runs/_logs/phase2_scaffold_run_13.log",
     "log_sha256": "fef3fb03a6250fbce4e82ffbb6eaf91fb220ed0054912564352c836fd5fc92ab",
     "evidence_hashes": {
       "metrics.csv": "006f4e2adc44d71708f8d3760924573bd9d523666dad67638820cf398c2c1f71",
@@ -266,7 +266,7 @@
     "run_name": "eurosat_sweep_scaffold_seed103_alpha0.3_20260813_035025",
     "selection_basis": "exact saved path in repair-campaign log; not accuracy",
     "terminal_accuracy_fraction": 0.7811111111111111,
-    "log_path": "itsl_followup/home/whu/disk1/infoopt_dl_server/runs/_logs/phase2_scaffold_run_14.log",
+    "log_path": "itsl_followup<REDACTED_HOME>/disk1/infoopt_dl_server/runs/_logs/phase2_scaffold_run_14.log",
     "log_sha256": "fdeee8d89f07d909daeb95ae073079534238d52f268407e21e8f61becfccd15d",
     "evidence_hashes": {
       "metrics.csv": "249383547ee75bbab553fe6cfe9dbb54658ecfbf0a202f20694c62f3676d5f9d",
@@ -286,7 +286,7 @@
     "run_name": "eurosat_sweep_scaffold_seed104_alpha0.3_20260813_040148",
     "selection_basis": "exact saved path in repair-campaign log; not accuracy",
     "terminal_accuracy_fraction": 0.7748148148148148,
-    "log_path": "itsl_followup/home/whu/disk1/infoopt_dl_server/runs/_logs/phase2_scaffold_run_15.log",
+    "log_path": "itsl_followup<REDACTED_HOME>/disk1/infoopt_dl_server/runs/_logs/phase2_scaffold_run_15.log",
     "log_sha256": "e2b7f96abbb663324a62c42dc2cdd92a6c3b4a99a1f1ca84c09efcabc1b59538",
     "evidence_hashes": {
       "metrics.csv": "1c1a8c0a9a6f311f93f117b05b092a3b40041cd91e0417014f7a56bba4098f29",
@@ -306,7 +306,7 @@
     "run_name": "cifar100_sweep_v2_feddyn_seed100_alpha0.3_20260812_221614",
     "selection_basis": "exact saved path in repair-campaign log; not accuracy",
     "terminal_accuracy_fraction": 0.4292,
-    "log_path": "itsl_followup/home/whu/disk1/infoopt_dl_server/runs/_logs/phase2_feddyn_run_1.log",
+    "log_path": "itsl_followup<REDACTED_HOME>/disk1/infoopt_dl_server/runs/_logs/phase2_feddyn_run_1.log",
     "log_sha256": "baa32fdaa362fae915ca5f6099f0b4cfaec1310d4d21ac36ddcfb09682230c92",
     "evidence_hashes": {
       "metrics.csv": "1f64a9148db2be5fea9dd221b4e34afa3e1c882689a9a2f23302e45d59a26047",
@@ -326,7 +326,7 @@
     "run_name": "cifar100_sweep_v2_feddyn_seed101_alpha0.3_20260812_224659",
     "selection_basis": "exact saved path in repair-campaign log; not accuracy",
     "terminal_accuracy_fraction": 0.4011,
-    "log_path": "itsl_followup/home/whu/disk1/infoopt_dl_server/runs/_logs/phase2_feddyn_run_2.log",
+    "log_path": "itsl_followup<REDACTED_HOME>/disk1/infoopt_dl_server/runs/_logs/phase2_feddyn_run_2.log",
     "log_sha256": "a852f832ee25f4f1fe2d9d6901ec7219a0ae540a18e6d340e9e08ca04775fd5a",
     "evidence_hashes": {
       "metrics.csv": "ed79b1e9670b05f7deeafb982258657d251e04a8601399224f05934e73e661fa",
@@ -346,7 +346,7 @@
     "run_name": "cifar100_sweep_v2_feddyn_seed102_alpha0.3_20260812_231822",
     "selection_basis": "exact saved path in repair-campaign log; not accuracy",
     "terminal_accuracy_fraction": 0.4218,
-    "log_path": "itsl_followup/home/whu/disk1/infoopt_dl_server/runs/_logs/phase2_feddyn_run_3.log",
+    "log_path": "itsl_followup<REDACTED_HOME>/disk1/infoopt_dl_server/runs/_logs/phase2_feddyn_run_3.log",
     "log_sha256": "da71b163b8df36eb4770615f14758fc8b02ee2b54171239bc0cbf825a0915c34",
     "evidence_hashes": {
       "metrics.csv": "ddccab997f3fa171d8c81b4b9f78b78028dae141250c28a58b8c39b201f297a1",
@@ -366,7 +366,7 @@
     "run_name": "cifar100_sweep_v2_feddyn_seed103_alpha0.3_20260812_234932",
     "selection_basis": "exact saved path in repair-campaign log; not accuracy",
     "terminal_accuracy_fraction": 0.4316,
-    "log_path": "itsl_followup/home/whu/disk1/infoopt_dl_server/runs/_logs/phase2_feddyn_run_4.log",
+    "log_path": "itsl_followup<REDACTED_HOME>/disk1/infoopt_dl_server/runs/_logs/phase2_feddyn_run_4.log",
     "log_sha256": "c64ab92e6b797d145b856355302529e2ec96288027389a272381b8374d71a072",
     "evidence_hashes": {
       "metrics.csv": "2265eb2f4f6cc3f5f662f8feb0a7ceeb5e5ae04391cdfec1e6153a4f13c7575b",
@@ -386,7 +386,7 @@
     "run_name": "cifar100_sweep_v2_feddyn_seed104_alpha0.3_20260813_002054",
     "selection_basis": "exact saved path in repair-campaign log; not accuracy",
     "terminal_accuracy_fraction": 0.4302,
-    "log_path": "itsl_followup/home/whu/disk1/infoopt_dl_server/runs/_logs/phase2_feddyn_run_5.log",
+    "log_path": "itsl_followup<REDACTED_HOME>/disk1/infoopt_dl_server/runs/_logs/phase2_feddyn_run_5.log",
     "log_sha256": "af9ca298aab3b37fcbf39c10a19df80726ac754402df95c5f21418f2f1f5981b",
     "evidence_hashes": {
       "metrics.csv": "b019ceaa14f43cb7e90d1dd568869866dda29c711dcae1e363592975172bfe90",
@@ -406,7 +406,7 @@
     "run_name": "pathmnist_sweep_feddyn_seed100_alpha0.3_20260813_005200",
     "selection_basis": "exact saved path in repair-campaign log; not accuracy",
     "terminal_accuracy_fraction": 0.8533426183844011,
-    "log_path": "itsl_followup/home/whu/disk1/infoopt_dl_server/runs/_logs/phase2_feddyn_run_6.log",
+    "log_path": "itsl_followup<REDACTED_HOME>/disk1/infoopt_dl_server/runs/_logs/phase2_feddyn_run_6.log",
     "log_sha256": "d966c27fb4289d0010ce0529f43d0f7970d4bcee89b7793b790944c418d02d14",
     "evidence_hashes": {
       "metrics.csv": "6d2d7133bdfa0bcefed6805d06b21e240f55bb24f68323a69f41247b54716b2a",
@@ -426,7 +426,7 @@
     "run_name": "pathmnist_sweep_feddyn_seed101_alpha0.3_20260813_014335",
     "selection_basis": "exact saved path in repair-campaign log; not accuracy",
     "terminal_accuracy_fraction": 0.863091922005571,
-    "log_path": "itsl_followup/home/whu/disk1/infoopt_dl_server/runs/_logs/phase2_feddyn_run_7.log",
+    "log_path": "itsl_followup<REDACTED_HOME>/disk1/infoopt_dl_server/runs/_logs/phase2_feddyn_run_7.log",
     "log_sha256": "ac9b5ec3d5ec0dbbfb2a8aa361273455c3e5466001c09e97a8cbb28135a7461e",
     "evidence_hashes": {
       "metrics.csv": "183bf3ce996a1ae7c39ff29c2a01de2ea90d06cba3cb492b51e58da1d4c57cf2",
@@ -446,7 +446,7 @@
     "run_name": "pathmnist_sweep_feddyn_seed102_alpha0.3_20260813_023501",
     "selection_basis": "exact saved path in repair-campaign log; not accuracy",
     "terminal_accuracy_fraction": 0.88983286908078,
-    "log_path": "itsl_followup/home/whu/disk1/infoopt_dl_server/runs/_logs/phase2_feddyn_run_8.log",
+    "log_path": "itsl_followup<REDACTED_HOME>/disk1/infoopt_dl_server/runs/_logs/phase2_feddyn_run_8.log",
     "log_sha256": "d998200b7ec8221bfb8609562e70bf48141b02f33615a0121888e028fec72325",
     "evidence_hashes": {
       "metrics.csv": "df861bcbead89289a9b3197e22cadb2496bf602226079f7e2340b8b861e08ef4",
@@ -466,7 +466,7 @@
     "run_name": "pathmnist_sweep_feddyn_seed103_alpha0.3_20260813_024635",
     "selection_basis": "exact saved path in repair-campaign log; not accuracy",
     "terminal_accuracy_fraction": 0.8395543175487465,
-    "log_path": "itsl_followup/home/whu/disk1/infoopt_dl_server/runs/_logs/phase2_feddyn_run_9.log",
+    "log_path": "itsl_followup<REDACTED_HOME>/disk1/infoopt_dl_server/runs/_logs/phase2_feddyn_run_9.log",
     "log_sha256": "4402482b52032bcb2fd92062e2e524cfa12cbf769d6273e232aeef5eed528d08",
     "evidence_hashes": {
       "metrics.csv": "5d41f8dd05793fee7dc4e565f898e22b4052e842c0c2eff2bbb8b6025ec23867",
@@ -486,7 +486,7 @@
     "run_name": "pathmnist_sweep_feddyn_seed104_alpha0.3_20260813_025706",
     "selection_basis": "exact saved path in repair-campaign log; not accuracy",
     "terminal_accuracy_fraction": 0.8332869080779944,
-    "log_path": "itsl_followup/home/whu/disk1/infoopt_dl_server/runs/_logs/phase2_feddyn_run_10.log",
+    "log_path": "itsl_followup<REDACTED_HOME>/disk1/infoopt_dl_server/runs/_logs/phase2_feddyn_run_10.log",
     "log_sha256": "dced35a9f73b1db7cfbe1d8c79747ee390c316f41c74c1d7793318b161f0a080",
     "evidence_hashes": {
       "metrics.csv": "a1b5d6972565acd979cb652a58a9045bfa326d2d9b418b7129c012ef0913dd6a",
@@ -506,7 +506,7 @@
     "run_name": "eurosat_sweep_feddyn_seed100_alpha0.3_20260813_030759",
     "selection_basis": "exact saved path in repair-campaign log; not accuracy",
     "terminal_accuracy_fraction": 0.8685185185185185,
-    "log_path": "itsl_followup/home/whu/disk1/infoopt_dl_server/runs/_logs/phase2_feddyn_run_11.log",
+    "log_path": "itsl_followup<REDACTED_HOME>/disk1/infoopt_dl_server/runs/_logs/phase2_feddyn_run_11.log",
     "log_sha256": "5c9373db4e1b54cf6528e96d97fd68cf7678d0617fcde3f77fb62e4a4b78ea49",
     "evidence_hashes": {
       "metrics.csv": "70fbeab9124d11a168765782ea395206ac02e764bd73bf59369458513df02406",
@@ -526,7 +526,7 @@
     "run_name": "eurosat_sweep_feddyn_seed101_alpha0.3_20260813_031946",
     "selection_basis": "exact saved path in repair-campaign log; not accuracy",
     "terminal_accuracy_fraction": 0.8922222222222222,
-    "log_path": "itsl_followup/home/whu/disk1/infoopt_dl_server/runs/_logs/phase2_feddyn_run_12.log",
+    "log_path": "itsl_followup<REDACTED_HOME>/disk1/infoopt_dl_server/runs/_logs/phase2_feddyn_run_12.log",
     "log_sha256": "5700f42f480d6e7231de42ea20cc1b3d587ce89628b21536078b349e6db2e28f",
     "evidence_hashes": {
       "metrics.csv": "3f039faa4fccba9290793ead3ad9c1297120db1e1c49f2262670bbf35586f7b3",
@@ -546,7 +546,7 @@
     "run_name": "eurosat_sweep_feddyn_seed102_alpha0.3_20260813_033124",
     "selection_basis": "exact saved path in repair-campaign log; not accuracy",
     "terminal_accuracy_fraction": 0.8837037037037037,
-    "log_path": "itsl_followup/home/whu/disk1/infoopt_dl_server/runs/_logs/phase2_feddyn_run_13.log",
+    "log_path": "itsl_followup<REDACTED_HOME>/disk1/infoopt_dl_server/runs/_logs/phase2_feddyn_run_13.log",
     "log_sha256": "5cffaf15ff699d75f44e0325432168e6b6abdf876a452263c65a33367cf8f1d3",
     "evidence_hashes": {
       "metrics.csv": "23c1a97a4472f0411472360e5ed74edbbcfa4f3c754f9c3dd3884d38fc0ee569",
@@ -566,7 +566,7 @@
     "run_name": "eurosat_sweep_feddyn_seed103_alpha0.3_20260813_034244",
     "selection_basis": "exact saved path in repair-campaign log; not accuracy",
     "terminal_accuracy_fraction": 0.8825925925925926,
-    "log_path": "itsl_followup/home/whu/disk1/infoopt_dl_server/runs/_logs/phase2_feddyn_run_14.log",
+    "log_path": "itsl_followup<REDACTED_HOME>/disk1/infoopt_dl_server/runs/_logs/phase2_feddyn_run_14.log",
     "log_sha256": "75d684d081dcc4ce1bcc092d61e9d3c86dae17f3416369fc9a19d182a9964335",
     "evidence_hashes": {
       "metrics.csv": "65b866a94b6f4476d29be26ab54a31c51ba74c34da730bd450dec9ed457044b7",
@@ -586,7 +586,7 @@
     "run_name": "eurosat_sweep_feddyn_seed104_alpha0.3_20260813_035400",
     "selection_basis": "exact saved path in repair-campaign log; not accuracy",
     "terminal_accuracy_fraction": 0.8688888888888889,
-    "log_path": "itsl_followup/home/whu/disk1/infoopt_dl_server/runs/_logs/phase2_feddyn_run_15.log",
+    "log_path": "itsl_followup<REDACTED_HOME>/disk1/infoopt_dl_server/runs/_logs/phase2_feddyn_run_15.log",
     "log_sha256": "841da8e61150ef3208116b335bfc12a7a1aebe769716f54a787b5300b1bdcda1",
     "evidence_hashes": {
       "metrics.csv": "f66763f563e4e2c71f49e221c30eafe5746e42debffb2c196085fa05f9f117f7",

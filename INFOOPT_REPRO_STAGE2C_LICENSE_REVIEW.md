@@ -4,7 +4,7 @@
 
 Review of authorship, existing license notices, third-party code, and
 recommendation for the public reproducibility package located at
-`D:\InfoOpt Latex\Code\InfoOpt_Public_Release`.
+`<REDACTED_LOCAL_PATH>/InfoOpt_Public_Release`.
 
 ## Findings
 

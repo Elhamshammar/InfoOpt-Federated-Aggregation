@@ -116,12 +116,9 @@ class StochasticImages(Dataset):
 
 
 def _find_bash():
-    if sys.platform.startswith("win"):
-        for cand in (r"C:\Program Files\Git\bin\bash.exe",
-                     r"C:\Program Files\Git\usr\bin\bash.exe"):
-            if Path(cand).is_file():
-                return cand
-        return None
+    bash_exe = os.environ.get("BASH_EXE")
+    if bash_exe:
+        return bash_exe
     return shutil.which("bash")
 
 
@@ -330,7 +327,7 @@ def main():
     test_root = (os.environ.get("STAGE1_TEST_DATA_ROOT")
                  or os.environ.get("FOURARM_TEST_CIFAR_ROOT")
                  or None)
-    default_root = r"D:\FL_StepSize_Diagnostic\data"
+    default_root = rstr(Path(__file__).resolve().parents[2] / "datasets")
     if test_root is None and Path(default_root).is_dir():
         test_root = default_root
     bash_exe = _find_bash()

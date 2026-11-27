@@ -1,7 +1,7 @@
 # InfoOpt Public Release — Final Pre-GitHub Report
 
 **Date:** 2026-11-22  
-**Repository:** `D:\InfoOpt Latex\Code\InfoOpt_Public_Release`
+**Repository:** `<REDACTED_LOCAL_PATH>/InfoOpt_Public_Release`
 
 ## Final preparation tasks completed
 

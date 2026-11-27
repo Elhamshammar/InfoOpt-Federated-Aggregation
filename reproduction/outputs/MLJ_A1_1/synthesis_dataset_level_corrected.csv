@@ -1,0 +1,4 @@
+dataset,n_settings,descriptive_mean_diff_pp,across_setting_sd_pp,n_positive,n_negative,note
+cifar100,4,0.010500000000000752,0.1961249601657066,2,2,Descriptive mean of setting-level effects for this dataset. Not a pooled inferential estimate.
+eurosat,4,-1.762962962962963,1.2062480232327113,1,3,Descriptive mean of setting-level effects for this dataset. Not a pooled inferential estimate.
+pathmnist,4,-0.7193593314763238,0.681813792820684,0,4,Descriptive mean of setting-level effects for this dataset. Not a pooled inferential estimate.

@@ -1,7 +1,7 @@
 {
   "smoke": {
     "dataset": "cifar100",
-    "data_root": "/home/whu/disk1/FL_StepSize_Diagnostic_fixed_20261004/data",
+    "data_root": "<REDACTED_HOME>/disk1/FL_StepSize_Diagnostic_fixed_20261004/data",
     "num_classes": 100,
     "model_name": "smallcnn_recovered",
     "use_aib": false,
@@ -46,7 +46,7 @@
     "cohort_seed": 777,
     "require_reference": true,
     "device": "cuda",
-    "output_dir": "/home/whu/disk1/FL_StepSize_Diagnostic_fixed_20261004/results/stepsize_diag_pilot_20261004_175620",
+    "output_dir": "<REDACTED_HOME>/disk1/FL_StepSize_Diagnostic_fixed_20261004/results/stepsize_diag_pilot_20261004_175620",
     "checkpoint_path": "",
     "strict_checks": true
   },

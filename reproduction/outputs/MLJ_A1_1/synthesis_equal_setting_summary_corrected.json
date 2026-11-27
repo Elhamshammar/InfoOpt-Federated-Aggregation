@@ -1,0 +1,9 @@
+{
+  "n_settings": 12,
+  "equal_setting_weighted_mean_diff_pp": -0.8239407648130951,
+  "across_setting_sd_pp": 1.0544741664189978,
+  "n_positive": 3,
+  "n_negative": 9,
+  "n_zero": 0,
+  "note": "Descriptive summary only. Settings share seeds/partitions/initializations/schedules across campaigns; no valid independent-samples inferential interval is available."
+}

@@ -1,0 +1,21 @@
+{
+  "method": "fedavg",
+  "controller_method": "fedavg",
+  "seed": 100,
+  "alpha": 0.1,
+  "rounds_completed": 100,
+  "early_stop_triggered": false,
+  "best_acc": 0.3248,
+  "best_round": 97,
+  "rounds_to_90": -1,
+  "rounds_to_95": -1,
+  "final_acc": 0.3064,
+  "final_loss": 2.9794988800048827,
+  "final_macro_f1": 0.2712187385414003,
+  "corrupted_clients": [
+    1,
+    6,
+    7
+  ],
+  "run_dir": "./runs/mlj_p1_fedavg_seed100_alpha0.1_20261125_135624_342759"
+}

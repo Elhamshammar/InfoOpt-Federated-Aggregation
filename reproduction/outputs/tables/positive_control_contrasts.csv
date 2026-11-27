@@ -1,0 +1,5 @@
+Comparison,Endpoint,Mean diff (pp),SD (pp),95% CI (pp),p (paired t),Cohen's dz
+Oracle aligned - Oracle shuffled,Round-100 accuracy,5.30,2.80,"[1.83, 8.77]",0.0133,1.89
+oracle nojs aligned - oracle nojs shuffled,last10_acc_pct,5.94,1.05,"[4.64, 7.24]",0.0002,5.68
+oracle nojs aligned - fedavg,final_acc_pct,1.99,1.31,"[0.37, 3.61]",0.0272,1.52
+oracle nojs shuffled - fedavg,final_acc_pct,-3.31,3.97,"[-8.24, 1.62]",0.1355,-0.83

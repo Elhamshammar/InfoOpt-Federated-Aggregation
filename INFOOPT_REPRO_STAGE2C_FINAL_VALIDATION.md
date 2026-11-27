@@ -6,7 +6,7 @@
 
 ## Package
 
-`D:\InfoOpt Latex\Code\InfoOpt_Public_Release`
+`<REDACTED_LOCAL_PATH>/InfoOpt_Public_Release`
 
 ## Changes made in Stage 2C
 

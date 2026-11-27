@@ -32,7 +32,7 @@ Contrast pairs require both arms valid for the same seed and identical partition
 
 ## Operations and failure policy
 
-Linux GPU 1 only; sequential runs; distinct EXP_ROOT /home/whu/disk1/ITSL_RA_matched_20261010. PREFLIGHT_ONLY=1 exits after CPU checks, integrity, dataset resolution and 15 shared schedules. It creates no training run directories beyond the empty runs container. Do not edit the existing four-arm experiment directory.
+Linux GPU 1 only; sequential runs; distinct EXP_ROOT <REDACTED_HOME>/disk1/ITSL_RA_matched_20261010. PREFLIGHT_ONLY=1 exits after CPU checks, integrity, dataset resolution and 15 shared schedules. It creates no training run directories beyond the empty runs container. Do not edit the existing four-arm experiment directory.
 
 One documented manual retry is allowed for an infrastructure failure, preserving the failed directory under EXP_ROOT/failed_attempts outside active discovery, with reason/log. Numerical or methodological invalidity must be reported and not silently replaced. Launcher never retries automatically. Preserve all attempts. No arbitrary extra seeds.
 

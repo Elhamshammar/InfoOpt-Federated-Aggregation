@@ -1,0 +1,58 @@
+PASS  S01 mean/CI/TOST reproduce reported values  mean=0.1540 CI=[-0.372,0.680] TOST=0.0710
+PASS  S01 TOST p equals max of one-sided p  
+PASS  S02 mean/CI/TOST reproduce reported values  mean=-2.4222 CI=[-8.443,3.599] TOST=0.7873
+PASS  S02 TOST p equals max of one-sided p  
+PASS  S03 mean/CI/TOST reproduce reported values  mean=-1.7298 CI=[-5.753,2.294] TOST=0.7781
+PASS  S03 TOST p equals max of one-sided p  
+PASS  S04 mean/CI/TOST reproduce reported values  mean=0.1960 CI=[-0.384,0.776] TOST=0.1096
+PASS  S04 TOST p equals max of one-sided p  
+PASS  S05 mean/CI/TOST reproduce reported values  mean=-0.0980 CI=[-0.592,0.396] TOST=0.0434
+PASS  S05 TOST p equals max of one-sided p  
+PASS  S06 mean/CI/TOST reproduce reported values  mean=-2.2889 CI=[-10.503,5.925] TOST=0.7110
+PASS  S06 TOST p equals max of one-sided p  
+PASS  S07 mean/CI/TOST reproduce reported values  mean=-2.3852 CI=[-4.451,-0.320] TOST=0.9678
+PASS  S07 TOST p equals max of one-sided p  
+PASS  S08 mean/CI/TOST reproduce reported values  mean=-0.2368 CI=[-4.677,4.203] TOST=0.4386
+PASS  S08 TOST p equals max of one-sided p  
+PASS  S09 mean/CI/TOST reproduce reported values  mean=-0.4290 CI=[-2.084,1.226] TOST=0.4555
+PASS  S09 TOST p equals max of one-sided p  
+PASS  S10 mean/CI/TOST reproduce reported values  mean=-0.2100 CI=[-1.377,0.957] TOST=0.2640
+PASS  S10 TOST p equals max of one-sided p  
+PASS  S11 mean/CI/TOST reproduce reported values  mean=0.0444 CI=[-1.533,1.622] TOST=0.2338
+PASS  S11 TOST p equals max of one-sided p  
+PASS  S12 mean/CI/TOST reproduce reported values  mean=-0.4819 CI=[-3.347,2.383] TOST=0.4934
+PASS  S12 TOST p equals max of one-sided p  
+PASS  Only S05 equivalent at +/-0.5 pp  ['S05']
+PASS  S05 binding test is the lower-bound test  p_low=0.0434 p_high=0.0142
+PASS  S01 power at exact MDE equals 0.80  
+PASS  S02 power at exact MDE equals 0.80  
+PASS  S03 power at exact MDE equals 0.80  
+PASS  S04 power at exact MDE equals 0.80  
+PASS  S05 power at exact MDE equals 0.80  
+PASS  S06 power at exact MDE equals 0.80  
+PASS  S07 power at exact MDE equals 0.80  
+PASS  S08 power at exact MDE equals 0.80  
+PASS  S09 power at exact MDE equals 0.80  
+PASS  S10 power at exact MDE equals 0.80  
+PASS  S11 power at exact MDE equals 0.80  
+PASS  S12 power at exact MDE equals 0.80  
+PASS  Monte Carlo power at exact ncp approx 0.80  mc=0.7991 ncp=3.761060
+PASS  FedDisco mean reproduces +0.046  0.046000
+PASS  FedDisco SD reproduces 0.2934  0.293394
+PASS  FedDisco 95% CI reproduces [-0.3183, 0.4103]  [-0.318297,0.410297]
+PASS  FedDisco two-sided p reproduces 0.743585  0.743585
+PASS  FedDisco TOST matches independent values  CI90=[-0.233719,0.325719] p_low=0.0070653 p_high=0.0129076 p_tost=0.0129076
+PASS  FedDisco equivalent at +/-0.5 pp  
+PASS  FedDisco accuracies lie on 0.01 grid (10,000-image test set)  
+PASS  FedDisco arm mean fedavg rounds to 43.13  43.1320
+PASS  FedDisco arm mean uniform rounds to 43.13  43.1280
+PASS  FedDisco arm mean feddisco rounds to 43.12  43.1200
+PASS  FedDisco arm mean shuffled rounds to 43.07  43.0740
+PASS  Oracle aligned-shuffled +5.300 [1.825, 8.775] p=0.013319 dz=1.894  5.3000 [1.8252,8.7748] p=0.013319 dz=1.8939
+PASS  Oracle aligned-FedAvg +1.988 [0.365, 3.611] p=0.027234  1.9880 p=0.027234
+PASS  Oracle shuffled-FedAvg -3.312 [-8.240, 1.616] p=0.135472  -3.3120 p=0.135472
+PASS  Oracle last-ten-round +5.943 [4.644, 7.243] p=0.000222  5.9434 p=0.000222
+PASS  Equal-setting mean aligned-shuffled -0.824  -0.8239
+PASS  Nine of 12 setting means negative  
+
+56/56 tests passed

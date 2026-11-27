@@ -25,7 +25,7 @@ from pathlib import Path
 ROOTS = [Path("run_metadata/runs"), Path("confirmatory_recovery/runs")]
 FREEZE = Path("reanalysis_20261008/frozen_inputs")
 MANIFEST = FREEZE / "proposed_source_manifest_FROZEN_20261008.csv"
-SERVER_RUNS = "/home/whu/disk1/infoopt_dl_server/runs"
+SERVER_RUNS = "<REDACTED_HOME>/disk1/infoopt_dl_server/runs"
 
 
 def sha256(p):

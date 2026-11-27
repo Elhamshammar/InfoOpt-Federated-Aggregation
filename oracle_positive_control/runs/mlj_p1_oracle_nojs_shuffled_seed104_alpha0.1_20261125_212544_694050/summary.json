@@ -1,0 +1,21 @@
+{
+  "method": "oracle_nojs_shuffled",
+  "controller_method": "InfoOpt-NoJS",
+  "seed": 104,
+  "alpha": 0.1,
+  "rounds_completed": 100,
+  "early_stop_triggered": false,
+  "best_acc": 0.3391,
+  "best_round": 100,
+  "rounds_to_90": -1,
+  "rounds_to_95": -1,
+  "final_acc": 0.3391,
+  "final_loss": 2.558137731170654,
+  "final_macro_f1": 0.31048306135789966,
+  "corrupted_clients": [
+    3,
+    5,
+    7
+  ],
+  "run_dir": "./runs/mlj_p1_oracle_nojs_shuffled_seed104_alpha0.1_20261125_212544_694050"
+}

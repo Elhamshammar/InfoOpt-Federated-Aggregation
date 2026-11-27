@@ -1,12 +1,1 @@
-License to be determined before public release.
-
-The source code in this repository is original work by the manuscript authors. No
-open-source license has been applied to the code yet because institutional or
-publisher permission has not been confirmed.
-
-For the current private review and reproducibility-checking use, the repository
-is shared under the understanding that it will not be redistributed, modified
-for publication, or used for commercial purposes until a license is added.
-
-See INFOOPT_REPRO_STAGE2C_LICENSE_REVIEW.md for the licensing assessment and
-recommended next steps.
+﻿Copyright (c) 2026 The InfoOpt Authors. All rights reserved. This repository is publicly accessible for academic transparency, manuscript evaluation, and research reproducibility. No open-source software license has been granted. Except as permitted by applicable law or GitHub's Terms of Service, reuse, modification, and redistribution require permission from the relevant copyright holders. Formal open-source licensing remains pending. Third-party dependencies and datasets remain subject to their respective licenses and terms of use.

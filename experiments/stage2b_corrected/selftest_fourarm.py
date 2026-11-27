@@ -108,10 +108,9 @@ def run_resume(ds, seed, arm, runs, shared):
 
 def _find_git_bash():
     import shutil
-    for cand in ("C:/Program Files/Git/bin/bash.exe",
-                 "C:/Program Files/Git/usr/bin/bash.exe"):
-        if Path(cand).is_file():
-            return cand
+    bash_exe = os.environ.get("BASH_EXE")
+    if bash_exe:
+        return bash_exe
     found = shutil.which("bash")
     return found or "bash"
 
@@ -301,7 +300,7 @@ def T10():
     import os, shutil
     local_data = os.environ.get(
         "FOURARM_TEST_CIFAR_ROOT",
-        r"D:\FL_StepSize_Diagnostic\data")
+        rstr(Path(__file__).resolve().parents[2] / "datasets"))
     with tempfile.TemporaryDirectory() as td:
         root = Path(td)
         exp = root / "exp"
@@ -349,7 +348,7 @@ def T11():
                    DATASETS="cifar100",
                    DATASETS_ROOT=os.environ.get(
                        "FOURARM_TEST_CIFAR_ROOT",
-                       r"D:\FL_StepSize_Diagnostic\data"),
+                       rstr(Path(__file__).resolve().parents[2] / "datasets")),
                    SHARED_DIR=str(shared), PREFLIGHT_ONLY="1",
                    PY=sys.executable)
         bash_exe = _find_git_bash()

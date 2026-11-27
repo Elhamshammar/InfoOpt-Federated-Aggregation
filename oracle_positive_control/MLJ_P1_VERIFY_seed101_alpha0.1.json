@@ -1,0 +1,39 @@
+{
+  "overall": "pass",
+  "seed": 101,
+  "alpha": 0.1,
+  "expected_rounds": 100,
+  "per_arm": [
+    {
+      "run_dir": "./runs/mlj_p1_fedavg_seed101_alpha0.1_20261125_200138_582888",
+      "status": "pass",
+      "completed_rounds": 100,
+      "failures": [],
+      "warnings": [],
+      "method": "fedavg"
+    },
+    {
+      "run_dir": "./runs/mlj_p1_oracle_nojs_aligned_seed101_alpha0.1_20261125_200834_515351",
+      "status": "pass",
+      "completed_rounds": 100,
+      "failures": [],
+      "warnings": [],
+      "method": "oracle_nojs_aligned"
+    },
+    {
+      "run_dir": "./runs/mlj_p1_oracle_nojs_shuffled_seed101_alpha0.1_20261125_201609_276133",
+      "status": "pass",
+      "completed_rounds": 100,
+      "failures": [],
+      "warnings": [],
+      "method": "oracle_nojs_shuffled"
+    }
+  ],
+  "cross_arm": {
+    "seed": 101,
+    "alpha": 0.1,
+    "status": "pass",
+    "failures": [],
+    "warnings": []
+  }
+}

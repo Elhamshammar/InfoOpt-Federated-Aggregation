@@ -1,7 +1,7 @@
 # InfoOpt Reproducibility Stage 2B — Decision
 
 **Date:** 2026-11-22  
-**Public release staging directory:** `D:\InfoOpt Latex\Code\InfoOpt_Public_Release`  
+**Public release staging directory:** `<REDACTED_LOCAL_PATH>/InfoOpt_Public_Release`  
 **Total size:** 47 MB  
 **Total files:** 1,310  
 **SHA-256 manifest:** `SHA256SUMS_Public_Release.txt` (regenerate after any final edits)  

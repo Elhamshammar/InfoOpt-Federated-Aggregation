@@ -164,7 +164,7 @@ Independent re-verification on Windows was attempted but requires a local CIFAR-
 
 ## 7. Path-sanitization verification
 
-A grep for `/home/whu/`, `C:/Users/Elham Ali/`, and `whu-lab` after sanitization showed:
+A grep for `<REDACTED_HOME>/`, `C:/Users/<REDACTED_USER>/`, and `<REDACTED_USER>` after sanitization showed:
 
 - 0 remaining hardcoded paths in executable code, configs, or launch scripts.
 - 17 remaining files in `analysis/assets/`, all frozen historical audit/provenance records.

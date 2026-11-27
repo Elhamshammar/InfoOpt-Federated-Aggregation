@@ -1,7 +1,7 @@
 # InfoOpt Reproducibility Stage 2B — Repository Manifest
 
 **Date:** 2026-11-22  
-**Public release staging directory:** `D:\InfoOpt Latex\Code\InfoOpt_Public_Release`  
+**Public release staging directory:** `<REDACTED_LOCAL_PATH>/InfoOpt_Public_Release`  
 **Total size:** 47 MB  
 **Total files:** 1,305
 
@@ -142,7 +142,7 @@ InfoOpt_Public_Release/
 
 ### 4.1 Paths replaced with relative/configurable forms
 
-- `dataset.root` in effective YAML configs: `/home/whu/disk1/...` → `./datasets`.
+- `dataset.root` in effective YAML configs: `<REDACTED_HOME>/disk1/...` → `./datasets`.
 - `resolve_dataset_roots.py`: removed hardcoded server fallback; defaults to script directory or `DATASETS_ROOT`/`EXP_ROOT` env vars.
 - Launch scripts (`launch_stage*.sh`, `launch_four_arm_gpu1.sh`, `aunch_ra_gpu1.sh`, `SERVER_STAGE4_RUN.sh`): default `PKG`, `EXP_ROOT`, `PY`, `STAGE3_DIR`, `STAGE4_DIR` changed to relative paths or `python`.
 - `build_run_manifest.py`, `analyze_stage*.py`, `verify_frozen_integrity.py`, `smoke_resnet_runtime.py`: default `EXP_ROOT`/`RUNS_DIR` changed to relative paths.

@@ -1,4 +1,4 @@
-READ-ONLY PROVENANCE SEARCH: /home/whu/disk1/infoopt_dl_server
+READ-ONLY PROVENANCE SEARCH: <REDACTED_HOME>/disk1/infoopt_dl_server
 Existing source files and runs are unchanged.
 
 $ git rev-parse --show-toplevel
@@ -23,27 +23,27 @@ fatal: 不是 git 仓库（或者直至挂载点 /home/whu 的任何父目录）
 EXIT: 128
 
 === SOURCE BACKUPS / PATCHES / REPAIR NOTES ===
-2026-08-12T14:45:13.439274	29692	/home/whu/disk1/infoopt_dl_server/train.py
-2026-07-18T09:29:54.257047	22932	/home/whu/disk1/infoopt_dl_server/train.py.bak
-2026-07-19T10:24:32.812994	23883	/home/whu/disk1/infoopt_dl_server/train.py.bak.lines
-2026-07-18T15:56:21.157723	23883	/home/whu/disk1/infoopt_dl_server/train.py.bak.phase1
-2026-07-19T12:54:58.200033	23883	/home/whu/disk1/infoopt_dl_server/train.py.bak.phase1_v2
-2026-07-19T13:08:10.461353	23883	/home/whu/disk1/infoopt_dl_server/train.py.bak.phase1_v3
-2026-07-19T21:38:16.299434	25002	/home/whu/disk1/infoopt_dl_server/train.py.bak.probe
-2026-07-19T22:04:52.107125	25002	/home/whu/disk1/infoopt_dl_server/train.py.broken
-2026-08-12T14:45:20.579481	8989	/home/whu/disk1/infoopt_dl_server/methods/client.py
-2026-08-12T22:15:57.975804	1652	/home/whu/disk1/infoopt_dl_server/scripts/launch_phase2_feddyn.sh
-2026-08-12T20:39:43.145662	1895	/home/whu/disk1/infoopt_dl_server/scripts/launch_phase2_fedopt_bracket.sh
-2026-08-12T22:15:57.985243	2037	/home/whu/disk1/infoopt_dl_server/scripts/launch_phase2_fedopt_canonical.sh
-2026-08-12T20:40:01.417292	1815	/home/whu/disk1/infoopt_dl_server/scripts/launch_phase2_fedopt_dev.sh
-2026-08-12T22:15:57.994196	5510	/home/whu/disk1/infoopt_dl_server/scripts/launch_phase2_master.sh
-2026-08-12T22:09:48.215396	4893	/home/whu/disk1/infoopt_dl_server/scripts/launch_phase2_safe.sh
-2026-08-12T22:15:57.966420	1668	/home/whu/disk1/infoopt_dl_server/scripts/launch_phase2_scaffold.sh
-2026-08-12T14:45:29.251586	3880	/home/whu/disk1/infoopt_dl_server/utils/feddyn.py
+2026-08-12T14:45:13.439274	29692	<REDACTED_HOME>/disk1/infoopt_dl_server/train.py
+2026-07-18T09:29:54.257047	22932	<REDACTED_HOME>/disk1/infoopt_dl_server/train.py.bak
+2026-07-19T10:24:32.812994	23883	<REDACTED_HOME>/disk1/infoopt_dl_server/train.py.bak.lines
+2026-07-18T15:56:21.157723	23883	<REDACTED_HOME>/disk1/infoopt_dl_server/train.py.bak.phase1
+2026-07-19T12:54:58.200033	23883	<REDACTED_HOME>/disk1/infoopt_dl_server/train.py.bak.phase1_v2
+2026-07-19T13:08:10.461353	23883	<REDACTED_HOME>/disk1/infoopt_dl_server/train.py.bak.phase1_v3
+2026-07-19T21:38:16.299434	25002	<REDACTED_HOME>/disk1/infoopt_dl_server/train.py.bak.probe
+2026-07-19T22:04:52.107125	25002	<REDACTED_HOME>/disk1/infoopt_dl_server/train.py.broken
+2026-08-12T14:45:20.579481	8989	<REDACTED_HOME>/disk1/infoopt_dl_server/methods/client.py
+2026-08-12T22:15:57.975804	1652	<REDACTED_HOME>/disk1/infoopt_dl_server/scripts/launch_phase2_feddyn.sh
+2026-08-12T20:39:43.145662	1895	<REDACTED_HOME>/disk1/infoopt_dl_server/scripts/launch_phase2_fedopt_bracket.sh
+2026-08-12T22:15:57.985243	2037	<REDACTED_HOME>/disk1/infoopt_dl_server/scripts/launch_phase2_fedopt_canonical.sh
+2026-08-12T20:40:01.417292	1815	<REDACTED_HOME>/disk1/infoopt_dl_server/scripts/launch_phase2_fedopt_dev.sh
+2026-08-12T22:15:57.994196	5510	<REDACTED_HOME>/disk1/infoopt_dl_server/scripts/launch_phase2_master.sh
+2026-08-12T22:09:48.215396	4893	<REDACTED_HOME>/disk1/infoopt_dl_server/scripts/launch_phase2_safe.sh
+2026-08-12T22:15:57.966420	1668	<REDACTED_HOME>/disk1/infoopt_dl_server/scripts/launch_phase2_scaffold.sh
+2026-08-12T14:45:29.251586	3880	<REDACTED_HOME>/disk1/infoopt_dl_server/utils/feddyn.py
 
 === TARGETED REPAIR-NOTE CONTENT ===
 
-FILE: /home/whu/disk1/infoopt_dl_server/scripts/launch_phase2_feddyn.sh
+FILE: <REDACTED_HOME>/disk1/infoopt_dl_server/scripts/launch_phase2_feddyn.sh
 2: # Phase 2: FedDyn canonical reruns — SAFE (GPU-isolated, failure-logged)
 3: # Usage: ./launch_phase2_feddyn.sh [start_gpu=0] [num_gpus=1]
 15: echo "=== Phase 2: FedDyn repair campaign ==="
@@ -54,13 +54,13 @@ FILE: /home/whu/disk1/infoopt_dl_server/scripts/launch_phase2_feddyn.sh
 52: echo "=== FedDyn complete: PASS=$PASS FAIL=$FAIL ==="
 53: echo "Status log: runs/_logs/phase2_status.log"
 
-FILE: /home/whu/disk1/infoopt_dl_server/scripts/launch_phase2_fedopt_bracket.sh
+FILE: <REDACTED_HOME>/disk1/infoopt_dl_server/scripts/launch_phase2_fedopt_bracket.sh
 2: # Phase 2: FedOpt server-LR quick bracketing (6 rounds, seed 999)
 3: # Usage: ./launch_phase2_fedopt_bracket.sh [start_gpu=0] [num_gpus=4]
 42:     logfile="runs/_logs/phase2_fedopt_bracket_run_$((i+1)).log"
 55: echo "Inspect runs/_logs/phase2_fedopt_bracket_run_*.log for round-6 test acc."
 
-FILE: /home/whu/disk1/infoopt_dl_server/scripts/launch_phase2_fedopt_canonical.sh
+FILE: <REDACTED_HOME>/disk1/infoopt_dl_server/scripts/launch_phase2_fedopt_canonical.sh
 2: # Phase 2: FedOpt canonical reruns — SAFE (2 GPUs, failure-logged)
 3: # Usage: ./launch_phase2_fedopt_canonical.sh [start_gpu=0] [num_gpus=2]
 18: echo "=== Phase 2: FedOpt repair campaign (canonical) ==="
@@ -69,14 +69,14 @@ FILE: /home/whu/disk1/infoopt_dl_server/scripts/launch_phase2_fedopt_canonical.s
 56:             echo "FAIL fedopt $dataset seed=$seed slr=$slr (exit code $?)" | tee -a runs/_logs/phase2_status.log
 64: echo "Status log: runs/_logs/phase2_status.log"
 
-FILE: /home/whu/disk1/infoopt_dl_server/scripts/launch_phase2_fedopt_dev.sh
+FILE: <REDACTED_HOME>/disk1/infoopt_dl_server/scripts/launch_phase2_fedopt_dev.sh
 2: # Phase 2: FedOpt server-LR dev study (non-canonical)
 3: # Usage: ./launch_phase2_fedopt_dev.sh [start_gpu=0] [num_gpus=4]
 10: # then set FEDOPT_SLR per dataset in scripts/launch_phase2_fedopt_canonical.sh.
 17: echo "=== Phase 2: FedOpt server-LR dev study ==="
 44:     logfile="runs/_logs/phase2_fedopt_dev_run_$((i+1)).log"
 
-FILE: /home/whu/disk1/infoopt_dl_server/scripts/launch_phase2_master.sh
+FILE: <REDACTED_HOME>/disk1/infoopt_dl_server/scripts/launch_phase2_master.sh
 2: # Phase 2 Master Orchestrator — SAFE, GPU-isolated, failure-logged
 4: # Sequence: SCAFFOLD(GPU0) || FedDyn(GPU1) → FedOpt(GPU0+1)
 21:   echo "=== Phase 2 Canonical Launch Provenance ==="
@@ -115,7 +115,7 @@ FILE: /home/whu/disk1/infoopt_dl_server/scripts/launch_phase2_master.sh
 121: echo "  Monitor: tail -f runs/_logs/phase2_fedopt_campaign.log"
 136: cat runs/_logs/phase2_status.log 2>/dev/null || echo "  (status log empty)"
 
-FILE: /home/whu/disk1/infoopt_dl_server/scripts/launch_phase2_safe.sh
+FILE: <REDACTED_HOME>/disk1/infoopt_dl_server/scripts/launch_phase2_safe.sh
 2: # Phase 2: Safe canonical launch — SCAFFOLD + FedDyn concurrently (1 GPU each)
 19:   echo "=== Phase 2 Canonical Launch Provenance ==="
 30:   ls -l --time-style=full-iso train.py methods/client.py utils/feddyn.py utils/aggregation.py
@@ -151,7 +151,7 @@ FILE: /home/whu/disk1/infoopt_dl_server/scripts/launch_phase2_safe.sh
 126: echo "  nohup bash scripts/launch_phase2_fedopt_canonical.sh 0 2 > runs/_logs/phase2_fedopt_canonical_v2.log 2>&1 &"
 135: # nohup bash scripts/launch_phase2_fedopt_canonical.sh 0 2 > runs/_logs/phase2_fedopt_canonical_v2.log 2>&1 &
 
-FILE: /home/whu/disk1/infoopt_dl_server/scripts/launch_phase2_scaffold.sh
+FILE: <REDACTED_HOME>/disk1/infoopt_dl_server/scripts/launch_phase2_scaffold.sh
 2: # Phase 2: SCAFFOLD canonical reruns — SAFE (GPU-isolated, failure-logged)
 3: # Usage: ./launch_phase2_scaffold.sh [start_gpu=0] [num_gpus=1]
 15: echo "=== Phase 2: SCAFFOLD repair campaign ==="

@@ -1,0 +1,9 @@
+{
+  "n_settings": 12,
+  "grand_mean_diff_pp": -0.3088408679803303,
+  "sd_across_settings": 0.5807039022408333,
+  "se_grand_mean": 0.16763477713910563,
+  "ci95_lower": -0.6778025247773141,
+  "ci95_upper": 0.06012078881665356,
+  "note": "Mean accuracy over rounds 91-100. Equal-setting-weighted descriptive summary."
+}

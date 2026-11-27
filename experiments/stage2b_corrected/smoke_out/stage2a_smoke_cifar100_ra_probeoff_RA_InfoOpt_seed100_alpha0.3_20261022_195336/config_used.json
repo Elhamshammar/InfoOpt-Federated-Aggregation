@@ -9,7 +9,7 @@
       "input_channels": 3,
       "name": "CIFAR100",
       "num_classes": 100,
-      "root": "D:\\Tried exoeriments\\FL_StepSize_Diagnostic\\data\\cifar100"
+      "root": "<REDACTED_LOCAL_PATH>\\cifar100"
     },
     "device": "cuda",
     "evaluation": {

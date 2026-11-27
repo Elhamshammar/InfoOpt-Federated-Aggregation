@@ -1,73 +1,34 @@
-# InfoOpt — Reproducibility Package
+# Controlled score reassignment in federated aggregation
 
-This repository contains the code, configurations, numerical results, and analysis scripts needed to reproduce the findings reported in the manuscript:
+Research code and retained evidence for the manuscript **Evaluating Client-Specific Score Attribution in Federated Aggregation: A Controlled Score-Reassignment Methodology** (submitted version in preparation).
 
-> "Do Client-Specific Scores Improve Information-Guided Federated Aggregation? A Controlled Evaluation and Implementation Audit."
+The study evaluates client-score assignment under matched aggregation procedures, rather than proposing a universally superior aggregator. The manuscript reports 530 runs: 480 original controlled runs, 15 corrected reliability runs, 20 FedDisco runs and 15 oracle positive-control runs.
 
-## What is included
+## Repository organization
 
-- **Canonical training code** in `source_snapshots/` for each study (Studies 1–5, corrected Study 2B, and the FedDisco extension).
-- **Frozen configurations** in `configs/` (effective YAMLs and resolution manifests).
-- **Numerical results** in `analysis/data*/` (per-seed round-100 accuracies, contrasts, summaries).
-- **Analysis and figure scripts** in `analysis/scripts/`.
-- **FedDisco extension evidence** in `feddisco_extension/` (source, configs, 20 run directories, verification and analysis reports).
-- **Verification reports** for the four-arm and RA-InfoOpt experiments under `analysis/data_fourarm/` and `analysis/data_ra/`.
+- `source_snapshots/`, `configs/`: existing training snapshots and configurations for the original studies and corrected reliability follow-up.
+- `feddisco_extension/`: existing training implementation, configurations and 20 run directories.
+- `analysis/`, `experiments/`: historical analysis and evidence. Some scripts use original machine-specific paths; historical results are not the authoritative source for the updated equivalence analysis.
+- `oracle_positive_control/`: recovered training source and retained evidence for the 15 oracle runs.
+- `reproduction/`: current CPU-only statistical verification, retained oracle results, corrected score-attribution summaries and figure/table generators.
 
-## What is excluded
+## Reproduce the updated statistical analyses
 
-- Raw datasets (CIFAR-100, EuroSAT, PathMNIST) — see Dataset setup below.
-- Large model checkpoints.
-- Medical imaging arrays unrelated to the paper.
-- Private credentials and internal server paths.
-
-## Important notes
-
-- **Historical audit-only records.** Some files under `experiments/` and
-  `analysis/assets/` are retained as frozen audit evidence. They may
-  contain original machine-specific paths from the development
-  environment and should not be executed without reviewing those paths.
-- **LaTeX manuscript source.** The final Astra-corrected LaTeX source
-  (`main_revised.tex`, `supplementary.tex`, `references.bib`,
-  `elsarticle-num.bst`) was not available in the workspace during
-  packaging. A placeholder `manuscript/` directory is provided. Add the
-  source files there to enable the full prose and cross-reference checks
-  in `analysis/scripts/check_numbers.py`.
-- **Missing historical patch.** The file
-  `pilot_validation_gamma_fix.patch` listed in the step-size pilot
-  package's `SHA256SUMS.txt` is absent. This missing patch is documented
-  in the Stage-2C validation report and does not affect the retained
-  numerical results of the principal controlled studies.
-
-## Quick start
+From the repository root, run:
 
 ```bash
-pip install -r requirements.txt
-
-# Regenerate tables and figures from retained results
-python analysis/scripts/make_tables.py
-python analysis/scripts/test_make_tables.py
-python analysis/scripts/plot_fourarm.py
-
-# Run numerical cross-checks against the manuscript
-python analysis/scripts/check_numbers.py .
+python -m pip install -r reproduction/requirements.txt
+python reproduction/scripts_reports/mlj_r4_statistics.py --seed-csv reproduction/outputs/MLJ_A1_1/seed_level_effects.csv --oracle-csv reproduction/outputs/positive_control_per_seed_accuracy.csv --out reproduction/outputs/MLJ_R4
+python reproduction/generate_all_tables.py
+python reproduction/generate_all_figures.py
 ```
 
-## Dataset setup
+The statistical script checks paired contrasts, corrected TOST, exact noncentral-t detectable effects, FedDisco equivalence and oracle contrasts. The equivalence and detectable-effect analyses are retrospective and nominal. Figure and table generators cover the updated analyses, not every historical manuscript display. The generated forest figure uses standardized dataset labels.
 
-The training scripts expect datasets under a configurable root. Set one of:
+## Training and limitations
 
-- `DATASETS_ROOT` environment variable (e.g., `export DATASETS_ROOT=/path/to/datasets`);
-- `EXP_ROOT/datasets/` relative to the experiment root;
-- or edit the `dataset.root` field in the YAML configs.
-
-CIFAR-100 will be downloaded automatically by torchvision if not present. EuroSAT and PathMNIST must be obtained separately and placed in the configured root.
-
-## Reproducibility notes
-
-- All reported manuscript tables and figures can be regenerated from the included CSV/JSON summaries without retraining.
-- Retraining the original 480 + 15 corrected Study 2B runs requires the datasets, a GPU environment, and the launch scripts in `source_snapshots/`.
-- The 20 FedDisco extension runs are included under `feddisco_extension/runs/` and were verified independently on the Linux server; the verification report is `feddisco_extension/STAGE4_VERIFICATION.txt`.
+For existing training snapshots, install root `requirements.txt` and consult the corresponding snapshot instructions and configurations. Set `DATASETS_ROOT` or configure `dataset.root` to local datasets. Raw datasets and large checkpoints are not included. The recovered oracle training implementation, launch configurations, corruption manifests and 15 run records are in `oracle_positive_control/`. See its README for the portable launcher. Full GPU retraining has not been verified in this release workspace. Historical provenance gaps remain as documented in the original repository. The old manuscript-number checker targets an earlier manuscript and is not an R4.2 verification command.
 
 ## License
 
-To be determined before public release.
+See `LICENSE`. Licensing and redistribution permission must be confirmed by the authors before public release. No new license is assigned by this update.
