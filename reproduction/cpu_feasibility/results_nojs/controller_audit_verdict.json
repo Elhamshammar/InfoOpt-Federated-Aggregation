@@ -1,0 +1,7 @@
+{
+  "historical_controller_imported": true,
+  "max_full_vs_replica_l1": 8.839595722065496e-13,
+  "full_fallback_fraction_mixed": 1.0,
+  "nojs_kappa_satisfied_fraction": 0.9192139737991266,
+  "nojs_aligned_below_expected_mass": true
+}

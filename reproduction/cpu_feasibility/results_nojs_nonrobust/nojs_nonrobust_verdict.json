@@ -1,0 +1,8 @@
+{
+  "mean_aligned_mass": 0.056758625347053226,
+  "mean_expected_mass": 0.3165938864628821,
+  "mean_reduction_vs_expected": -0.2598352611158289,
+  "mean_l1_aligned_vs_shuffled": 0.5273498742432892,
+  "kappa_satisfied_fraction": 1.0,
+  "mean_effective_clients": 4.022431111963257
+}

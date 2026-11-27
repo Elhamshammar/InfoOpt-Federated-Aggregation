@@ -1,0 +1,1 @@
+Original CPU feasibility outputs recovered from the author archive. Run `python verify_cpu_feasibility.py` from this directory or by full path. Direct mixed-cohort means use 458 of 500 records. The secondary aggregate averages seed means within composition before weighting compositions. Revised NoJS has no JS fallback branch or explicit fallback flag. No training is required.
